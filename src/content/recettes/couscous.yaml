@@ -1,0 +1,78 @@
+titre: Couscous
+cuisine: mediterraneenne
+origine: Maghreb
+type: plat
+resume: "Le couscous du dimanche : poulet et merguez, bouillon épicé aux sept légumes, pois chiches et semoule légère."
+portions:
+  base: 6
+
+ingredients:
+  - groupe: Les viandes
+    items:
+      - { nom: Cuisses de poulet, qte: 6 }
+      - { nom: Épaule d'agneau en morceaux, qte: 600, unite: g, mode: chef }
+      - { nom: Merguez, qte: 6 }
+  - groupe: Le bouillon
+    items:
+      - { nom: Oignons, qte: 2 }
+      - { nom: Tomates, qte: 3 }
+      - { nom: Concentré de tomate, qte: 2, unite: cs }
+      - { nom: Carottes, qte: 4 }
+      - { nom: Navets, qte: 3 }
+      - { nom: Courgettes, qte: 3 }
+      - { nom: Céleri, qte: 2, unite: branche }
+      - { nom: Potiron, qte: 300, unite: g, mode: chef }
+      - { nom: Pois chiches en boîte, qte: 400, unite: g, note: égouttés }
+      - { nom: Ras el hanout, qte: 2, unite: cc }
+      - { nom: Cumin moulu, qte: 1, unite: cc }
+      - { nom: Paprika, qte: 1, unite: cc }
+      - { nom: Curcuma, qte: 0.5, unite: cc }
+      - { nom: Bâton de cannelle, qte: 1, mode: chef }
+      - { nom: Coriandre fraîche, qte: 1, unite: bouquet }
+      - { nom: Huile d'olive, qte: 3, unite: cs }
+      - { nom: Eau, qte: 2.5, unite: l }
+  - groupe: La semoule
+    items:
+      - { nom: Semoule moyenne, qte: 500, unite: g, cle: semoule }
+      - { nom: Beurre, qte: 40, unite: g, cle: beurre }
+      - { nom: Huile d'olive, qte: 2, unite: cs, cle: huilesemoule }
+      - { nom: Sel }
+  - groupe: Pour servir
+    items:
+      - { nom: Harissa, qte: 1, unite: pot }
+      - { nom: Raisins secs, qte: 60, unite: g, optionnel: true }
+
+simple:
+  temps: { preparation: 30, cuisson: 75 }
+  etapes:
+    - texte: "Dans un grand faitout, dorer les cuisses de poulet dans l'huile avec les oignons émincés, 8 min. Ajouter les épices, le concentré et les tomates coupées, remuer 2 min, puis couvrir d'eau, saler et porter à frémissement."
+      minuteur: 600
+    - texte: "Ajouter les carottes et les navets coupés en gros tronçons et le céleri, et laisser cuire 30 min."
+      minuteur: 1800
+    - texte: "Ajouter les courgettes en tronçons, les pois chiches et la moitié de la coriandre : encore 20 min."
+      minuteur: 1200
+    - "Griller les merguez à la poêle ou au gril."
+    - texte: "Verser {semoule} de semoule dans un saladier avec {huilesemoule} d'huile et une pincée de sel, et l'arroser du même volume d'eau bouillante. Couvrir 5 min, puis égrainer à la fourchette avec {beurre} de beurre."
+      minuteur: 300
+    - "Servir la semoule, les viandes, les légumes et le bouillon à part, avec la harissa délayée dans une louche de bouillon et le reste de la coriandre."
+
+chef:
+  temps: { preparation: 45, cuisson: 120, attente: 30 }
+  etapes:
+    - titre: Les viandes
+      texte: "Dans la marmite du couscoussier, dorer l'agneau puis le poulet dans l'huile, en plusieurs fois. Remettre le tout avec les oignons émincés, les épices, la cannelle, le concentré et les tomates râpées : 5 min à feu doux pour torréfier les épices."
+    - titre: Le bouillon
+      texte: "Couvrir de 2,5 l d'eau, saler, ajouter le bouquet de coriandre ficelé et laisser frémir 45 min."
+      minuteur: 2700
+    - titre: La semoule, première vapeur
+      texte: "Mouiller la semoule d'un verre d'eau salée, la rouler entre les mains avec l'huile pour enrober chaque grain, et laisser gonfler 15 min. La mettre dans le haut du couscoussier, sans tasser, et compter 15 min à partir du moment où la vapeur traverse."
+      minuteur: 900
+    - titre: Les légumes
+      texte: "Ajouter dans le bouillon les carottes, les navets et le céleri. 15 min plus tard, les courgettes, le potiron et les pois chiches."
+    - titre: Deuxième et troisième vapeur
+      texte: "Verser la semoule dans un grand plat, l'arroser d'un verre d'eau froide salée, l'égrainer à la main en écrasant les paquets, laisser reposer 10 min et la remettre à la vapeur 15 min. Recommencer une troisième fois, puis l'égrainer avec le beurre : elle devient légère et chaque grain se sépare."
+      minuteur: 900
+    - titre: Les merguez et le service
+      texte: "Griller les merguez. Dresser la semoule en dôme, les viandes et les légumes autour, le bouillon en soupière, la harissa délayée dans un bol de bouillon, et les raisins secs gonflés dans un peu de bouillon."
+  astuces:
+    - "Pas de couscoussier : un grand panier vapeur ou une passoire posée sur la marmite, avec un linge humide pour bien sceller les bords."

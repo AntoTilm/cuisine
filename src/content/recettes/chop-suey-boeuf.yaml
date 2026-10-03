@@ -1,0 +1,85 @@
+titre: Chop suey au bœuf
+cuisine: asiatique
+origine: Chine, Canton
+type: plat
+resume: "Bœuf mariné et petits légumes sautés au wok, avec ce qu'on a sous la main. Les légumes restent croquants, la viande très tendre."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La marinade
+    items:
+      - { nom: Bœuf tendre, qte: 300, unite: g, note: "tende de tranche ou filet" }
+      - { nom: Sel, qte: 0.25, unite: cc }
+      - { nom: Poivre moulu, qte: 0.5, unite: cc }
+      - { nom: Sauce soja foncée, qte: 1, unite: cs, cle: sojamarinade }
+      - { nom: Œuf, qte: 1, note: le blanc }
+      - { nom: Fécule de maïs, qte: 2, unite: cc }
+      - { nom: Huile de tournesol, qte: 1, unite: cs, cle: huilemarinade }
+  - groupe: Les légumes
+    items:
+      - { nom: Carotte, qte: 1 }
+      - { nom: Céleri, qte: 1, unite: branche }
+      - { nom: Champignons de Paris, qte: 130, unite: g }
+      - { nom: Champignons noirs déshydratés, qte: 7, unite: g, mode: chef }
+      - { nom: Tofu mi-ferme, qte: 200, unite: g, mode: chef }
+      - { nom: Poivron, qte: 0.5, note: "un quart rouge, un quart vert" }
+      - { nom: Chou chinois, qte: 200, unite: g }
+      - { nom: Oignon, qte: 1, note: petit }
+      - { nom: Oignon nouveau, qte: 1 }
+      - { nom: Gingembre frais, qte: 2, unite: cm }
+      - { nom: Ail, qte: 6, unite: gousse }
+  - groupe: La cuisson
+    items:
+      - { nom: Sauce soja foncée, qte: 1, unite: cs, cle: sojacuisson }
+      - { nom: Sauce d'huître, qte: 1, unite: cs }
+      - { nom: Alcool de riz Shaoxing, qte: 2, unite: cc }
+      - { nom: Huile de tournesol, qte: 6, unite: cs, cle: huilecuisson }
+      - { nom: Sel }
+
+simple:
+  temps: { preparation: 25, cuisson: 10, attente: 15 }
+  etapes:
+    - "Couper le bœuf en tranches de 5 mm, perpendiculairement aux fibres. Le mélanger avec le sel, le poivre et {sojamarinade} de sauce soja foncée, puis le blanc d'œuf, la fécule et {huilemarinade} d'huile. Laisser mariner pendant la suite."
+    - "Couper tous les légumes en petits morceaux. Hacher l'ail, trancher finement le gingembre. Garder le vert de l'oignon nouveau à part."
+    - texte: "Wok à feu fort, 2 c. à soupe d'huile : sauter un peu d'ail, la carotte, les champignons, l'oignon, le poivron, le céleri et le chou avec une pincée de sel, 3 à 4 min. Réserver."
+      minuteur: 210
+    - texte: "Remettre 3 c. à soupe d'huile dans le wok bien chaud. Ajouter le gingembre, le reste de l'ail et le bœuf, l'étaler et le laisser saisir 30 s, puis remuer 20 s."
+      minuteur: 50
+    - "Ajouter {sojacuisson} de sauce soja foncée, la sauce d'huître et l'alcool de riz, puis tous les légumes. Remuer 20 s, ajouter le vert de l'oignon nouveau et couper le feu."
+
+chef:
+  temps: { preparation: 35, cuisson: 15, attente: 20 }
+  etapes:
+    - titre: Les champignons noirs
+      texte: "Faire tremper les champignons noirs dans l'eau tiède pendant toute la préparation."
+    - titre: La marinade, étape par étape
+      texte: "Couper le bœuf en tranches de 5 mm perpendiculairement aux fibres. Assaisonner avec le sel, le poivre et {sojamarinade} de sauce soja foncée, et masser pour détendre les fibres. Ajouter le blanc d'œuf, bien mélanger, puis la fécule, et enfin {huilemarinade} d'huile pour que les tranches ne collent pas à la cuisson."
+    - titre: La découpe
+      texte: "Couper en petits morceaux la carotte, le céleri, le poivron, le chou chinois, l'oignon et le blanc de l'oignon nouveau, les champignons de Paris et le tofu. Égoutter les champignons noirs et retirer leur pied. Trancher le gingembre, hacher l'ail."
+    - titre: Le tofu
+      texte: "Feu fort, 1 c. à soupe d'huile : dorer les cubes de tofu environ 4 min en les retournant. Réserver."
+      minuteur: 240
+    - titre: Première fournée
+      texte: "1 c. à soupe d'huile, un peu d'ail, la carotte et une pincée de sel : 30 s. Ajouter les deux champignons, 2 min. Verser ½ c. à café d'alcool de riz sur les bords du wok, remuer et réserver."
+      minuteur: 150
+    - titre: Deuxième fournée
+      texte: "1 c. à soupe d'huile, un peu d'ail, l'oignon, le blanc d'oignon nouveau, le poivron, le céleri, le chou et une pincée de sel : 2 min. ½ c. à café d'alcool de riz sur les bords, remuer et réserver. Sauter en plusieurs fois garde le wok très chaud."
+      minuteur: 120
+    - titre: Le bœuf
+      texte: "Chauffer le wok jusqu'à ce qu'il fume, 3 c. à soupe d'huile, le gingembre 10 s, puis le reste de l'ail et le bœuf. L'étaler, laisser saisir 30 s, retourner et remuer 20 s. Verser sur les bords {sojacuisson} de sauce soja foncée et 1 c. à café d'alcool de riz, ajouter la sauce d'huître sur la viande et remuer 10 s : la sauce caramélise."
+      minuteur: 70
+    - titre: L'assemblage
+      texte: "Remettre tous les légumes et le tofu, remuer 20 s, ajouter le vert de l'oignon nouveau et couper le feu."
+  astuces:
+    - "Le blanc d'œuf et la fécule forment une couche protectrice : la viande reste tendre et juteuse."
+    - "La sauce soja foncée sale moins qu'elle ne colore : elle donne au plat sa belle couleur brune."
+
+sources:
+  - titre: "Chop suey au bœuf, Cooking With Morgane (YouTube)"
+    url: https://www.youtube.com/watch?v=4D9G-bMno_A
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc]
+    defaut: [riz-blanc]

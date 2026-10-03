@@ -2,7 +2,7 @@ titre: Salade composée
 cuisine: francaise
 type: accompagnement
 saison: ete
-resume: La salade de brasserie qui accompagne la viande et les frites, avec une vinaigrette à la moutarde montée minute.
+resume: "La salade du carnet : tomates, oignon rouge, mozzarella (ou burrata) et un peu de feta si on veut, avec une vinaigrette à la moutarde montée minute."
 portions:
   base: 4
 
@@ -13,8 +13,9 @@ ingredients:
       - { nom: Tomates, qte: 3 }
       - { nom: Concombre, qte: 0.5 }
       - { nom: Oignon rouge, qte: 0.5 }
-      - { nom: Œufs, qte: 2, mode: chef, note: durs }
-      - { nom: Radis, qte: 6, mode: chef }
+      - { nom: Mozzarella, qte: 1, note: boule de 125 g, mode: simple }
+      - { nom: Burrata, qte: 1, mode: chef }
+      - { nom: Feta, qte: 100, unite: g, optionnel: true }
       - { nom: Pain de campagne, qte: 2, unite: tranche, mode: chef, note: pour les croûtons }
       - { nom: Beurre, qte: 15, unite: g, mode: chef }
   - groupe: La vinaigrette
@@ -24,6 +25,7 @@ ingredients:
       - { nom: Huile d'olive, qte: 3, unite: cs }
       - { nom: Échalote, qte: 1, mode: chef }
       - { nom: Ciboulette, qte: 0.5, unite: botte }
+      - { nom: Basilic frais, qte: 4, unite: feuille, mode: chef }
       - { nom: Sel }
       - { nom: Poivre }
 
@@ -32,20 +34,17 @@ simple:
   etapes:
     - "Laver et essorer la salade. Couper les tomates en quartiers, le concombre en demi-rondelles et l'oignon rouge en lamelles fines."
     - "Dans le fond du saladier, mélanger la moutarde, le vinaigre, le sel et le poivre, puis l'huile en fouettant."
-    - "Ajouter les légumes et la ciboulette ciselée, mais ne mélanger qu'au moment de servir : la salade ne doit pas attendre dans la vinaigrette."
+    - "Ajouter les légumes et la ciboulette ciselée, mélanger au moment de servir, puis poser la mozzarella déchirée et la feta émiettée par-dessus."
 
 chef:
-  temps: { preparation: 25, cuisson: 10 }
+  temps: { preparation: 20, cuisson: 5 }
   etapes:
-    - titre: Les œufs
-      texte: "Cuire les œufs 10 min à l'eau bouillante, les refroidir dans l'eau glacée et les écaler."
-      minuteur: 600
     - titre: Les croûtons
       texte: "Couper le pain en dés et les dorer au beurre dans une poêle, 4 à 5 min, en remuant. Saler légèrement."
       minuteur: 270
     - titre: Les légumes
-      texte: "Laver et bien essorer la salade : une feuille mouillée dilue la vinaigrette. Tailler les tomates en quartiers, le concombre en demi-rondelles, les radis en rondelles fines et l'oignon rouge en lamelles. Ciseler l'échalote et la ciboulette."
+      texte: "Laver et bien essorer la salade : une feuille mouillée dilue la vinaigrette. Tailler les tomates en quartiers, les saler et les laisser rendre leur jus 10 min. Couper le concombre en demi-rondelles, l'oignon rouge en lamelles très fines. Ciseler l'échalote et la ciboulette."
     - titre: La vinaigrette
-      texte: "Dans le fond du saladier, dissoudre le sel dans le vinaigre (il ne fond pas dans l'huile), ajouter la moutarde et l'échalote, puis l'huile en filet en fouettant pour émulsionner. Poivrer."
+      texte: "Dans le fond du saladier, dissoudre le sel dans le vinaigre (il ne fond pas dans l'huile), ajouter la moutarde, l'échalote et le jus rendu par les tomates, puis l'huile en filet en fouettant pour émulsionner. Poivrer."
     - titre: Le service
-      texte: "Mettre la salade et les légumes sur la vinaigrette, mélanger à la main au dernier moment, puis poser les œufs en quartiers, les croûtons et la ciboulette."
+      texte: "Mélanger la salade et les légumes avec la vinaigrette à la main, au dernier moment. Poser la burrata au centre et l'ouvrir à table, émietter la feta autour, puis les croûtons, la ciboulette et le basilic déchiré."

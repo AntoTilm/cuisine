@@ -1,0 +1,59 @@
+titre: Pizza maison
+cuisine: italienne
+origine: Naples
+type: plat
+resume: "Une pâte qui lève, une sauce tomate crue, de la mozzarella et un four le plus chaud possible. En grande cuisine, pâte à longue fermentation et cuisson sur pierre."
+portions:
+  base: 2
+  unite: pizza
+  pluriel: pizzas
+  pas: 1
+  min: 1
+
+ingredients:
+  - groupe: La pâte
+    items:
+      - { nom: Farine T45 ou tipo 00, qte: 250, unite: g, cle: farine }
+      - { nom: Eau tiède, qte: 160, unite: ml, cle: eau }
+      - { nom: Levure de boulanger sèche, qte: 5, unite: g, mode: simple }
+      - { nom: Levure de boulanger sèche, qte: 1, unite: g, mode: chef, note: une petite pincée }
+      - { nom: Sel, qte: 5, unite: g }
+      - { nom: Huile d'olive, qte: 1, unite: cs }
+  - groupe: La garniture
+    items:
+      - { nom: Tomates pelées en boîte, qte: 200, unite: g, note: "San Marzano si possible" }
+      - { nom: Mozzarella, qte: 2, note: boules de 125 g }
+      - { nom: Basilic frais, qte: 6, unite: feuille }
+      - { nom: Origan séché, qte: 0.5, unite: cc }
+      - { nom: Huile d'olive, qte: 2, unite: cs }
+      - { nom: Jambon cuit ou salami, qte: 4, unite: tranche, optionnel: true }
+
+simple:
+  temps: { preparation: 20, cuisson: 12, attente: 90 }
+  etapes:
+    - texte: "Délayer la levure dans l'eau tiède. Mélanger avec la farine, puis le sel et l'huile, et pétrir 8 à 10 min jusqu'à ce que la pâte soit lisse. La couvrir et la laisser doubler de volume 1 h 30 dans un endroit tiède."
+      minuteur: 5400
+    - "Préchauffer le four au maximum (250 °C ou plus) avec la plaque à l'intérieur. Écraser les tomates à la fourchette avec l'origan, une pincée de sel et un filet d'huile."
+    - "Partager la pâte en deux et l'étaler à la main sur du papier cuisson, en gardant le bord un peu plus épais."
+    - texte: "Étaler la sauce, ajouter la mozzarella égouttée et déchirée (et le jambon), glisser sur la plaque chaude et cuire 8 à 10 min. Basilic et filet d'huile à la sortie."
+      minuteur: 540
+
+chef:
+  temps: { preparation: 30, cuisson: 10, attente: 1440 }
+  etapes:
+    - titre: La pâte, la veille
+      texte: "Dissoudre la levure dans {eau} d'eau à température ambiante. Ajouter {farine} de farine, mélanger, laisser reposer 20 min (autolyse), puis ajouter le sel et l'huile et pétrir 10 min. Couvrir et mettre 24 h au réfrigérateur : la fermentation lente donne une pâte légère, alvéolée et digeste."
+    - titre: Les pâtons
+      texte: "Sortir la pâte 3 h avant la cuisson. La diviser en deux et former des boules serrées. Les laisser reposer couvertes à température ambiante."
+      minuteur: 10800
+    - titre: Le four
+      texte: "Mettre une pierre ou une plaque en acier en haut du four et préchauffer au maximum pendant 45 min. Égoutter et déchirer la mozzarella une heure à l'avance, pour qu'elle ne détrempe pas la pâte."
+    - titre: Étaler à la main
+      texte: "Sur le plan fariné, aplatir chaque pâton du bout des doigts en partant du centre, sans toucher le bord : il gonflera en corniche. Jamais de rouleau, qui chasse l'air."
+    - titre: Garnir et cuire
+      texte: "Tomates écrasées à la main, salées et huilées, puis mozzarella. Glisser sur la pierre et cuire 5 à 7 min, en passant le gril la dernière minute pour colorer le bord. Basilic et huile d'olive après cuisson."
+      minuteur: 360
+
+assiette:
+  - role: legume
+    choix: [salade-composee]

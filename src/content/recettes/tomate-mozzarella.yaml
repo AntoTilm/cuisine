@@ -1,0 +1,37 @@
+titre: Tomate mozzarella
+cuisine: italienne
+type: entree
+saison: ete
+resume: "Rien que des bons produits : des tomates de saison, de la mozzarella di bufala ou une burrata, du basilic et une belle huile d'olive."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Tomates, qte: 4, note: "cœur de bœuf ou anciennes, bien mûres" }
+      - { nom: Mozzarella di bufala, qte: 2, note: boules de 125 g, mode: simple }
+      - { nom: Burrata, qte: 2, mode: chef }
+      - { nom: Tomates cerises, qte: 200, unite: g, mode: chef }
+      - { nom: Oignon rouge, qte: 0.5, mode: chef, optionnel: true }
+      - { nom: Basilic frais, qte: 1, unite: bouquet }
+      - { nom: Huile d'olive vierge extra, qte: 4, unite: cs }
+      - { nom: Vinaigre balsamique, qte: 1, unite: cs, optionnel: true }
+      - { nom: Fleur de sel }
+      - { nom: Poivre du moulin }
+
+simple:
+  temps: { preparation: 10, cuisson: 0 }
+  etapes:
+    - "Sortir les tomates et la mozzarella du frigo 30 min avant : froides, elles n'ont pas de goût."
+    - "Trancher les tomates et la mozzarella et les alterner sur le plat avec des feuilles de basilic."
+    - "Fleur de sel, poivre, huile d'olive et quelques gouttes de balsamique au moment de servir."
+
+chef:
+  temps: { preparation: 15, cuisson: 0 }
+  etapes:
+    - titre: Les tomates
+      texte: "Couper les grosses tomates en quartiers irréguliers et les tomates cerises en deux. Les saler 10 min avant dans un saladier : elles rendent un jus parfumé qu'on garde."
+    - titre: L'huile au basilic
+      texte: "Mixer la moitié du basilic avec l'huile d'olive et une pincée de sel, puis filtrer."
+    - titre: Le dressage
+      texte: "Disposer les tomates et leur jus, l'oignon rouge en lamelles très fines, poser les burratas au centre et les ouvrir au moment de servir. Arroser d'huile au basilic, poivrer, parsemer du reste du basilic."

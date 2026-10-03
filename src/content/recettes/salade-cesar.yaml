@@ -1,0 +1,58 @@
+titre: Salade César
+cuisine: americaine
+origine: Tijuana
+type: plat
+resume: "Romaine croquante, poulet grillé, croûtons à l'ail, copeaux de parmesan et la vraie sauce César à l'anchois."
+portions:
+  base: 2
+
+ingredients:
+  - groupe: La salade
+    items:
+      - { nom: Laitue romaine, qte: 1 }
+      - { nom: Blancs de poulet, qte: 2 }
+      - { nom: Parmesan, qte: 30, unite: g, note: en copeaux }
+      - { nom: Huile d'olive, qte: 1, unite: cs, cle: huilepoulet }
+  - groupe: Les croûtons
+    items:
+      - { nom: Pain de campagne, qte: 2, unite: tranche }
+      - { nom: Ail, qte: 1, unite: gousse, cle: ailcroutons }
+      - { nom: Huile d'olive, qte: 2, unite: cs, cle: huilecroutons }
+  - groupe: La sauce
+    items:
+      - { nom: Mayonnaise, qte: 3, unite: cs, mode: simple }
+      - { nom: Jaune d'œuf, qte: 1, mode: chef }
+      - { nom: Moutarde de Dijon, qte: 1, unite: cc, mode: chef }
+      - { nom: Filets d'anchois, qte: 2 }
+      - { nom: Ail, qte: 1, unite: gousse, cle: ailsauce }
+      - { nom: Citron, qte: 0.5, note: le jus }
+      - { nom: Sauce Worcestershire, qte: 1, unite: cc }
+      - { nom: Parmesan râpé, qte: 30, unite: g }
+      - { nom: Huile d'olive, qte: 8, unite: cl, mode: chef, cle: huilesauce }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 15, cuisson: 15 }
+  etapes:
+    - texte: "Saler et poivrer les blancs de poulet, les cuire 6 min par face dans {huilepoulet} d'huile, puis les laisser reposer et les trancher."
+      minuteur: 720
+    - texte: "Couper le pain en dés et les dorer à la poêle avec {huilecroutons} d'huile et la gousse d'ail écrasée, 3 à 4 min."
+      minuteur: 210
+    - "Mélanger la mayonnaise avec les anchois écrasés, l'ail râpé, le jus de citron, la Worcestershire, le parmesan râpé et du poivre. Détendre d'une cuillère d'eau si elle est trop épaisse."
+    - "Mélanger la romaine coupée en lanières avec la sauce, puis ajouter le poulet, les croûtons et les copeaux de parmesan."
+
+chef:
+  temps: { preparation: 25, cuisson: 15 }
+  etapes:
+    - titre: Le poulet
+      texte: "Aplatir légèrement les blancs pour une épaisseur régulière, les saler 15 min avant. Les griller dans {huilepoulet} d'huile à feu moyen-vif, 5 à 6 min par face, jusqu'à 68 °C à cœur. Laisser reposer 5 min avant de trancher."
+      minuteur: 660
+    - titre: Les croûtons
+      texte: "Écraser la gousse d'ail dans {huilecroutons} d'huile et laisser infuser 10 min. Enrober les dés de pain de cette huile et les cuire 8 min au four à 190 °C, en remuant à mi-cuisson."
+      minuteur: 480
+    - titre: La sauce
+      texte: "Écraser les anchois et l'ail en pâte. Ajouter le jaune, la moutarde, le jus de citron et la Worcestershire, puis monter avec {huilesauce} d'huile versée en filet, comme une mayonnaise. Finir avec le parmesan râpé et beaucoup de poivre."
+    - titre: Le montage
+      texte: "Garder les feuilles de romaine entières, bien sèches et froides. Les enrober de sauce à la main, puis disposer le poulet tranché, les croûtons et les copeaux de parmesan."
+  astuces:
+    - "La romaine doit sortir du frigo au dernier moment : c'est son croquant qui fait la salade."

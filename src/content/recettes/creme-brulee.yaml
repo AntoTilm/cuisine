@@ -3,7 +3,7 @@ cuisine: francaise
 type: dessert
 resume: Une crème vanillée cuite tout doucement, et sa fine croûte de cassonade caramélisée au chalumeau.
 portions:
-  base: 6
+  base: 5
 
 ingredients:
   - groupe: La crème

@@ -1,0 +1,48 @@
+titre: Pâtes au pesto
+cuisine: italienne
+origine: Gênes
+type: plat
+saison: ete
+resume: "Un pesto de basilic frais, pignons, parmesan et huile d'olive. En grande cuisine, au mortier et à la génoise, avec pommes de terre et haricots verts."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le pesto
+    items:
+      - { nom: Basilic frais, qte: 50, unite: g, note: les feuilles }
+      - { nom: Pignons de pin, qte: 30, unite: g }
+      - { nom: Parmesan râpé, qte: 50, unite: g }
+      - { nom: Pecorino râpé, qte: 20, unite: g, mode: chef }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Huile d'olive, qte: 10, unite: cl }
+      - { nom: Gros sel, qte: 1, unite: pincee }
+  - groupe: Les pâtes
+    items:
+      - { nom: Linguine ou trofie, qte: 400, unite: g }
+      - { nom: Pommes de terre, qte: 2, mode: chef, note: "petites, à chair ferme" }
+      - { nom: Haricots verts, qte: 150, unite: g, mode: chef }
+
+simple:
+  temps: { preparation: 10, cuisson: 12 }
+  etapes:
+    - "Dorer les pignons à sec dans une poêle, 2 min, et les laisser refroidir."
+    - "Mixer par à-coups le basilic, les pignons, l'ail, le parmesan et le sel en versant l'huile petit à petit. Ne pas mixer longtemps : le basilic chauffe et noircit."
+    - "Cuire les pâtes, les égoutter en gardant un peu d'eau de cuisson, et les mélanger hors du feu avec le pesto détendu de 2 ou 3 c. à soupe de cette eau."
+
+chef:
+  temps: { preparation: 25, cuisson: 15 }
+  etapes:
+    - titre: Le pesto au mortier
+      texte: "Piler l'ail avec le gros sel jusqu'à obtenir une crème. Ajouter les feuilles de basilic peu à peu en les écrasant d'un mouvement tournant, sans taper. Ajouter les pignons, puis les fromages, et enfin l'huile d'olive en filet."
+    - titre: À la génoise
+      texte: "Éplucher les pommes de terre et les couper en petits dés. Les mettre dans l'eau bouillante salée en même temps que les pâtes, et ajouter les haricots verts coupés en tronçons 5 min avant la fin."
+    - titre: Le mélange
+      texte: "Égoutter en gardant une louche d'eau de cuisson. Mélanger hors du feu avec le pesto détendu d'un peu d'eau : l'amidon des pommes de terre le rend crémeux. Ne jamais chauffer le pesto."
+  astuces:
+    - "Pour un pesto qui reste vert, mettre le bol du mixeur et les lames 15 min au congélateur avant."
+    - "Le pesto se garde 3 jours au frigo sous une fine couche d'huile, ou se congèle en bacs à glaçons."
+
+assiette:
+  - role: legume
+    choix: [salade-composee]

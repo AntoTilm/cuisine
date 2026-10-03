@@ -1,0 +1,85 @@
+titre: Gyoza
+cuisine: asiatique
+origine: Chine, Japon, Corée
+type: entree
+resume: "Raviolis au porc et au chou, dorés dessous et cuits à la vapeur dessus. Jiaozi en Chine, gyoza au Japon, mandu en Corée."
+portions:
+  base: 24
+  unite: gyoza
+  pluriel: gyozas
+  pas: 12
+  min: 12
+  parPersonne: 6
+
+ingredients:
+  - groupe: Les feuilles
+    mode: simple
+    items:
+      - { nom: Feuilles de gyoza, qte: 24, note: rayon asiatique ou surgelés }
+  - groupe: La pâte
+    mode: chef
+    items:
+      - { nom: Farine, qte: 250, unite: g, cle: farine }
+      - { nom: Sel, qte: 0.5, unite: cc }
+      - { nom: Eau, qte: 130, unite: ml, cle: eaupate }
+      - { nom: Fécule de tapioca, qte: 2, unite: cs, note: pour fariner le plan de travail }
+  - groupe: La farce
+    items:
+      - { nom: Porc haché, qte: 350, unite: g }
+      - { nom: Chou vert ou chou chinois, qte: 3, unite: feuille }
+      - { nom: Ciboulette thaïe, qte: 3, unite: brin }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Gingembre frais râpé, qte: 0.5, unite: cc }
+      - { nom: Saké, qte: 1, unite: cs }
+      - { nom: Huile de sésame, qte: 1, unite: cs }
+      - { nom: Sauce soja, qte: 2, unite: cs }
+      - { nom: Fécule de tapioca ou de maïs, qte: 2, unite: cc }
+      - { nom: Sel, qte: 0.25, unite: cc }
+      - { nom: Poivre moulu }
+  - groupe: La cuisson
+    items:
+      - { nom: Huile neutre, qte: 2, unite: cs, note: 1 par poêlée de 12 }
+      - { nom: Eau, qte: 300, unite: ml, note: 150 ml par poêlée }
+      - { nom: Huile de sésame, qte: 2, unite: cc, cle: sesamecuisson }
+  - groupe: La sauce
+    items:
+      - { nom: Sauce soja, qte: 1, unite: cs, cle: sojasauce }
+      - { nom: Vinaigre de riz, qte: 1, unite: cs }
+      - { nom: Huile de sésame, qte: 0.25, unite: cc }
+
+simple:
+  temps: { preparation: 40, cuisson: 20 }
+  etapes:
+    - "Blanchir les feuilles de chou 1 min, les égoutter, les presser et les hacher finement. Hacher l'ail et ciseler la ciboulette."
+    - "Mélanger le porc avec l'ail, le gingembre, le saké, l'huile de sésame, la sauce soja, la fécule, le sel et le poivre. Ajouter le chou et la ciboulette."
+    - "Déposer 1 c. à café de farce au centre de chaque feuille, mouiller le bord au doigt, plier en deux et pincer en faisant quelques plis sur le dessus."
+    - texte: "À feu moyen, 1 c. à soupe d'huile dans une poêle avec couvercle. Y ranger 12 gyozas et les laisser dorer dessous sans les bouger, 2 à 3 min."
+      minuteur: 150
+    - texte: "Verser 150 ml d'eau et couvrir aussitôt : 5 à 6 min, jusqu'à ce que l'eau soit évaporée. Ajouter 1 c. à café d'huile de sésame et laisser rissoler 1 min à découvert. Recommencer avec les 12 suivants."
+      minuteur: 330
+    - "Mélanger les ingrédients de la sauce et servir à côté."
+
+chef:
+  temps: { preparation: 90, cuisson: 20, attente: 60 }
+  etapes:
+    - titre: La pâte
+      texte: "Tamiser {farine} de farine. Dissoudre le sel dans {eaupate} d'eau, verser sur la farine, mélanger à la spatule puis pétrir 10 min : la pâte devient lisse et élastique. La couper en deux boudins, les filmer et laisser reposer 1 h à température ambiante."
+      minuteur: 3600
+    - titre: La farce
+      texte: "Hacher finement l'ail, ciseler la ciboulette, râper le gingembre. Blanchir les feuilles de chou 1 min, puis les hacher finement. Mélanger le porc avec l'ail, le gingembre, le saké, l'huile de sésame, la sauce soja, le sel, la fécule et le poivre, puis le chou et la ciboulette. Garder au frais."
+    - titre: Les feuilles
+      texte: "Fariner le plan de travail de fécule de tapioca. Couper la pâte en 24 parts égales, les bouler, les aplatir puis les étaler en disques de 10 cm."
+    - titre: Le pliage
+      texte: "Une c. à café de farce au centre. Mouiller le bord de la moitié inférieure, rabattre l'autre moitié et pincer au milieu. Plisser la partie supérieure droite vers le centre en appuyant chaque pli du pouce, puis la partie gauche. Poser le gyoza sur la planche pour lui donner sa forme de lingot."
+    - titre: La cuisson, en deux fois
+      texte: "Tout à feu moyen. Une c. à soupe d'huile, 12 gyozas : les laisser dorer dessous sans les retourner. Verser 150 ml d'eau et couvrir aussitôt, 5 à 6 min. Quand l'eau est évaporée, 1 c. à café d'huile de sésame et 1 min de rissolage à découvert, sans remuer."
+      minuteur: 480
+    - titre: La sauce
+      texte: "Mélanger {sojasauce} de sauce soja, le vinaigre de riz et l'huile de sésame."
+  astuces:
+    - "Les gyozas crus se congèlent très bien sur une plaque, puis en sachet. Les cuire sans les décongeler, avec 2 min de vapeur en plus."
+    - "En Chine, on les prépare en famille pour le Nouvel An : leur forme de lingot d'or porte bonheur."
+
+sources:
+  - titre: "Gyoza, jiaozi, mandu : recette complète, Cooking With Morgane (YouTube)"
+    url: https://www.youtube.com/watch?v=mmoCEkTg_RI

@@ -1,0 +1,55 @@
+titre: Pêches au thon
+cuisine: belge
+type: entree
+saison: ete
+resume: "L'entrée froide des dimanches belges : des demi-pêches garnies de thon à la mayonnaise, sur un lit de salade."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Les pêches
+    items:
+      - { nom: Demi-pêches au sirop, qte: 8, note: "une grande boîte", mode: simple }
+      - { nom: Pêches jaunes bien mûres, qte: 4, mode: chef }
+      - { nom: Citron, qte: 0.5, mode: chef, note: le jus }
+  - groupe: La farce
+    items:
+      - { nom: Thon au naturel, qte: 2, unite: boite, note: "2 × 140 g égouttés" }
+      - { nom: Mayonnaise, qte: 4, unite: cs, mode: simple }
+      - { nom: Échalote, qte: 1 }
+      - { nom: Ciboulette, qte: 0.5, unite: botte }
+      - { nom: Paprika, qte: 1, unite: pincee }
+  - groupe: La mayonnaise maison
+    mode: chef
+    items:
+      - { nom: Jaune d'œuf, qte: 1 }
+      - { nom: Moutarde, qte: 1, unite: cc }
+      - { nom: Huile de tournesol, qte: 15, unite: cl }
+      - { nom: Vinaigre de vin blanc, qte: 1, unite: cc }
+  - groupe: Pour servir
+    items:
+      - { nom: Laitue, qte: 1 }
+      - { nom: Tomates, qte: 2 }
+      - { nom: Œufs, qte: 2, note: durs, optionnel: true }
+      - { nom: Sel }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 15, cuisson: 0 }
+  etapes:
+    - "Égoutter les pêches et le thon. Émietter le thon et le mélanger avec la mayonnaise, l'échalote finement ciselée et la moitié de la ciboulette. Saler, poivrer."
+    - "Garnir généreusement chaque demi-pêche d'une boule de thon, face bombée vers le haut."
+    - "Dresser sur des feuilles de laitue avec les tomates en quartiers et les œufs, saupoudrer de paprika et du reste de ciboulette. Servir bien frais."
+
+chef:
+  temps: { preparation: 30, cuisson: 2 }
+  etapes:
+    - titre: Les pêches
+      texte: "Plonger les pêches 30 s dans l'eau bouillante puis dans l'eau glacée, les peler, les couper en deux et les dénoyauter. Les citronner pour qu'elles ne noircissent pas."
+      minuteur: 30
+    - titre: La mayonnaise
+      texte: "Tous les ingrédients à température ambiante. Fouetter le jaune avec la moutarde, une pincée de sel, puis verser l'huile en filet très fin en fouettant sans arrêt. Finir avec le vinaigre."
+    - titre: La farce
+      texte: "Émietter le thon, le mélanger avec 4 c. à soupe de mayonnaise, l'échalote ciselée et la ciboulette. Goûter et rectifier."
+    - titre: Le dressage
+      texte: "Garnir les pêches en dôme, les poser sur la laitue avec les tomates et les œufs, un trait de mayonnaise, du paprika et de la ciboulette."

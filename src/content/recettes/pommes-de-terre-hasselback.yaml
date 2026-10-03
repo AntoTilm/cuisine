@@ -9,7 +9,7 @@ portions:
 
 ingredients:
   - items:
-      - { nom: Pommes de terre, qte: 8, note: "petites, à chair ferme" }
+      - { nom: Pommes de terre, qte: 6, note: "petites, à chair ferme" }
       - { nom: Ail, qte: 2, unite: gousse }
       - { nom: Huile d'olive, qte: 3, unite: cs }
       - { nom: Beurre, qte: 30, unite: g, mode: chef }

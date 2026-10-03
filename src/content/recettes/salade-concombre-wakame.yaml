@@ -5,20 +5,20 @@ type: accompagnement
 saison: ete
 resume: Concombre tranché fin, algues wakamé et vinaigrette japonaise au sésame grillé.
 portions:
-  base: 2
+  base: 4
 
 ingredients:
   - groupe: La salade
     items:
       - { nom: Concombre, qte: 1 }
-      - { nom: Algues wakamé déshydratées, qte: 2, unite: cs }
-      - { nom: Graines de sésame blanc, qte: 4, unite: cc }
+      - { nom: Algues wakamé déshydratées, qte: 5, unite: g }
+      - { nom: Graines de sésame blanc, qte: 1, unite: cc }
   - groupe: La vinaigrette japonaise
     items:
-      - { nom: Huile de sésame grillé, qte: 2, unite: cs }
-      - { nom: Huile de colza, qte: 4, unite: cs }
-      - { nom: Vinaigre de riz blanc, qte: 2, unite: cs }
-      - { nom: Sauce soja Kikkoman, qte: 2, unite: cs }
+      - { nom: Huile de sésame grillé, qte: 1, unite: cs }
+      - { nom: Huile de colza, qte: 2, unite: cs }
+      - { nom: Vinaigre de riz blanc, qte: 1, unite: cs, note: ou vinaigre de pomme }
+      - { nom: Sauce soja Kikkoman, qte: 1, unite: cs }
       - { nom: Poivre noir }
 
 simple:

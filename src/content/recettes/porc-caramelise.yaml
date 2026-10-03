@@ -14,8 +14,8 @@ ingredients:
       - { nom: Sucre, qte: 2, unite: cs }
       - { nom: Huile de tournesol, qte: 3, unite: cs }
       - { nom: Nuoc-mâm (sauce de poisson), qte: 2, unite: cs }
-      - { nom: Sel }
-      - { nom: Poivre moulu }
+      - { nom: Sel, qte: 0.25, unite: cc }
+      - { nom: Poivre moulu, qte: 0.25, unite: cc }
   - groupe: Les légumes sautés
     items:
       - { nom: Oignon, qte: 1 }

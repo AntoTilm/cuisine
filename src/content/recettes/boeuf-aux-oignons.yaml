@@ -1,0 +1,63 @@
+titre: Bœuf aux oignons
+cuisine: asiatique
+origine: Chine
+type: plat
+resume: "Un grand classique chinois avec très peu d'ingrédients : du bœuf mariné à la sauce d'huître, saisi au wok avec beaucoup d'oignons fondants."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La marinade
+    items:
+      - { nom: Bœuf tendre, qte: 600, unite: g, note: "rumsteck, bavette ou filet" }
+      - { nom: Farine de blé, qte: 10, unite: g }
+      - { nom: Sel, qte: 0.5, unite: cc }
+      - { nom: Sauce d'huître, qte: 2, unite: cs }
+      - { nom: Sauce soja foncée, qte: 2, unite: cs }
+      - { nom: Huile de tournesol, qte: 2, unite: cs, cle: huilemarinade }
+  - groupe: La cuisson
+    items:
+      - { nom: Oignons, qte: 500, unite: g }
+      - { nom: Huile de tournesol, qte: 4, unite: cs, cle: huilecuisson }
+      - { nom: Poivre moulu }
+
+simple:
+  temps: { preparation: 15, cuisson: 8, attente: 20 }
+  etapes:
+    - "Trancher finement le bœuf. Le mélanger avec le sel, la sauce soja foncée, la sauce d'huître, {huilemarinade} d'huile et la farine. Laisser mariner 20 min au frais."
+    - "Couper les oignons en quartiers, puis séparer les pétales."
+    - texte: "Chauffer {huilecuisson} d'huile dans un wok à feu très fort. Y sauter les oignons 2 à 3 min."
+      minuteur: 150
+    - texte: "Détacher les morceaux de bœuf, les ajouter aux oignons et sauter 2 à 3 min en remuant sans arrêt. Poivrer et servir aussitôt."
+      minuteur: 150
+
+chef:
+  temps: { preparation: 20, cuisson: 8, attente: 60 }
+  etapes:
+    - titre: Trancher
+      texte: "Passer le bœuf 30 min au congélateur : il se tranche plus facilement. Le couper en tranches de 3 mm, perpendiculairement aux fibres, pour qu'il reste tendre."
+    - titre: Mariner
+      texte: "Dans un grand récipient, mélanger le bœuf avec le sel, la sauce soja foncée, la sauce d'huître, {huilemarinade} d'huile et la farine. Bien masser, puis laisser reposer 1 h au réfrigérateur. La farine forme une fine couche qui garde la viande juteuse."
+      minuteur: 3600
+    - titre: Les oignons
+      texte: "Couper les oignons en quartiers et séparer les pétales. Chauffer le wok à feu très fort jusqu'à ce qu'il fume, puis ajouter {huilecuisson} d'huile. Sauter les oignons 2 à 3 min, en remuant de temps en temps : ils doivent dorer sur les bords et rester un peu croquants."
+      minuteur: 150
+    - titre: Le bœuf
+      texte: "Détacher les morceaux de bœuf mariné les uns des autres et les incorporer aux oignons. Remuer régulièrement 2 à 3 min, pas plus : le bœuf doit rester rosé et très tendre."
+      minuteur: 150
+    - titre: Le service
+      texte: "Poivrer et servir tout de suite, avec un bol de riz parfumé."
+  astuces:
+    - "Tout se joue à feu très fort : si le wok n'est pas assez chaud, le bœuf rend son jus et bout au lieu de saisir."
+    - "Pour 6 personnes ou plus, cuire le bœuf en deux fois."
+
+sources:
+  - titre: "Bœuf aux oignons, Cooking With Morgane (YouTube)"
+    url: https://www.youtube.com/watch?v=kSAhmnt5UaE
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc, riz-cantonais]
+    defaut: [riz-blanc]
+  - role: legume
+    choix: [legumes-sautes-wok, salade-concombre-wakame]

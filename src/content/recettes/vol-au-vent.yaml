@@ -28,16 +28,16 @@ ingredients:
   - groupe: Le ris de veau
     mode: chef
     items:
-      - { nom: Ris de veau, qte: 300, unite: g }
+      - { nom: Ris de veau, qte: 500, unite: g }
   - groupe: Les champignons
     items:
-      - { nom: Champignons de Paris, qte: 1, unite: kg }
+      - { nom: Champignons de Paris, qte: 500, unite: g, note: moyens }
       - { nom: Citron, qte: 1 }
   - groupe: Les boulettes
     items:
-      - { nom: Viande hachée porc et veau, qte: 1, unite: kg }
-      - { nom: Œuf, qte: 4, note: les jaunes }
-      - { nom: Chapelure, qte: 3, unite: cs }
+      - { nom: Viande hachée porc et veau, qte: 400, unite: g }
+      - { nom: Œuf, qte: 2, note: les jaunes }
+      - { nom: Chapelure, qte: 2, unite: cs }
   - groupe: La sauce
     items:
       - { nom: Beurre, qte: 100, unite: g }
@@ -93,6 +93,13 @@ chef:
   astuces:
     - "Dépouiller une sauce, c'est la laisser frémir pour que les impuretés remontent en écume, puis les retirer à la louche : la sauce devient plus nette et plus brillante."
     - "La sauce se prépare la veille et gagne en goût ; la crème s'ajoute seulement au moment de réchauffer."
+
+notes:
+  - titre: Comme aux Armes de Bruxelles
+    mode: chef
+    texte: "La maison presse le ris de veau une nuit au frigo après l'avoir blanchi et paré : il se taille alors en cubes nets de 3 cm, qu'on farine et qu'on dore au beurre mousseux. Au service, les croûtes passent 2 min au four à 180 °C, et une cuillère de sauce hollandaise coiffe le vol-au-vent, avec un trait de citron frais."
+  - titre: Les quantités
+    texte: "Le fichier comptait 1 kg de hachis et 1 kg de champignons pour 4 : c'est le double de ce que mettent la recette de la RTBF et celle des Armes de Bruxelles. Le carnet suit maintenant ces deux sources (400 g de hachis, 500 g de champignons)."
 
 sources:
   - titre: "Bouchées à la reine / vol-au-vent, recette simple (YouTube)"

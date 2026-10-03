@@ -1,0 +1,102 @@
+titre: Poulet au citron
+cuisine: asiatique
+origine: Chine
+type: plat
+resume: "Sucré, salé, acidulé. En version simple, des hauts de cuisse saisis au wok avec le citron et le poivre de Sichuan ; en grande cuisine, le poulet frit et laqué de sauce au citron, comme au restaurant."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La marinade
+    mode: simple
+    items:
+      - { nom: Hauts de cuisse de poulet désossés, qte: 500, unite: g }
+      - { nom: Gingembre frais râpé, qte: 1, unite: cc }
+      - { nom: Sel, qte: 0.25, unite: cc }
+      - { nom: Poivre moulu, qte: 0.5, unite: cc }
+      - { nom: Sauce soja claire, qte: 1, unite: cs }
+      - { nom: Sauce soja foncée, qte: 1, unite: cc }
+      - { nom: Fécule de maïs, qte: 0.5, unite: cs }
+      - { nom: Huile de tournesol, qte: 1, unite: cs }
+  - groupe: La cuisson
+    mode: simple
+    items:
+      - { nom: Citron, qte: 1 }
+      - { nom: Sucre, qte: 0.5, unite: cs }
+      - { nom: Sauce d'huître, qte: 1, unite: cs }
+      - { nom: Ail, qte: 4, unite: gousse }
+      - { nom: Oignon, qte: 1 }
+      - { nom: Coriandre fraîche, qte: 10, unite: g }
+      - { nom: Piment, qte: 2, optionnel: true, note: ou piments doux }
+      - { nom: Poivre de Sichuan, qte: 0.5, unite: cc }
+      - { nom: Huile de tournesol, qte: 2, unite: cs }
+  - groupe: La marinade
+    mode: chef
+    items:
+      - { nom: Blancs de poulet, qte: 400, unite: g }
+      - { nom: Gingembre frais râpé, qte: 1, unite: cc }
+      - { nom: Alcool de riz Shaoxing, qte: 1, unite: cc }
+      - { nom: Huile de sésame, qte: 1, unite: cc }
+      - { nom: Œuf, qte: 1, note: le blanc }
+      - { nom: Sel, qte: 1, unite: cc }
+      - { nom: Poivre moulu }
+      - { nom: Fécule de maïs, qte: 100, unite: g, cle: fecule }
+      - { nom: Huile pour friture, qte: 1, unite: l }
+  - groupe: La sauce au citron
+    mode: chef
+    items:
+      - { nom: Citron, qte: 1, note: "le jus, plus 2 tranches pour décorer" }
+      - { nom: Sucre, qte: 3, unite: cs }
+      - { nom: Sauce soja claire, qte: 1, unite: cs }
+      - { nom: Bouillon de poulet ou eau, qte: 100, unite: ml }
+      - { nom: Gingembre frais râpé, qte: 1, unite: cc }
+      - { nom: Sel, qte: 0.5, unite: cc }
+      - { nom: Huile de sésame, qte: 1, unite: cc }
+      - { nom: Fécule de maïs, qte: 1, unite: cc, note: "délayée dans 1 c. à soupe d'eau" }
+      - { nom: Huile de tournesol, qte: 2, unite: cs }
+      - { nom: Graines de sésame, qte: 0.5, unite: cc }
+      - { nom: Ciboulette thaïe, qte: 1, unite: brin }
+
+simple:
+  temps: { preparation: 20, cuisson: 10 }
+  etapes:
+    - "Retirer la peau des hauts de cuisse et les couper en morceaux. Les mélanger avec le gingembre, le sel, le poivre, les deux sauces soja, la fécule et l'huile. Laisser de côté."
+    - "Moudre finement le poivre de Sichuan. Couper l'oignon en morceaux, hacher l'ail, couper la coriandre en tronçons et les piments en morceaux. Couper un demi-citron en tranches et presser l'autre moitié."
+    - texte: "Chauffer une poêle 2 min à feu fort, puis l'huile. Saisir le poulet bien étalé 2 min, le retourner, 2 min encore, remuer brièvement et réserver en laissant l'huile."
+      minuteur: 240
+    - "Dans cette huile : l'ail 5 s, puis à feu doux le poivre de Sichuan 10 s et les piments 10 s. Feu fort, l'oignon 30 s."
+    - texte: "Remettre le poulet avec le jus et les tranches de citron, le sucre et la sauce d'huître. Remuer 1 min, ajouter la coriandre et couper le feu."
+      minuteur: 60
+  astuces:
+    - "Le poivre de Sichuan ne pique pas : il a un parfum d'agrume qui rappelle le citron."
+
+chef:
+  temps: { preparation: 30, cuisson: 15, attente: 15 }
+  etapes:
+    - titre: La marinade
+      texte: "Couper les blancs en tranches d'1 cm. Les mélanger avec le gingembre, le sel, l'alcool de riz, l'huile de sésame, le poivre et le blanc d'œuf. Laisser reposer pendant la suite."
+    - titre: La sauce au citron
+      texte: "Dans un bol, mélanger le sucre, le sel, la sauce soja claire, l'huile de sésame, le jus de citron et le bouillon. Dans un autre petit bol, délayer la fécule dans l'eau. Couper 2 tranches de citron, émincer la ciboulette."
+    - titre: Enrober
+      texte: "Juste avant de frire, incorporer {fecule} de fécule à la marinade en trois fois, en mélangeant entre chaque ajout."
+    - titre: Frire
+      texte: "Chauffer l'huile à 180 °C. Y déposer le poulet morceau par morceau et frire 3 à 4 min en remuant, jusqu'à ce qu'il soit doré. Égoutter."
+      minuteur: 210
+    - titre: Laquer
+      texte: "Poêle à feu fort, 2 c. à soupe d'huile et le gingembre. Quand il commence à dorer, verser la sauce. À ébullition, passer à feu doux 1 min, puis ajouter la fécule délayée en remuant 10 s. Ajouter le poulet frit et remuer 20 s."
+      minuteur: 90
+    - titre: Le service
+      texte: "Dresser avec les tranches de citron, parsemer de sésame et de ciboulette. Une pincée de piment en poudre si on aime."
+
+sources:
+  - titre: "Poulet au citron, version rapide sans friture, Cooking With Morgane (YouTube)"
+    url: https://www.youtube.com/watch?v=BqliQu0C_2Y
+  - titre: "Poulet au citron frit puis sauté, Cooking With Morgane (YouTube)"
+    url: https://www.youtube.com/watch?v=eD-NUU8Mu40
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc, riz-cantonais]
+    defaut: [riz-blanc]
+  - role: legume
+    choix: [legumes-sautes-wok, salade-concombre-wakame]

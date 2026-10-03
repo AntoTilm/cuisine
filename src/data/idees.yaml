@@ -1,66 +1,7 @@
 # Recettes à écrire : notées dans le fichier Excel, sans quantités ni étapes.
 # Quand une recette est prête, créer son fichier dans src/content/recettes/ et la retirer d'ici.
 
-- id: chicons-au-gratin
-  titre: Chicons au gratin
-  cuisine: belge
-  note: Noté dans les recettes d'hiver.
-- id: chicons-braises
-  titre: Chicons braisés
-  cuisine: belge
-- id: steak-frites
-  titre: Steak frites
-  cuisine: belge
-- id: peches-au-thon
-  titre: Pêches au thon
-  cuisine: belge
-- id: hachis-parmentier
-  titre: Hachis parmentier
-  cuisine: francaise
-- id: poulet-creme-moutarde
-  titre: Poulet crème moutarde
-  cuisine: francaise
-- id: pizza-maison
-  titre: Pizza maison
-  cuisine: italienne
-- id: tomate-mozzarella
-  titre: Tomate mozzarella
-  cuisine: italienne
-- id: pates-carbonara
-  titre: Pâtes carbonara
-  cuisine: italienne
-- id: pates-pesto
-  titre: Pâtes au pesto
-  cuisine: italienne
-- id: salade-composee
-  titre: Salade composée
-  cuisine: mediterraneenne
-  note: "Salade, tomate, mozzarella burrata, oignons, et peut-être de la feta."
-- id: couscous
-  titre: Couscous
-  cuisine: mediterraneenne
-  lien: https://cuisine.journaldesfemmes.fr/recette/330008-couscous
 - id: plat-libanais
   titre: Un plat libanais
   cuisine: mediterraneenne
-- id: salade-cesar
-  titre: Salade César
-  cuisine: americaine
-  lien: https://cuisine.journaldesfemmes.fr/recette/316406-salade-cesar-rapide
-- id: gyoza
-  titre: Gyoza
-  cuisine: asiatique
-  note: Raviolis japonais, chinois (jiaozi) ou coréens (mandu).
-  lien: https://www.youtube.com/watch?v=mmoCEkTg_RI
-- id: boeuf-chop-suey
-  titre: Bœuf chop suey
-  cuisine: asiatique
-  note: Bœuf sauté aux légumes, avec ce qu'on a sous la main.
-  lien: https://www.youtube.com/watch?v=4D9G-bMno_A
-- id: boeuf-aux-oignons
-  titre: Bœuf aux oignons
-  cuisine: asiatique
-  lien: https://www.youtube.com/watch?v=kSAhmnt5UaE
-- id: poulet-citron
-  titre: Poulet au citron
-  cuisine: asiatique
+  note: "Le lien du fichier mène à une conversation ChatGPT, lisible seulement depuis ton compte : coller la recette pour l'ajouter."

@@ -1,0 +1,65 @@
+titre: Hachis parmentier
+cuisine: francaise
+type: plat
+saison: hiver
+resume: "Une viande hachée mijotée aux oignons sous une purée maison, gratinée au four. En grande cuisine, avec du bœuf braisé effiloché."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La viande
+    items:
+      - { nom: Bœuf haché, qte: 600, unite: g, mode: simple }
+      - { nom: Paleron de bœuf, qte: 800, unite: g, mode: chef }
+      - { nom: Vin rouge, qte: 25, unite: cl, mode: chef, cle: vin }
+      - { nom: Fond de bœuf ou bouillon, qte: 50, unite: cl, mode: chef }
+      - { nom: Oignons, qte: 2 }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Concentré de tomate, qte: 1, unite: cs }
+      - { nom: Thym, qte: 2, unite: brin }
+      - { nom: Persil plat, qte: 0.5, unite: botte }
+      - { nom: Huile d'olive, qte: 2, unite: cs }
+  - groupe: La purée
+    items:
+      - { nom: Pommes de terre à chair farineuse, qte: 1.2, unite: kg, note: Bintje }
+      - { nom: Lait entier, qte: 25, unite: cl, cle: lait }
+      - { nom: Beurre, qte: 60, unite: g, cle: beurre }
+      - { nom: Noix de muscade }
+  - groupe: Le gratin
+    items:
+      - { nom: Gruyère râpé, qte: 80, unite: g }
+      - { nom: Chapelure, qte: 2, unite: cs, mode: chef }
+      - { nom: Sel }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 25, cuisson: 50 }
+  etapes:
+    - texte: "Cuire les pommes de terre épluchées à l'eau salée, 20 à 25 min."
+      minuteur: 1350
+    - texte: "Pendant ce temps, faire revenir les oignons hachés dans l'huile 5 min, ajouter l'ail et la viande et la faire dorer 8 min en l'émiettant. Ajouter le concentré de tomate, le thym, sel et poivre, puis le persil hors du feu."
+      minuteur: 780
+    - "Préchauffer le four à 200 °C. Écraser les pommes de terre avec {beurre} de beurre et {lait} de lait chaud, muscade, sel et poivre."
+    - texte: "Étaler la viande dans un plat, couvrir de purée, rayer le dessus à la fourchette, parsemer de fromage et enfourner 20 à 25 min, jusqu'à ce que le dessus soit doré."
+      minuteur: 1350
+
+chef:
+  temps: { preparation: 30, cuisson: 210 }
+  etapes:
+    - titre: Le bœuf braisé
+      texte: "Couper le paleron en gros cubes, les saler et les colorer dans l'huile, en plusieurs fois. Ajouter les oignons émincés et l'ail, puis le concentré de tomate 1 min. Déglacer avec {vin} de vin rouge, réduire de moitié, mouiller avec le fond, ajouter le thym et laisser mijoter 2 h 30 à couvert, à feu très doux."
+      minuteur: 9000
+    - titre: Effilocher
+      texte: "Effilocher la viande à la fourchette et la remettre dans son jus réduit : elle doit être juste nappée, pas noyée. Ajouter le persil ciselé et rectifier l'assaisonnement."
+    - titre: La purée
+      texte: "Cuire les pommes de terre en robe, les peler chaudes, les passer au moulin à légumes et les monter avec {beurre} de beurre froid puis {lait} de lait chaud. Muscade, sel, poivre."
+    - titre: Gratiner
+      texte: "Préchauffer le four à 200 °C. Viande au fond du plat, purée lissée par-dessus, fromage et chapelure, quelques noisettes de beurre. Enfourner 25 min, puis 2 min sous le gril."
+      minuteur: 1500
+  astuces:
+    - "C'est le meilleur usage des restes de pot-au-feu ou de bœuf bourguignon."
+
+assiette:
+  - role: legume
+    choix: [salade-composee]
+    defaut: [salade-composee]

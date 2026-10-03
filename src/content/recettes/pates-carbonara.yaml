@@ -1,0 +1,48 @@
+titre: Pâtes carbonara
+cuisine: italienne
+origine: Rome
+type: plat
+resume: "La vraie, sans crème : guanciale croustillant, jaunes d'œufs, pecorino et beaucoup de poivre, liés à l'eau de cuisson."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Spaghetti ou rigatoni, qte: 400, unite: g }
+      - { nom: Lardons fumés, qte: 150, unite: g, mode: simple }
+      - { nom: Guanciale, qte: 150, unite: g, mode: chef, note: "joue de porc séchée, à l'épicerie italienne ; à défaut, pancetta" }
+      - { nom: Jaunes d'œufs, qte: 4, cle: jaunes }
+      - { nom: Œuf entier, qte: 1 }
+      - { nom: Parmesan râpé, qte: 80, unite: g, mode: simple }
+      - { nom: Pecorino romano râpé, qte: 80, unite: g, mode: chef }
+      - { nom: Poivre noir du moulin, qte: 2, unite: cc }
+      - { nom: Gros sel }
+
+simple:
+  temps: { preparation: 10, cuisson: 15 }
+  etapes:
+    - "Cuire les pâtes dans une grande casserole d'eau salée."
+    - "Pendant ce temps, dorer les lardons à sec dans une grande poêle. Couper le feu."
+    - "Dans un bol, fouetter les jaunes, l'œuf entier, le fromage et beaucoup de poivre."
+    - "Égoutter les pâtes en gardant une louche d'eau de cuisson. Les verser dans la poêle des lardons, hors du feu, puis ajouter les œufs et un peu d'eau de cuisson en mélangeant vivement : la sauce doit napper sans faire d'omelette. Servir aussitôt avec du poivre."
+
+chef:
+  temps: { preparation: 15, cuisson: 15 }
+  etapes:
+    - titre: Le guanciale
+      texte: "Retirer la couenne et couper le guanciale en bâtonnets épais. Le faire fondre doucement à sec dans une grande poêle, 8 à 10 min, jusqu'à ce qu'il soit doré et croustillant. Couper le feu en gardant la graisse."
+      minuteur: 540
+    - titre: Les pâtes
+      texte: "Cuire les pâtes dans une eau moins salée que d'habitude (le pecorino et le guanciale salent déjà), en les sortant 1 min avant la fin."
+    - titre: La crème d'œufs
+      texte: "Fouetter {jaunes} jaunes, l'œuf entier, le pecorino et le poivre fraîchement concassé, avec 2 c. à soupe de graisse du guanciale tiédie : on obtient une pâte épaisse."
+    - titre: La liaison
+      texte: "Verser les pâtes égouttées dans la poêle du guanciale, sur feu éteint, et mélanger 30 s pour qu'elles refroidissent un peu. Ajouter la crème d'œufs détendue d'une petite louche d'eau de cuisson, et remuer sans arrêt : la sauce doit rester sous 65 °C pour être crémeuse. Ajuster avec de l'eau de cuisson."
+    - titre: Le service
+      texte: "Servir dans des assiettes chaudes, avec un tour de poivre et un peu de pecorino."
+  astuces:
+    - "Si la sauce est trop liquide, remettre la poêle 10 s sur un feu très doux en remuant ; si elle graine, c'est qu'elle a trop chauffé."
+
+assiette:
+  - role: legume
+    choix: [salade-composee]

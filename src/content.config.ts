@@ -17,7 +17,7 @@ const ingredient = z.object({
   // Préparation faite dans la recette (bouillon maison…) : pas dans la liste de courses.
   maison: z.boolean().optional(),
   rayon: z.string().optional(),
-});
+}).strict(); // une virgule non protégée dans une note crée une clé inconnue : on la signale
 
 const etape = z.union([
   z.string(),

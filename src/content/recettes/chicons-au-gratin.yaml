@@ -1,0 +1,57 @@
+titre: Chicons au gratin
+cuisine: belge
+type: plat
+saison: hiver
+resume: "Le plat d'hiver belge par excellence : des chicons fondus roulés dans le jambon, nappés de béchamel au fromage et gratinés."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Les chicons
+    items:
+      - { nom: Chicons, qte: 8 }
+      - { nom: Beurre, qte: 30, unite: g, cle: beurrechicons }
+      - { nom: Sucre, qte: 1, unite: cc }
+      - { nom: Jambon cuit, qte: 8, unite: tranche }
+  - groupe: La béchamel au fromage
+    items:
+      - { nom: Beurre, qte: 50, unite: g, cle: beurresauce }
+      - { nom: Farine, qte: 50, unite: g, cle: farine }
+      - { nom: Lait entier, qte: 60, unite: cl, cle: lait }
+      - { nom: Gruyère râpé, qte: 150, unite: g, cle: fromage }
+      - { nom: Jaune d'œuf, qte: 1, mode: chef }
+      - { nom: Noix de muscade }
+      - { nom: Sel }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 20, cuisson: 50 }
+  etapes:
+    - texte: "Retirer le cône amer à la base des chicons. Les cuire entiers dans le beurre avec le sucre, à couvert et à feu doux, 25 min. Les laisser égoutter dans une passoire en les pressant légèrement : c'est l'eau des chicons qui rend un gratin liquide."
+      minuteur: 1500
+    - "Préchauffer le four à 200 °C. Faire fondre {beurresauce} de beurre, ajouter {farine} de farine et cuire 1 min en remuant, puis verser {lait} de lait froid en fouettant jusqu'à ébullition. Hors du feu, ajouter les deux tiers du fromage, muscade, sel et poivre."
+    - "Rouler chaque chicon dans une tranche de jambon et les ranger dans un plat beurré."
+    - texte: "Napper de béchamel, parsemer du reste de fromage et gratiner 20 à 25 min."
+      minuteur: 1350
+
+chef:
+  temps: { preparation: 30, cuisson: 70 }
+  etapes:
+    - titre: Braiser les chicons
+      texte: "Retirer le cône amer. Dorer les chicons dans {beurrechicons} de beurre avec le sucre, puis les braiser 35 min à couvert, à feu très doux, sous un papier cuisson. Les laisser égoutter debout dans une passoire au moins 15 min, puis les presser délicatement dans un essuie."
+      minuteur: 2100
+    - titre: La béchamel
+      texte: "Cuire {beurresauce} de beurre et {farine} de farine 2 min sans coloration. Verser {lait} de lait froid d'un coup en fouettant, porter à ébullition et cuire 5 min à feu doux : la farine perd son goût de cru. Hors du feu, ajouter le jaune d'œuf, les deux tiers du fromage, la muscade, le sel et le poivre."
+      minuteur: 300
+    - titre: Monter
+      texte: "Préchauffer le four à 200 °C. Rouler les chicons bien secs dans le jambon, les ranger serrés dans un plat beurré, napper de sauce et parsemer du reste de fromage."
+    - titre: Gratiner
+      texte: "Enfourner 25 min, puis 2 à 3 min sous le gril pour une croûte bien dorée. Laisser reposer 5 min avant de servir."
+      minuteur: 1500
+  astuces:
+    - "Le jaune d'œuf dans la béchamel donne une sauce plus riche qui gratine mieux."
+
+assiette:
+  - role: feculent
+    choix: [puree-maison, frites-maison]
+    defaut: [puree-maison]

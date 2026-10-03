@@ -22,7 +22,7 @@ Ce qui a été corrigé, interprété ou ajouté en passant du fichier `sources/
   La case « nombre de personnes » contenait une date ; la recette part sur 4 personnes.
 - **Porc caramélisé** : ail, sucre, huile et sauce de poisson étaient multipliés par personne (12 gousses et 8 c. à
   soupe de nuoc-mâm pour 4). Ce sont les quantités pour 500 g de viande, soit 4 personnes : 3 gousses, 2 c. à soupe
-  de sucre, 3 c. à soupe d'huile, 2 c. à soupe de nuoc-mâm. **À vérifier.**
+  de sucre, 3 c. à soupe d'huile, 2 c. à soupe de nuoc-mâm. Confirmé par la vidéo.
 - **Rouleaux de printemps** : les deux sauces étaient multipliées par rouleau (480 g de nuoc-mâm pour 8 rouleaux).
   Elles sont devenues deux recettes séparées, avec les quantités de l'Excel pour 4 personnes.
 - **Sauce burger** : Excel avait transformé les fractions en dates. Relu comme ¾ de tasse de mayonnaise (190 ml),
@@ -61,3 +61,38 @@ Ce qui a été corrigé, interprété ou ajouté en passant du fichier `sources/
   dans les idées à tester.
 - « Chicon au gratin » et « Couscous » n'avaient qu'un titre ou un lien : ils sont dans les idées à tester, avec
   la feuille « Plat à incorporer » et la liste « A rajouter » de la feuille Asiatique.
+
+## Vérifié contre les liens du fichier (octobre 2026)
+
+Les descriptions et les sous-titres des vidéos YouTube ont été relus, ainsi que les sites liés quand ils étaient
+accessibles.
+
+- **Salade concombre-wakamé** : la recette était comptée pour 2 avec les quantités de la vidéo pour 4 (le double de
+  vinaigrette). Remise sur 4 : 5 g de wakamé, 1 c. à soupe d'huile de sésame, 2 de colza, 1 de vinaigre, 1 de soja.
+- **Poulet croustillant teriyaki** : réécrit d'après la vidéo. 1 cuisse par personne (et non 2), sauce aux oignons
+  propre à la recette (saké, mirin, soja, eau, sucre), cuisson côté peau en partant à froid, environ 18 min.
+- **Ramen** : bouillon de la vidéo (2 carcasses de poulet, oignon, 3 gousses d'ail, poireau), 1 c. à café de dashi
+  pour les œufs au lieu d'½, ail ajouté au bouillon final.
+- **Vol-au-vent** : 1 kg de hachis et 1 kg de champignons pour 4, c'était le double des deux sources. Ramené à 400 g
+  et 500 g ; ris de veau à 500 g comme aux Armes de Bruxelles ; leur finition à la hollandaise en note.
+- **Crème brûlée** : la recette d'Etchebest est pour 5, pas 6.
+- **Pommes de terre Hasselback** : 3 par personne (Marie Food Tips), au lieu de 4.
+- **Saumon teriyaki** : le saké de la vidéo ajouté à la marinade.
+- **Tarte au citron** : dans la vidéo, Etchebest fait une meringue française ; le carnet garde l'italienne en grande
+  cuisine.
+- Conformes : poulet du Général Tao, riz cantonais, porc caramélisé, fondue savoyarde, bœuf à la sauce d'huître,
+  hollandaise des œufs Bénédicte.
+
+Non lus : la sauce noix de cajou (vlourish.com refuse les robots), la salade César et le couscous du Journal des
+Femmes (site bloqué), les shorts sans sous-titres (sauce teriyaki, bœuf à la sauce d'huître : description seulement).
+
+## Ajouté depuis les liens et la feuille « Plat à incorporer »
+
+- D'après les vidéos de Cooking With Morgane : **gyoza**, **bœuf aux oignons**, **chop suey au bœuf**, **poulet au
+  citron** (version simple sans friture, version grande cuisine frite puis laquée : deux vidéos différentes).
+- Recettes classiques écrites sans source dans le fichier : **poulet crème moutarde**, **pizza maison**, **pêches au
+  thon**, **hachis parmentier**, **chicons braisés**, **chicons au gratin**, **tomate mozzarella**, **salade César**,
+  **pâtes carbonara**, **pâtes au pesto**, **couscous**. **À relire** : ce sont des quantités de référence, pas les
+  tiennes.
+- La **salade composée** reprend la liste de la feuille : tomate, oignons, mozzarella ou burrata, feta en option.
+- « Steak frites » est couvert par l'entrecôte et ses frites.

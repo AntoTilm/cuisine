@@ -1,0 +1,64 @@
+titre: Poulet crème moutarde
+cuisine: francaise
+type: plat
+resume: "Le plat du soir qui ne déçoit jamais : du poulet doré, déglacé au vin blanc et nappé d'une sauce à la crème et aux deux moutardes."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le poulet
+    items:
+      - { nom: Blancs de poulet, qte: 600, unite: g, mode: simple }
+      - { nom: Hauts de cuisse de poulet désossés avec la peau, qte: 8, mode: chef }
+      - { nom: Beurre, qte: 20, unite: g }
+      - { nom: Huile d'olive, qte: 1, unite: cs }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: La sauce
+    items:
+      - { nom: Échalote, qte: 2 }
+      - { nom: Vin blanc sec, qte: 10, unite: cl, cle: vin }
+      - { nom: Fond de volaille, qte: 15, unite: cl, mode: chef, cle: fond }
+      - { nom: Crème fraîche épaisse, qte: 25, unite: cl, cle: creme }
+      - { nom: Moutarde de Dijon, qte: 2, unite: cs, cle: dijon }
+      - { nom: Moutarde à l'ancienne, qte: 1, unite: cs, cle: ancienne }
+      - { nom: Estragon frais, qte: 3, unite: brin, mode: chef }
+      - { nom: Persil plat, qte: 3, unite: brin, mode: simple, optionnel: true }
+
+simple:
+  temps: { preparation: 10, cuisson: 25 }
+  etapes:
+    - "Couper le poulet en gros morceaux, saler et poivrer. Ciseler les échalotes."
+    - texte: "Dorer le poulet dans le beurre et l'huile à feu vif, 5 à 6 min, puis le réserver."
+      minuteur: 330
+    - texte: "Dans la même poêle, faire suer les échalotes 2 min, puis verser {vin} de vin blanc et gratter les sucs. Laisser réduire de moitié."
+      minuteur: 120
+    - texte: "Ajouter {creme} de crème et les deux moutardes, remettre le poulet et laisser mijoter 10 min à feu doux, jusqu'à ce qu'il soit cuit et la sauce nappante. Persil ciselé au moment de servir."
+      minuteur: 600
+
+chef:
+  temps: { preparation: 15, cuisson: 35 }
+  etapes:
+    - titre: La peau croustillante
+      texte: "Saler les hauts de cuisse sur les deux faces. Les poser côté peau dans une sauteuse avec l'huile, à feu moyen, et les laisser dorer 10 à 12 min sans y toucher. Retourner 3 min côté chair, puis réserver sur une grille, peau vers le haut."
+      minuteur: 660
+    - titre: La sauce
+      texte: "Retirer l'excédent de graisse en gardant les sucs. Ajouter le beurre et les échalotes, 2 min. Déglacer avec {vin} de vin blanc et réduire à sec, puis ajouter {fond} de fond de volaille et réduire de moitié."
+      minuteur: 240
+    - texte: "Ajouter {creme} de crème et laisser frémir 3 à 4 min, jusqu'à ce qu'elle nappe la cuillère."
+      minuteur: 210
+    - titre: La moutarde, hors du feu
+      texte: "Hors du feu, incorporer {dijon} de moutarde de Dijon et {ancienne} de moutarde à l'ancienne, puis l'estragon ciselé. Goûter et rectifier."
+    - titre: Le service
+      texte: "Remettre le poulet et son jus de repos dans la sauce, le laisser chauffer 3 min à couvert sur feu très doux, puis servir avec la peau hors de la sauce pour qu'elle reste croustillante."
+      minuteur: 180
+  astuces:
+    - "La moutarde n'aime pas bouillir : elle devient amère et perd son piquant. On l'ajoute toujours à la fin, hors du feu."
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc, puree-maison, frites-maison, frites-au-four]
+    defaut: [riz-blanc]
+  - role: legume
+    choix: [chicons-braises, salade-composee, legumes-grilles-au-four]
+    defaut: [chicons-braises]

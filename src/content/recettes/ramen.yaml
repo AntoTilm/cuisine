@@ -13,19 +13,17 @@ ingredients:
       - { nom: Œuf, qte: 2 }
       - { nom: Sauce soja, qte: 2, unite: cs }
       - { nom: Mirin, qte: 2, unite: cs }
-      - { nom: Dashi en poudre, qte: 0.5, unite: cc }
+      - { nom: Dashi en poudre, qte: 1, unite: cc }
       - { nom: Eau, qte: 100, unite: ml }
   - groupe: Le bouillon de poulet maison
     mode: chef
     items:
-      - { nom: Poule, qte: 600, unite: g }
+      - { nom: Carcasses de poulet, qte: 2 }
       - { nom: Oignon, qte: 1 }
-      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Ail, qte: 3, unite: gousse }
       - { nom: Poireau, qte: 1 }
-      - { nom: Carotte, qte: 2 }
-      - { nom: Persil, qte: 1, unite: botte }
-      - { nom: Thym, qte: 1, unite: brin }
-      - { nom: Laurier, qte: 1, unite: feuille }
+      - { nom: Sel }
+      - { nom: Poivre }
       - { nom: Eau, qte: 2, unite: l }
   - groupe: Le bouillon final
     items:
@@ -34,6 +32,7 @@ ingredients:
       - { nom: Lait de soja, qte: 300, unite: ml }
       - { nom: Sauce soja, qte: 2, unite: cs }
       - { nom: Gingembre frais, qte: 2, unite: cm }
+      - { nom: Ail, qte: 1, unite: gousse, note: haché }
   - groupe: Le porc
     items:
       - { nom: Échine ou poitrine de porc, qte: 250, unite: g }
@@ -73,13 +72,13 @@ chef:
       texte: "Faire cuire tous les ingrédients de la sauce dans une casserole et laisser refroidir. Cuire les œufs 6 min et les plonger aussitôt dans un grand volume d'eau fraîche. Les écaler et les mettre au frigo 2 jours dans un sac de congélation avec la sauce."
       minuteur: 360
     - titre: Le bouillon, la veille
-      texte: "Dans une casserole avec un peu d'huile, faire revenir la poule 5 à 10 min. Couvrir d'eau (environ 2 l), ajouter l'oignon, l'ail, le poireau, les carottes, le persil, le thym et le laurier. Laisser cuire 30 à 45 min, puis retirer l'oignon et le poireau."
+      texte: "Dans une casserole avec un peu d'huile, faire revenir les carcasses 5 à 10 min. Couvrir d'eau (environ 2 l), ajouter l'oignon, l'ail et le poireau, saler et poivrer. Laisser cuire 30 à 45 min, puis retirer l'oignon et le poireau."
       minuteur: 2700
     - texte: "Laisser cuire 2 h à feu moyen pour faire réduire le bouillon."
       minuteur: 7200
     - texte: "Égoutter pour ne garder que le bouillon et le mettre 24 h au frigo. Le lendemain, retirer la pellicule de gras jaune figée sur le dessus."
     - titre: Le bouillon final
-      texte: "Réunir le bouillon de poulet, le lait de soja, la sauce soja et le gingembre haché dans une casserole et remonter doucement en température jusqu'à ébullition."
+      texte: "Réunir le bouillon de poulet, le lait de soja, la sauce soja, l'ail et le gingembre hachés dans une casserole et remonter doucement en température jusqu'à ébullition."
     - titre: Le porc
       texte: "Porter à peine à ébullition le saké, le miel, la sauce soja, l'ail haché et la sauce d'huître. Griller toutes les faces de la pièce de porc dans une poêle avec l'huile. La découper en tranches assez fines, chauffer la sauce dans la poêle et y cuire les tranches jusqu'à ce qu'elles soient cuites et laquées."
     - titre: Les nouilles

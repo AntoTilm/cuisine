@@ -16,7 +16,8 @@ ingredients:
       - { nom: Sauce soja claire, qte: 22, unite: g }
       - { nom: Sauce soja foncée, qte: 2, unite: g }
       - { nom: Sirop de riz, qte: 20, unite: g, note: "ou miel, ou sucre" }
-      - { nom: Mirin, qte: 8, unite: g, note: ou saké de cuisine }
+      - { nom: Mirin, qte: 8, unite: g }
+      - { nom: Saké de cuisine, qte: 0.5, unite: cs }
       - { nom: Jus de citron, qte: 8, unite: g }
       - { nom: Gingembre frais râpé, qte: 3, unite: g }
       - { nom: Ail, qte: 0.5, unite: gousse }
@@ -47,7 +48,7 @@ chef:
     - titre: Le saumon
       texte: "Retirer les écailles du pavé sans enlever la peau. Sécher le saumon avec du papier absorbant."
     - titre: La marinade
-      texte: "Mélanger les sauces soja claire et foncée, le sirop de riz, le mirin, le jus de citron, l'ail pressé, le gingembre râpé, le sel et le poivre jusqu'à obtenir une sauce homogène."
+      texte: "Mélanger les sauces soja claire et foncée, le sirop de riz, le mirin, le saké, le jus de citron, l'ail pressé, le gingembre râpé, le sel et le poivre jusqu'à obtenir une sauce homogène."
     - texte: "Déposer le saumon dans la sauce, bien l'enrober et le laisser mariner 30 min à température ambiante ou au frais."
       minuteur: 1800
     - titre: Les accompagnements

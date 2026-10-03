@@ -1,0 +1,42 @@
+titre: Chicons braisés
+cuisine: belge
+type: accompagnement
+saison: hiver
+resume: "Les chicons dorés au beurre puis fondus à couvert, avec une pointe de sucre et de citron pour tenir l'amertume en respect."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Chicons, qte: 8, note: bien fermes et blancs }
+      - { nom: Beurre, qte: 40, unite: g }
+      - { nom: Sucre, qte: 1, unite: cs }
+      - { nom: Citron, qte: 0.5, note: le jus }
+      - { nom: Noix de muscade }
+      - { nom: Sel }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 10, cuisson: 35 }
+  etapes:
+    - "Essuyer les chicons sans les laver (ils se gorgeraient d'eau), retirer les feuilles abîmées et les couper en deux dans la longueur."
+    - texte: "Les dorer dans le beurre à feu moyen, face coupée en dessous, 5 min. Saupoudrer de sucre et les retourner."
+      minuteur: 300
+    - texte: "Arroser du jus de citron, saler, poivrer, couvrir et laisser fondre 25 à 30 min à feu doux, en les retournant une fois."
+      minuteur: 1650
+
+chef:
+  temps: { preparation: 15, cuisson: 50 }
+  etapes:
+    - titre: Préparer
+      texte: "Essuyer les chicons, retirer les premières feuilles, puis creuser un petit cône à la base avec la pointe d'un couteau : c'est la partie la plus amère."
+    - titre: Caraméliser
+      texte: "Faire mousser le beurre dans une sauteuse, y ranger les chicons entiers bien serrés, saupoudrer de sucre et les dorer sur toutes les faces, 8 à 10 min, jusqu'à une belle couleur blonde."
+      minuteur: 540
+    - titre: Braiser
+      texte: "Arroser du jus de citron, saler, poivrer, râper un peu de muscade. Couvrir d'une feuille de papier cuisson posée à même les chicons, puis du couvercle, et laisser fondre 40 min à feu très doux."
+      minuteur: 2400
+    - titre: Laquer
+      texte: "Retirer le couvercle et le papier, monter un peu le feu et rouler les chicons dans leur jus jusqu'à ce qu'il devienne sirupeux."
+  astuces:
+    - "Un chicon qui verdit est plus amer : les conserver à l'abri de la lumière, enveloppés dans du papier."
