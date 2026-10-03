@@ -1,0 +1,59 @@
+titre: Scampis à l'ail
+cuisine: belge
+origine: Brasserie
+type: plat
+saison: ete
+resume: Crevettes au beurre d'ail, citron et persil, servies sur un riz brun.
+portions:
+  base: 2
+
+ingredients:
+  - groupe: Les crevettes
+    items:
+      - { nom: Crevettes crues décortiquées, qte: 300, unite: g }
+      - { nom: Chapelure, qte: 2, unite: cc, mode: chef }
+  - groupe: Le riz
+    items:
+      - { nom: Riz brun, qte: 120, unite: g }
+      - { nom: Beurre, qte: 30, unite: g, note: pour le riz, cle: beurreriz }
+      - { nom: Eau, qte: 240, unite: ml }
+      - { nom: Sel, qte: 2, unite: pincee }
+  - groupe: Le beurre à l'ail
+    items:
+      - { nom: Beurre, qte: 60, unite: g, mode: simple }
+      - { nom: Beurre, qte: 250, unite: g, mode: chef, note: ramolli }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Jus de citron, qte: 2, unite: cs }
+      - { nom: Persil frais, qte: 10, unite: g }
+      - { nom: Poivre, qte: 2, unite: pincee }
+
+simple:
+  temps: { preparation: 10, cuisson: 40 }
+  etapes:
+    - "Cuire le riz brun avec le beurre du riz, l'eau et le sel, selon les indications du paquet."
+    - "Dans une grande poêle, faire fondre le beurre à feu moyen avec l'ail pressé, 1 min sans colorer."
+    - texte: "Ajouter les crevettes et les cuire 2 à 3 min en les retournant, jusqu'à ce qu'elles soient roses."
+      minuteur: 150
+    - "Hors du feu, ajouter le jus de citron, le persil haché, du sel et du poivre. Servir sur le riz en nappant de beurre à l'ail."
+
+chef:
+  temps: { preparation: 25, cuisson: 30 }
+  etapes:
+    - titre: Le riz
+      texte: "Faire fondre {beurreriz} de beurre dans une casserole, ajouter le riz et remuer pour bien l'enrober. Ajouter l'eau et le sel, porter à ébullition, couvrir, réduire à feu doux et cuire 20 min. Vérifier le paquet : le riz brun demande souvent un peu plus."
+      minuteur: 1200
+    - titre: Le beurre à l'ail
+      texte: "Écraser le beurre ramolli à température ambiante. Ajouter l'ail pressé, le jus de citron, le persil haché, le sel et le poivre. Bien mélanger."
+    - titre: Les crevettes
+      texte: "Ouvrir les crevettes en papillon dans la longueur et retirer le boyau noir si nécessaire. Garnir chacune de beurre à l'ail, les refermer légèrement et les disposer sur une plaque. Saupoudrer d'un peu de chapelure pour le croustillant."
+    - titre: La cuisson
+      texte: "Cuire au four à 175 °C pendant 3 à 4 min, jusqu'à ce que les crevettes soient bien roses et légèrement croustillantes."
+      minuteur: 240
+    - titre: Le dressage
+      texte: "Servir le riz dans une assiette creuse et disposer les crevettes dessus. Napper du beurre à l'ail restant, fondu."
+  astuces:
+    - "Le beurre à l'ail en trop se roule en boudin dans du film et se congèle : parfait pour un pain à l'ail ou des escargots."
+
+sources:
+  - titre: "Crevettes à l'ail (YouTube)"
+    url: https://www.youtube.com/watch?v=0zvziyJ8nfQ

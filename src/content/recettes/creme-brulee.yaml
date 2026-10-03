@@ -1,0 +1,61 @@
+titre: Crème brûlée
+cuisine: francaise
+type: dessert
+resume: Une crème vanillée cuite tout doucement, et sa fine croûte de cassonade caramélisée au chalumeau.
+portions:
+  base: 6
+
+ingredients:
+  - groupe: La crème
+    items:
+      - { nom: Œuf, qte: 6, note: les jaunes }
+      - { nom: Sucre, qte: 75, unite: g }
+      - { nom: Lait, qte: 5, unite: cl }
+      - { nom: Crème liquide entière, qte: 50, unite: cl, note: 30 % de matière grasse minimum }
+      - { nom: Vanille en poudre, qte: 0.5, unite: cc, mode: simple, optionnel: true }
+      - { nom: Gousse de vanille, qte: 1, mode: chef }
+  - groupe: La croûte
+    items:
+      - { nom: Cassonade, qte: 50, unite: g }
+
+simple:
+  temps: { preparation: 15, cuisson: 70, attente: 480 }
+  etapes:
+    - "Préchauffer le four à 110 °C. Séparer les jaunes des blancs."
+    - "Mélanger immédiatement les jaunes avec le sucre et fouetter jusqu'à ce que le mélange blanchisse. Ne jamais laisser le sucre au contact des jaunes sans mélanger : il les « cuit »."
+    - "Ajouter le lait, la crème liquide et la vanille, puis bien mélanger."
+    - "Verser dans des ramequins, les déposer dans un plat à rebords et ajouter un peu d'eau dans le plat pour créer de la vapeur."
+    - texte: "Cuire 1 h à 1 h 15 : le centre doit encore trembler légèrement."
+      minuteur: 3900
+    - "Laisser refroidir, puis placer au réfrigérateur, idéalement une nuit."
+    - "Saupoudrer uniformément de cassonade et caraméliser au chalumeau, en surveillant : ça va très vite."
+
+chef:
+  temps: { preparation: 20, cuisson: 60, attente: 420 }
+  etapes:
+    - titre: L'infusion
+      texte: "Fendre la gousse de vanille, gratter les graines et les mettre avec la gousse dans la crème et le lait. Porter à frémissement, couvrir hors du feu et laisser infuser 30 min."
+      minuteur: 1800
+    - titre: L'appareil
+      texte: "Fouetter les jaunes et le sucre juste pour les mélanger, sans faire mousser : les bulles marqueraient la surface des crèmes."
+    - texte: "Verser la crème tiède filtrée sur les jaunes en mélangeant doucement à la maryse. Laisser reposer l'appareil 1 h au frais, ou une nuit, puis retirer la mousse en surface."
+    - titre: La cuisson
+      texte: "Préchauffer le four à 100 °C. Verser l'appareil dans des ramequins larges et peu profonds, posés dans un bain-marie d'eau chaude."
+    - texte: "Cuire 50 à 60 min : les crèmes sont prises sur les bords et tremblotent au centre, comme une gelée."
+      minuteur: 3300
+    - texte: "Laisser refroidir, puis réfrigérer au moins 6 h."
+    - titre: La croûte
+      texte: "Éponger la condensation en surface. Saupoudrer d'une fine couche de cassonade, caraméliser au chalumeau, puis recommencer une seconde fois : deux couches fines donnent une croûte plus craquante qu'une seule épaisse."
+
+notes:
+  - titre: Astuces
+    texte: |
+      - Plus la crème est riche en matière grasse, plus la crème brûlée est onctueuse.
+      - Sans chalumeau, décorer d'un caramel fin en « cheveux d'ange ».
+      - La recette s'aromatise selon les goûts : vanille, café, agrumes.
+
+sources:
+  - titre: "La crème brûlée (Philippe Etchebest)"
+    url: https://philippe-etchebest.com/la-creme-brulee/
+  - titre: "La crème brûlée (YouTube)"
+    url: https://www.youtube.com/watch?v=lROX8gJ8SPE

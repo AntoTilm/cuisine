@@ -1,0 +1,45 @@
+titre: Sauce teriyaki
+cuisine: asiatique
+origine: Japon
+type: sauce
+resume: Soja, mirin et sucre réduits jusqu'à devenir sirupeux. La version chef part d'un caramel à sec.
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Sucre, qte: 120, unite: g }
+      - { nom: Sauce soja, qte: 120, unite: ml }
+      - { nom: Mirin, qte: 60, unite: g }
+      - { nom: Vinaigre de riz, qte: 4, unite: cc }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Gingembre frais, qte: 2, unite: cm }
+      - { nom: Graines de sésame blanc, qte: 1, unite: cs }
+      - { nom: Fécule de maïs, qte: 1, unite: cc, optionnel: true }
+
+simple:
+  temps: { preparation: 5, cuisson: 10 }
+  etapes:
+    - "Dans une petite casserole, mélanger la sauce soja, le mirin, le sucre, le vinaigre de riz, l'ail écrasé et le gingembre en lamelles."
+    - texte: "Porter à frémissement et laisser réduire 5 min à feu doux, jusqu'à ce que la sauce nappe la cuillère."
+      minuteur: 300
+    - "Pour une sauce plus épaisse, ajouter la fécule délayée dans un peu d'eau et cuire 30 secondes. Retirer l'ail et le gingembre, parsemer de sésame."
+
+chef:
+  temps: { preparation: 5, cuisson: 15 }
+  etapes:
+    - titre: Le caramel à sec
+      texte: "Mettre le sucre seul dans une petite casserole. Le laisser fondre doucement sans remuer, en faisant tourner la casserole pour homogénéiser. Quand il devient ambré foncé, retirer du feu."
+    - titre: Le déglaçage
+      texte: "Verser le mirin et la sauce soja en filet, très doucement : attention aux projections. Remettre sur feu doux et remuer pour bien dissoudre le caramel."
+    - texte: "Ajouter le vinaigre de riz, l'ail et le gingembre, et un peu d'eau si nécessaire pour ajuster la consistance."
+    - texte: "Laisser réduire 3 à 5 min à feu doux : la sauce devient sirupeuse et brillante."
+      minuteur: 240
+    - texte: "Si besoin, ajouter la fécule délayée dans un peu d'eau et laisser épaissir 30 secondes. Filtrer et ajouter le sésame."
+  astuces:
+    - "Le caramel apporte une note toastée et une couleur profonde qu'on n'obtient pas en faisant simplement réduire la sauce."
+
+sources:
+  - titre: "The garbage can of sauces: teriyaki (YouTube)"
+    url: https://www.youtube.com/shorts/NHiztRy77Ys
+voirAussi: [saumon-teriyaki, poulet-croustillant-teriyaki]

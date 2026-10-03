@@ -1,0 +1,1378 @@
+/*
+  Carnet de cuisine
+  Un cahier d'écolier à grands carreaux (réglure Seyès) : lignes bleu lavande, marge rouge.
+  L'encre bleue sert à la version simple et aux actions ; le rouge de la marge, aux annotations
+  du chef et à la version grande cuisine.
+*/
+
+:root {
+  --page: #ffffff;
+  --surface: #f5f7fc;
+  --texte: #1f2331;
+  --texte-doux: #596075;
+  --encre: #2348a8;
+  --encre-fonce: #1a3680;
+  --encre-pale: #e7edfb;
+  --marge: #c4304a;
+  --marge-pale: #fcebee;
+  --ligne: #dce3f3;
+  --ligne-forte: #b3c0e4;
+  --seyes-fine: #e5eaf7;
+  --ombre: 0 1px 0 var(--ligne), 0 10px 24px -18px rgb(35 72 168 / 0.45);
+
+  --f-titre: 'Besley', 'Rockwell', Georgia, serif;
+  --f-texte: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --largeur: 1160px;
+  --gouttiere: 16px;
+  --carreau: 32px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --page: #141926;
+    --surface: #1a2031;
+    --texte: #e8ebf3;
+    --texte-doux: #a6adbf;
+    --encre: #94b0ff;
+    --encre-fonce: #b9cbff;
+    --encre-pale: #1f2a47;
+    --marge: #ff7d8e;
+    --marge-pale: #3a1e28;
+    --ligne: #252d43;
+    --ligne-forte: #36415f;
+    --seyes-fine: #1d2436;
+    --ombre: 0 1px 0 var(--ligne), 0 10px 24px -18px rgb(0 0 0 / 0.8);
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --page: #141926;
+  --surface: #1a2031;
+  --texte: #e8ebf3;
+  --texte-doux: #a6adbf;
+  --encre: #94b0ff;
+  --encre-fonce: #b9cbff;
+  --encre-pale: #1f2a47;
+  --marge: #ff7d8e;
+  --marge-pale: #3a1e28;
+  --ligne: #252d43;
+  --ligne-forte: #36415f;
+  --seyes-fine: #1d2436;
+  --ombre: 0 1px 0 var(--ligne), 0 10px 24px -18px rgb(0 0 0 / 0.8);
+  color-scheme: dark;
+}
+
+@media (min-width: 720px) {
+  :root {
+    --gouttiere: 32px;
+  }
+}
+
+/* --- Base ------------------------------------------------------------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--texte);
+  font-family: var(--f-texte);
+  font-size: 17px;
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+}
+[hidden] {
+  display: none !important;
+}
+a {
+  color: var(--encre);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+:focus-visible {
+  outline: 3px solid var(--encre);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--f-titre);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0;
+  text-wrap: balance;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.15rem;
+}
+p {
+  margin: 0;
+}
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+.conteneur {
+  max-width: var(--largeur);
+  margin-inline: auto;
+  padding-inline: var(--gouttiere);
+}
+.visuellement-cache {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.evitement {
+  position: absolute;
+  left: -9999px;
+}
+.evitement:focus {
+  left: 16px;
+  top: 16px;
+  z-index: 50;
+  background: var(--page);
+  padding: 8px 12px;
+}
+
+/* --- Réglure Seyès ------------------------------------------------------------ */
+.seyes {
+  --x-marge: 40px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--page);
+  background-image:
+    linear-gradient(var(--ligne-forte) 1px, transparent 1px),
+    linear-gradient(90deg, var(--seyes-fine) 1px, transparent 1px),
+    linear-gradient(var(--seyes-fine) 1px, transparent 1px);
+  background-size:
+    100% var(--carreau),
+    var(--carreau) 100%,
+    100% calc(var(--carreau) / 4);
+  background-position: 0 -1px;
+}
+.seyes > .conteneur {
+  position: relative;
+}
+.seyes > .conteneur::before {
+  content: '';
+  position: absolute;
+  top: -400px;
+  bottom: -400px;
+  left: calc(var(--gouttiere) + var(--x-marge) - 16px);
+  width: 2px;
+  background: var(--marge);
+  opacity: 0.85;
+}
+.seyes .dans-la-marge {
+  padding-left: var(--x-marge);
+}
+@media (min-width: 720px) {
+  .seyes {
+    --x-marge: 64px;
+  }
+}
+
+/* --- En-tête du site -------------------------------------------------------- */
+.site-tete {
+  border-bottom: 1px solid var(--ligne-forte);
+  background: var(--page);
+}
+.site-tete .conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 24px;
+  padding-block: 12px;
+}
+.marque {
+  font-family: var(--f-titre);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--texte);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+.marque span {
+  color: var(--marge);
+}
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+.site-nav a {
+  color: var(--texte);
+  text-decoration: none;
+  padding-block: 6px;
+  border-bottom: 2px solid transparent;
+}
+.site-nav a:hover,
+.site-nav a[aria-current='page'] {
+  border-bottom-color: var(--encre);
+}
+.compteur-liste {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.5em;
+  height: 1.5em;
+  margin-left: 4px;
+  padding-inline: 4px;
+  border-radius: 999px;
+  background: var(--encre);
+  color: var(--page);
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Pied de page ----------------------------------------------------------- */
+.site-pied {
+  margin-top: 96px;
+  border-top: 1px solid var(--ligne-forte);
+  color: var(--texte-doux);
+  font-size: 0.9rem;
+}
+.site-pied .conteneur {
+  padding-block: 24px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  justify-content: space-between;
+}
+
+/* --- Accueil -------------------------------------------------------------------- */
+.une {
+  padding-block: calc(var(--carreau) * 2) calc(var(--carreau) * 1.5);
+}
+.une h1 {
+  font-size: clamp(3rem, 11vw, 6.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  max-width: 10ch;
+}
+.une .chapeau {
+  margin-top: 24px;
+  max-width: 34rem;
+  font-size: 1.15rem;
+  color: var(--texte);
+}
+.recherche {
+  margin-top: 32px;
+  max-width: 34rem;
+}
+.recherche label {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--texte-doux);
+  margin-bottom: 4px;
+}
+.recherche input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--encre);
+  background: transparent;
+  padding: 6px 0;
+  font-family: var(--f-titre);
+  font-size: 1.5rem;
+  color: var(--encre);
+  border-radius: 0;
+}
+.recherche input::placeholder {
+  color: var(--texte-doux);
+  opacity: 0.7;
+}
+.recherche input:focus-visible {
+  outline: none;
+  border-bottom-width: 3px;
+}
+
+.sommaire {
+  margin-top: 56px;
+}
+.sommaire h2 {
+  margin-bottom: 12px;
+}
+.sommaire ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 40rem;
+}
+.sommaire li a {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-block: 8px;
+  color: var(--texte);
+  text-decoration: none;
+}
+.sommaire li a .cuisine-nom {
+  font-family: var(--f-titre);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.sommaire li a .pointilles {
+  flex: 1;
+  border-bottom: 2px dotted var(--ligne-forte);
+  transform: translateY(-5px);
+  min-width: 24px;
+}
+.sommaire li a .nombre {
+  color: var(--texte-doux);
+  font-variant-numeric: tabular-nums;
+}
+.sommaire li a:hover .cuisine-nom {
+  color: var(--encre);
+}
+
+.filtres {
+  margin-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.filtres .legende {
+  color: var(--texte-doux);
+  margin-right: 4px;
+}
+.puce {
+  border: 1.5px solid var(--ligne-forte);
+  background: var(--page);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  min-height: 40px;
+}
+.puce[aria-pressed='true'] {
+  background: var(--encre);
+  border-color: var(--encre);
+  color: var(--page);
+}
+
+.section-cuisine {
+  margin-top: 56px;
+  scroll-margin-top: 16px;
+}
+.section-cuisine > header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--texte);
+}
+.section-cuisine > header p {
+  color: var(--texte-doux);
+}
+.aucun-resultat {
+  margin-top: 40px;
+  font-size: 1.1rem;
+}
+
+/* Liste de recettes : une ligne par recette, comme un index. */
+.lignes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ligne a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 24px;
+  padding-block: 16px;
+  border-bottom: 1px solid var(--ligne);
+  color: var(--texte);
+  text-decoration: none;
+}
+.ligne a:hover .ligne-titre {
+  color: var(--encre);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.ligne-titre {
+  font-family: var(--f-titre);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.ligne-resume {
+  grid-column: 1;
+  color: var(--texte-doux);
+  max-width: 60ch;
+}
+.ligne-infos {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  text-align: right;
+  color: var(--texte-doux);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+.ligne-infos .duree {
+  display: block;
+  color: var(--texte);
+  font-family: var(--f-titre);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 560px) {
+  .ligne a {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ligne-infos {
+    grid-column: 1;
+    grid-row: auto;
+    text-align: left;
+  }
+  .ligne-infos .duree {
+    display: inline;
+    margin-right: 8px;
+  }
+}
+
+/* --- Page cuisine --------------------------------------------------------------- */
+.tete-page {
+  padding-block: calc(var(--carreau) * 1.5) var(--carreau);
+}
+.tete-page h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.tete-page .chapeau {
+  margin-top: 12px;
+  font-size: 1.15rem;
+  max-width: 40rem;
+}
+.fil {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+/* --- Page recette ------------------------------------------------------------------ */
+.recette-tete {
+  padding-block: calc(var(--carreau) * 1.5) var(--carreau);
+}
+.recette-tete h1 {
+  font-size: clamp(2.4rem, 7.5vw, 4.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  max-width: 16ch;
+}
+.recette-tete .resume {
+  margin-top: 16px;
+  max-width: 40rem;
+  font-size: 1.15rem;
+}
+.etiquettes {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  list-style: none;
+}
+.etiquettes li {
+  border: 1.5px solid var(--ligne-forte);
+  background: var(--page);
+  border-radius: 4px;
+  padding: 1px 10px;
+  font-size: 0.9rem;
+}
+
+/* Barre de réglages : collée en haut pendant qu'on cuisine (sur grand écran seulement). */
+.reglages {
+  z-index: 20;
+  background: var(--page);
+  border-block: 1px solid var(--ligne-forte);
+}
+@media (min-width: 720px) {
+  .reglages {
+    position: sticky;
+    top: 0;
+  }
+}
+.reglages .conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 28px;
+  padding-block: 10px;
+}
+.bascule {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 999px;
+  border: 1.5px solid var(--ligne-forte);
+  background: var(--surface);
+}
+.bascule button {
+  border: 0;
+  background: transparent;
+  border-radius: 999px;
+  padding: 7px 16px;
+  min-height: 40px;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--texte-doux);
+}
+.bascule button[aria-checked='true'] {
+  color: var(--page);
+}
+.bascule button[data-choix-mode='simple'][aria-checked='true'] {
+  background: var(--encre);
+}
+.bascule button[data-choix-mode='chef'][aria-checked='true'] {
+  background: var(--marge);
+}
+.portions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.portions label {
+  color: var(--texte-doux);
+}
+.compteur {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.rond {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--encre);
+  background: var(--page);
+  color: var(--encre);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.rond:hover {
+  background: var(--encre-pale);
+}
+#portions {
+  width: 3.6em;
+  text-align: center;
+  border: 0;
+  border-bottom: 2px solid var(--encre);
+  background: transparent;
+  font-family: var(--f-titre);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--encre);
+  border-radius: 0;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+#portions::-webkit-inner-spin-button,
+#portions::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.temps {
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  font-size: 0.95rem;
+}
+.temps div {
+  display: grid;
+}
+.temps dt {
+  color: var(--texte-doux);
+  font-size: 0.8rem;
+}
+.temps dd {
+  margin: 0;
+  font-family: var(--f-titre);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.ecran {
+  margin-left: auto;
+  border: 1.5px solid var(--ligne-forte);
+  background: var(--page);
+  border-radius: 999px;
+  padding: 6px 14px;
+  min-height: 40px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.ecran[aria-pressed='true'] {
+  border-color: var(--encre);
+  background: var(--encre-pale);
+  color: var(--encre-fonce);
+}
+.ecran[aria-pressed='true']::before {
+  content: '✓ ';
+}
+
+/* Ce qui ne concerne qu'une version. */
+.recette[data-mode='simple'] [data-version='chef'],
+.recette[data-mode='chef'] [data-version='simple'] {
+  display: none !important;
+}
+.explication-mode {
+  font-size: 0.95rem;
+  color: var(--texte-doux);
+}
+
+.recette-corps {
+  display: grid;
+  gap: 48px;
+  margin-top: 40px;
+}
+@media (min-width: 960px) {
+  .recette-corps {
+    grid-template-columns: 360px minmax(0, 1fr);
+    gap: 56px;
+    align-items: start;
+  }
+}
+
+/* Panneau ingrédients / liste de courses */
+.panneau {
+  background: var(--surface);
+  border-radius: 8px;
+  box-shadow: var(--ombre);
+  padding: 4px 20px 20px;
+}
+.onglets {
+  display: flex;
+  gap: 4px;
+  margin-inline: -20px;
+  padding-inline: 12px;
+  border-bottom: 1.5px solid var(--ligne-forte);
+}
+.onglets button {
+  border: 0;
+  background: transparent;
+  padding: 14px 10px 10px;
+  cursor: pointer;
+  font-family: var(--f-titre);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--texte-doux);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1.5px;
+}
+.onglets button[aria-selected='true'] {
+  color: var(--texte);
+  border-bottom-color: var(--encre);
+}
+.groupe-ingredients {
+  margin-top: 20px;
+}
+.groupe-ingredients h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ingredients li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2px 12px;
+  align-items: baseline;
+  padding-block: 7px;
+  border-bottom: 1px solid var(--ligne);
+}
+.ingredients .note {
+  grid-column: 1;
+  font-size: 0.88rem;
+  color: var(--texte-doux);
+}
+.ingredients .qte,
+.rayon .quantite {
+  font-family: var(--f-titre);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+.facultatif {
+  color: var(--texte-doux);
+  font-size: 0.88rem;
+}
+.marque-chef {
+  color: var(--marge);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.rayon {
+  margin-top: 18px;
+}
+.rayon h3 {
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+.rayon ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.rayon li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2px 12px;
+  align-items: baseline;
+  padding-block: 6px;
+  border-bottom: 1px solid var(--ligne);
+}
+.actions-panneau {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+.bouton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid var(--encre);
+  background: var(--encre);
+  color: var(--page);
+  border-radius: 999px;
+  padding: 10px 18px;
+  min-height: 44px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.bouton:hover {
+  background: var(--encre-fonce);
+  border-color: var(--encre-fonce);
+}
+.bouton.secondaire {
+  background: transparent;
+  color: var(--encre);
+}
+.bouton.secondaire:hover {
+  background: var(--encre-pale);
+}
+.etat-liste {
+  font-size: 0.95rem;
+  text-align: center;
+}
+.lien-discret {
+  border: 0;
+  background: none;
+  padding: 4px 0;
+  color: var(--texte-doux);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.lien-discret:hover {
+  color: var(--marge);
+}
+
+/* Étapes : numérotées dans la marge rouge. */
+.deroulement h2 {
+  margin-bottom: 8px;
+}
+.etapes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.etapes::before {
+  content: '';
+  position: absolute;
+  left: 51px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--marge);
+  opacity: 0.85;
+}
+.etape {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  column-gap: 20px;
+  padding-block: 16px;
+  border-bottom: 1px solid var(--ligne);
+}
+.etape .numero {
+  justify-self: start;
+  align-self: start;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background: transparent;
+  font-family: var(--f-titre);
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--encre);
+  cursor: pointer;
+  font-variant-numeric: tabular-nums;
+  margin-top: -6px;
+}
+.etape .numero:hover {
+  background: var(--encre-pale);
+}
+.etape .numero[aria-pressed='true'] {
+  background: var(--encre);
+  color: var(--page);
+}
+.etape-texte {
+  max-width: 62ch;
+}
+.etape-titre {
+  display: block;
+  font-family: var(--f-titre);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+.etape.faite .etape-texte {
+  color: var(--texte-doux);
+}
+.etape.faite .etape-titre {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+.etape .qte,
+.etape .calc {
+  font-family: var(--f-titre);
+  font-weight: 700;
+  color: var(--encre-fonce);
+  white-space: nowrap;
+}
+.recette[data-mode='chef'] .etape .qte,
+.recette[data-mode='chef'] .etape .calc {
+  color: var(--marge);
+}
+.outils-etape {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.minuteur {
+  font-family: var(--f-titre);
+  border: 1.5px solid var(--encre);
+  background: transparent;
+  color: var(--encre);
+  border-radius: 999px;
+  padding: 6px 14px;
+  min-height: 40px;
+  min-width: 110px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.minuteur[data-etat='marche'] {
+  background: var(--encre);
+  color: var(--page);
+}
+.minuteur[data-etat='fini'] {
+  background: var(--marge);
+  border-color: var(--marge);
+  color: var(--page);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .minuteur[data-etat='fini'] {
+    animation: battement 1s ease-in-out infinite;
+  }
+  @keyframes battement {
+    50% {
+      transform: scale(1.06);
+    }
+  }
+}
+.alerte {
+  grid-column: 2;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-left: 3px solid var(--marge);
+  background: var(--marge-pale);
+  border-radius: 0 6px 6px 0;
+}
+.alerte strong {
+  color: var(--marge);
+}
+.alerte ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+/* Annotations : à l'encre bleue en version simple, au stylo rouge en grande cuisine. */
+.annotations {
+  margin-top: 40px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--encre);
+  background: var(--encre-pale);
+  border-radius: 0 8px 8px 0;
+}
+.annotations h2 {
+  font-size: 1.3rem;
+  color: var(--encre-fonce);
+}
+.annotations ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+}
+.annotations.chef {
+  border-left-color: var(--marge);
+  background: var(--marge-pale);
+}
+.annotations.chef h2 {
+  color: var(--marge);
+  font-style: italic;
+  font-weight: 500;
+}
+.annotations.chef li {
+  font-family: var(--f-titre);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.bloc {
+  margin-top: 48px;
+}
+.bloc > h2 {
+  margin-bottom: 12px;
+}
+.notes {
+  display: grid;
+  gap: 20px;
+}
+.note-carnet h3 {
+  margin-bottom: 4px;
+}
+.note-carnet ul {
+  margin: 4px 0;
+  padding-left: 20px;
+}
+.note-carnet p + p,
+.note-carnet ul + p {
+  margin-top: 8px;
+}
+.sources {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 6px;
+}
+.liens-recettes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.liens-recettes a {
+  display: block;
+  padding: 10px 16px;
+  border: 1.5px solid var(--ligne-forte);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--texte);
+  background: var(--page);
+}
+.liens-recettes a:hover {
+  border-color: var(--encre);
+}
+.liens-recettes .titre {
+  font-family: var(--f-titre);
+  font-weight: 700;
+  display: block;
+}
+.liens-recettes .type {
+  font-size: 0.88rem;
+  color: var(--texte-doux);
+}
+.deroule {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 18px 22px;
+  border: 2px dashed var(--ligne-forte);
+  border-radius: 8px;
+}
+.deroule p {
+  max-width: 44ch;
+}
+.deroule strong {
+  font-family: var(--f-titre);
+  font-size: 1.15rem;
+  display: block;
+}
+
+/* Calculateur de cuisson */
+.calculateur {
+  margin-bottom: 40px;
+  padding: 20px 22px;
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--ombre);
+}
+.calculateur h2 {
+  font-size: 1.3rem;
+}
+.calculateur .champs {
+  margin-top: 14px;
+  display: grid;
+  gap: 16px;
+}
+.calculateur fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.calculateur legend,
+.calculateur .etiquette {
+  color: var(--texte-doux);
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  padding: 0;
+}
+.reglette {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.reglette input {
+  flex: 1;
+  accent-color: var(--encre);
+  min-height: 32px;
+}
+.reglette output {
+  font-family: var(--f-titre);
+  font-weight: 700;
+  font-size: 1.25rem;
+  min-width: 4ch;
+  font-variant-numeric: tabular-nums;
+}
+.choix-cuisson {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.choix-cuisson input {
+  position: absolute;
+  opacity: 0;
+}
+.choix-cuisson label {
+  border: 1.5px solid var(--ligne-forte);
+  border-radius: 999px;
+  padding: 6px 14px;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  background: var(--page);
+}
+.choix-cuisson input:checked + label {
+  background: var(--marge);
+  border-color: var(--marge);
+  color: var(--page);
+}
+.choix-cuisson input:focus-visible + label {
+  outline: 3px solid var(--encre);
+  outline-offset: 2px;
+}
+.resultats {
+  margin: 18px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--ligne-forte);
+}
+.resultats div {
+  padding: 10px 0 0;
+}
+.resultats dt {
+  font-size: 0.85rem;
+  color: var(--texte-doux);
+}
+.resultats dd {
+  margin: 0;
+  font-family: var(--f-titre);
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Liste de courses ---------------------------------------------------------- */
+#liste-courses {
+  margin-top: 40px;
+}
+.page-liste {
+  display: grid;
+  gap: 40px;
+}
+@media (min-width: 960px) {
+  .page-liste {
+    grid-template-columns: minmax(0, 1fr) 380px;
+    align-items: start;
+    gap: 56px;
+  }
+  .page-liste .colonne-recettes {
+    order: 2;
+    position: sticky;
+    top: 24px;
+  }
+}
+.colonne-recettes {
+  background: var(--surface);
+  border-radius: 8px;
+  box-shadow: var(--ombre);
+  padding: 18px 20px;
+}
+.colonne-recettes h2,
+.colonne-articles h2 {
+  font-size: 1.3rem;
+}
+#liste-recettes {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+.recette-liste {
+  padding-block: 12px;
+  border-bottom: 1px solid var(--ligne);
+}
+.recette-liste .titre {
+  font-family: var(--f-titre);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--texte);
+  text-decoration: none;
+}
+.recette-liste .titre:hover {
+  color: var(--encre);
+  text-decoration: underline;
+}
+.reglages-ligne {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+.reglages-ligne .valeur {
+  min-width: 7.5em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.reglages-ligne .rond {
+  width: 34px;
+  height: 34px;
+  font-size: 1.1rem;
+}
+.choix-mode {
+  border: 1.5px solid var(--ligne-forte);
+  border-radius: 6px;
+  padding: 6px 8px;
+  background: var(--page);
+  min-height: 36px;
+}
+.colonne-articles .rayon li {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  padding-block: 4px;
+}
+.colonne-articles .rayon li:has(.lien-discret) {
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+}
+.article input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  border: 2px solid var(--ligne-forte);
+  border-radius: 6px;
+  background: var(--page);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+.article input[type='checkbox']::before {
+  content: '';
+  width: 12px;
+  height: 6px;
+  border-left: 3px solid var(--page);
+  border-bottom: 3px solid var(--page);
+  transform: rotate(-45deg) translate(1px, -1px);
+  opacity: 0;
+}
+.article input[type='checkbox']:checked {
+  background: var(--encre);
+  border-color: var(--encre);
+}
+.article input[type='checkbox']:checked::before {
+  opacity: 1;
+}
+.article label {
+  display: grid;
+  cursor: pointer;
+  padding-block: 6px;
+  min-width: 0;
+}
+.article .pour {
+  font-size: 0.85rem;
+  color: var(--texte-doux);
+}
+.article.coche .nom,
+.article.coche .quantite {
+  text-decoration: line-through;
+  color: var(--texte-doux);
+}
+.ajout-extra {
+  margin-top: 24px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.ajout-extra input {
+  flex: 1 1 200px;
+  border: 0;
+  border-bottom: 2px solid var(--encre);
+  background: transparent;
+  padding: 8px 0;
+  border-radius: 0;
+}
+.ajout-extra input:focus-visible {
+  outline: none;
+  border-bottom-width: 3px;
+}
+.actions-liste {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+}
+#vider.arme {
+  color: var(--marge);
+  font-weight: 700;
+}
+.vide {
+  max-width: 40rem;
+  padding: 24px 0;
+}
+.vide p + p {
+  margin-top: 12px;
+}
+
+/* --- Idées ------------------------------------------------------------------------ */
+.idees {
+  display: grid;
+  gap: 40px;
+  margin-top: 40px;
+}
+@media (min-width: 720px) {
+  .idees {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.idees h2 {
+  font-size: 1.3rem;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--texte);
+}
+.idees ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.idees li {
+  padding-block: 10px;
+  border-bottom: 1px solid var(--ligne);
+}
+.idees .titre-idee {
+  font-family: var(--f-titre);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.idees .note-idee {
+  color: var(--texte-doux);
+  font-size: 0.95rem;
+}
+
+/* --- Impression : la recette seule, sans les boutons. -------------------------------- */
+@media print {
+  .site-tete,
+  .site-pied,
+  .reglages .bascule,
+  .ecran,
+  .onglets,
+  .actions-panneau,
+  .minuteur,
+  #courses,
+  .deroule,
+  .liens-recettes {
+    display: none !important;
+  }
+  .seyes {
+    background: none;
+  }
+  .seyes > .conteneur::before,
+  .etapes::before {
+    display: none;
+  }
+  .reglages {
+    position: static;
+  }
+  .panneau {
+    box-shadow: none;
+    position: static;
+    max-height: none;
+  }
+  body {
+    font-size: 12pt;
+  }
+}

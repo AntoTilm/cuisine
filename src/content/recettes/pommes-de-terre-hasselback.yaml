@@ -1,0 +1,51 @@
+titre: Pommes de terre Hasselback
+cuisine: autres-horizons
+origine: Suède
+type: accompagnement
+saison: ete
+resume: Des pommes de terre tranchées en accordéon, glissées d'ail et rôties jusqu'à ce que les bords croustillent.
+portions:
+  base: 2
+
+ingredients:
+  - items:
+      - { nom: Pommes de terre, qte: 8, note: "petites, à chair ferme" }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Huile d'olive, qte: 3, unite: cs }
+      - { nom: Beurre, qte: 30, unite: g, mode: chef }
+      - { nom: Parmesan râpé, qte: 20, unite: g, mode: chef, optionnel: true }
+  - groupe: Les épices
+    items:
+      - { nom: Fleur de sel }
+      - { nom: Poivre }
+      - { nom: Paprika, qte: 1, unite: cc }
+      - { nom: Thym, qte: 2, unite: brin }
+      - { nom: Romarin, qte: 1, unite: brin }
+      - { nom: Origan séché, qte: 0.5, unite: cc }
+
+simple:
+  temps: { preparation: 15, cuisson: 50 }
+  etapes:
+    - "Préchauffer le four à 200 °C."
+    - "Poser chaque pomme de terre entre les manches de deux cuillères en bois et l'entailler en tranches fines de 3 mm : les manches arrêtent le couteau avant le fond."
+    - "Glisser de l'huile et de fines lamelles d'ail entre les tranches."
+    - texte: "Assaisonner de fleur de sel, poivre, paprika, thym, romarin et origan. Enfourner environ 50 min, jusqu'à ce que la pointe d'un couteau s'enfonce sans résistance."
+      minuteur: 3000
+
+chef:
+  temps: { preparation: 20, cuisson: 55 }
+  etapes:
+    - "Préchauffer le four à 200 °C. Faire fondre le beurre avec l'huile d'olive, le thym et le romarin."
+    - "Entailler les pommes de terre en tranches de 2 à 3 mm entre deux baguettes. Les rincer sous l'eau froide en écartant les tranches pour retirer l'amidon, puis bien les sécher : elles s'ouvriront mieux en éventail."
+    - texte: "Les badigeonner de beurre aromatisé en le faisant couler entre les tranches. Saler, poivrer et enfourner 25 min."
+      minuteur: 1500
+    - texte: "Glisser les lamelles d'ail entre les tranches qui se sont ouvertes, badigeonner à nouveau et cuire encore 25 min."
+      minuteur: 1500
+    - texte: "Parsemer de paprika, d'origan et éventuellement de parmesan, puis passer 5 min sous le gril pour dorer les bords. Finir à la fleur de sel."
+      minuteur: 300
+  astuces:
+    - "Ajouter l'ail à mi-cuisson évite qu'il brûle et devienne amer."
+
+sources:
+  - titre: "Pommes de terre Hasselback (Marie Food Tips)"
+    url: https://mariefoodtips.com/pommes-de-terre-hasselback/

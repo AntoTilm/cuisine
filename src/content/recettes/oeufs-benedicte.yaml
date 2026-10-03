@@ -1,0 +1,62 @@
+titre: Œufs bénédicte
+cuisine: americaine
+origine: New York
+type: plat
+saison: ete
+resume: Pain grillé, pancetta, œuf poché et sauce hollandaise. Le brunch dans les règles.
+portions:
+  base: 2
+
+ingredients:
+  - groupe: Les œufs pochés
+    items:
+      - { nom: Œuf, qte: 4, note: très frais }
+      - { nom: Vinaigre blanc, qte: 3, unite: cs }
+  - groupe: La sauce hollandaise
+    items:
+      - { nom: Beurre, qte: 100, unite: g, note: bien froid }
+      - { nom: Œuf, qte: 3, note: les jaunes }
+      - { nom: Vin blanc ou vinaigre de vin blanc, qte: 50, unite: ml, mode: chef }
+      - { nom: Citron, qte: 0.25, note: le jus }
+      - { nom: Piment d'Espelette }
+      - { nom: Sel }
+  - groupe: Le pain
+    items:
+      - { nom: Pancetta, qte: 8, unite: tranche }
+      - { nom: Pain de mie, qte: 4, unite: tranche }
+      - { nom: Ciboulette, qte: 4, unite: brin, mode: chef, optionnel: true }
+
+simple:
+  temps: { preparation: 10, cuisson: 15 }
+  etapes:
+    - "Faire griller la pancetta à sec dans une poêle, 2 min par face. Toaster le pain de mie."
+    - titre: Hollandaise express
+      texte: "Faire fondre le beurre. Dans un mixeur, mixer les jaunes avec le jus de citron, une pincée de sel et de piment d'Espelette, puis verser le beurre chaud en mince filet, moteur en marche : la sauce épaissit en 30 secondes."
+    - titre: Les œufs pochés
+      texte: "Porter une casserole d'eau non salée à frémissement avec le vinaigre. Casser chaque œuf dans une tasse, créer un léger tourbillon et y glisser l'œuf. Cuire 3 min, puis égoutter sur du papier absorbant."
+      minuteur: 180
+    - "Sur chaque tranche de pain, poser la pancetta et un œuf poché, puis napper de hollandaise."
+
+chef:
+  temps: { preparation: 15, cuisson: 25 }
+  etapes:
+    - titre: L'eau de pochage
+      texte: "Porter l'eau à peine frémissante avec le vinaigre, sans sel : il fait éclater le blanc. L'eau ne doit pas bouillir, les bulles cassent le blanc."
+    - texte: "Plonger chaque œuf 10 secondes dans l'eau avec sa coquille, puis le casser dans une tasse : le blanc précuit se tient mieux autour du jaune."
+    - texte: "Créer un léger tourbillon, glisser l'œuf au centre et le cuire 3 min. L'égoutter et le garder dans un bol d'eau tiède."
+      minuteur: 180
+    - titre: Le sabayon
+      texte: "Dans un poêlon, fouetter les jaunes avec le vin blanc, le sel et le piment d'Espelette sur feu doux. Le poêlon ne doit pas être trop chaud : on doit pouvoir toucher le fond avec la main. S'il commence à fumer, le retirer du feu."
+    - texte: "Monter les jaunes en sabayon : la préparation épaissit et l'on voit le fond du poêlon en fouettant."
+    - titre: L'émulsion
+      texte: "Ajouter le beurre très froid petit à petit, en fouettant, pour créer l'émulsion. Surveiller la température tout du long et retirer du feu si ça chauffe trop. Ajouter le jus de citron, seulement si la base est au vin blanc."
+    - titre: Le dressage
+      texte: "Griller la pancetta et toaster le pain. Réchauffer les œufs 30 secondes dans l'eau chaude. Dresser : pain, pancetta, œuf, hollandaise et ciboulette ciselée."
+  astuces:
+    - "Si la hollandaise tranche et devient granuleuse, mettre une cuillère d'eau froide dans un bol propre et y verser la sauce petit à petit en fouettant vivement."
+
+sources:
+  - titre: "La sauce hollandaise (Philippe Etchebest)"
+    url: https://philippe-etchebest.com/sauce-hollandaise/
+  - titre: "Réussir un œuf poché (750g, YouTube)"
+    url: https://www.youtube.com/watch?v=WcaYANOUSRY

@@ -1,0 +1,81 @@
+titre: Fondue savoyarde
+cuisine: francaise
+origine: Savoie
+type: plat
+saison: hiver
+resume: Quatre fromages fondus dans un vin de Savoie, à feu doux et en dessinant des huit.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Les fromages
+    mode: simple
+    items:
+      - { nom: Mélange de fromages pour fondue savoyarde, qte: 720, unite: g, note: râpé ou en dés }
+  - groupe: Les fromages
+    mode: chef
+    items:
+      - { nom: Vacherin fribourgeois, qte: 180, unite: g }
+      - { nom: Gruyère suisse, qte: 180, unite: g }
+      - { nom: Comté affiné, qte: 180, unite: g }
+      - { nom: Beaufort, qte: 180, unite: g }
+  - groupe: Le caquelon
+    items:
+      - { nom: Vin blanc de Savoie, qte: 340, unite: ml, note: cépage jacquère, cle: vin }
+      - { nom: Beurre doux, qte: 20, unite: g, cle: beurre }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Kirsch ou marc de gewurztraminer, qte: 20, unite: ml, cle: kirsch }
+      - { nom: Fécule de maïs, qte: 1, unite: cc, cle: fecule }
+      - { nom: Poivre noir du moulin }
+      - { nom: Citron, qte: 0.5, mode: chef, optionnel: true, note: pour rattraper une fondue trop élastique }
+  - groupe: Pour servir
+    items:
+      - { nom: Pain de campagne ou baguette, qte: 480, unite: g, note: "de la veille, en cubes" }
+
+simple:
+  temps: { preparation: 10, cuisson: 15 }
+  etapes:
+    - "Frotter l'intérieur du caquelon avec une gousse d'ail coupée en deux."
+    - "Verser le vin et le chauffer doucement jusqu'à frémissement, sans le faire bouillir."
+    - "Ajouter le fromage par petites poignées en remuant sans arrêt avec une cuillère en bois, en dessinant des 8. Attendre que chaque poignée ait fondu avant d'ajouter la suivante."
+    - "Quand la fondue est lisse, délayer la fécule dans le kirsch et l'ajouter hors du feu, avec un tour de poivre. Servir sur le réchaud avec le pain en cubes."
+  astuces:
+    - "Si la fondue devient trop épaisse, ajouter un trait de vin blanc chaud ; si elle est trop liquide, un peu de fromage."
+
+chef:
+  temps: { preparation: 20, cuisson: 25 }
+  etapes:
+    - titre: Préparer le caquelon
+      texte: "Frotter l'intérieur du caquelon avec l'ail coupé en deux ; laisser quelques éclats au fond pour un goût plus marqué. Ajouter {beurre} de beurre et le faire fondre à feu doux, sans colorer l'ail."
+    - titre: Ajouter le vin
+      texte: "Verser {vin} de vin blanc et chauffer doucement jusqu'à frémissement, sans bouillir : 70 à 75 °C au thermomètre. Poivrer légèrement."
+    - titre: Incorporer les fromages
+      texte: "Ajouter les fromages progressivement, par petites poignées, en remuant constamment avec une cuillère en bois en formant des 8. La fonte doit se faire doucement, entre 65 et 70 °C, pour éviter que la matière grasse se sépare. Continuer jusqu'à une texture lisse et homogène."
+    - titre: Stabiliser
+      texte: "Délayer {fecule} de fécule de maïs dans un peu de vin froid et l'incorporer à la fondue."
+    - titre: Finaliser
+      texte: "Quand la fondue est bien liée et brillante, ajouter hors du feu {kirsch} de kirsch (ou de marc de gewurztraminer) et un peu de poivre noir : hors du feu, les arômes sont préservés."
+    - titre: Pendant le service
+      texte: "Régler le réchaud pour garder la fondue entre 60 et 65 °C. Si elle épaissit, ajouter 1 c. à soupe de vin chaud ; si elle se liquéfie, un peu de fromage râpé."
+  astuces:
+    - "Une fondue est une émulsion entre une phase aqueuse et acide, le vin blanc, et une phase grasse et protéinée, le fromage. Elles ne se mélangent pas naturellement : il faut les unir petit à petit, à température douce."
+    - "L'acidité et l'alcool du vin stabilisent le fromage : c'est pour ça qu'on ne fait jamais bouillir le vin."
+    - "Le mouvement en 8 mélange progressivement le vin et les protéines fondues."
+
+notes:
+  - titre: Rattraper la texture
+    texte: |
+      - Trop élastique : température trop élevée ou manque d'acidité. Ajouter quelques gouttes de citron.
+      - Trop liquide : trop de vin ou chaleur trop forte. Ajouter un peu de fromage râpé ou une pointe de fécule.
+      - Trop épaisse : pas assez de vin. Ajouter 1 à 2 c. à soupe de vin chaud.
+      - Grasse ou qui se sépare : ébullition, ou vin trop doux. Baisser le feu, ajouter un trait de vin et quelques gouttes de citron.
+  - titre: Températures clés
+    mode: chef
+    texte: |
+      - Chauffe du vin : 70 à 75 °C, pour préparer la phase acide sans la dégrader.
+      - Fonte du fromage : 65 à 70 °C, pour créer une émulsion stable.
+      - Service sur le réchaud : 60 à 65 °C, pour garder la texture.
+
+sources:
+  - titre: "Tous les secrets de la fondue savoyarde avec le chef Laurent Métral (YouTube)"
+    url: https://www.youtube.com/watch?v=SvgKp69Gzu8

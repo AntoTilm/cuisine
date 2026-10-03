@@ -1,0 +1,46 @@
+titre: Salade de concombre et wakamé
+cuisine: asiatique
+origine: Japon
+type: entree
+saison: ete
+resume: Concombre tranché fin, algues wakamé et vinaigrette japonaise au sésame grillé.
+portions:
+  base: 2
+
+ingredients:
+  - groupe: La salade
+    items:
+      - { nom: Concombre, qte: 1 }
+      - { nom: Algues wakamé déshydratées, qte: 2, unite: cs }
+      - { nom: Graines de sésame blanc, qte: 4, unite: cc }
+  - groupe: La vinaigrette japonaise
+    items:
+      - { nom: Huile de sésame grillé, qte: 2, unite: cs }
+      - { nom: Huile de colza, qte: 4, unite: cs }
+      - { nom: Vinaigre de riz blanc, qte: 2, unite: cs }
+      - { nom: Sauce soja Kikkoman, qte: 2, unite: cs }
+      - { nom: Poivre noir }
+
+simple:
+  temps: { preparation: 10, attente: 30 }
+  etapes:
+    - texte: "Mettre les wakamé séchées dans un bol d'eau froide pendant 30 min. Les égoutter, les presser légèrement et les couper en petits morceaux."
+      minuteur: 1800
+    - "Fouetter l'huile de sésame, l'huile de colza, le vinaigre de riz, la sauce soja et deux tours de moulin à poivre pour émulsionner."
+    - "Couper le concombre en tranches fines, ajouter les algues, verser la vinaigrette et mélanger doucement."
+    - "Parsemer de graines de sésame grillées et servir bien frais."
+
+chef:
+  temps: { preparation: 20, attente: 30 }
+  etapes:
+    - "Réhydrater les wakamé dans l'eau froide, puis les égoutter et les presser."
+    - texte: "Trancher le concombre très finement à la mandoline, le saler légèrement et le laisser dégorger 10 min. Le presser dans les mains : il reste croquant et ne dilue pas la vinaigrette."
+      minuteur: 600
+    - "Torréfier les graines de sésame à sec dans une poêle, 2 min en remuant, jusqu'à ce qu'elles sentent la noisette."
+    - "Émulsionner la vinaigrette au fouet."
+    - "Assaisonner au dernier moment, dresser en petit dôme et parsemer de sésame."
+
+sources:
+  - titre: "Vinaigrette japonaise et salade d'algues wakamé et concombre (YouTube)"
+    url: https://www.youtube.com/watch?v=_0CkWADgyso
+servirAvec: [saumon-teriyaki]

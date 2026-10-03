@@ -1,0 +1,69 @@
+titre: Saumon teriyaki
+cuisine: asiatique
+origine: Japon
+type: plat
+resume: Pavé de saumon à la peau croustillante, laqué dans sa marinade soja, mirin et gingembre, avec du riz rond.
+portions:
+  base: 2
+
+ingredients:
+  - groupe: Le saumon
+    items:
+      - { nom: Pavé de saumon avec la peau, qte: 300, unite: g, note: 2 pavés }
+      - { nom: Huile de tournesol, qte: 1, unite: cs }
+  - groupe: La marinade teriyaki
+    items:
+      - { nom: Sauce soja claire, qte: 22, unite: g }
+      - { nom: Sauce soja foncée, qte: 2, unite: g }
+      - { nom: Sirop de riz, qte: 20, unite: g, note: "ou miel, ou sucre" }
+      - { nom: Mirin, qte: 8, unite: g, note: ou saké de cuisine }
+      - { nom: Jus de citron, qte: 8, unite: g }
+      - { nom: Gingembre frais râpé, qte: 3, unite: g }
+      - { nom: Ail, qte: 0.5, unite: gousse }
+      - { nom: Sel }
+      - { nom: Poivre moulu }
+  - groupe: La finition et le riz
+    items:
+      - { nom: Ciboulette, qte: 2, unite: g }
+      - { nom: Graines de sésame blanc et noir, qte: 2, unite: g }
+      - { nom: Riz rond, qte: 160, unite: g }
+      - { nom: Kimchi, qte: 60, unite: g, mode: chef, optionnel: true }
+
+simple:
+  temps: { preparation: 10, cuisson: 15, attente: 15 }
+  etapes:
+    - texte: "Mélanger dans un plat tous les ingrédients de la marinade et y retourner les pavés. Laisser mariner 15 min."
+      minuteur: 900
+    - "Pendant ce temps, lancer la cuisson du riz."
+    - texte: "Chauffer l'huile dans une poêle à feu moyen. Égoutter le saumon et le poser côté peau. Cuire 4 min sans y toucher."
+      minuteur: 240
+    - texte: "Retourner, verser la marinade et laisser réduire 2 min en arrosant le saumon."
+      minuteur: 120
+    - "Parsemer de ciboulette et de sésame, puis servir avec le riz."
+
+chef:
+  temps: { preparation: 20, cuisson: 15, attente: 30 }
+  etapes:
+    - titre: Le saumon
+      texte: "Retirer les écailles du pavé sans enlever la peau. Sécher le saumon avec du papier absorbant."
+    - titre: La marinade
+      texte: "Mélanger les sauces soja claire et foncée, le sirop de riz, le mirin, le jus de citron, l'ail pressé, le gingembre râpé, le sel et le poivre jusqu'à obtenir une sauce homogène."
+    - texte: "Déposer le saumon dans la sauce, bien l'enrober et le laisser mariner 30 min à température ambiante ou au frais."
+      minuteur: 1800
+    - titre: Les accompagnements
+      texte: "Cuire le riz rond selon les instructions du paquet. Préparer la salade de concombre et wakamé et, si souhaité, un peu de kimchi."
+    - titre: La cuisson
+      texte: "Chauffer l'huile dans une poêle à feu moyen. Déposer le saumon côté peau et le laisser griller 3 min sans le bouger."
+      minuteur: 180
+    - texte: "Retourner délicatement le saumon, verser la marinade restante et cuire encore 3 min en l'arrosant régulièrement de sauce."
+      minuteur: 180
+    - titre: La finition
+      texte: "Parsemer de ciboulette ciselée et de graines de sésame. Servir avec le riz, la sauce teriyaki réduite et les légumes frais."
+  astuces:
+    - "Presser le pavé avec une spatule pendant les 20 premières secondes : la peau reste à plat et croustille de façon régulière."
+
+sources:
+  - titre: "Saumon teriyaki, impressionnant et facile à préparer (YouTube)"
+    url: https://www.youtube.com/watch?v=zzN5bhc5_PQ
+servirAvec: [salade-concombre-wakame]
+voirAussi: [sauce-teriyaki]

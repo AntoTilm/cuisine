@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import { lien } from '../lib/recettes.js';
+---
+
+<Base titre="Page introuvable">
+  <section class="tete-page seyes">
+    <div class="conteneur">
+      <div class="dans-la-marge">
+        <h1>Page introuvable</h1>
+        <p class="chapeau">
+          Cette page n’existe pas ou a changé d’adresse. <a href={lien()}>Revenir au sommaire</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>

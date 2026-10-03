@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Entrecôte bleue du vendredi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Big+Shoulders+Display:wght@700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: une colonne étroite de « bons » de cuisine posés sur le passe en inox ; barre de progression collante en haut. */
+:root{
+  --bg:#e3e6e9; --paper:#fcfcfd; --ink:#14171a; --ink2:#363d44; --muted:#68717a; --line:#d0d5da;
+  --accent:#a3122a; --on-accent:#ffffff; --accent-soft:#f8e5e8;
+  --warn:#7a4f00; --warn-soft:#fbefd5;
+  --f-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --f-body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1012; --paper:#1a1d21; --ink:#eceef0; --ink2:#c9ced3; --muted:#959ea7; --line:#2d3237;
+    --accent:#ff6b7f; --on-accent:#22070c; --accent-soft:#36181e;
+    --warn:#f3c266; --warn-soft:#30270f;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1012; --paper:#1a1d21; --ink:#eceef0; --ink2:#c9ced3; --muted:#959ea7; --line:#2d3237;
+  --accent:#ff6b7f; --on-accent:#22070c; --accent-soft:#36181e;
+  --warn:#f3c266; --warn-soft:#30270f;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
+.wrap{max-width:640px;margin:0 auto;padding-inline:16px;padding-block:0 56px}
+
+/* Barre collante */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);padding-block:10px 10px;border-bottom:1px solid var(--line)}
+.bar-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.clock{font-family:var(--f-mono);font-weight:700;font-size:20px;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.count{font-family:var(--f-mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
+.track{height:6px;background:var(--line);border-radius:3px;margin-top:8px;overflow:hidden}
+.fill{height:100%;width:0;background:var(--accent);transition:width .3s ease}
+
+/* En-tête */
+header{display:grid;gap:14px;padding-block:24px 8px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(48px,14vw,76px);line-height:.9;margin:0;letter-spacing:.01em;text-transform:uppercase;text-wrap:balance}
+.menu{margin:0;color:var(--ink2);max-width:52ch}
+.temps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1.5px solid var(--ink);border-radius:8px;overflow:hidden;background:var(--paper)}
+.temps div{padding:10px 10px 12px;display:grid;gap:2px;min-width:0}
+.temps div + div{border-left:1.5px solid var(--ink)}
+.temps span{font-size:12px;line-height:1.25;color:var(--muted)}
+.temps b{font-family:var(--f-mono);font-size:clamp(18px,5.6vw,24px);font-variant-numeric:tabular-nums;white-space:nowrap}
+.temps div:last-child b{color:var(--accent)}
+.temps-note{font-size:13px;color:var(--muted);margin:-6px 0 0}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.btn{font:inherit;font-size:14px;font-weight:700;padding:9px 14px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.btn[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.btn.armed{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn:focus-visible,.timer:focus-visible,.cb:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* Bons */
+.phases{display:grid;gap:22px;margin-top:22px}
+.ticket{background:var(--paper);border-radius:4px;box-shadow:0 1px 0 var(--line),0 6px 18px -12px rgba(0,0,0,.35)}
+.ticket-head{padding:16px 18px 12px;border-bottom:2px dashed var(--line);display:grid;gap:2px}
+.cue{font-family:var(--f-mono);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+h2{font-family:var(--f-display);font-weight:800;font-size:32px;line-height:1;margin:0;text-transform:uppercase;letter-spacing:.01em}
+.ticket-head p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+ol.steps{list-style:none;margin:0;padding:6px 0}
+.step{display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:14px;padding:12px 18px;transition:background .2s}
+.step + .step{border-top:1px solid var(--line)}
+.cb{appearance:none;-webkit-appearance:none;width:30px;height:30px;margin:2px 0 0;border:2px solid var(--muted);border-radius:7px;display:grid;place-content:center;cursor:pointer;background:var(--paper)}
+.cb::before{content:"";width:13px;height:7px;border-left:3px solid var(--on-accent);border-bottom:3px solid var(--on-accent);transform:rotate(-45deg) translate(1px,-2px);opacity:0}
+.cb:checked{background:var(--accent);border-color:var(--accent)}
+.cb:checked::before{opacity:1}
+.step label{cursor:pointer;display:grid;gap:3px;min-width:0}
+.title{font-weight:700;font-size:17px;line-height:1.3}
+.num{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-right:8px;font-variant-numeric:tabular-nums}
+.detail{color:var(--ink2);font-size:15.5px;max-width:60ch}
+.tools{grid-column:2;display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.tools:empty{display:none}
+.tag-now{grid-column:2;justify-self:start;font-family:var(--f-mono);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--on-accent);background:var(--accent);padding:2px 8px;border-radius:3px;margin-bottom:6px}
+.step.next{background:var(--accent-soft)}
+.step.done .title{text-decoration:line-through;text-decoration-thickness:2px;color:var(--muted)}
+.step.done .detail{color:var(--muted)}
+.temp{font-family:var(--f-mono);font-size:13px;font-weight:700;padding:5px 10px;border:1.5px solid var(--ink2);border-radius:999px;color:var(--ink2);white-space:nowrap}
+.timer{font-family:var(--f-mono);font-size:14px;font-weight:700;padding:6px 14px;border-radius:999px;border:1.5px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;font-variant-numeric:tabular-nums;min-width:96px}
+.timer.running{background:var(--accent);color:var(--on-accent)}
+.timer.finished{background:var(--warn-soft);border-color:var(--warn);color:var(--warn)}
+@media (prefers-reduced-motion: no-preference){
+  .timer.finished{animation:pulse 1s ease-in-out infinite}
+  @keyframes pulse{50%{transform:scale(1.05)}}
+}
+.warn{grid-column:2;margin-top:10px;padding:10px 12px;background:var(--warn-soft);color:var(--ink);border-radius:6px;font-size:14.5px;display:grid;gap:4px}
+.warn strong{color:var(--warn);font-size:12px;font-family:var(--f-mono);letter-spacing:.08em;text-transform:uppercase}
+
+/* Vin */
+.wine{margin-top:28px;display:grid;gap:12px}
+.wine h2{font-size:28px}
+.wines{list-style:none;margin:0;padding:0;background:var(--paper);border-radius:4px;box-shadow:0 1px 0 var(--line)}
+.wines li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;padding:14px 18px;align-items:baseline}
+.wines li + li{border-top:1px solid var(--line)}
+.wines b{font-size:16px}
+.wines .role{font-family:var(--f-mono);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:3px;border:1.5px solid var(--ink2);color:var(--ink2);white-space:nowrap}
+.wines li:first-child .role{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.wines p{grid-column:1 / -1;margin:0;font-size:15px;color:var(--ink2)}
+.end{margin-top:28px;font-size:14px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<div class="bar" role="status" aria-live="polite">
+  <div class="wrap" style="padding-block:0">
+    <div class="bar-row">
+      <span class="clock" id="clock">--:--</span>
+      <span class="count" id="count">0 / 0 étapes</span>
+    </div>
+    <div class="track"><div class="fill" id="fill"></div></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Vendredi 2 octobre · le déroulé</span>
+    <h1>Entrecôte bleue</h1>
+    <p class="menu">Entrecôte de 1 000 g au beurre de thym, sauce au cognac, gratin dauphinois, salade poire, noix et persil. Côtes du Rhône Villages en carafe.</p>
+    <div class="temps" aria-label="Températures à cœur visées">
+      <div><span>Sortie du four</span><b>33–35 °C</b></div>
+      <div><span>Sortie de poêle</span><b>40 °C</b></div>
+      <div><span>Dans l'assiette</span><b>≈ 45 °C</b></div>
+    </div>
+    <p class="temps-note">Température à cœur, au thermomètre piqué par le côté, dans la partie la plus épaisse.</p>
+    <div class="actions">
+      <button class="btn" id="wake" type="button" aria-pressed="false">Garder l'écran allumé</button>
+      <button class="btn" id="reset" type="button">Tout décocher</button>
+    </div>
+  </header>
+
+  <div class="phases" id="phases"></div>
+
+  <section class="wine" aria-labelledby="wine-h">
+    <h2 id="wine-h">Le vin</h2>
+    <ul class="wines">
+      <li><b>Côtes du Rhône Villages Vieilles Vignes 2023</b><span class="role">À table</span>
+        <p>Grenache et syrah, 15 %. En carafe vers 19 h 15. S'il sort de la cave à 12 °C, laisse la carafe dans la pièce : il sera autour de 16 °C au moment de servir. Les notes de garrigue répondent au thym et à l'ail du beurre.</p></li>
+      <li><b>Saint Gilles Grande Réserve 2023</b><span class="role">Plan B</span>
+        <p>Plus léger (13 %) et souple, si tu préfères un vin moins puissant.</p></li>
+      <li><b>Sensas Cabernet-Syrah 2024</b><span class="role">Pour la sauce</span>
+        <p>100 g dans la sauce au cognac.</p></li>
+    </ul>
+  </section>
+
+  <p class="end">Les cases cochées restent enregistrées sur ce téléphone si tu recharges la page.</p>
+</div>
+
+<script>
+(function(){
+  var PHASES = [
+    {cue:"Maintenant", title:"Mise en place", note:"Jusqu'à 18 h 55, pendant que le gratin finit de cuire.", steps:[
+      {id:"sel", t:"Saler l'entrecôte", d:"10 g de gros sel pour les 1 000 g de viande, sur toutes les faces, gras compris. Pose-la sur une grille, à température ambiante, jusqu'à ce qu'elle parte au four. Pas de poivre."},
+      {id:"poire", t:"Acheter une poire", d:"Une poire d'environ 180 g, bien mûre et parfumée. Si tu trouves du roquefort, prends-en 50 g pour la salade."},
+      {id:"noix", t:"Griller les noix", d:"40 g de noix, à sec dans une poêle, feu moyen, 3 à 4 min en remuant, jusqu'à ce qu'elles sentent bon. Laisse refroidir, puis concasse grossièrement."},
+      {id:"arom", t:"Peser les aromates", d:"Échalote : 35 g, ciselée très finement. Ail : 15 g (3 gousses), écrasé dans sa peau. Thym : 3 g (4 à 5 brins). Beurre : 40 g pour arroser, 20 g bien froid pour la sauce."},
+      {id:"mesure", t:"Peser la sauce", d:"38 g de cognac et 100 g de Sensas, chacun pesé dans un verre, prêts à verser."},
+      {id:"poste", t:"Installer le poste de cuisson", d:"Poêle en fonte ou en acier, pince, papier absorbant, planche, couteau bien aiguisé, cuillère à soupe, petit bol, saucière, 10 g d'huile neutre, fleur de sel, moulin à poivre, thermomètre."}
+    ]},
+    {cue:"18 h 55", title:"Le gratin sort", note:"Le four doit passer de 150 °C à 50 °C avant d'accueillir la viande.", steps:[
+      {id:"gratin-out", t:"Sortir le gratin", d:"Couvre-le d'alu et laisse-le sur le plan de travail. Le repos l'aide à se tenir à la découpe."},
+      {id:"four-50", t:"Faire redescendre le four", d:"Porte grande ouverte 5 à 10 min. Règle ensuite sur 50 °C en chaleur tournante et ferme. Contrôle l'air : thermomètre tenu 30 s au centre de la grille. S'il dépasse 60 °C, coince une cuillère en bois dans la porte.", temp:"Four 50–55 °C"}
+    ]},
+    {cue:"1 h 15 avant le repas", title:"La viande au four", note:"C'est le thermomètre qui décide, pas la montre. Compte 45 min à 1 h 15. Si l'enfournement est dans plus d'une heure, remets la viande au frigo d'ici là, sur sa grille, sans la couvrir.", steps:[
+      {id:"enfourner", t:"Enfourner la viande et les assiettes", d:"L'entrecôte sur la grille, une plaque en dessous pour le jus. Les assiettes en bas du four."},
+      {id:"carafe", t:"Carafer le vin vers 19 h 15", d:"Côtes du Rhône Villages. S'il sort de la cave, laisse la carafe dans la pièce. S'il était déjà à 22 °C, mets la carafe 20 min au frigo avant de servir."},
+      {id:"salade-prep", t:"Préparer la salade sans l'assaisonner", d:"Feuilles très bien essorées. Les 180 g de poire en fines lamelles, avec quelques gouttes de citron pour qu'elle ne noircisse pas. 15 g de persil plat effeuillé. Tout au frigo, la vinaigrette dans son bocal."},
+      {id:"controle", t:"Contrôler la température à cœur", d:"À partir de 30 min de four, pique toutes les 10 à 15 min, par le côté, au cœur de la partie la plus épaisse. Referme vite la porte. Ne laisse jamais le thermomètre dans le four.", temp:"Objectif 33–35 °C",
+        warn:["Au-dessus de 38 °C : sors-la tout de suite.","Encore sous 30 °C après 1 h 15 : sors-la quand même, et saisis 30 s de plus par face."]}
+    ]},
+    {cue:"Viande à 35 °C", title:"Coup de feu", note:"Environ 15 minutes jusqu'au service. Tout doit être à portée de main.", steps:[
+      {id:"sortir", t:"Sortir la viande et les assiettes", d:"Assiettes empilées sous un torchon. Éponge la viande très soigneusement sur toutes les faces : une surface sèche donne une belle croûte."},
+      {id:"gratin-in", t:"Remettre le gratin au four", d:"Four à 200 °C en chaleur tournante, gratin couvert d'alu, découvert pour la fin. 15 min s'il a attendu moins d'1 h 30, sinon 20 à 25 min. Passe en grill les 3 dernières minutes pour le dorer.", timer:900},
+      {id:"poele", t:"Chauffer la poêle", d:"À fond, 3 à 4 min. Ajoute les 10 g d'huile neutre : elle doit fumer légèrement. Hotte à fond."},
+      {id:"face1", t:"Saisir la première face", d:"Pose la viande et ne la touche plus.", timer:120},
+      {id:"face2", t:"Saisir la deuxième face", d:"Retourne-la à la pince, jamais à la fourchette.", timer:120},
+      {id:"gras", t:"Saisir le gras", d:"Tiens-la debout avec la pince, le bord gras contre la poêle.", timer:60},
+      {id:"arroser", t:"Arroser au beurre", d:"Feu moyen. Jette l'huile, ajoute les 40 g de beurre, les 15 g d'ail et les 3 g de thym. Incline la poêle et arrose sans arrêt. Pique : retire-la à 40 °C. En dessous, continue par tranches de 30 s.", timer:60, temp:"Sortie 40 °C"},
+      {id:"repos", t:"Mettre la viande au repos", d:"Sur la planche, une feuille d'alu simplement posée dessus, sans l'emballer. Verse le beurre aromatique dans le petit bol avec l'ail et le thym. Garde la poêle.", timer:420}
+    ]},
+    {cue:"Pendant le repos", title:"Sauce, salade, gratin", note:"6 à 8 minutes, le temps du minuteur de repos.", steps:[
+      {id:"sauce", t:"Faire la sauce au cognac", d:"Même poêle, feu moyen : les 35 g d'échalote 1 min dans 10 g de beurre aromatique. Hors du feu, verse les 38 g de cognac (il peut s'enflammer, recule-toi) et gratte les sucs. Ajoute les 100 g de Sensas et réduis de moitié, 2 à 3 min. Hors du feu, ajoute le jus rendu par la viande et fouette les 20 g de beurre froid. Goûte, sale, verse en saucière."},
+      {id:"salade", t:"Assaisonner la salade", d:"1 g de sel sur les feuilles, puis la vinaigrette bien secouée, environ 15 g par personne. Mélange à la main. La poire, les 40 g de noix et le persil par-dessus."},
+      {id:"gratin-fin", t:"Sortir le gratin", d:"Coupe le four."}
+    ]},
+    {cue:"Service", title:"À table", note:"Une viande bleue refroidit vite : on ne traîne pas.", steps:[
+      {id:"trancher", t:"Trancher l'entrecôte", d:"À contresens des fibres, en tranches d'1 cm. Le jus de découpe va dans la sauce."},
+      {id:"napper", t:"Assaisonner et napper", d:"Environ 2 g de fleur de sel et du poivre du moulin sur les tranches, puis le beurre aromatique à la cuillère. La sauce au cognac à côté. Environ 0,5 g de fleur de sel sur chaque part de gratin."},
+      {id:"servir", t:"Servir le vin", d:"Dans des verres assez grands. Bon appétit."}
+    ]}
+  ];
+
+  var KEY = "entrecote-bleue-2026-10-02";
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch(e) { state = {}; }
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {} }
+
+  var root = document.getElementById("phases");
+  var all = [];
+  var n = 0;
+
+  function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function fmt(s){ var m = Math.floor(s/60), r = s%60; return m + ":" + (r<10?"0":"") + r; }
+
+  PHASES.forEach(function(p){
+    var sec = el("section","ticket");
+    var head = el("div","ticket-head");
+    head.appendChild(el("span","cue",p.cue));
+    head.appendChild(el("h2",null,p.title));
+    if (p.note) head.appendChild(el("p",null,p.note));
+    sec.appendChild(head);
+    var ol = el("ol","steps");
+    p.steps.forEach(function(s){
+      n++;
+      var li = el("li","step"); li.id = "step-" + s.id;
+      var tag = el("span","tag-now","À faire maintenant"); tag.hidden = true;
+      var cb = el("input","cb"); cb.type = "checkbox"; cb.id = "c-" + s.id; cb.checked = !!state[s.id];
+      var lab = el("label"); lab.htmlFor = cb.id;
+      var title = el("span","title");
+      title.appendChild(el("span","num", (n<10?"0":"") + n));
+      title.appendChild(document.createTextNode(s.t));
+      lab.appendChild(title);
+      lab.appendChild(el("span","detail",s.d));
+      var tools = el("div","tools");
+      if (s.temp) tools.appendChild(el("span","temp",s.temp));
+      if (s.timer) tools.appendChild(makeTimer(s.timer));
+      li.appendChild(tag);
+      li.appendChild(cb);
+      li.appendChild(lab);
+      li.appendChild(tools);
+      if (s.warn){
+        var w = el("div","warn");
+        w.appendChild(el("strong",null,"Garde-fous"));
+        s.warn.forEach(function(x){ w.appendChild(el("span",null,x)); });
+        li.appendChild(w);
+      }
+      cb.addEventListener("change", function(){ state[s.id] = cb.checked; save(); refresh(); });
+      ol.appendChild(li);
+      all.push({id:s.id, li:li, cb:cb, tag:tag});
+    });
+    sec.appendChild(ol);
+    root.appendChild(sec);
+  });
+
+  function refresh(){
+    var done = 0, nextFound = false;
+    all.forEach(function(x){
+      var c = x.cb.checked;
+      if (c) done++;
+      x.li.classList.toggle("done", c);
+      var isNext = !c && !nextFound;
+      if (isNext) nextFound = true;
+      x.li.classList.toggle("next", isNext);
+      x.tag.hidden = !isNext;
+    });
+    document.getElementById("count").textContent = done === all.length ? "Tout est fait. Bon appétit !" : done + " / " + all.length + " étapes";
+    document.getElementById("fill").style.width = (all.length ? (done/all.length*100) : 0) + "%";
+  }
+
+  /* Minuteurs */
+  var ctx = null;
+  function audio(){ try { if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)(); if (ctx.state === "suspended") ctx.resume(); } catch(e) {} }
+  function beep(){
+    if (!ctx) return;
+    try {
+      for (var i=0;i<3;i++){
+        var o = ctx.createOscillator(), g = ctx.createGain(), t = ctx.currentTime + i*0.35;
+        o.type = "square"; o.frequency.value = 880;
+        g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.25, t+0.02); g.gain.exponentialRampToValueAtTime(0.0001, t+0.25);
+        o.connect(g); g.connect(ctx.destination); o.start(t); o.stop(t+0.26);
+      }
+    } catch(e) {}
+    try { if (navigator.vibrate) navigator.vibrate([300,150,300,150,300]); } catch(e) {}
+  }
+  function makeTimer(secs){
+    var b = el("button","timer"); b.type = "button";
+    var end = 0, iv = null;
+    function idle(){ clearInterval(iv); iv = null; b.className = "timer"; b.textContent = "▶ " + fmt(secs); b.setAttribute("aria-label","Lancer un minuteur de " + fmt(secs)); }
+    function tick(){
+      var left = Math.max(0, Math.round((end - Date.now())/1000));
+      if (left <= 0){ clearInterval(iv); iv = null; b.className = "timer finished"; b.textContent = "Terminé"; b.setAttribute("aria-label","Minuteur terminé, toucher pour réinitialiser"); beep(); return; }
+      b.textContent = fmt(left) + " ■";
+    }
+    b.addEventListener("click", function(){
+      audio();
+      if (b.classList.contains("running") || b.classList.contains("finished")) { idle(); return; }
+      end = Date.now() + secs*1000; b.className = "timer running"; b.setAttribute("aria-label","Arrêter le minuteur");
+      tick(); iv = setInterval(tick, 250);
+    });
+    idle();
+    return b;
+  }
+
+  /* Horloge */
+  function clock(){ var d = new Date(); document.getElementById("clock").textContent = (d.getHours()<10?"0":"") + d.getHours() + ":" + (d.getMinutes()<10?"0":"") + d.getMinutes(); }
+  clock(); setInterval(clock, 10000);
+
+  /* Écran allumé */
+  var wakeBtn = document.getElementById("wake"), lock = null, want = false;
+  function showWake(txt, on){ wakeBtn.textContent = txt; wakeBtn.setAttribute("aria-pressed", on ? "true" : "false"); }
+  async function requestWake(){
+    try {
+      if (!("wakeLock" in navigator)) throw new Error("x");
+      lock = await navigator.wakeLock.request("screen");
+      lock.addEventListener("release", function(){ lock = null; if (!want) showWake("Garder l'écran allumé", false); });
+      showWake("Écran maintenu allumé", true);
+    } catch(e) { lock = null; want = false; showWake("Écran : réglage indisponible ici", false); }
+  }
+  wakeBtn.addEventListener("click", function(){
+    if (want){ want = false; try { if (lock) lock.release(); } catch(e) {} lock = null; showWake("Garder l'écran allumé", false); }
+    else { want = true; requestWake(); }
+  });
+  document.addEventListener("visibilitychange", function(){ if (want && !lock && document.visibilityState === "visible") requestWake(); });
+
+  /* Remise à zéro avec confirmation dans la page */
+  var resetBtn = document.getElementById("reset"), armed = null;
+  resetBtn.addEventListener("click", function(){
+    if (armed){
+      clearTimeout(armed); armed = null; resetBtn.classList.remove("armed"); resetBtn.textContent = "Tout décocher";
+      state = {}; save(); all.forEach(function(x){ x.cb.checked = false; }); refresh();
+      window.scrollTo({top:0, behavior:"smooth"});
+      return;
+    }
+    resetBtn.classList.add("armed"); resetBtn.textContent = "Touche encore pour confirmer";
+    armed = setTimeout(function(){ armed = null; resetBtn.classList.remove("armed"); resetBtn.textContent = "Tout décocher"; }, 4000);
+  });
+
+  refresh();
+})();
+</script>
+</body>
+</html>

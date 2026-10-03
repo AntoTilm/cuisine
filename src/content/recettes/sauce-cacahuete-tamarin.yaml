@@ -1,0 +1,41 @@
+titre: Sauce cacahuète-tamarin
+cuisine: asiatique
+origine: Vietnam
+type: sauce
+resume: La sauce onctueuse des rouleaux de printemps, entre l'acidité du tamarin et le gras de la cacahuète.
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Pâte de cacahuètes, qte: 32, unite: g, note: non sucrée }
+      - { nom: Concentré de tamarin, qte: 1, unite: cc, mode: simple, note: en pot }
+      - { nom: Tamarin acide séché, qte: 15, unite: g, mode: chef, note: sans noyaux de préférence }
+      - { nom: Sucre blanc ou roux, qte: 12, unite: g }
+      - { nom: Sel, qte: 1.5, unite: g }
+      - { nom: Piment en poudre ou frais, qte: 0.5, unite: g, optionnel: true }
+      - { nom: Eau, qte: 50, unite: ml, note: à ajuster selon la texture }
+      - { nom: Cacahuètes grillées, qte: 10, unite: g, mode: chef, optionnel: true }
+
+simple:
+  temps: { preparation: 5 }
+  etapes:
+    - "Mélanger au fouet la pâte de cacahuètes, le concentré de tamarin, le sucre, le sel et le piment."
+    - "Ajouter l'eau petit à petit jusqu'à obtenir une sauce onctueuse."
+    - "Goûter et ajuster : plus de tamarin pour l'acidité, ou de sucre, de sel, de piment selon le plat."
+
+chef:
+  temps: { preparation: 15, attente: 10 }
+  etapes:
+    - titre: Réhydrater le tamarin
+      texte: "Couvrir le tamarin sec d'eau bouillante et laisser tremper 10 min. L'écraser avec les doigts ou une cuillère pour en extraire la pulpe, puis filtrer pour retirer les fibres."
+      minuteur: 600
+    - titre: Mixer
+      texte: "Au blender ou à la main, mélanger la pâte de cacahuètes, la pulpe de tamarin, le sucre, le sel et le piment."
+    - texte: "Ajouter l'eau petit à petit pour obtenir une sauce onctueuse et émulsionnée."
+    - titre: Goûter et ajuster
+      texte: "Renforcer l'acidité avec le tamarin, le sucré avec le sucre, le salé avec le sel ou le piquant avec le piment, selon le plat auquel la sauce est destinée. Parsemer de cacahuètes grillées concassées."
+  astuces:
+    - "Acheter le tamarin acide séché en magasin asiatique, de préférence sans noyaux."
+
+servirAvec: [rouleaux-de-printemps]

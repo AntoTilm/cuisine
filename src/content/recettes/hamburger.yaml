@@ -1,0 +1,61 @@
+titre: Hamburger maison
+cuisine: americaine
+type: plat
+saison: ete
+resume: Steak au cheddar, lardo fondant et une sauce burger maison à la mayonnaise, aux cornichons et à la sriracha.
+portions:
+  base: 8
+  defaut: 4
+
+ingredients:
+  - groupe: Les burgers
+    items:
+      - { nom: Pain burger, qte: 8 }
+      - { nom: Bœuf haché, qte: 1.2, unite: kg, note: 15 à 20 % de matière grasse }
+      - { nom: Cheddar, qte: 16, unite: tranche }
+      - { nom: Lardo, qte: 16, unite: tranche, note: très fines }
+      - { nom: Tomate, qte: 2 }
+      - { nom: Oignon jaune, qte: 2 }
+      - { nom: Laitue, qte: 1 }
+      - { nom: Cornichon, qte: 8 }
+      - { nom: Beurre, qte: 40, unite: g, mode: chef, note: pour les pains et les oignons }
+  - groupe: La sauce burger
+    items:
+      - { nom: Mayonnaise, qte: 190, unite: ml }
+      - { nom: Ketchup, qte: 4, unite: cs }
+      - { nom: Moutarde jaune, qte: 2, unite: cs }
+      - { nom: Sauce sriracha, qte: 1, unite: cs }
+      - { nom: Sauce Worcestershire, qte: 0.5, unite: cc }
+      - { nom: Cornichons aigres-doux, qte: 85, unite: ml, note: hachés finement }
+      - { nom: Poudre d'ail, qte: 1, unite: cc }
+      - { nom: Poudre d'oignon, qte: 1, unite: cc }
+      - { nom: Paprika, qte: 0.5, unite: cc }
+      - { nom: Sel }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 20, cuisson: 10 }
+  etapes:
+    - titre: La sauce
+      texte: "Mélanger tous les ingrédients de la sauce et la réserver au frais."
+    - "Couper les tomates et l'oignon en rondelles, laver la salade, trancher les cornichons."
+    - "Façonner des steaks de 150 g, un peu plus larges que les pains. Les cuire 2 à 3 min par face dans une poêle très chaude, saler, poser le cheddar dessus et couvrir 1 min pour le faire fondre."
+    - "Toaster les pains, face coupée contre la poêle."
+    - "Monter : pain, sauce, salade, steak au cheddar, lardo, tomate, oignon, cornichons, un peu de sauce, pain."
+
+chef:
+  temps: { preparation: 20, cuisson: 30, attente: 60 }
+  etapes:
+    - titre: La sauce
+      texte: "Mélanger les ingrédients de la sauce et la laisser reposer 1 h au frais : les poudres d'ail et d'oignon ont besoin de temps pour se réhydrater."
+    - titre: Les oignons
+      texte: "Émincer les oignons et les faire compoter 20 min à feu doux avec une noisette de beurre et une pincée de sel, jusqu'à ce qu'ils soient blonds et fondants."
+      minuteur: 1200
+    - titre: Les steaks
+      texte: "Former des boules de 150 g sans trop tasser la viande. Ne saler qu'au moment de cuire : salée trop tôt, la viande se resserre."
+    - texte: "Chauffer une poêle en fonte jusqu'à ce qu'elle fume. Poser les boules et les écraser fermement à la spatule 10 secondes pour former un steak fin (méthode « smash »). Saler, poivrer et cuire 2 min sans toucher, jusqu'à une croûte bien brune."
+      minuteur: 120
+    - texte: "Retourner, poser le cheddar et le lardo, couvrir 1 min : le lardo devient translucide et fondant."
+      minuteur: 60
+    - titre: Le montage
+      texte: "Toaster les pains au beurre, face coupée contre la poêle. Monter : pain, sauce, salade, steak, oignons compotés, tomate, cornichons, sauce, pain."

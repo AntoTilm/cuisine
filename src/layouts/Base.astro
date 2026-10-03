@@ -1,0 +1,72 @@
+---
+import '@fontsource/besley/latin-500.css';
+import '@fontsource/besley/latin-500-italic.css';
+import '@fontsource/besley/latin-700.css';
+import '@fontsource/besley/latin-800.css';
+import '@fontsource/atkinson-hyperlegible/latin-400.css';
+import '@fontsource/atkinson-hyperlegible/latin-400-italic.css';
+import '@fontsource/atkinson-hyperlegible/latin-700.css';
+import '../styles/global.css';
+import { lien } from '../lib/recettes.js';
+
+interface Props {
+  titre: string;
+  description?: string;
+  page?: 'recettes' | 'idees' | 'liste';
+}
+const { titre, description = 'Mes recettes, rangées par cuisine, en version simple ou grande cuisine.', page } = Astro.props;
+const titreComplet = titre === 'Carnet de cuisine' ? titre : `${titre} · Carnet de cuisine`;
+---
+
+<!doctype html>
+<html lang="fr-BE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{titreComplet}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141926" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href={lien('favicon.svg')} type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="evitement" href="#contenu">Aller au contenu</a>
+    <header class="site-tete">
+      <div class="conteneur">
+        <a class="marque" href={lien()}>Carnet de cuisine<span>.</span></a>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href={lien()} aria-current={page === 'recettes' ? 'page' : undefined}>Recettes</a>
+          <a href={lien('idees/')} aria-current={page === 'idees' ? 'page' : undefined}>Idées à tester</a>
+          <a href={lien('liste-de-courses/')} aria-current={page === 'liste' ? 'page' : undefined}>
+            Liste de courses<span class="compteur-liste" data-compteur-liste hidden></span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <slot />
+    </main>
+
+    <footer class="site-pied">
+      <div class="conteneur">
+        <p>Recettes tirées de mon fichier Excel, mises au propre.</p>
+        <p><a href={lien('idees/')}>Les recettes encore à écrire</a></p>
+      </div>
+    </footer>
+
+    <script>
+      import { nombreDansLaListe } from '../scripts/stockage.js';
+      const badge = document.querySelector('[data-compteur-liste]');
+      const maj = () => {
+        const n = nombreDansLaListe();
+        badge.textContent = String(n);
+        badge.hidden = n === 0;
+        badge.setAttribute('aria-label', `${n} élément${n > 1 ? 's' : ''}`);
+      };
+      window.addEventListener('carnet:liste', maj);
+      window.addEventListener('storage', maj);
+      maj();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+titre: Ramen au poulet et porc laqué
+cuisine: asiatique
+origine: Japon
+type: plat
+saison: hiver
+resume: Bouillon de poule au lait de soja, nouilles fraîches, porc laqué et œuf mollet mariné à la sauce soja.
+portions:
+  base: 2
+
+ingredients:
+  - groupe: Les œufs mollets marinés
+    items:
+      - { nom: Œuf, qte: 2 }
+      - { nom: Sauce soja, qte: 2, unite: cs }
+      - { nom: Mirin, qte: 2, unite: cs }
+      - { nom: Dashi en poudre, qte: 0.5, unite: cc }
+      - { nom: Eau, qte: 100, unite: ml }
+  - groupe: Le bouillon de poulet maison
+    mode: chef
+    items:
+      - { nom: Poule, qte: 600, unite: g }
+      - { nom: Oignon, qte: 1 }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Poireau, qte: 1 }
+      - { nom: Carotte, qte: 2 }
+      - { nom: Persil, qte: 1, unite: botte }
+      - { nom: Thym, qte: 1, unite: brin }
+      - { nom: Laurier, qte: 1, unite: feuille }
+      - { nom: Eau, qte: 2, unite: l }
+  - groupe: Le bouillon final
+    items:
+      - { nom: Bouillon de volaille, qte: 900, unite: ml, mode: simple, note: en brique }
+      - { nom: Bouillon de poulet maison, qte: 900, unite: ml, mode: chef, maison: true }
+      - { nom: Lait de soja, qte: 300, unite: ml }
+      - { nom: Sauce soja, qte: 2, unite: cs }
+      - { nom: Gingembre frais, qte: 2, unite: cm }
+  - groupe: Le porc
+    items:
+      - { nom: Échine ou poitrine de porc, qte: 250, unite: g }
+      - { nom: Saké, qte: 2, unite: cs }
+      - { nom: Miel, qte: 1, unite: cs }
+      - { nom: Sauce soja, qte: 2, unite: cs }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Sauce d'huître, qte: 1, unite: cc }
+      - { nom: Huile neutre, qte: 1, unite: cs }
+  - groupe: Les nouilles et le bol
+    items:
+      - { nom: Nouilles de blé fraîches, qte: 200, unite: g }
+      - { nom: Pousses de soja ou de bambou, qte: 200, unite: g }
+      - { nom: Cébette, qte: 2, note: le vert }
+      - { nom: Feuille de nori, qte: 2, mode: chef, optionnel: true }
+
+simple:
+  temps: { preparation: 30, cuisson: 20, attente: 240 }
+  etapes:
+    - titre: Les œufs, le matin
+      texte: "Porter à ébullition la sauce soja, le mirin, le dashi et l'eau, puis laisser refroidir. Cuire les œufs 6 min 30 dans l'eau bouillante, les plonger dans l'eau glacée, les écaler et les laisser mariner au moins 4 h au frigo dans un sac avec la sauce."
+      minuteur: 390
+    - titre: Le bouillon
+      texte: "Verser dans une casserole le bouillon, le lait de soja, la sauce soja et le gingembre haché. Remonter doucement jusqu'à ébullition, puis garder au chaud."
+    - titre: Le porc
+      texte: "Mélanger le saké, le miel, la sauce soja, l'ail haché et la sauce d'huître. Trancher finement le porc, le saisir 2 min à la poêle dans l'huile, verser la sauce et laquer 2 à 3 min jusqu'à ce que la viande soit cuite."
+    - titre: Les nouilles
+      texte: "Cuire les nouilles 1 à 2 min (voir l'emballage) et les égoutter."
+      minuteur: 90
+    - titre: Le bol
+      texte: "Répartir les nouilles dans des bols chauds, verser le bouillon, ajouter le porc, les pousses, l'œuf coupé en deux et le vert de cébette ciselé."
+
+chef:
+  temps: { preparation: 60, cuisson: 180, attente: 2880 }
+  etapes:
+    - titre: Les œufs, deux jours avant
+      texte: "Faire cuire tous les ingrédients de la sauce dans une casserole et laisser refroidir. Cuire les œufs 6 min et les plonger aussitôt dans un grand volume d'eau fraîche. Les écaler et les mettre au frigo 2 jours dans un sac de congélation avec la sauce."
+      minuteur: 360
+    - titre: Le bouillon, la veille
+      texte: "Dans une casserole avec un peu d'huile, faire revenir la poule 5 à 10 min. Couvrir d'eau (environ 2 l), ajouter l'oignon, l'ail, le poireau, les carottes, le persil, le thym et le laurier. Laisser cuire 30 à 45 min, puis retirer l'oignon et le poireau."
+      minuteur: 2700
+    - texte: "Laisser cuire 2 h à feu moyen pour faire réduire le bouillon."
+      minuteur: 7200
+    - texte: "Égoutter pour ne garder que le bouillon et le mettre 24 h au frigo. Le lendemain, retirer la pellicule de gras jaune figée sur le dessus."
+    - titre: Le bouillon final
+      texte: "Réunir le bouillon de poulet, le lait de soja, la sauce soja et le gingembre haché dans une casserole et remonter doucement en température jusqu'à ébullition."
+    - titre: Le porc
+      texte: "Porter à peine à ébullition le saké, le miel, la sauce soja, l'ail haché et la sauce d'huître. Griller toutes les faces de la pièce de porc dans une poêle avec l'huile. La découper en tranches assez fines, chauffer la sauce dans la poêle et y cuire les tranches jusqu'à ce qu'elles soient cuites et laquées."
+    - titre: Les nouilles
+      texte: "Cuire les nouilles 1 à 2 min selon l'emballage. Bien les égoutter : l'eau de cuisson diluerait le bouillon."
+      minuteur: 90
+    - titre: Le bol
+      texte: "Chauffer les bols à l'eau bouillante. Y déposer les nouilles démêlées, verser le bouillon brûlant, puis disposer le porc, les pousses, l'œuf coupé en deux, la feuille de nori et le vert de cébette."
+  astuces:
+    - "Le gras retiré du bouillon refroidi parfume le bol : une demi-cuillère sur le bouillon chaud apporte de la rondeur."
+    - "Le lait de soja donne au bouillon une texture onctueuse proche d'un tonkotsu, sans les 12 h de cuisson d'os de porc."
+
+sources:
+  - titre: "Recette japonaise : le ramen (YouTube)"
+    url: https://www.youtube.com/watch?v=QvAq2i7mrnU
+voirAussi: [porc-laque]

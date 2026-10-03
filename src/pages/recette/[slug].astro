@@ -1,0 +1,354 @@
+---
+import Base from '../../layouts/Base.astro';
+import {
+  toutesLesRecettes,
+  lien,
+  portionsDefaut,
+  etapeEnHtml,
+  noteEnHtml,
+  donneesClient,
+} from '../../lib/recettes.js';
+import { formater, formaterDuree } from '../../lib/quantites.js';
+import { TYPES, SAISONS, cuisine } from '../../data/cuisines.js';
+import { CUISSONS, textesCalcul } from '../../lib/entrecote.js';
+import { libelleDuree } from '../../scripts/minuteur.js';
+
+export async function getStaticPaths() {
+  const recettes = await toutesLesRecettes();
+  const parSlug = new Map(recettes.map((r) => [r.id, r]));
+  return recettes.map((r) => {
+    const lies = (slugs: string[] = []) =>
+      slugs.map((s) => {
+        const x = parSlug.get(s);
+        if (!x) throw new Error(`${r.id} : recette liée introuvable « ${s} »`);
+        return x;
+      });
+    return {
+      params: { slug: r.id },
+      props: { entree: r, servirAvec: lies(r.data.servirAvec), voirAussi: lies(r.data.voirAussi) },
+    };
+  });
+}
+
+const { entree, servirAvec, voirAussi } = Astro.props;
+const r = entree.data;
+const slug = entree.id;
+const c = cuisine(r.cuisine);
+const defaut = portionsDefaut(r);
+const facteur = defaut / r.portions.base;
+const MODES = [
+  { id: 'simple', nom: 'Simple', explication: 'Les étapes essentielles, avec quelques raccourcis.' },
+  { id: 'chef', nom: 'Grande cuisine', explication: 'La technique complète : gestes, températures et finitions du chef.' },
+] as const;
+
+// Un groupe ou un ingrédient propre à une version porte data-version, masqué dans l'autre version.
+const etiquettes = [TYPES[r.type as keyof typeof TYPES], r.origine, r.saison ? SAISONS[r.saison as keyof typeof SAISONS] : null].filter(Boolean);
+const donnees = JSON.stringify(donneesClient(entree)).replace(/</g, '\\u003c');
+const notes = r.notes ?? [];
+const calcul = textesCalcul(3, 'saignant');
+---
+
+<Base titre={r.titre} description={r.resume} page="recettes">
+  <article class="recette" data-mode="simple">
+    <header class="recette-tete seyes">
+      <div class="conteneur">
+        <div class="dans-la-marge">
+          <nav class="fil" aria-label="Fil d'Ariane">
+            <a href={lien(`cuisine/${r.cuisine}/`)}>{c?.titre}</a>
+          </nav>
+          <h1>{r.titre}</h1>
+          <p class="resume">{r.resume}</p>
+          <ul class="etiquettes" aria-label="Catégories">
+            {etiquettes.map((e) => <li>{e}</li>)}
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="reglages">
+      <div class="conteneur">
+        <div class="bascule" role="radiogroup" aria-label="Version de la recette">
+          {
+            MODES.map((m) => (
+              <button type="button" role="radio" data-choix-mode={m.id} aria-checked={m.id === 'simple' ? 'true' : 'false'}>
+                {m.nom}
+              </button>
+            ))
+          }
+        </div>
+
+        <div class="portions">
+          <label for="portions">Pour</label>
+          <div class="compteur">
+            <button class="rond" type="button" data-portions="moins" aria-label={`Moins de ${r.portions.pluriel}`}>−</button>
+            <input id="portions" type="number" inputmode="numeric" min={r.portions.min ?? r.portions.pas} step={r.portions.pas} value={defaut} />
+            <button class="rond" type="button" data-portions="plus" aria-label={`Plus de ${r.portions.pluriel}`}>+</button>
+          </div>
+          <span data-unite-portions>{defaut >= 2 ? r.portions.pluriel : r.portions.unite}</span>
+        </div>
+
+        {
+          MODES.map((m) => {
+            const t = r[m.id].temps;
+            return (
+              <dl class="temps" data-version={m.id}>
+                {t.preparation > 0 && (
+                  <div>
+                    <dt>Préparation</dt>
+                    <dd>{formaterDuree(t.preparation)}</dd>
+                  </div>
+                )}
+                {t.cuisson > 0 && (
+                  <div>
+                    <dt>Cuisson</dt>
+                    <dd>{formaterDuree(t.cuisson)}</dd>
+                  </div>
+                )}
+                {t.attente > 0 && (
+                  <div>
+                    <dt>Attente</dt>
+                    <dd>{formaterDuree(t.attente)}</dd>
+                  </div>
+                )}
+              </dl>
+            );
+          })
+        }
+
+        <button class="ecran" id="ecran" type="button" aria-pressed="false">Garder l’écran allumé</button>
+      </div>
+    </div>
+
+    <div class="conteneur">
+      {MODES.map((m) => <p class="explication-mode" data-version={m.id} style="margin-top: 14px">{m.explication}</p>)}
+    </div>
+
+    <div class="recette-corps conteneur">
+      <aside class="panneau" aria-label="Ingrédients et liste de courses">
+        <div class="onglets" role="tablist">
+          <button type="button" role="tab" id="onglet-ingredients" aria-controls="volet-ingredients" aria-selected="true">
+            Ingrédients
+          </button>
+          <button type="button" role="tab" id="onglet-courses" aria-controls="volet-courses" aria-selected="false" tabindex="-1">
+            Liste de courses
+          </button>
+        </div>
+
+        <div id="volet-ingredients" role="tabpanel" aria-labelledby="onglet-ingredients">
+          {
+            r.ingredients.map((g: any) => (
+              <section class="groupe-ingredients" data-version={g.mode}>
+                {g.groupe && <h3>{g.groupe}</h3>}
+                <ul class="ingredients">
+                  {g.items.map((it: any) => (
+                    <li data-version={it.mode}>
+                      <span>
+                        {it.nom}
+                        {it.optionnel && <span class="facultatif"> (facultatif)</span>}
+                        {it.mode === 'chef' && !g.mode && <span class="marque-chef">chef</span>}
+                      </span>
+                      {it.qte != null ? (
+                        <span class="qte" data-q={it.qte} data-u={it.unite ?? 'piece'}>
+                          {formater(it.qte * facteur, it.unite ?? 'piece')}
+                        </span>
+                      ) : (
+                        <span />
+                      )}
+                      {it.note && <span class="note">{it.note}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ))
+          }
+        </div>
+
+        <div id="volet-courses" role="tabpanel" aria-labelledby="onglet-courses" hidden>
+          <div id="courses" aria-live="polite"></div>
+        </div>
+
+        <div class="actions-panneau">
+          <button class="bouton" id="ajouter-liste" type="button">Ajouter à ma liste de courses</button>
+          <p class="etat-liste" id="etat-liste" hidden>
+            <a href={lien('liste-de-courses/')}>Voir ma liste de courses</a>
+          </p>
+          <button class="lien-discret" id="copier-courses" type="button">Copier la liste</button>
+        </div>
+      </aside>
+
+      <section class="deroulement" aria-labelledby="titre-etapes">
+        {
+          r.outil === 'cuisson-entrecote' && (
+            <section class="calculateur" aria-labelledby="titre-calcul">
+              <h2 id="titre-calcul">Temps de cuisson</h2>
+              <div class="champs">
+                <div>
+                  <label class="etiquette" for="epaisseur">Épaisseur de la viande</label>
+                  <div class="reglette">
+                    <input id="epaisseur" type="range" min="1" max="6" step="0.5" value="3" />
+                    <output id="epaisseur-valeur" for="epaisseur">3 cm</output>
+                  </div>
+                </div>
+                <fieldset>
+                  <legend>Cuisson</legend>
+                  <div class="choix-cuisson">
+                    {Object.entries(CUISSONS).map(([id, cu]) => (
+                      <>
+                        <input type="radio" name="cuisson" id={`cuisson-${id}`} value={id} checked={id === 'saignant'} />
+                        <label for={`cuisson-${id}`}>{cu.nom}</label>
+                      </>
+                    ))}
+                  </div>
+                </fieldset>
+              </div>
+              <dl class="resultats">
+                <div><dt>Par face</dt><dd data-calc="face">{calcul.face}</dd></div>
+                <div><dt>Arrosage au beurre</dt><dd data-calc="arrosage">{calcul.arrosage}</dd></div>
+                <div><dt>Repos</dt><dd data-calc="repos">{calcul.repos}</dd></div>
+                <div><dt>En tout</dt><dd data-calc="total">{calcul.total}</dd></div>
+                <div><dt>À cœur</dt><dd data-calc="coeur">{calcul.coeur}</dd></div>
+              </dl>
+            </section>
+          )
+        }
+
+        <h2 id="titre-etapes">Étapes</h2>
+        {
+          MODES.map((m) => (
+            <ol class="etapes" data-version={m.id}>
+              {r[m.id].etapes.map((e: any, i: number) => {
+                const etape = typeof e === 'string' ? { texte: e } : e;
+                return (
+                  <li class="etape">
+                    <button class="numero" type="button" aria-pressed="false" aria-label={`Étape ${i + 1} : marquer comme faite`}>
+                      {i + 1}
+                    </button>
+                    <p class="etape-texte">
+                      {etape.titre && <span class="etape-titre">{etape.titre}</span>}
+                      <Fragment set:html={etapeEnHtml(etape.texte, r, slug)} />
+                    </p>
+                    {etape.minuteur && (
+                      <div class="outils-etape">
+                        <button class="minuteur" type="button" data-s={etape.minuteur}>
+                          ▶ {libelleDuree(etape.minuteur)}
+                        </button>
+                      </div>
+                    )}
+                    {etape.alerte && (
+                      <div class="alerte">
+                        <strong>Garde-fous</strong>
+                        <ul>{etape.alerte.map((a: string) => <li>{a}</li>)}</ul>
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
+            </ol>
+          ))
+        }
+
+        {
+          r.simple.astuces && (
+            <aside class="annotations" data-version="simple" aria-label="Astuces">
+              <h2>Astuces</h2>
+              <ul>{r.simple.astuces.map((a: string) => <li>{a}</li>)}</ul>
+            </aside>
+          )
+        }
+        {
+          r.chef.astuces && (
+            <aside class="annotations chef" data-version="chef" aria-label="Le mot du chef">
+              <h2>Le mot du chef</h2>
+              <ul>{r.chef.astuces.map((a: string) => <li>{a}</li>)}</ul>
+            </aside>
+          )
+        }
+
+        {
+          r.deroule && (
+            <div class="deroule">
+              <p>
+                <strong>{r.deroule.titre}</strong>
+                La page minute par minute, avec cases à cocher et minuteurs, préparée pour le service.
+              </p>
+              <a class="bouton secondaire" href={lien(r.deroule.url)}>Ouvrir le déroulé</a>
+            </div>
+          )
+        }
+
+        {
+          notes.length > 0 && (
+            <section class="bloc" aria-labelledby="titre-notes">
+              <h2 id="titre-notes">Notes du carnet</h2>
+              <div class="notes">
+                {notes.map((n: any) => (
+                  <div class="note-carnet" data-version={n.mode}>
+                    <h3>{n.titre}</h3>
+                    <Fragment set:html={noteEnHtml(n.texte)} />
+                  </div>
+                ))}
+              </div>
+            </section>
+          )
+        }
+
+        {
+          servirAvec.length > 0 && (
+            <section class="bloc" aria-labelledby="titre-servir">
+              <h2 id="titre-servir">À servir avec</h2>
+              <ul class="liens-recettes">
+                {servirAvec.map((x: any) => (
+                  <li>
+                    <a href={lien(`recette/${x.id}/`)}>
+                      <span class="titre">{x.data.titre}</span>
+                      <span class="type">{TYPES[x.data.type as keyof typeof TYPES]}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+
+        {
+          voirAussi.length > 0 && (
+            <section class="bloc" aria-labelledby="titre-voir">
+              <h2 id="titre-voir">Voir aussi</h2>
+              <ul class="liens-recettes">
+                {voirAussi.map((x: any) => (
+                  <li>
+                    <a href={lien(`recette/${x.id}/`)}>
+                      <span class="titre">{x.data.titre}</span>
+                      <span class="type">{TYPES[x.data.type as keyof typeof TYPES]}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+
+        {
+          r.sources && (
+            <section class="bloc" aria-labelledby="titre-sources">
+              <h2 id="titre-sources">Sources</h2>
+              <ul class="sources">
+                {r.sources.map((s: any) => (
+                  <li>
+                    <a href={s.url} rel="noopener" target="_blank">{s.titre}</a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+      </section>
+    </div>
+
+    <script type="application/json" id="donnees-recette" set:html={donnees} />
+  </article>
+</Base>
+
+<script>
+  import '../../scripts/recette.js';
+</script>

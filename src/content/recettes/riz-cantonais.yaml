@@ -1,0 +1,69 @@
+titre: Riz cantonais
+cuisine: asiatique
+origine: Chine, Canton
+type: plat
+resume: Riz sauté au wok avec saucisse chinoise, poitrine de porc, œufs, petits pois et shiitakés.
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Riz parfumé thaï, qte: 400, unite: g }
+      - { nom: Saucisse chinoise séchée, qte: 2 }
+      - { nom: Poitrine de porc, qte: 150, unite: g }
+      - { nom: Carotte, qte: 2 }
+      - { nom: Petits pois, qte: 100, unite: g }
+      - { nom: Champignons parfumés séchés (shiitakés), qte: 2 }
+      - { nom: Oignon, qte: 1 }
+      - { nom: Œuf, qte: 2 }
+      - { nom: Ciboulette, qte: 3, unite: brin }
+      - { nom: Coriandre fraîche, qte: 5, unite: g }
+      - { nom: Sauce soja claire, qte: 1, unite: cs }
+      - { nom: Huile de tournesol, qte: 1, unite: cs }
+      - { nom: Sel }
+      - { nom: Poivre moulu }
+
+simple:
+  temps: { preparation: 20, cuisson: 15, attente: 180 }
+  etapes:
+    - "Cuire le riz la veille, ou au moins 3 h avant, et le laisser refroidir au frigo : un riz froid ne colle pas au wok."
+    - texte: "Faire tremper les champignons 20 min dans l'eau chaude, puis les émincer. Couper la saucisse, la poitrine et la carotte en petits dés et émincer l'oignon."
+      minuteur: 1200
+    - "Battre les œufs, les cuire brouillés dans un peu d'huile et les réserver."
+    - "Dans un wok bien chaud, faire revenir la poitrine, la saucisse et l'oignon 3 min, puis la carotte, les petits pois et les champignons 3 min."
+    - "Ajouter le riz et le faire sauter 3 à 4 min à feu vif en l'égrainant. Ajouter la sauce soja, les œufs, la ciboulette et la coriandre ciselées. Saler et poivrer."
+
+chef:
+  temps: { preparation: 30, cuisson: 20, attente: 720 }
+  etapes:
+    - titre: Le riz, la veille
+      texte: "Rincer le riz jusqu'à ce que l'eau soit claire, le cuire, puis l'étaler sur une plaque et le laisser sécher une nuit au frigo, sans couvrir."
+    - titre: Les shiitakés
+      texte: "Réhydrater les champignons 30 min dans l'eau tiède. Garder 2 c. à soupe de leur eau, très parfumée."
+      minuteur: 1800
+    - titre: La taille
+      texte: "Tailler tous les ingrédients en dés de la taille d'un petit pois : la régularité donne une cuisson homogène et l'aspect du vrai riz cantonais."
+    - titre: Les viandes
+      texte: "Faire fondre la poitrine dans le wok à sec pour en extraire le gras, puis y sauter la saucisse chinoise 1 min. Réserver en laissant le gras dans le wok."
+    - titre: Les œufs
+      texte: "Cuire les œufs battus dans le wok très chaud, les casser en morceaux quand ils sont à moitié pris et les réserver."
+    - titre: Les légumes
+      texte: "Sauter l'oignon, la carotte, les petits pois et les shiitakés 2 min à feu vif."
+    - titre: Le riz
+      texte: "Ajouter le riz en l'égrainant et le faire sauter 3 min sans arrêt, à feu maximum. Verser la sauce soja et l'eau des champignons le long de la paroi brûlante du wok : elles caramélisent avant de toucher le riz."
+    - titre: La finition
+      texte: "Remettre les viandes et les œufs, ajouter la ciboulette et la coriandre, poivrer et servir aussitôt."
+  astuces:
+    - "Travailler par petites quantités : un wok trop rempli refroidit et le riz cuit à la vapeur au lieu de sauter."
+
+sources:
+  - titre: "Traditional Cantonese Rice (Cooking With Morgane)"
+    url: https://www.youtube.com/watch?v=DmgPPIDnekI
+  - titre: "Riz cantonais, la vraie recette (Hervé Cuisine)"
+    url: https://www.hervecuisine.com/recette/riz-cantonais-la-vrai-recette-de-cuisine-chinoise/
+  - titre: "La recette du riz cantonais (Petits plats entre amis)"
+    url: https://www.petitsplatsentreamis.com/recette-du-riz-cantonais/
+  - titre: "Le riz cantonais à la sauce soja de Cyril Lignac (Cuisine Actuelle)"
+    url: https://www.cuisineactuelle.fr/culture-food/idees-de-menus/idees-de-repas/la-recette-facile-du-riz-cantonais-a-la-sauce-soja-de-cyril-lignac-187234
+  - titre: "Riz cantonais de Cyril Lignac, l'astuce du chef (Modes et Travaux)"
+    url: https://www.modesettravaux.fr/cuisine/ideesrecettes/riz-cantonais-de-cyril-lignac-lastuce-secrete-du-chef-pour-faire-exploser-les-saveurs-66156.html

@@ -1,0 +1,46 @@
+titre: Sauce noix de cajou
+cuisine: autres-horizons
+origine: Cuisine végétale
+type: sauce
+saison: ete
+resume: Une crème végétale à l'ail, pour les pâtes, les bowls et les burgers.
+portions:
+  base: 3
+
+ingredients:
+  - items:
+      - { nom: Noix de cajou, qte: 200, unite: g, note: "nature, non salées" }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Eau, note: "eau de cuisson, selon la texture" }
+      - { nom: Citron, qte: 0.5, mode: chef, note: le jus }
+      - { nom: Levure maltée, qte: 1, unite: cs, mode: chef, optionnel: true }
+      - { nom: Noix de muscade }
+      - { nom: Sel }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 10, cuisson: 15 }
+  etapes:
+    - texte: "Faire bouillir les noix de cajou dans l'eau jusqu'à ce qu'elles soient tendres, environ 15 min, ou les faire tremper la veille."
+      minuteur: 900
+    - "Les mixer avec l'ail dans le petit bol du mixeur, celui prévu pour les herbes aromatiques."
+    - "Ajouter de l'eau de cuisson petit à petit pour allonger la sauce."
+    - "Assaisonner de sel, de poivre et de noix de muscade."
+  astuces:
+    - "Se garde 4 jours au frigo dans un bocal fermé."
+
+chef:
+  temps: { preparation: 15, cuisson: 15, attente: 480 }
+  etapes:
+    - "Faire tremper les noix de cajou 8 h dans l'eau froide, puis les cuire 10 min à l'eau frémissante. Garder l'eau de cuisson."
+    - texte: "Blanchir l'ail 2 min dans l'eau bouillante pour adoucir son piquant."
+      minuteur: 120
+    - "Mixer longuement (2 à 3 min) dans un blender puissant les noix égouttées, l'ail, le jus de citron et la levure maltée, en versant l'eau de cuisson en filet jusqu'à une texture de crème liquide."
+    - "Assaisonner de sel, de poivre et de muscade. Pour une sauce parfaitement lisse, la passer au tamis fin."
+  astuces:
+    - "La sauce épaissit en refroidissant : la détendre avec un peu d'eau chaude avant de servir."
+    - "La levure maltée apporte un goût de fromage affiné, idéal sur des pâtes."
+
+sources:
+  - titre: "Sauce noix de cajou vegan pour pâtes, bowls et burgers"
+    url: https://vlourish.com/sauce-noix-de-cajou/

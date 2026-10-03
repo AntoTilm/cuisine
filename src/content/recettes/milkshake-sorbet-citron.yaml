@@ -1,0 +1,31 @@
+titre: Milkshake sorbet citron et coco
+cuisine: americaine
+type: dessert
+saison: ete
+resume: Sorbet citron, lait de coco et glace pilée, mixés en trente secondes.
+portions:
+  base: 2
+
+ingredients:
+  - items:
+      - { nom: Sorbet citron, qte: 160, unite: g }
+      - { nom: Lait de coco, qte: 200, unite: g }
+      - { nom: Glaçons, qte: 120, unite: g }
+      - { nom: Sirop de sucre, qte: 30, unite: g }
+      - { nom: Citron vert, qte: 1, mode: chef, note: le zeste }
+      - { nom: Menthe fraîche, qte: 2, unite: brin, mode: chef }
+
+simple:
+  temps: { preparation: 5 }
+  etapes:
+    - "Mixer les glaçons pour obtenir de la glace pilée."
+    - "Ajouter le sorbet, le lait de coco et le sirop de sucre."
+    - "Mixer et servir aussitôt."
+
+chef:
+  temps: { preparation: 10, attente: 15 }
+  etapes:
+    - texte: "Placer les verres 15 min au congélateur."
+      minuteur: 900
+    - "Piler les glaçons au mixeur, puis ajouter le lait de coco bien froid, le sirop et les deux tiers du sorbet. Mixer par impulsions : trop mixé, le milkshake chauffe et devient liquide."
+    - "Verser dans les verres givrés, ajouter une boule avec le reste du sorbet, râper le zeste de citron vert et poser une feuille de menthe."

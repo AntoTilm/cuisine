@@ -1,0 +1,59 @@
+titre: Porc laqué
+cuisine: asiatique
+origine: Chine, Canton
+type: plat
+resume: Lanières d'échine marinées au hoisin, au miel et aux cinq-épices, puis laquées jusqu'à caraméliser.
+portions:
+  base: 400
+  unite: g de porc
+  pluriel: g de porc
+  pas: 100
+  min: 200
+
+ingredients:
+  - groupe: La viande
+    items:
+      - { nom: Échine de porc, qte: 400, unite: g }
+  - groupe: La marinade
+    items:
+      - { nom: Sauce soja, qte: 24, unite: g }
+      - { nom: Sauce hoisin, qte: 16, unite: g }
+      - { nom: Miel ou sucre brun, qte: 16, unite: g }
+      - { nom: Vin de riz Shaoxing, qte: 12, unite: g, note: ou xérès }
+      - { nom: Sauce d'huître, qte: 16, unite: g, optionnel: true }
+      - { nom: Huile de sésame grillé, qte: 4, unite: g }
+      - { nom: Cinq-épices, qte: 1.2, unite: g }
+      - { nom: Ail, qte: 1, unite: gousse, note: râpé }
+      - { nom: Colorant alimentaire rouge, optionnel: true }
+
+simple:
+  temps: { preparation: 10, cuisson: 20, attente: 180 }
+  etapes:
+    - "Couper le porc en lanières de 1,5 cm d'épaisseur, plus fines que pour le four, pour une cuisson à la poêle."
+    - "Mélanger tous les ingrédients de la marinade et y faire mariner la viande au moins 3 h, idéalement une nuit, dans un sac de congélation."
+    - texte: "Mettre la viande égouttée dans une poêle antiadhésive à feu moyen avec 3 c. à soupe d'eau. Couvrir et cuire 8 min en retournant à mi-cuisson."
+      minuteur: 480
+    - texte: "Retirer le couvercle, verser le reste de la marinade et laisser réduire 4 à 5 min en retournant sans arrêt : la sauce devient un glaçage brillant qui caramélise."
+      minuteur: 300
+    - texte: "Laisser reposer 5 min avant de trancher finement."
+      minuteur: 300
+  astuces:
+    - "Version express : remplacer la marinade par un mélange de sauce hoisin, de miel et de sauce soja."
+
+chef:
+  temps: { preparation: 15, cuisson: 55, attente: 720 }
+  etapes:
+    - "Découper le porc en longues lanières épaisses de 2 à 3 cm."
+    - "Mélanger tous les ingrédients de la marinade et y faire mariner la viande toute une nuit."
+    - texte: "Pour une texture encore plus fondante, précuire la viande 20 min à la vapeur."
+      minuteur: 1200
+    - "Préchauffer le four à 200 °C en chaleur tournante. Disposer la viande sur une grille posée au-dessus d'une plaque garnie de papier cuisson, pour récupérer le jus."
+    - texte: "Cuire 25 à 30 min en badigeonnant une ou deux fois avec la marinade restante."
+      minuteur: 1680
+    - texte: "Terminer par 5 min en mode gril pour bien caraméliser."
+      minuteur: 300
+    - texte: "Laisser reposer 5 min avant de trancher finement."
+      minuteur: 300
+  astuces:
+    - "Pour un laquage plus brillant, ajouter une cuillère de miel à la marinade restante avant le dernier badigeonnage."
+    - "Se conserve très bien au frigo et se réchauffe à la poêle ou au four."

@@ -1,0 +1,18 @@
+# Dépendances et fichiers générés
+node_modules/
+dist/
+.astro/
+
+# Journaux et environnement
+*.log
+npm-debug.log*
+.env
+.env.*
+
+# Systèmes
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fichier Excel ouvert (verrou temporaire)
+~$*

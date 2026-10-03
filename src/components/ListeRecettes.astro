@@ -1,0 +1,37 @@
+---
+import { lien, dureeTotale } from '../lib/recettes.js';
+import { formaterDuree } from '../lib/quantites.js';
+import { TYPES } from '../data/cuisines.js';
+
+interface Props {
+  recettes: any[];
+}
+const { recettes } = Astro.props;
+
+// Texte indexé pour la recherche de l'accueil : titre, résumé, origine et ingrédients.
+const indexer = (r: any) =>
+  [r.data.titre, r.data.resume, r.data.origine ?? '', ...r.data.ingredients.flatMap((g: any) => g.items.map((i: any) => i.nom))]
+    .join(' ')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/œ/g, 'oe');
+---
+
+<ul class="lignes">
+  {
+    recettes.map((r) => (
+      <li class="ligne" data-type={r.data.type} data-saison={r.data.saison ?? ''} data-recherche={indexer(r)}>
+        <a href={lien(`recette/${r.id}/`)}>
+          <span class="ligne-titre">{r.data.titre}</span>
+          <span class="ligne-resume">{r.data.resume}</span>
+          <span class="ligne-infos">
+            <span class="duree">{formaterDuree(dureeTotale(r.data.simple.temps))}</span>
+            {TYPES[r.data.type as keyof typeof TYPES]}
+            {r.data.origine ? `, ${r.data.origine}` : ''}
+          </span>
+        </a>
+      </li>
+    ))
+  }
+</ul>

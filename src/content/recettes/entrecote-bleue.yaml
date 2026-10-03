@@ -1,0 +1,114 @@
+titre: Entrecôte bleue, sauce au cognac
+cuisine: francaise
+type: plat
+resume: Une pièce d'un kilo cuite tout doucement au four, saisie et arrosée au beurre de thym, avec une sauce au cognac et une salade poire, noix et persil.
+portions:
+  base: 1000
+  unite: g d'entrecôte
+  pluriel: g d'entrecôte
+  pas: 250
+  min: 500
+
+deroule:
+  titre: Le déroulé minuté du vendredi 2 octobre
+  url: deroules/entrecote-bleue.html
+
+ingredients:
+  - groupe: La viande
+    items:
+      - { nom: Entrecôte, qte: 1000, unite: g, note: une pièce épaisse }
+      - { nom: Gros sel, qte: 10, unite: g, cle: sel }
+      - { nom: Huile neutre, qte: 10, unite: g }
+      - { nom: Fleur de sel, qte: 2, unite: g }
+      - { nom: Poivre du moulin }
+  - groupe: Le beurre aromatique
+    items:
+      - { nom: Beurre, qte: 40, unite: g, note: pour arroser, cle: beurrearroser }
+      - { nom: Ail, qte: 3, unite: gousse, note: écrasées dans leur peau }
+      - { nom: Thym, qte: 5, unite: brin }
+  - groupe: La sauce au cognac
+    items:
+      - { nom: Échalote, qte: 35, unite: g }
+      - { nom: Cognac, qte: 38, unite: g, cle: cognac }
+      - { nom: Vin rouge, qte: 100, unite: g, note: un cabernet-syrah, cle: vin }
+      - { nom: Beurre, qte: 20, unite: g, note: bien froid, cle: beurresauce }
+  - groupe: La salade poire, noix et persil
+    items:
+      - { nom: Salade, qte: 1 }
+      - { nom: Poire, qte: 1, note: "bien mûre, environ 180 g" }
+      - { nom: Noix, qte: 40, unite: g }
+      - { nom: Persil plat, qte: 15, unite: g }
+      - { nom: Citron, qte: 0.25, note: quelques gouttes }
+      - { nom: Roquefort, qte: 50, unite: g, optionnel: true }
+      - { nom: Vinaigrette, maison: true, note: environ 15 g par personne }
+
+simple:
+  temps: { preparation: 15, cuisson: 25, attente: 60 }
+  etapes:
+    - "Saler l'entrecôte au gros sel sur toutes les faces 1 h avant la cuisson et la laisser à température ambiante, sur une grille. Préchauffer le four à 180 °C."
+    - texte: "L'éponger soigneusement. Chauffer la poêle à fond avec l'huile et saisir la viande 2 min par face, puis 1 min sur le gras, tenue debout à la pince."
+      minuteur: 120
+    - texte: "Ajouter le beurre, l'ail et le thym et arroser 1 min. Enfourner ensuite 6 à 10 min, jusqu'à 40 °C à cœur au thermomètre."
+      minuteur: 480
+    - texte: "Laisser reposer 7 min sous une feuille d'alu posée sans serrer."
+      minuteur: 420
+    - "Pendant le repos, faire la sauce dans la même poêle : l'échalote 1 min dans un peu de beurre aromatique, puis hors du feu le cognac, en grattant les sucs. Ajouter le vin et réduire de moitié. Hors du feu, ajouter le jus de la viande et le beurre froid en fouettant."
+    - "Assaisonner la salade au dernier moment : feuilles, poire en lamelles citronnées, noix grillées, persil. Trancher la viande à contresens des fibres, puis fleur de sel et poivre."
+
+chef:
+  temps: { preparation: 30, cuisson: 90, attente: 60 }
+  etapes:
+    - titre: Saler
+      texte: "Saler l'entrecôte avec {sel} de gros sel sur toutes les faces, gras compris. La poser sur une grille, à température ambiante, jusqu'à l'enfournement. Pas de poivre."
+    - titre: La mise en place
+      texte: "Griller les noix à sec 3 à 4 min à feu moyen, les laisser refroidir et les concasser. Ciseler l'échalote très finement, écraser l'ail dans sa peau, peser le cognac et le vin. Installer le poste : poêle en fonte ou en acier, pince, papier absorbant, planche, couteau bien aiguisé, thermomètre."
+    - titre: Le four à 50 °C
+      texte: "Régler le four sur 50 °C en chaleur tournante. Contrôler l'air au thermomètre, tenu 30 secondes au centre de la grille. S'il dépasse 60 °C, coincer une cuillère en bois dans la porte."
+    - titre: La cuisson douce
+      texte: "Enfourner la viande sur la grille, une plaque dessous pour le jus, et les assiettes en bas du four. À partir de 30 min, piquer toutes les 10 à 15 min par le côté, au cœur de la partie la plus épaisse. Sortir à 33–35 °C à cœur, en 45 min à 1 h 15 : c'est le thermomètre qui décide, pas la montre."
+      alerte:
+        - "Au-dessus de 38 °C : la sortir tout de suite."
+        - "Encore sous 30 °C après 1 h 15 : la sortir quand même et saisir 30 secondes de plus par face."
+    - titre: La salade
+      texte: "Feuilles très bien essorées, poire en fines lamelles avec quelques gouttes de citron pour qu'elle ne noircisse pas, persil effeuillé. Tout au frigo, sans assaisonner."
+    - titre: Le coup de feu
+      texte: "Sortir la viande et l'éponger très soigneusement sur toutes les faces : une surface sèche donne une belle croûte. Chauffer la poêle à fond 3 à 4 min avec l'huile : elle doit fumer légèrement. Hotte à fond."
+    - titre: Première face
+      texte: "Poser la viande et ne plus la toucher."
+      minuteur: 120
+    - titre: Deuxième face
+      texte: "Retourner à la pince, jamais à la fourchette."
+      minuteur: 120
+    - titre: Le gras
+      texte: "Tenir la pièce debout avec la pince, le bord gras contre la poêle."
+      minuteur: 60
+    - titre: L'arrosage
+      texte: "Feu moyen. Jeter l'huile, ajouter {beurrearroser} de beurre, l'ail et le thym. Incliner la poêle et arroser sans arrêt. Retirer la viande à 40 °C à cœur ; en dessous, continuer par tranches de 30 secondes."
+      minuteur: 60
+    - titre: Le repos
+      texte: "Sur la planche, une feuille d'alu simplement posée dessus, sans l'emballer. Verser le beurre aromatique dans un petit bol avec l'ail et le thym. Garder la poêle."
+      minuteur: 420
+    - titre: La sauce au cognac
+      texte: "Même poêle, feu moyen : l'échalote 1 min dans une cuillère de beurre aromatique. Hors du feu, verser {cognac} de cognac (il peut s'enflammer : se reculer) et gratter les sucs. Ajouter {vin} de vin et réduire de moitié, 2 à 3 min. Hors du feu, ajouter le jus rendu par la viande et fouetter {beurresauce} de beurre froid. Goûter, saler, verser en saucière."
+    - titre: L'assaisonnement
+      texte: "Une pincée de sel sur les feuilles, puis la vinaigrette bien secouée. Mélanger à la main ; poire, noix et persil par-dessus."
+    - titre: Le service
+      texte: "Trancher à contresens des fibres, en tranches d'1 cm ; le jus de découpe va dans la sauce. Fleur de sel, poivre du moulin, beurre aromatique à la cuillère et sauce au cognac à côté. Une viande bleue refroidit vite : on ne traîne pas."
+
+notes:
+  - titre: Températures à cœur
+    texte: |
+      - Sortie du four : 33 à 35 °C
+      - Sortie de poêle : 40 °C
+      - Dans l'assiette : environ 45 °C
+
+      Au thermomètre, piqué par le côté, dans la partie la plus épaisse.
+  - titre: Le vin
+    texte: |
+      - À table : Côtes du Rhône Villages Vieilles Vignes 2023, grenache et syrah. En carafe une heure avant, servi autour de 16 °C : ses notes de garrigue répondent au thym et à l'ail.
+      - Plan B : Saint Gilles Grande Réserve 2023, plus léger et souple.
+      - Pour la sauce : Sensas Cabernet-Syrah 2024.
+  - titre: Le reste du menu
+    texte: "Servi avec un gratin dauphinois, préparé à l'avance et repassé 15 min à 200 °C pendant que la viande cuit."
+
+voirAussi: [entrecote-beurre-arrose]

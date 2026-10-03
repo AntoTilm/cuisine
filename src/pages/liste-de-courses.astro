@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import { toutesLesRecettes, donneesClient, lien } from '../lib/recettes.js';
+
+const recettes = await toutesLesRecettes();
+const donnees = JSON.stringify(recettes.map(donneesClient)).replace(/</g, '\\u003c');
+---
+
+<Base titre="Ma liste de courses" page="liste">
+  <section class="tete-page seyes">
+    <div class="conteneur">
+      <div class="dans-la-marge">
+        <h1>Ma liste de courses</h1>
+        <p class="chapeau">
+          Les ingrédients de toutes les recettes ajoutées, additionnés et rangés par rayon. Elle reste enregistrée sur
+          cet appareil.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="conteneur" id="liste-courses" data-base={lien()}>
+    <div class="vide" id="liste-vide" hidden>
+      <p>La liste est vide.</p>
+      <p>
+        Sur une recette, le bouton « Ajouter à ma liste de courses » y ajoute ses ingrédients, pour le nombre de
+        personnes et la version choisis. <a href={lien()}>Choisir une recette</a>
+      </p>
+    </div>
+
+    <div class="page-liste" id="liste-pleine" hidden>
+      <section class="colonne-recettes" aria-labelledby="titre-recettes">
+        <h2 id="titre-recettes">Les recettes</h2>
+        <ul id="liste-recettes"></ul>
+      </section>
+
+      <section class="colonne-articles" aria-labelledby="titre-articles">
+        <h2 id="titre-articles">À acheter</h2>
+        <div id="liste-articles"></div>
+
+        <form class="ajout-extra" id="ajout-extra">
+          <label class="visuellement-cache" for="extra">Ajouter un article</label>
+          <input id="extra" type="text" placeholder="Ajouter un article : café, papier cuisson…" autocomplete="off" />
+          <button class="bouton secondaire" type="submit">Ajouter</button>
+        </form>
+
+        <div class="actions-liste">
+          <button class="bouton" id="copier-liste" type="button">Copier ou partager la liste</button>
+          <button class="lien-discret" id="decocher" type="button">Tout décocher</button>
+          <button class="lien-discret" id="vider" type="button">Vider la liste</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script type="application/json" id="donnees-recettes" set:html={donnees} />
+</Base>
+
+<script>
+  import '../scripts/liste.js';
+</script>

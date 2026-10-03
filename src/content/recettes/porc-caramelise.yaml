@@ -1,0 +1,69 @@
+titre: Porc caramélisé et légumes sautés
+cuisine: asiatique
+origine: Vietnam
+type: plat
+resume: Échine de porc (ou poulet) cuite dans un caramel à l'ail et au nuoc-mâm, avec des légumes sautés au wok et du riz.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La viande caramélisée
+    items:
+      - { nom: Échine de porc ou blanc de poulet, qte: 500, unite: g }
+      - { nom: Ail, qte: 3, unite: gousse }
+      - { nom: Sucre, qte: 2, unite: cs }
+      - { nom: Huile de tournesol, qte: 3, unite: cs }
+      - { nom: Nuoc-mâm (sauce de poisson), qte: 2, unite: cs }
+      - { nom: Sel }
+      - { nom: Poivre moulu }
+  - groupe: Les légumes sautés
+    items:
+      - { nom: Oignon, qte: 1 }
+      - { nom: Carotte, qte: 2 }
+      - { nom: Poivron, qte: 2, note: "rouge, jaune ou vert" }
+      - { nom: Champignons de Paris, qte: 200, unite: g, note: ou shiitakés }
+      - { nom: Huile de tournesol, qte: 2, unite: cs }
+      - { nom: Sauce soja, optionnel: true }
+      - { nom: Miel, optionnel: true }
+  - groupe: Le riz
+    items:
+      - { nom: Riz parfumé thaï, qte: 300, unite: g }
+
+simple:
+  temps: { preparation: 15, cuisson: 25 }
+  etapes:
+    - "Lancer la cuisson du riz."
+    - "Couper la viande en tranches de 8 mm et hacher l'ail."
+    - "Dans une poêle à feu vif, mettre l'huile et le sucre, sans remuer. Quand le sucre brunit, ajouter l'ail 10 secondes, puis la viande, le nuoc-mâm, le sel et le poivre."
+    - texte: "Cuire 7 à 10 min en remuant, jusqu'à ce que l'eau rendue par la viande s'évapore et que les morceaux caramélisent."
+      minuteur: 540
+    - texte: "Pendant ce temps, dans une autre poêle très chaude, sauter l'oignon, les carottes, les poivrons et les champignons 8 min. Saler, poivrer, ajouter un filet de sauce soja."
+      minuteur: 480
+    - "Servir la viande sur le riz, avec les légumes."
+
+chef:
+  temps: { preparation: 20, cuisson: 30 }
+  etapes:
+    - titre: La préparation
+      texte: "Découper le porc (ou le poulet) en tranches d'environ 8 mm. Hacher l'ail. Mesurer le sucre, le nuoc-mâm, le sel et le poivre : tout va très vite ensuite."
+    - titre: Le caramel
+      texte: "Chauffer une poêle à feu vif. Ajouter l'huile et le sucre, sans remuer. Quand le sucre commence à brunir, mélanger brièvement pour homogénéiser."
+    - texte: "Ajouter l'ail haché et remuer rapidement 10 secondes, sans le laisser brûler."
+    - titre: La viande
+      texte: "Ajouter la viande et l'assaisonner de sel, de poivre et de nuoc-mâm. Cuire environ 7 min en remuant régulièrement. Au début, la viande rend de l'eau, c'est normal : poursuivre jusqu'à évaporation complète et caramélisation des morceaux."
+      minuteur: 420
+    - texte: "Laisser reposer 2 à 3 min avant de servir."
+    - titre: Les légumes, à feu vif
+      texte: "Chauffer 2 c. à soupe d'huile dans un wok. Y mettre les oignons en premier, 2 min, pour qu'ils deviennent translucides et parfumés."
+      minuteur: 120
+    - texte: "Ajouter les carottes, 3 min : plus fermes, elles doivent s'attendrir avant le reste."
+      minuteur: 180
+    - texte: "Ajouter les poivrons, 2 min : ils cuisent vite et doivent rester croquants."
+      minuteur: 120
+    - texte: "Ajouter les champignons en dernier, 2 min : ils rendent de l'eau et détremperaient les autres légumes."
+      minuteur: 120
+    - texte: "Assaisonner en fin de cuisson : sel, poivre, un peu d'ail haché si souhaité, un filet de sauce soja ou une pointe de miel pour rappeler la viande caramélisée. Compter 9 à 10 min en tout, en remuant souvent."
+
+sources:
+  - titre: "Porc caramélisé : la plus simple de mes recettes (YouTube)"
+    url: https://www.youtube.com/watch?v=9FS3dpXsr2Q

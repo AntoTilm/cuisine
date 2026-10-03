@@ -1,0 +1,86 @@
+titre: Tarte au citron meringuée
+cuisine: francaise
+type: dessert
+resume: Pâte brisée, crémeux au citron bien acidulé et meringue dorée au chalumeau.
+portions:
+  base: 1
+  unite: tarte
+  pluriel: tartes
+  pas: 1
+  min: 1
+
+ingredients:
+  - groupe: La pâte
+    mode: simple
+    items:
+      - { nom: Pâte brisée prête à dérouler, qte: 1 }
+  - groupe: La pâte brisée
+    mode: chef
+    items:
+      - { nom: Farine, qte: 250, unite: g }
+      - { nom: Beurre, qte: 125, unite: g, note: "froid, en dés" }
+      - { nom: Sucre, qte: 1, unite: cs }
+      - { nom: Sel, qte: 1, unite: pincee }
+      - { nom: Eau, qte: 5, unite: cs, note: très froide }
+  - groupe: Le crémeux citron
+    items:
+      - { nom: Citron, qte: 8, note: pour 330 g de jus }
+      - { nom: Sucre, qte: 250, unite: g }
+      - { nom: Œuf, qte: 10, note: voir les notes }
+      - { nom: Fécule de maïs, qte: 25, unite: g }
+      - { nom: Beurre, qte: 100, unite: g }
+  - groupe: La meringue
+    items:
+      - { nom: Œuf, qte: 3, note: les blancs seulement }
+      - { nom: Sucre, qte: 150, unite: g, cle: sucremeringue }
+      - { nom: Eau, qte: 50, unite: ml, mode: chef }
+
+simple:
+  temps: { preparation: 40, cuisson: 35, attente: 120 }
+  etapes:
+    - texte: "Préchauffer le four à 180 °C. Foncer un moule de 24 cm avec la pâte, piquer le fond et le couvrir de papier cuisson et de légumes secs. Cuire 20 min, retirer les légumes secs et cuire encore 5 min."
+      minuteur: 1200
+    - "Presser les citrons et chauffer le jus avec le sucre jusqu'à frémissement."
+    - "Fouetter les œufs avec la fécule, verser le jus chaud dessus en fouettant, puis remettre le tout dans la casserole à feu moyen. Fouetter sans arrêt jusqu'à ce que la crème épaississe, aux premiers bouillons."
+    - "Hors du feu, incorporer le beurre en morceaux. Verser sur le fond de tarte cuit et laisser refroidir au moins 2 h au frigo."
+    - "Monter les blancs en neige en ajoutant le sucre petit à petit, jusqu'à obtenir une meringue ferme et brillante."
+    - texte: "Dresser la meringue sur la tarte et la colorer au chalumeau, ou 2 min sous le gril du four en surveillant."
+      minuteur: 120
+
+chef:
+  temps: { preparation: 75, cuisson: 45, attente: 240 }
+  etapes:
+    - titre: La pâte brisée
+      texte: "Sabler du bout des doigts la farine, le sucre et le sel avec le beurre froid. Ajouter juste assez d'eau froide pour rassembler la pâte, sans la travailler. L'aplatir en disque, la filmer et la laisser reposer 1 h au frais."
+    - texte: "L'étaler sur 3 mm, foncer un cercle de 24 cm et le mettre 30 min au congélateur : la pâte ne se rétractera pas à la cuisson."
+    - texte: "Cuire à blanc à 170 °C : 20 min avec des billes de cuisson, puis 10 min sans, jusqu'à ce que le fond soit bien doré."
+      minuteur: 1200
+    - titre: Le crémeux citron
+      texte: "Chauffer le jus de citron avec la moitié du sucre jusqu'à 50 °C seulement, au thermomètre : à partir de 62 °C, les blancs commencent à coaguler."
+    - texte: "Fouetter les œufs avec le reste du sucre et la fécule. Verser le jus tiède dessus en fouettant, remettre en casserole à feu doux et cuire en fouettant sans arrêt jusqu'à 72–75 °C : la crème épaissit grâce à la fécule, sans grumeaux d'œuf cuit."
+    - texte: "Hors du feu, laisser redescendre à 40 °C puis incorporer le beurre en dés au mixeur plongeant, pour une texture lisse et brillante. Couler sur le fond cuit et laisser prendre 3 h au frigo."
+    - titre: La meringue italienne
+      texte: "Préparer un sirop avec {sucremeringue} de sucre et l'eau, et le monter à 118–121 °C. Pendant ce temps, commencer à battre les blancs au robot jusqu'à ce qu'ils soient mousseux puis presque fermes, sans les serrer."
+    - texte: "Verser le sirop chaud en filet régulier entre la paroi et le fouet, jamais directement sur le fouet : il éclabousserait et cristalliserait. Continuer à fouetter jusqu'à ce que la cuve revienne à température ambiante, 5 à 7 min."
+      minuteur: 360
+    - texte: "Dresser la meringue à la poche avec une douille, puis la colorer au chalumeau."
+  astuces:
+    - "Verser le sirop brûlant avec une petite casserole à bec verseur : c'est plus précis et moins risqué."
+    - "La meringue italienne est cuite par le sirop : elle est lisse, brillante et tient plusieurs heures sans retomber."
+
+notes:
+  - titre: À propos des œufs
+    texte: "La recette écrite compte 10 œufs dans la crème, alors que la vidéo n'en montre que 6. Pour la meringue, il s'agit bien de 3 blancs et non de 3 œufs entiers. Contrôler la température du jus de citron : 50 °C suffisent, les blancs coagulent dès 62 °C."
+  - titre: Pourquoi 72 °C suffisent
+    mode: chef
+    texte: "Les œufs commencent à coaguler vers 62–65 °C, mais la fécule les protège d'une coagulation brutale : avec elle, on peut s'arrêter entre 72 et 75 °C pour une crème épaisse. Sans fécule, pour une texture de curd, on monte plutôt à 82–84 °C. Dans tous les cas, mélanger sans arrêt pour que la chaleur reste homogène."
+  - titre: Pistes à tester
+    texte: |
+      - Encore plus de citron ?
+      - Moins d'œufs et deux fois plus de maïzena ?
+
+sources:
+  - titre: "Ma tarte citron douce et acidulée (YouTube)"
+    url: https://www.youtube.com/watch?v=N7kY8vuCbVI
+  - titre: "Ma pâte brisée incontournable (YouTube)"
+    url: https://www.youtube.com/watch?v=TUcbb8bbmgs

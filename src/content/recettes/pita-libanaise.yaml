@@ -1,0 +1,66 @@
+titre: Pita libanaise au poulet
+cuisine: mediterraneenne
+origine: Liban
+type: plat
+saison: ete
+resume: Pains libanais garnis de poulet, de crudités et d'une sauce au yaourt, citron et menthe.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La garniture
+    items:
+      - { nom: Pain libanais (pita), qte: 4 }
+      - { nom: Blanc de poulet, qte: 400, unite: g }
+      - { nom: Poivron, qte: 2 }
+      - { nom: Tomate, qte: 2 }
+      - { nom: Oignon rouge, qte: 1 }
+      - { nom: Maïs en boîte, qte: 100, unite: g }
+      - { nom: Concombre, qte: 1 }
+      - { nom: Huile d'olive, qte: 2, unite: cs }
+  - groupe: La sauce
+    items:
+      - { nom: Yaourt grec, qte: 300, unite: g }
+      - { nom: Citron, qte: 1, note: le jus }
+      - { nom: Menthe fraîche, qte: 1, unite: bouquet }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Cumin en poudre, qte: 1, unite: cc }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: La marinade et les pickles
+    mode: chef
+    items:
+      - { nom: Yaourt grec, qte: 100, unite: g, note: pour la marinade }
+      - { nom: Ail, qte: 1, unite: gousse, note: pour la marinade }
+      - { nom: Paprika fumé, qte: 1, unite: cc }
+      - { nom: Vinaigre de vin blanc, qte: 5, unite: cl }
+      - { nom: Sucre, qte: 1, unite: cc }
+
+simple:
+  temps: { preparation: 20, cuisson: 10 }
+  etapes:
+    - "Couper le poulet en lamelles et le saisir 6 à 8 min à la poêle dans un filet d'huile d'olive, avec du sel, du poivre et une pincée de cumin."
+    - "Couper les poivrons en lanières, les tomates et le concombre en dés, l'oignon rouge en fines rondelles. Égoutter le maïs."
+    - "Pour la sauce, mélanger le yaourt grec, le jus de citron, la menthe ciselée, l'ail râpé et le reste du cumin. Saler et poivrer."
+    - "Réchauffer les pains 1 min à la poêle, les ouvrir et les garnir de poulet, de légumes et de sauce."
+
+chef:
+  temps: { preparation: 40, cuisson: 20, attente: 120 }
+  etapes:
+    - titre: La marinade
+      texte: "Couper le poulet en lanières. Le mélanger avec le yaourt de la marinade, le paprika fumé, la moitié du cumin, l'ail râpé, l'huile d'olive, du sel et du poivre. Laisser mariner au moins 2 h au frais."
+    - titre: Les pickles d'oignon
+      texte: "Émincer l'oignon rouge très finement. Le couvrir de vinaigre avec le sucre et une pincée de sel et attendre 20 min : il devient rose vif et croquant."
+      minuteur: 1200
+    - titre: Les poivrons grillés
+      texte: "Griller les poivrons entiers sous le gril du four jusqu'à ce que la peau noircisse. Les enfermer 10 min dans un sac, les peler et les tailler en lanières."
+    - titre: Le poulet
+      texte: "Saisir le poulet dans une poêle en fonte très chaude, sans le remuer pendant 2 min, pour obtenir des bords grillés comme à la broche. Cuire 6 à 8 min au total."
+    - titre: La sauce
+      texte: "Mélanger le yaourt grec, le jus de citron, la menthe ciselée, l'ail râpé, le reste du cumin, du sel et du poivre."
+    - titre: Le montage
+      texte: "Passer les pains 20 secondes dans une poêle brûlante. Les garnir de poulet, de tomates et de concombre en dés, de maïs, de poivrons grillés, de pickles d'oignon et de sauce."
+
+sources:
+  - titre: "Des recettes de pitas pour voyager le temps d'un repas (Marie Claire)"
+    url: https://www.marieclaire.fr/cuisine/des-recettes-de-pitas-pour-voyager-le-temps-d-un-repas,1378517.asp

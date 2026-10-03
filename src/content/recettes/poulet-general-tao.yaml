@@ -1,0 +1,75 @@
+titre: Poulet du Général Tao
+cuisine: asiatique
+origine: Chine
+type: plat
+resume: Poulet croustillant enrobé d'une sauce aigre-douce relevée, au gingembre et au vinaigre de riz noir.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La marinade
+    items:
+      - { nom: Blanc ou haut de cuisse de poulet, qte: 500, unite: g }
+      - { nom: Fécule de maïs, qte: 100, unite: g }
+      - { nom: Œuf, qte: 1, note: le blanc }
+      - { nom: Huile neutre, qte: 1, unite: cs }
+      - { nom: Poivre moulu, qte: 0.5, unite: cc }
+      - { nom: Sel }
+  - groupe: La sauce
+    items:
+      - { nom: Sucre, qte: 3, unite: cs }
+      - { nom: Vinaigre de riz blanc, qte: 3, unite: cs }
+      - { nom: Vinaigre de riz noir, qte: 1, unite: cs }
+      - { nom: Sauce soja claire, qte: 1, unite: cs }
+      - { nom: Sauce soja foncée, qte: 1, unite: cc }
+      - { nom: Alcool de riz Shaoxing, qte: 1, unite: cc }
+      - { nom: Purée de piment, qte: 1, unite: cs }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Gingembre râpé, qte: 1, unite: cc }
+      - { nom: Bouillon de poule ou eau, qte: 100, unite: ml }
+  - groupe: La cuisson et la finition
+    items:
+      - { nom: Huile de tournesol, qte: 2, unite: cs }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Gingembre râpé, qte: 1, unite: cc }
+      - { nom: Fécule de maïs, qte: 1, unite: cc, note: pour lier la sauce }
+      - { nom: Ciboulette thaïe, qte: 2, unite: brin }
+      - { nom: Huile de tournesol, qte: 6, unite: cs, mode: simple, note: pour la cuisson à la poêle }
+      - { nom: Huile pour friture, qte: 1, unite: l, mode: chef }
+
+simple:
+  temps: { preparation: 20, cuisson: 20 }
+  etapes:
+    - "Couper le poulet en morceaux. Le mélanger avec le sel, le poivre, le blanc d'œuf et l'huile, puis ajouter la fécule jusqu'à bien l'enrober."
+    - "Mélanger tous les ingrédients de la sauce dans un bol. Délayer à part la fécule de la liaison dans 2 c. à soupe d'eau."
+    - texte: "Cuire le poulet en deux fois dans une grande poêle avec 1 cm d'huile, 5 à 6 min en le retournant, jusqu'à ce qu'il soit doré. L'égoutter sur du papier absorbant."
+      minuteur: 330
+    - "Vider la poêle. Faire revenir 20 secondes le gingembre et l'ail dans 2 c. à soupe d'huile, verser la sauce, laisser réduire 1 min, puis ajouter la liaison."
+    - "Remettre le poulet, mélanger 30 secondes pour bien l'enrober, parsemer de ciboulette et servir aussitôt avec du riz."
+  astuces:
+    - "Au airfryer : 12 à 15 min à 200 °C avec un filet d'huile, en secouant à mi-cuisson."
+
+chef:
+  temps: { preparation: 30, cuisson: 30 }
+  etapes:
+    - titre: La marinade
+      texte: "Découper le poulet en morceaux. Le mettre dans un bol avec le sel, le poivre, le blanc d'œuf et l'huile. Mélanger, puis ajouter progressivement la fécule jusqu'à bien enrober. Laisser reposer 15 min."
+      minuteur: 900
+    - titre: Les aromates
+      texte: "Râper le gingembre, hacher l'ail, émincer la ciboulette."
+    - titre: La sauce
+      texte: "Dans un bol, mélanger le gingembre et l'ail de la sauce, le sucre, les vinaigres de riz blanc et noir, les sauces soja claire et foncée, l'alcool de riz Shaoxing, la purée de piment, le bouillon et le poivre. Délayer à part la fécule dans un peu d'eau pour la liaison."
+    - titre: Première friture
+      texte: "Chauffer l'huile à 170 °C. Plonger les morceaux de poulet un à un pour qu'ils ne collent pas. Frire environ 5 min en remuant de temps en temps, jusqu'à ce qu'ils soient dorés. Égoutter."
+      minuteur: 300
+    - titre: Seconde friture
+      texte: "Monter l'huile à 190 °C et replonger le poulet 1 min : la double friture chasse l'humidité et donne une croûte qui reste croustillante dans la sauce."
+      minuteur: 60
+    - titre: La sauce au wok
+      texte: "Dans un wok, faire revenir le reste du gingembre et de l'ail 20 secondes dans l'huile chaude. Ajouter la sauce, laisser réduire 1 min, puis la liaison pour épaissir."
+    - titre: L'assemblage
+      texte: "Mettre le poulet frit dans la sauce et mélanger 30 secondes pour bien l'enrober. Couper le feu, parsemer de ciboulette et servir immédiatement."
+
+sources:
+  - titre: "Poulet du Général Tao, recette facile (Cooking With Morgane)"
+    url: https://www.youtube.com/watch?v=nL_x4wCtldI

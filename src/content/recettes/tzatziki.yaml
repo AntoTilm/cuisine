@@ -1,0 +1,43 @@
+titre: Tzatziki
+cuisine: mediterraneenne
+origine: Grèce
+type: sauce
+saison: ete
+resume: Yaourt grec, concombre bien pressé, ail et menthe. À servir très frais.
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Yaourt grec, qte: 400, unite: g }
+      - { nom: Concombre, qte: 160, unite: g }
+      - { nom: Ail, qte: 1.6, unite: gousse }
+      - { nom: Huile d'olive, qte: 1.6, unite: cs }
+      - { nom: Vinaigre de vin blanc ou jus de citron, qte: 0.8, unite: cs }
+      - { nom: Menthe fraîche, qte: 2, unite: brin }
+      - { nom: Aneth, qte: 2, unite: brin, mode: chef }
+      - { nom: Sel }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 10, attente: 60 }
+  etapes:
+    - "Râper ou hacher finement le concombre et le presser pour enlever l'excès d'eau."
+    - "Peler et écraser les gousses d'ail."
+    - "Mélanger le yaourt grec, le concombre, l'ail, l'huile d'olive, le vinaigre (ou le jus de citron) et la menthe ciselée."
+    - "Assaisonner de sel et de poivre selon le goût."
+    - texte: "Laisser reposer au réfrigérateur au moins 1 h avant de déguster."
+      minuteur: 3600
+
+chef:
+  temps: { preparation: 25, attente: 60 }
+  etapes:
+    - texte: "Râper le concombre avec sa peau, le saler légèrement et le laisser dégorger 15 min dans une passoire."
+      minuteur: 900
+    - "Le presser fortement dans un torchon propre : il doit être presque sec. C'est ce qui évite un tzatziki qui rend de l'eau."
+    - "Râper l'ail à la râpe fine et le laisser 5 min dans le vinaigre : son piquant s'adoucit."
+    - "Mélanger le yaourt grec, le concombre, l'ail et son vinaigre, la moitié de l'huile d'olive, la menthe et l'aneth ciselés. Poivrer et goûter avant de resaler, le concombre l'est déjà."
+    - texte: "Laisser reposer 1 h au frais. Servir avec le reste de l'huile d'olive en filet et quelques feuilles de menthe sur le dessus."
+      minuteur: 3600
+  astuces:
+    - "Choisir un yaourt grec à 10 % de matière grasse : la texture est plus dense et plus crémeuse."

@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListeRecettes from '../../components/ListeRecettes.astro';
+import { toutesLesRecettes, lien } from '../../lib/recettes.js';
+import { CUISINES, TYPES } from '../../data/cuisines.js';
+
+export async function getStaticPaths() {
+  const recettes = await toutesLesRecettes();
+  return CUISINES.filter((c) => recettes.some((r) => r.data.cuisine === c.slug)).map((c) => ({
+    params: { slug: c.slug },
+    props: { cuisine: c, recettes: recettes.filter((r) => r.data.cuisine === c.slug) },
+  }));
+}
+
+const { cuisine, recettes } = Astro.props;
+const ordre = Object.keys(TYPES);
+const parType = ordre
+  .map((t) => ({ type: t, nom: TYPES[t as keyof typeof TYPES], recettes: recettes.filter((r: any) => r.data.type === t) }))
+  .filter((g) => g.recettes.length);
+---
+
+<Base titre={cuisine.titre} description={cuisine.intro} page="recettes">
+  <section class="tete-page seyes">
+    <div class="conteneur">
+      <div class="dans-la-marge">
+        <nav class="fil" aria-label="Fil d'Ariane"><a href={lien()}>Toutes les cuisines</a></nav>
+        <h1>{cuisine.titre}</h1>
+        <p class="chapeau">{cuisine.intro}</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="conteneur">
+    {
+      parType.map((g) => (
+        <section class="section-cuisine">
+          <header>
+            <h2>{g.nom === 'Entrée' ? 'Entrées' : g.nom === 'Plat' ? 'Plats' : `${g.nom}s`}</h2>
+          </header>
+          <ListeRecettes recettes={g.recettes} />
+        </section>
+      ))
+    }
+  </div>
+</Base>

@@ -1,0 +1,58 @@
+titre: Rouleaux de printemps
+cuisine: asiatique
+origine: Vietnam
+type: entree
+saison: ete
+resume: Galettes de riz roulées autour des vermicelles, des crudités, des herbes fraîches, des crevettes et de la viande.
+portions:
+  base: 8
+  unite: rouleau
+  pluriel: rouleaux
+  pas: 2
+  min: 2
+
+ingredients:
+  - groupe: Les rouleaux
+    items:
+      - { nom: Galette de riz, qte: 8, note: 28 cm }
+      - { nom: Vermicelles de riz, qte: 200, unite: g }
+      - { nom: Germes de soja, qte: 200, unite: g }
+      - { nom: Carotte, qte: 2 }
+      - { nom: Concombre, qte: 2 }
+      - { nom: Laitue, qte: 2 }
+      - { nom: Menthe fraîche, qte: 2, unite: bouquet }
+      - { nom: Coriandre fraîche, qte: 2, unite: bouquet }
+      - { nom: Jeunes oignons, qte: 2, unite: botte }
+  - groupe: Les protéines
+    items:
+      - { nom: Crevettes crues, qte: 24 }
+      - { nom: Blanc de poulet, qte: 400, unite: g }
+      - { nom: Porc mariné, qte: 400, unite: g, note: voir le porc laqué }
+
+simple:
+  temps: { preparation: 45, cuisson: 15 }
+  etapes:
+    - texte: "Cuire les vermicelles 3 à 4 min dans l'eau bouillante, les rincer à l'eau froide et les égoutter."
+      minuteur: 210
+    - "Cuire les crevettes 2 min dans l'eau bouillante, les rafraîchir et les couper en deux dans l'épaisseur. Pocher le poulet 10 min et l'effilocher ; poêler le porc mariné et l'émincer."
+    - "Tailler la carotte et le concombre en fins bâtonnets, émincer les jeunes oignons, effeuiller la menthe et la coriandre, laver la salade."
+    - "Tremper une galette 2 à 3 secondes dans l'eau tiède et la poser sur un torchon humide. Disposer en bas une feuille de salade, des vermicelles, des légumes, des herbes et de la viande."
+    - "Replier les côtés, puis rouler bien serré. Avant le dernier tour, poser les demi-crevettes face rose contre la galette : elles se verront par transparence."
+    - "Servir avec la sauce cacahuète-tamarin et la sauce nuoc-mâm."
+
+chef:
+  temps: { preparation: 60, cuisson: 20 }
+  etapes:
+    - titre: La mise en place
+      texte: "Préparer toutes les garnitures avant de rouler : vermicelles cuits 3 min, rincés et bien égouttés ; crevettes pochées 2 min puis tranchées en deux dans l'épaisseur ; poulet poché 10 min dans un bouillon frémissant puis effiloché ; porc mariné saisi puis tranché très finement."
+    - texte: "Tailler la carotte et le concombre en julienne régulière de 8 cm, la longueur d'un rouleau. Garder les feuilles de menthe et de coriandre entières : hachées, elles noircissent."
+    - titre: La galette
+      texte: "Tremper la galette dans l'eau tiède juste le temps qu'elle s'assouplisse à peine : elle finit de ramollir sur le plan de travail. Trop trempée, elle se déchire."
+    - titre: Le roulage
+      texte: "Sur le tiers inférieur, poser la salade, une petite poignée de vermicelles, la julienne, la viande et les herbes, sans surcharger. Rouler un tour bien serré et replier les côtés."
+    - texte: "Aligner trois demi-crevettes face rose vers le bas et quelques feuilles de menthe, puis terminer de rouler : elles apparaissent sous la galette translucide."
+    - titre: Le service
+      texte: "Garder les rouleaux sous un torchon humide et les servir dans l'heure avec les deux sauces, pour qu'ils ne sèchent pas."
+
+servirAvec: [sauce-cacahuete-tamarin, sauce-nuoc-mam]
+voirAussi: [porc-laque]

@@ -1,0 +1,79 @@
+titre: Chili con carne
+cuisine: americaine
+origine: Tex-Mex
+type: plat
+saison: hiver
+resume: Bœuf haché, haricots rouges et poivrons mijotés au cumin et à l'origan.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le chili
+    items:
+      - { nom: Bœuf haché, qte: 600, unite: g }
+      - { nom: Poivron, qte: 2 }
+      - { nom: Oignon, qte: 2 }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Maïs en boîte, qte: 80, unite: g, note: égoutté }
+      - { nom: Jus de tomate, qte: 250, unite: ml }
+      - { nom: Piment en poudre, qte: 0.8, unite: cc }
+      - { nom: Cumin en poudre, qte: 2, unite: cc }
+      - { nom: Origan séché, qte: 1.2, unite: cs }
+      - { nom: Huile d'olive, qte: 2, unite: cs }
+      - { nom: Tabasco, optionnel: true }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: Haricots et tomates
+    mode: simple
+    items:
+      - { nom: Haricots rouges en boîte, qte: 2, unite: boite, note: "400 g, égouttés et rincés" }
+      - { nom: Tomates concassées en boîte, qte: 1, unite: boite, note: 400 g }
+  - groupe: Haricots et tomates
+    mode: chef
+    items:
+      - { nom: Haricots rouges secs, qte: 300, unite: g }
+      - { nom: Tomate, qte: 2, note: à monder }
+      - { nom: Chocolat noir, qte: 10, unite: g, note: 70 % de cacao }
+  - groupe: Pour servir
+    mode: chef
+    items:
+      - { nom: Crème aigre, qte: 150, unite: g, optionnel: true }
+      - { nom: Coriandre fraîche, qte: 1, unite: bouquet, optionnel: true }
+      - { nom: Citron vert, qte: 1, optionnel: true }
+
+simple:
+  temps: { preparation: 15, cuisson: 30 }
+  etapes:
+    - "Éplucher et hacher les oignons et l'ail. Les faire revenir 5 min dans l'huile d'olive, dans une cocotte, jusqu'à ce qu'ils deviennent translucides."
+    - "Monter le feu, ajouter le bœuf haché et le cuire 5 min en l'émiettant à la spatule."
+    - "Ajouter les poivrons en dés, le piment, le cumin et l'origan. Remuer 1 min pour réveiller les épices."
+    - texte: "Verser les tomates concassées et le jus de tomate, puis les haricots égouttés et le maïs. Couvrir et laisser mijoter 20 min à feu doux."
+      minuteur: 1200
+    - "Rectifier l'assaisonnement avec le sel, le poivre et quelques gouttes de Tabasco. Servir avec du riz ou des tortillas."
+  astuces:
+    - "Le chili est encore meilleur réchauffé le lendemain."
+    - "Pour un chili plus doux, diviser le piment par deux et servir le Tabasco à table."
+
+chef:
+  temps: { preparation: 40, cuisson: 150, attente: 720 }
+  etapes:
+    - titre: La veille
+      texte: "Faire tremper les haricots rouges 12 heures dans un grand volume d'eau froide."
+    - titre: Les haricots
+      texte: "Égoutter les haricots, les mettre dans une cocotte remplie d'eau froide et les cuire 1 h 30 à petits bouillons. Saler seulement en fin de cuisson : le sel ajouté trop tôt durcit la peau."
+      minuteur: 5400
+    - titre: Les tomates
+      texte: "Pendant ce temps, monder les tomates : inciser une croix à la base, les plonger 30 secondes dans l'eau bouillante puis dans l'eau glacée. Les peler, les épépiner et les couper en dés."
+    - titre: La base
+      texte: "Hacher les oignons et l'ail et les faire revenir à feu moyen dans l'huile d'olive jusqu'à ce qu'ils deviennent translucides, environ 8 min."
+    - texte: "Monter le feu au maximum et ajouter la viande en deux fois, sans remuer pendant la première minute : elle doit colorer, pas bouillir. Cette coloration fait le goût du chili."
+    - texte: "Ajouter le cumin, le piment et l'origan directement sur la viande et remuer 1 min. Ajouter les tomates en dés, les poivrons et le jus de tomate, puis laisser mijoter 5 min."
+    - titre: Le mijotage
+      texte: "Égoutter les haricots et les ajouter avec le maïs. Cuire 45 min à feu très doux, couvercle entrouvert, en remuant de temps en temps."
+      minuteur: 2700
+    - titre: La finition
+      texte: "Hors du feu, faire fondre le chocolat noir dans le chili et rectifier l'assaisonnement (sel, poivre, Tabasco). Servir avec la crème aigre, la coriandre et des quartiers de citron vert."
+  astuces:
+    - "Torréfier le cumin en graines 1 min à sec dans une poêle, puis le moudre : le parfum est bien plus intense qu'avec la poudre."
+    - "Le chocolat ne sucre pas le plat : il arrondit l'acidité de la tomate et donne de la profondeur à la sauce."
+    - "Préparé la veille et réchauffé doucement, le chili gagne encore en goût."

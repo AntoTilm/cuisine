@@ -1,0 +1,51 @@
+titre: Poulet croustillant sauce teriyaki
+cuisine: asiatique
+origine: Japon
+type: plat
+resume: Cuisses désossées cuites côté peau jusqu'à ce qu'elles craquent, puis laquées avec les oignons dans la sauce teriyaki.
+portions:
+  base: 2
+
+ingredients:
+  - items:
+      - { nom: Cuisse de poulet désossée avec la peau, qte: 4 }
+      - { nom: Sel, qte: 2, unite: g }
+      - { nom: Huile de tournesol, qte: 4, unite: cs }
+      - { nom: Oignon, qte: 1 }
+      - { nom: Sauce teriyaki maison, qte: 6, unite: cs, maison: true, note: voir la recette }
+      - { nom: Graines de sésame, qte: 1, unite: cc, mode: chef, optionnel: true }
+      - { nom: Cébette, qte: 1, mode: chef, optionnel: true }
+
+simple:
+  temps: { preparation: 10, cuisson: 20 }
+  etapes:
+    - "Désosser les cuisses si besoin (ou les acheter désossées). Saler les deux faces."
+    - texte: "Poser les cuisses côté peau dans une poêle froide avec un filet d'huile, puis allumer à feu moyen. Cuire 10 à 12 min sans y toucher, jusqu'à ce que la peau soit dorée et croustillante."
+      minuteur: 660
+    - texte: "Retourner et cuire 4 à 5 min côté chair."
+      minuteur: 270
+    - "Retirer l'excès de gras, ajouter l'oignon émincé 2 min, puis la sauce teriyaki. Laisser réduire 1 min en enrobant le poulet."
+    - "Trancher et servir avec du riz, nappé de sauce et d'oignons."
+
+chef:
+  temps: { preparation: 15, cuisson: 25 }
+  etapes:
+    - titre: Préparer le poulet
+      texte: "Désosser les cuisses de poulet. Entailler légèrement la chair pour qu'elle cuise uniformément. Saler les deux faces avec une pincée de sel et laisser reposer pendant que la sauce se prépare."
+    - texte: "Sécher soigneusement la peau au papier absorbant : une peau humide ne croustille pas."
+    - titre: La cuisson côté peau
+      texte: "Poser les cuisses côté peau dans une poêle froide légèrement huilée. Les couvrir d'une feuille de papier cuisson et d'une casserole remplie d'eau pour les presser. Cuire à feu moyen 10 à 12 min : la graisse fond lentement et la peau devient très croustillante."
+      minuteur: 660
+    - texte: "Retirer le poids, retourner et cuire 4 min côté chair."
+      minuteur: 240
+    - titre: Les oignons
+      texte: "Réserver le poulet, peau vers le haut. Faire dorer l'oignon émincé 3 min dans la graisse de cuisson."
+      minuteur: 180
+    - titre: Le laquage
+      texte: "Retirer l'excès de graisse, verser la sauce teriyaki et la laisser réduire jusqu'à ce qu'elle nappe. Remettre le poulet côté chair dans la sauce, sans mouiller la peau, pour garder le croustillant."
+    - texte: "Trancher, napper d'oignons laqués, parsemer de sésame et de vert de cébette."
+
+sources:
+  - titre: "Cuisse de poulet croustillante sauce teriyaki aux oignons (YouTube)"
+    url: https://www.youtube.com/watch?v=VWFlQ1EOxMk
+servirAvec: [sauce-teriyaki]

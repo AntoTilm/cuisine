@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { CUISINES } from '../data/cuisines.js';
+
+const idees = await getCollection('idees');
+const groupes = CUISINES.map((c) => ({ ...c, idees: idees.filter((i) => i.data.cuisine === c.slug) })).filter(
+  (g) => g.idees.length,
+);
+---
+
+<Base titre="Idées à tester" description="Les recettes notées dans le carnet, encore à écrire." page="idees">
+  <section class="tete-page seyes">
+    <div class="conteneur">
+      <div class="dans-la-marge">
+        <h1>Idées à tester</h1>
+        <p class="chapeau">
+          Notées dans le fichier, mais pas encore écrites : ni quantités ni étapes. Quand une recette est au point, elle
+          rejoint le carnet.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="conteneur">
+    <div class="idees">
+      {
+        groupes.map((g) => (
+          <section>
+            <h2>{g.titre}</h2>
+            <ul>
+              {g.idees.map((i) => (
+                <li>
+                  <span class="titre-idee">
+                    {i.data.lien ? (
+                      <a href={i.data.lien} rel="noopener" target="_blank">
+                        {i.data.titre}
+                      </a>
+                    ) : (
+                      i.data.titre
+                    )}
+                  </span>
+                  {i.data.note && <p class="note-idee">{i.data.note}</p>}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+  </div>
+</Base>

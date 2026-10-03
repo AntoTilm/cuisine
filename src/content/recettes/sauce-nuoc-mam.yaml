@@ -1,0 +1,36 @@
+titre: Sauce nuoc-mâm
+cuisine: asiatique
+origine: Vietnam
+type: sauce
+resume: Sucrée, salée, acide et piquante à la fois, pour les rouleaux et tous les plats vietnamiens.
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Nuoc-mâm (sauce de poisson), qte: 60, unite: g }
+      - { nom: Eau, qte: 60, unite: ml, note: chaude }
+      - { nom: Sucre, qte: 24, unite: g }
+      - { nom: Citron vert, qte: 1, note: "le jus, environ 30 g ; ou du vinaigre de riz" }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Piment rouge frais, qte: 1, note: petit }
+      - { nom: Carotte, qte: 0.125, note: râpée, optionnel: true }
+
+simple:
+  temps: { preparation: 5 }
+  etapes:
+    - "Dans un bocal, mettre le sucre, l'eau chaude, le nuoc-mâm et le jus de citron vert. Fermer et secouer jusqu'à ce que le sucre soit dissous."
+    - "Ajouter l'ail et le piment hachés, et la carotte râpée si souhaité. Goûter et ajuster."
+
+chef:
+  temps: { preparation: 10, attente: 30 }
+  etapes:
+    - "Dissoudre le sucre dans l'eau chaude."
+    - "Ajouter le nuoc-mâm, le jus de citron vert (ou le vinaigre), l'ail et le piment."
+    - "Ajouter éventuellement la carotte râpée, pour la couleur et le croquant."
+    - "Goûter et ajuster l'équilibre entre le sucré, le salé et l'acide."
+    - "Servir frais, avec des rouleaux de printemps ou des plats vietnamiens."
+  astuces:
+    - "Piler l'ail et le piment au mortier avec une pincée de sucre : ils flottent alors à la surface au lieu de tomber au fond."
+
+servirAvec: [rouleaux-de-printemps]

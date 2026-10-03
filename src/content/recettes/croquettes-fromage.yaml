@@ -1,0 +1,72 @@
+titre: Croquettes au fromage
+cuisine: belge
+type: entree
+resume: Une béchamel très épaisse au parmesan et à l'emmental, refroidie, panée deux fois et frite.
+portions:
+  base: 24
+  unite: croquette
+  pluriel: croquettes
+  pas: 6
+  min: 6
+
+ingredients:
+  - groupe: La pâte
+    items:
+      - { nom: Beurre, qte: 200, unite: g, cle: beurre }
+      - { nom: Farine, qte: 200, unite: g, cle: farine }
+      - { nom: Lait, qte: 1, unite: l, cle: lait }
+      - { nom: Œuf, qte: 6, note: "jaunes pour la pâte, blancs pour la panure" }
+      - { nom: Parmesan râpé, qte: 408, unite: g }
+      - { nom: Emmental râpé, qte: 192, unite: g }
+      - { nom: Noix de muscade }
+      - { nom: Sel }
+  - groupe: La panure
+    items:
+      - { nom: Farine, qte: 100, unite: g, note: pour paner }
+      - { nom: Chapelure, qte: 300, unite: g }
+      - { nom: Huile neutre, qte: 1, unite: cs, note: à battre avec les blancs }
+      - { nom: Huile pour friture, qte: 2, unite: l }
+  - groupe: Pour servir
+    mode: chef
+    items:
+      - { nom: Persil plat, qte: 1, unite: bouquet, note: à frire }
+      - { nom: Citron, qte: 1 }
+
+simple:
+  temps: { preparation: 45, cuisson: 20, attente: 180 }
+  etapes:
+    - "Préparer une sauce blanche avec le beurre, la farine, le lait et le sel. Elle doit être très épaisse."
+    - "Hors du feu, mais tant que la sauce est encore chaude, y ajouter les jaunes d'œufs puis le fromage râpé."
+    - "Étaler la pâte sur 2 à 3 cm d'épaisseur dans un plat filmé et la mettre au frigo 2 à 3 h, ou toute la nuit."
+    - "Quand la pâte est bien dure, façonner les croquettes."
+    - "Préparer trois assiettes : la farine, les blancs d'œufs battus avec un filet d'huile, la chapelure. Passer chaque croquette dans la farine, puis dans les blancs, puis dans la chapelure. Recommencer blancs et chapelure une seconde fois."
+    - texte: "Cuire environ 3 min dans la friteuse à 170 °C."
+      minuteur: 180
+
+chef:
+  temps: { preparation: 60, cuisson: 30, attente: 720 }
+  etapes:
+    - titre: Le roux
+      texte: "Faire fondre {beurre} de beurre à feu moyen dans une casserole à fond épais, sans coloration. Verser {farine} de farine d'un coup et mélanger énergiquement avec une cuillère en bois ou un fouet : c'est le roux. Le cuire 1 à 2 min pour éliminer le goût de farine crue, sans le laisser brunir."
+    - titre: Le lait
+      texte: "Hors du feu, ajouter une petite louche de lait froid et fouetter pour bien délayer. Remettre sur feu doux et ajouter progressivement le reste du lait ({lait} en tout), toujours en fouettant pour éviter les grumeaux."
+    - titre: Cuire la sauce
+      texte: "Porter à petite ébullition en mélangeant constamment. Laisser cuire quelques minutes : la sauce doit devenir très épaisse, presque comme une purée. Saler légèrement (le fromage apporte déjà du sel) et ajouter une pincée de muscade râpée."
+    - titre: Fromages et jaunes
+      texte: "Retirer la casserole du feu. Ajouter les jaunes un à un, en fouettant vite pour qu'ils ne cuisent pas en grumeaux. Incorporer ensuite le parmesan et l'emmental et mélanger jusqu'à obtenir une pâte homogène et épaisse."
+    - titre: Refroidir
+      texte: "Verser la préparation dans un plat sur 2 à 3 cm d'épaisseur. Couvrir d'un film alimentaire au contact et laisser refroidir au frigo 2 à 3 h minimum, idéalement une nuit."
+    - titre: Façonner et paner
+      texte: "Couper la pâte bien dure en rectangles réguliers. Passer chaque croquette dans la farine, puis dans les blancs battus avec l'huile, puis dans la chapelure. Recommencer blancs et chapelure : cette double panure empêche les croquettes de crever à la cuisson."
+    - titre: Frire
+      texte: "Cuire environ 3 min à 170 °C, par petites quantités pour ne pas faire chuter la température de l'huile."
+      minuteur: 180
+    - titre: Persil frit
+      texte: "Frire le persil bien sec 20 secondes dans la même huile, en se protégeant des projections. Servir les croquettes avec le persil frit et un quartier de citron."
+  astuces:
+    - "Se mouiller les mains à l'eau froide pour façonner : la pâte ne colle plus."
+    - "Les croquettes panées se congèlent crues. Les frire directement surgelées, 4 à 5 min."
+
+sources:
+  - titre: "Recette d'origine (Google Drive)"
+    url: https://drive.google.com/file/d/1xT3SrBk2okrn2yii7Qjn8QU-MmJ_rKpm/view?usp=sharing

@@ -1,0 +1,72 @@
+titre: Entrecôte au beurre arrosé
+cuisine: francaise
+type: plat
+resume: Saisie à feu très vif, arrosée de beurre à l'ail et aux herbes, puis reposée. Les temps se calculent selon l'épaisseur et la cuisson voulue.
+portions:
+  base: 2
+
+outil: cuisson-entrecote
+
+ingredients:
+  - groupe: La viande
+    items:
+      - { nom: Entrecôte épaisse, qte: 700, unite: g, note: "2 à 4 cm, environ 350 g par personne" }
+      - { nom: Huile neutre, qte: 1, unite: cs }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: Le beurre parfumé
+    items:
+      - { nom: Beurre, qte: 60, unite: g }
+      - { nom: Ail, qte: 2, unite: gousse, note: écrasées }
+      - { nom: Thym, qte: 2, unite: brin }
+      - { nom: Romarin, qte: 1, unite: brin }
+      - { nom: Persil, qte: 2, unite: brin, mode: chef }
+      - { nom: Estragon, qte: 2, unite: brin, mode: chef }
+      - { nom: Échalote, qte: 1, optionnel: true }
+
+simple:
+  temps: { preparation: 5, cuisson: 10, attente: 30 }
+  etapes:
+    - "Sortir la viande du frigo 30 min à l'avance. La saler 15 min avant la cuisson et l'éponger au papier absorbant juste avant."
+    - "Chauffer une poêle à feu très vif avec un filet d'huile. Saisir l'entrecôte {@face} par face sans la bouger, et la retourner avec une pince."
+    - "Baisser le feu, ajouter le beurre, l'ail écrasé et les herbes. Arroser la viande de beurre mousseux pendant {@arrosage}."
+    - "Laisser reposer {@repos} sous une feuille d'alu, puis poivrer et servir nappé du beurre de cuisson."
+
+chef:
+  temps: { preparation: 10, cuisson: 12, attente: 60 }
+  etapes:
+    - titre: Avant la cuisson
+      texte: "Sortir la viande du frigo 30 min à 1 h à l'avance. La saler 15 à 30 min avant la cuisson, pas plus tôt, et la tamponner au papier absorbant avant de la saisir : sinon elle rend de l'eau et grille mal."
+    - titre: La saisie, sans beurre
+      texte: "Chauffer une poêle en acier ou en fonte à feu très vif. Ajouter un filet d'huile neutre. Déposer l'entrecôte dans la poêle très chaude et ne plus y toucher."
+    - texte: "Cuire {@face} par face. Retourner avec une pince, jamais avec une fourchette. Saisir éventuellement les bords quelques secondes."
+    - titre: La finition au beurre parfumé
+      texte: "Baisser le feu à moyen. Ajouter le beurre, l'ail, les herbes et éventuellement l'échalote. Remettre la viande dans la poêle et l'arroser sans arrêt de beurre fondu à la cuillère pendant {@arrosage}."
+    - titre: Le repos
+      texte: "Sortir l'entrecôte, la poser sur une assiette chaude ou une grille. La couvrir légèrement d'une feuille d'alu et la laisser reposer {@repos}."
+    - titre: Le dressage
+      texte: "Napper la viande du beurre de cuisson chaud, ou la reposer 10 secondes dans le beurre avant de servir. Accompagner de pommes grenailles, d'une salade ou de haricots verts."
+  astuces:
+    - "Ne pas poivrer dans la poêle : le poivre brûle."
+    - "Utiliser une pince, jamais une fourchette, et ne pas toucher la viande pendant la saisie."
+    - "Pour une sauce, déglacer la poêle après la cuisson au vin rouge, au cognac ou au porto."
+
+notes:
+  - titre: Pour que l'intérieur soit bien chaud
+    texte: |
+      - Choisir une entrecôte épaisse (2 à 4 cm) pour un bon équilibre entre la cuisson extérieure et intérieure.
+      - La saisie rapide à feu vif crée une belle croûte qui retient les jus.
+      - L'arrosage prolongé au beurre parfumé chauffe doucement la viande sans brûler l'extérieur.
+      - Le repos laisse la chaleur se répartir et les jus se stabiliser.
+      - Pour une pièce de plus de 4 cm, une finition au four doux (100 à 120 °C) peut être utile.
+
+sources:
+  - titre: "This is why steaks are better in restaurants (YouTube)"
+    url: https://www.youtube.com/shorts/cj3ZhK4ccfw
+  - titre: "Butter basted steak tutorial (YouTube)"
+    url: https://www.youtube.com/shorts/kUXXjApmS-E
+  - titre: "Entrecôte de bœuf au beurre d'ail (YouTube)"
+    url: https://www.youtube.com/shorts/tEbeQC85Svw
+  - titre: "Pourquoi saler et laisser reposer (YouTube)"
+    url: https://www.youtube.com/shorts/i5qb5gcyw8s
+voirAussi: [entrecote-bleue]

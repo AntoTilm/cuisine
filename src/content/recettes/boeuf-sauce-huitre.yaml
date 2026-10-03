@@ -1,0 +1,71 @@
+titre: Bœuf sauté à la sauce d'huître
+cuisine: asiatique
+origine: Chine, Canton
+type: plat
+resume: Lamelles de bœuf attendries, saisies au wok et enrobées d'une sauce d'huître brillante, à la ciboule.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La marinade du bœuf
+    items:
+      - { nom: "Bœuf (rumsteck, bavette ou filet)", qte: 500, unite: g }
+      - { nom: Sauce soja claire, qte: 44, unite: g }
+      - { nom: Vin de cuisine chinois (Shaoxing), qte: 28, unite: g }
+      - { nom: Bicarbonate alimentaire, qte: 4, unite: g }
+      - { nom: Fécule de maïs, qte: 20, unite: g }
+      - { nom: Huile neutre, qte: 40, unite: g }
+      - { nom: Poivre noir }
+  - groupe: La sauce
+    items:
+      - { nom: Sauce soja claire, qte: 48, unite: g }
+      - { nom: Sauce soja foncée, qte: 10, unite: g }
+      - { nom: Sauce d'huître, qte: 60, unite: g }
+      - { nom: Sucre, qte: 10, unite: g }
+      - { nom: Eau, qte: 120, unite: g }
+      - { nom: Huile de sésame, qte: 20, unite: g }
+      - { nom: Fécule de maïs, qte: 20, unite: g }
+  - groupe: Les aromates et la cuisson
+    items:
+      - { nom: Ail, qte: 4, unite: gousse }
+      - { nom: Gingembre frais, qte: 20, unite: g }
+      - { nom: Ciboule chinoise ou oignon vert, qte: 80, unite: g }
+      - { nom: Huile neutre, qte: 80, unite: g, note: pour la cuisson }
+  - groupe: Pour servir
+    items:
+      - { nom: Riz blanc, qte: 300, unite: g }
+      - { nom: "Brocoli, pois gourmands ou bok choy", qte: 400, unite: g, optionnel: true }
+
+simple:
+  temps: { preparation: 15, cuisson: 10, attente: 15 }
+  etapes:
+    - texte: "Trancher le bœuf finement, perpendiculairement aux fibres. Le mélanger avec tous les ingrédients de la marinade et laisser reposer 15 min."
+      minuteur: 900
+    - "Mélanger les ingrédients de la sauce dans un bol."
+    - texte: "Saisir le bœuf 1 min à feu vif dans l'huile, puis le retirer."
+      minuteur: 60
+    - "Faire revenir l'ail et le gingembre hachés 30 secondes, remettre le bœuf, verser la sauce et cuire 1 min. Ajouter la ciboule, mélanger 10 secondes et retirer du feu."
+    - "Servir avec le riz blanc et des légumes sautés."
+
+chef:
+  temps: { preparation: 30, cuisson: 10, attente: 15 }
+  etapes:
+    - titre: Trancher
+      texte: "Placer le bœuf 20 min au congélateur pour le raffermir, puis le trancher en lamelles de 3 mm, perpendiculairement aux fibres."
+    - titre: Mariner
+      texte: "Mélanger la viande avec la sauce soja, le Shaoxing, le bicarbonate et le poivre, puis la fécule, et enfin l'huile, qui enrobe et protège les lamelles. Laisser reposer 15 min."
+      minuteur: 900
+    - titre: Préparer la sauce
+      texte: "Mélanger tous les ingrédients de la sauce dans un petit bol. La fécule se dépose au fond : remuer juste avant de verser."
+    - titre: Saisir
+      texte: "Chauffer le wok jusqu'à ce qu'il fume. Saisir le bœuf 30 à 60 secondes à feu vif dans l'huile de cuisson, en deux fois, sans le remuer pendant les premières secondes. Retirer et réserver."
+      minuteur: 60
+    - texte: "Faire revenir l'ail et le gingembre 20 secondes dans un fond d'huile."
+    - texte: "Remettre le bœuf, verser la sauce et cuire 1 min : elle devient brillante et nappante. Ajouter la ciboule, mélanger 10 secondes et retirer du feu."
+    - texte: "Servir avec le riz blanc et des légumes sautés : brocolis, pois gourmands ou bok choy."
+  astuces:
+    - "Le bicarbonate attendrit la viande en modifiant l'acidité de sa surface : c'est le secret de la texture fondante des restaurants chinois. Ne pas dépasser la dose, sinon il laisse un goût savonneux."
+
+sources:
+  - titre: "Bœuf sauté à la sauce huître (YouTube)"
+    url: https://www.youtube.com/shorts/EdYrgxk728Y

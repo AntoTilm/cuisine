@@ -1,0 +1,101 @@
+titre: Vol-au-vent
+cuisine: belge
+origine: Bruxelles
+type: plat
+saison: hiver
+resume: Poule pochée, boulettes, champignons et sauce veloutée dans une croûte feuilletée. Avec des frites, évidemment.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La volaille et le bouillon
+    mode: simple
+    items:
+      - { nom: Blanc de poulet, qte: 600, unite: g }
+      - { nom: Cube de bouillon de volaille, qte: 2, unite: cube }
+      - { nom: Eau, qte: 1.5, unite: l }
+  - groupe: La poule et son bouillon
+    mode: chef
+    items:
+      - { nom: Poule ou poularde, qte: 1.2, unite: kg }
+      - { nom: Oignon, qte: 2 }
+      - { nom: Poireau, qte: 1 }
+      - { nom: Carotte, qte: 2 }
+      - { nom: Persil, qte: 1, unite: botte }
+      - { nom: Thym, qte: 2, unite: brin }
+      - { nom: Laurier, qte: 2, unite: feuille }
+      - { nom: Graisse d'oie, qte: 1, unite: cs, optionnel: true }
+  - groupe: Le ris de veau
+    mode: chef
+    items:
+      - { nom: Ris de veau, qte: 300, unite: g }
+  - groupe: Les champignons
+    items:
+      - { nom: Champignons de Paris, qte: 1, unite: kg }
+      - { nom: Citron, qte: 1 }
+  - groupe: Les boulettes
+    items:
+      - { nom: Viande hachée porc et veau, qte: 1, unite: kg }
+      - { nom: Œuf, qte: 4, note: les jaunes }
+      - { nom: Chapelure, qte: 3, unite: cs }
+  - groupe: La sauce
+    items:
+      - { nom: Beurre, qte: 100, unite: g }
+      - { nom: Farine, qte: 150, unite: g }
+      - { nom: Crème fraîche, qte: 20, unite: cl }
+      - { nom: Noix de muscade }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: Pour servir
+    items:
+      - { nom: Croûtes feuilletées (bouchées à la reine), qte: 4 }
+
+simple:
+  temps: { preparation: 30, cuisson: 40 }
+  etapes:
+    - texte: "Porter l'eau et les cubes de bouillon à frémissement. Y pocher les blancs de poulet 15 min, les sortir et garder le bouillon."
+      minuteur: 900
+    - texte: "Mélanger la viande hachée avec les jaunes d'œufs, un peu de chapelure, du sel et du poivre. Former de petites boulettes et les pocher 5 min dans le bouillon. Les égoutter."
+      minuteur: 300
+    - "Couper les champignons en quatre. Les cuire 2 min à couvert sur feu vif avec 2 cm d'eau, le jus du citron et du poivre. Garder le jus."
+    - texte: "Dans une grande casserole, faire fondre le beurre, ajouter la farine et cuire 2 min en fouettant. Verser petit à petit environ 1 l de bouillon chaud et le jus des champignons, sans cesser de fouetter pour éviter les grumeaux. Laisser cuire 10 min à feu doux."
+      minuteur: 600
+    - "Ajouter le poulet en morceaux, les boulettes, les champignons et la crème. Réchauffer, puis assaisonner : sel, poivre, muscade."
+    - "Chauffer les croûtes 5 min au four à 180 °C et les garnir au dernier moment. Servir avec des frites ou une purée."
+  astuces:
+    - "Un poulet rôti du commerce, effiloché, remplace très bien les blancs pochés."
+
+chef:
+  temps: { preparation: 60, cuisson: 120, attente: 60 }
+  etapes:
+    - titre: Le bouillon
+      texte: "Remplir d'eau froide une casserole assez grande. Nettoyer les légumes aromatiques, les couper en gros morceaux et les mettre dans l'eau avec sel, poivre, thym et laurier. Porter à ébullition et laisser tirer 20 min à petit feu : c'est l'extraction, qui donne tout le goût des légumes au bouillon."
+      minuteur: 1200
+    - titre: La poule
+      texte: "Passer le bouillon au chinois pour le garder clair. Le ramener à ébullition et y plonger la poule : elle doit être entièrement recouverte, sinon ajouter de l'eau. La cuire 50 min à petite ébullition avec la graisse d'oie."
+      minuteur: 3000
+    - texte: "Vérifier la cuisson : détacher une cuisse et regarder l'articulation. Si elle est bien blanche, la poule est cuite. La sortir et la laisser refroidir pour l'éplucher. Conserver précieusement le bouillon."
+    - titre: Le ris de veau
+      texte: "Pendant la cuisson, faire dégorger le ris de veau 1 h dans l'eau froide. Le blanchir 2 min dans le bouillon, le rafraîchir, retirer les membranes et le couper en morceaux. Le dorer au beurre juste avant l'assemblage."
+    - titre: Les champignons
+      texte: "Couper le pied des champignons, puis les couper en quatre. Les mettre en casserole sur 2 cm d'eau froide avec le jus du citron et un peu de poivre du moulin. Couvrir et porter à ébullition 1 à 2 min sur feu très vif : c'est la cuisson « à blanc ». Garder le jus pour la sauce."
+    - titre: Les boulettes
+      texte: "Mélanger les jaunes d'œufs à la viande avec un peu de chapelure, du sel et du poivre. Façonner de petites boulettes régulières. Les cuire dans le bouillon de la poule, puis les rissoler à la poêle."
+    - titre: Le roux
+      texte: "Faire réduire le bouillon à gros bouillons pour concentrer les goûts : compter environ 60 cl de sauce par personne. Dans une autre casserole, faire fondre le beurre doucement, sans coloration. Ajouter la farine et fouetter pour obtenir un roux, puis le cuire 5 min à feu doux pour enlever le goût de farine."
+      minuteur: 300
+    - titre: La sauce
+      texte: "Filtrer le bouillon et le verser petit à petit sur le roux en fouettant énergiquement : on évite les grumeaux et on aère la sauce. Ajouter le jus des champignons. Quand la sauce est assez liée, la laisser bouillir à petit feu 10 min pour la dépouiller, en écumant les impuretés qui remontent à la surface."
+      minuteur: 600
+    - titre: L'assemblage
+      texte: "Décortiquer la volaille en retirant tendons et cartilages, en gros ou petits morceaux. Dans une grande casserole, réunir la sauce, la volaille, le ris de veau, les boulettes et les champignons. Réchauffer doucement en mélangeant, faire bouillir un instant et terminer avec la crème. Goûter, puis ajuster le sel, le poivre et la muscade."
+    - texte: "Chauffer les croûtes 5 min à 180 °C et les garnir au dernier moment, pour qu'elles restent croustillantes."
+  astuces:
+    - "Dépouiller une sauce, c'est la laisser frémir pour que les impuretés remontent en écume, puis les retirer à la louche : la sauce devient plus nette et plus brillante."
+    - "La sauce se prépare la veille et gagne en goût ; la crème s'ajoute seulement au moment de réchauffer."
+
+sources:
+  - titre: "Bouchées à la reine / vol-au-vent, recette simple (YouTube)"
+    url: https://www.youtube.com/watch?v=bgG479XvQkk
+  - titre: "Le vol-au-vent des Armes de Bruxelles (The Mastercooks of Belgium)"
+    url: https://mastercooks.be/fr/le-vol-au-vent-des-armes-de-bruxelles

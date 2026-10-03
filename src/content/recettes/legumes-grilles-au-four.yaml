@@ -1,0 +1,53 @@
+titre: Légumes grillés au four
+cuisine: mediterraneenne
+origine: Provence
+type: accompagnement
+saison: ete
+resume: Champignons, poivrons, carottes, courgette et tomates cerises rôtis à l'huile d'olive.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Les légumes
+    items:
+      - { nom: Champignons de Paris, qte: 500, unite: g }
+      - { nom: Poivron, qte: 2 }
+      - { nom: Tomates cerises, qte: 400, unite: g }
+      - { nom: Carotte, qte: 3 }
+      - { nom: Échalote, qte: 5 }
+      - { nom: Courgette, qte: 1 }
+  - groupe: L'assaisonnement
+    items:
+      - { nom: Huile d'olive, qte: 4, unite: cs }
+      - { nom: Herbes de Provence, qte: 2, unite: cc, mode: simple }
+      - { nom: Ail, qte: 6, unite: gousse, mode: chef, note: en chemise }
+      - { nom: Thym, qte: 4, unite: brin, mode: chef }
+      - { nom: Romarin, qte: 2, unite: brin, mode: chef }
+      - { nom: Vinaigre balsamique, qte: 1, unite: cs, mode: chef }
+      - { nom: Fleur de sel, mode: chef }
+      - { nom: Sel }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 15, cuisson: 40 }
+  etapes:
+    - "Préchauffer le four à 200 °C."
+    - "Couper les légumes en morceaux de taille similaire : les carottes en rondelles fines (elles cuisent plus lentement), les échalotes en deux, les poivrons et la courgette en gros dés, les champignons en deux. Laisser les tomates cerises entières."
+    - "Mélanger les légumes sur une plaque avec l'huile d'olive, les herbes, le sel et le poivre, en une seule couche."
+    - texte: "Enfourner 35 à 40 min en remuant à mi-cuisson."
+      minuteur: 2100
+
+chef:
+  temps: { preparation: 25, cuisson: 40 }
+  etapes:
+    - "Préchauffer le four à 220 °C en chaleur tournante, avec deux plaques à l'intérieur pour qu'elles soient brûlantes."
+    - "Tailler les légumes en morceaux réguliers et bien les sécher. Les assaisonner séparément d'huile d'olive, de sel et de poivre : chaque légume a son temps de cuisson."
+    - texte: "Étaler sur une plaque les carottes, les échalotes coupées en deux et les gousses d'ail en chemise. Enfourner 15 min."
+      minuteur: 900
+    - texte: "Sur la deuxième plaque, étaler les poivrons, la courgette et les champignons, sans les entasser : serrés, ils cuisent à la vapeur au lieu de rôtir. Enfourner les deux plaques 15 min avec le thym et le romarin."
+      minuteur: 900
+    - texte: "Ajouter les tomates cerises pour les 10 dernières minutes : elles doivent juste éclater."
+      minuteur: 600
+    - "Réunir les légumes dans un plat, presser l'ail rôti hors de sa peau, arroser d'un filet de vinaigre balsamique et finir à la fleur de sel."
+  astuces:
+    - "Des légumes bien secs avant l'huile colorent beaucoup mieux : les essuyer après les avoir lavés."

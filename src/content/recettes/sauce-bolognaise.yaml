@@ -1,0 +1,66 @@
+titre: Sauce bolognaise
+cuisine: italienne
+origine: Bologne
+type: sauce
+saison: hiver
+resume: Une grande marmite de sauce à la viande et aux champignons, qui mijote au moins deux heures et se congèle très bien.
+portions:
+  base: 10
+
+ingredients:
+  - groupe: La sauce
+    items:
+      - { nom: Viande hachée bœuf et porc, qte: 1, unite: kg }
+      - { nom: Oignon, qte: 2 }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Tomates pelées en boîte, qte: 1, unite: kg, note: ou tomates fraîches }
+      - { nom: Coulis de tomate, qte: 1, unite: l }
+      - { nom: Concentré de tomate, qte: 150, unite: g }
+      - { nom: Champignons de Paris, qte: 625, unite: g }
+      - { nom: Piment en poudre, qte: 1, unite: cc }
+      - { nom: Thym séché, qte: 1, unite: cc }
+      - { nom: Laurier, qte: 2, unite: feuille }
+      - { nom: Eau, qte: 250, unite: ml, note: un grand verre }
+      - { nom: Huile d'olive, qte: 3, unite: cs }
+      - { nom: Sauce piquante, optionnel: true }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: Le soffritto et le mouillage
+    mode: chef
+    items:
+      - { nom: Carotte, qte: 2 }
+      - { nom: Céleri, qte: 2, unite: branche }
+      - { nom: Vin rouge, qte: 25, unite: cl }
+      - { nom: Lait entier, qte: 15, unite: cl }
+      - { nom: Croûte de parmesan, qte: 1, optionnel: true }
+
+simple:
+  temps: { preparation: 20, cuisson: 75 }
+  etapes:
+    - "Émincer les oignons et l'ail, les faire revenir dans l'huile d'olive au fond d'une grande marmite. Ajouter la viande et la laisser cuire en l'émiettant."
+    - "Ajouter les champignons émincés et cuire 5 min, jusqu'à ce qu'ils aient rendu leur eau."
+    - "Verser les tomates pelées et les écraser grossièrement, avec un presse-purée par exemple. Cuire 5 min."
+    - "Ajouter le concentré de tomate et le coulis, puis l'eau, le laurier, le thym, le sel, le poivre et le piment."
+    - texte: "Laisser mijoter sans couvrir au moins 1 h, idéalement 2 h, en mélangeant de temps en temps."
+      minuteur: 3600
+  astuces:
+    - "Se congèle très bien en portions : c'est une sauce à préparer en grande quantité."
+
+chef:
+  temps: { preparation: 40, cuisson: 200 }
+  etapes:
+    - titre: Le soffritto
+      texte: "Tailler les oignons, les carottes et le céleri en tout petits dés (brunoise). Les faire suer 10 min à feu doux dans l'huile d'olive avec l'ail, sans coloration."
+    - titre: La viande
+      texte: "Pousser les légumes sur le côté, monter le feu et faire colorer la viande en plusieurs fois. Ne pas remuer pendant 2 min : la croûte qui se forme au fond de la marmite donne le goût."
+    - titre: Le mouillage
+      texte: "Verser le vin rouge et gratter les sucs. Laisser réduire presque à sec."
+    - texte: "Verser le lait et laisser réduire de moitié : il attendrit la viande et adoucit l'acidité de la tomate."
+    - texte: "Dans une poêle à part, sauter les champignons émincés 5 min à feu vif, puis les ajouter à la marmite avec les tomates pelées écrasées, le concentré, le coulis, l'eau, le laurier, le thym, le piment et la croûte de parmesan."
+    - titre: Le mijotage
+      texte: "Laisser mijoter 3 h à feu très doux, couvercle entrouvert, en remuant de temps en temps. Ajouter un peu d'eau si la sauce attache."
+      minuteur: 10800
+    - texte: "Retirer le laurier et la croûte de parmesan, puis rectifier le sel et le poivre en fin de cuisson."
+  astuces:
+    - "Sauter les champignons à part et à feu vif : avec la viande, ils rendent leur eau et l'empêchent de colorer."
+    - "À Bologne, la sauce se sert avec des tagliatelles fraîches plutôt qu'avec des spaghettis."
