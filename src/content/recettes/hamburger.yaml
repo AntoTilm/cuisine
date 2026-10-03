@@ -59,3 +59,10 @@ chef:
       minuteur: 60
     - titre: Le montage
       texte: "Toaster les pains au beurre, face coupée contre la poêle. Monter : pain, sauce, salade, steak, oignons compotés, tomate, cornichons, sauce, pain."
+
+assiette:
+  - role: feculent
+    choix: [frites-maison, frites-au-four, friterie, pommes-de-terre-hasselback]
+    defaut: [frites-maison]
+  - role: legume
+    choix: [salade-composee]

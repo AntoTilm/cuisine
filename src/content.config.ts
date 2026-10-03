@@ -57,6 +57,8 @@ const recettes = defineCollection({
       pluriel: z.string().default('personnes'),
       pas: z.number().positive().default(1),
       min: z.number().positive().optional(),
+      // Combien d'unités par personne (2 rouleaux, 250 g d'entrecôte…) : sert à doser les accompagnements.
+      parPersonne: z.number().positive().default(1),
     }),
     ingredients: z
       .array(
@@ -75,6 +77,22 @@ const recettes = defineCollection({
     sources: z.array(z.object({ titre: z.string(), url: z.string().url() })).optional(),
     servirAvec: z.array(z.string()).optional(),
     voirAussi: z.array(z.string()).optional(),
+    // Plat complet : pour chaque rôle, les recettes qu'on peut mettre à côté.
+    assiette: z
+      .array(
+        z.object({
+          role: z.enum(['feculent', 'legume', 'sauce', 'autre']),
+          titre: z.string().optional(),
+          choix: z.array(z.string()).min(1),
+          defaut: z.array(z.string()).default([]),
+          plusieurs: z.boolean().default(false),
+        }),
+      )
+      .optional(),
+    // Variantes d'une même recette : la recette principale porte nomVariante,
+    // les autres portent aussi varianteDe (le slug de la principale) et ne sont pas listées à part.
+    nomVariante: z.string().optional(),
+    varianteDe: z.string().optional(),
     outil: z.enum(['cuisson-entrecote']).optional(),
     deroule: z.object({ titre: z.string(), url: z.string() }).optional(),
   }),

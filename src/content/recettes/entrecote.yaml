@@ -1,7 +1,8 @@
-titre: Entrecôte au beurre arrosé
+titre: Entrecôte
+nomVariante: À la poêle, beurre arrosé
 cuisine: francaise
 type: plat
-resume: Saisie à feu très vif, arrosée de beurre à l'ail et aux herbes, puis reposée. Les temps se calculent selon l'épaisseur et la cuisson voulue.
+resume: Saisie à feu très vif, arrosée de beurre à l'ail et aux herbes, puis reposée. Les temps se calculent selon l'épaisseur et la cuisson voulue, du bleu au bien cuit.
 portions:
   base: 2
 
@@ -45,7 +46,7 @@ chef:
     - titre: Le repos
       texte: "Sortir l'entrecôte, la poser sur une assiette chaude ou une grille. La couvrir légèrement d'une feuille d'alu et la laisser reposer {@repos}."
     - titre: Le dressage
-      texte: "Napper la viande du beurre de cuisson chaud, ou la reposer 10 secondes dans le beurre avant de servir. Accompagner de pommes grenailles, d'une salade ou de haricots verts."
+      texte: "Napper la viande du beurre de cuisson chaud, ou la reposer 10 secondes dans le beurre avant de servir."
   astuces:
     - "Ne pas poivrer dans la poêle : le poivre brûle."
     - "Utiliser une pince, jamais une fourchette, et ne pas toucher la viande pendant la saisie."
@@ -69,4 +70,11 @@ sources:
     url: https://www.youtube.com/shorts/tEbeQC85Svw
   - titre: "Pourquoi saler et laisser reposer (YouTube)"
     url: https://www.youtube.com/shorts/i5qb5gcyw8s
-voirAussi: [entrecote-bleue]
+
+assiette:
+  - role: feculent
+    choix: [frites-maison, frites-au-four, friterie, pommes-de-terre-hasselback, gratin-dauphinois, puree-maison]
+    defaut: [frites-maison]
+  - role: legume
+    choix: [salade-composee, legumes-grilles-au-four]
+    defaut: [salade-composee]

@@ -44,16 +44,23 @@ export function ecrireListe(liste) {
   window.dispatchEvent(new CustomEvent('carnet:liste'));
 }
 
-export function ajouterRecette(slug, portions, mode) {
+/**
+ * Ajoute (ou met à jour) une recette dans la liste. `avec` : les accompagnements choisis
+ * ({ slug, portions }), rangés sous le plat ; ceux d'un ajout précédent sont remplacés.
+ */
+export function ajouterRecette(slug, portions, mode, avec = []) {
   const liste = lireListe();
-  const existante = liste.recettes.find((r) => r.slug === slug);
-  if (existante) Object.assign(existante, { portions, mode });
-  else liste.recettes.push({ slug, portions, mode });
+  liste.recettes = liste.recettes.filter((r) => r.pour !== slug);
+  const existante = liste.recettes.find((r) => r.slug === slug && !r.pour);
+  if (existante) Object.assign(existante, { portions, mode, avec: avec.map((a) => a.slug) });
+  else liste.recettes.push({ slug, portions, mode, avec: avec.map((a) => a.slug) });
+  const i = liste.recettes.findIndex((r) => r.slug === slug && !r.pour);
+  liste.recettes.splice(i + 1, 0, ...avec.map((a) => ({ slug: a.slug, portions: a.portions, mode, pour: slug })));
   ecrireListe(liste);
 }
 
 export function dansLaListe(slug) {
-  return lireListe().recettes.find((r) => r.slug === slug) || null;
+  return lireListe().recettes.find((r) => r.slug === slug && !r.pour) || null;
 }
 
 export function nombreDansLaListe() {

@@ -1,0 +1,78 @@
+titre: Gratin dauphinois
+cuisine: francaise
+origine: Dauphiné
+type: accompagnement
+saison: hiver
+resume: Des pommes de terre fines cuites lentement dans une crème infusée à l'ail et au thym. Sans fromage, comme le vrai dauphinois.
+portions:
+  base: 6
+
+ingredients:
+  - groupe: Les pommes de terre
+    items:
+      - { nom: Pommes de terre à chair farineuse, qte: 1.2, unite: kg, note: "Bintje, Agata ou Monalisa", cle: pdt }
+  - groupe: La crème infusée
+    items:
+      - { nom: Lait entier, qte: 500, unite: ml, cle: lait }
+      - { nom: Crème entière (35 % min.), qte: 400, unite: ml, cle: creme }
+      - { nom: Ail, qte: 3, unite: gousse }
+      - { nom: Thym frais, qte: 2, unite: brin }
+      - { nom: Laurier, qte: 1, unite: feuille }
+      - { nom: Noix de muscade, qte: 0.3, unite: cc, note: fraîchement râpée }
+      - { nom: Sel fin, qte: 2, unite: cc }
+      - { nom: Poivre blanc moulu, qte: 0.5, unite: cc }
+  - groupe: Le plat
+    items:
+      - { nom: Beurre doux, qte: 30, unite: g, cle: beurre }
+      - { nom: Crème double épaisse, qte: 100, unite: g, note: type Isigny, cle: double }
+      - { nom: Fleur de sel }
+  - groupe: La touche grand luxe
+    mode: chef
+    items:
+      - { nom: Truffe fraîche, qte: 30, unite: g, optionnel: true, note: "Bourgogne en automne, Périgord dès décembre", cle: truffe }
+
+simple:
+  temps: { preparation: 25, cuisson: 90, attente: 30 }
+  etapes:
+    - texte: "Dans une casserole, verser {lait} de lait et {creme} de crème. Ajouter 2 gousses d'ail écrasées, le thym, le laurier, le sel, le poivre et la muscade. Porter juste à frémissement, couper le feu, couvrir et laisser infuser 15 min (jusqu'à 20 min pour plus d'ail)."
+      minuteur: 900
+    - "Pendant l'infusion, éplucher {pdt} de pommes de terre et les tailler en rondelles de 3 mm. Ne pas rincer les rondelles : leur amidon va lier la crème. Les pommes de terre entières peuvent attendre dans l'eau, pas les rondelles."
+    - "Préchauffer le four à 160 °C, chaleur statique. Frotter le plat avec la dernière gousse d'ail coupée en deux, puis le beurrer avec {beurre} de beurre."
+    - "Ranger les rondelles en couches serrées dans le plat. Filtrer la crème encore chaude par-dessus : elle doit arriver juste à hauteur de la dernière couche, pas la noyer. Tasser avec une spatule, puis répartir {double} de crème double en surface."
+    - texte: "Enfourner à 160 °C pour environ 1 h 30. Le gratin est prêt quand le dessus est blond doré et qu'une lame traverse sans résistance ; compter jusqu'à 1 h 45 si besoin. S'il colore trop vite, le couvrir de papier cuisson."
+      minuteur: 5400
+    - texte: "Laisser reposer 15 min hors du four pour que la crème se fige légèrement et que le gratin se tienne. Une pincée de fleur de sel au moment de servir."
+      minuteur: 900
+  astuces:
+    - "Il est encore meilleur réchauffé le lendemain."
+    - "Avec du gruyère, on bascule vers un gratin savoyard."
+
+chef:
+  temps: { preparation: 30, cuisson: 100, attente: 30 }
+  etapes:
+    - titre: Infuser la crème
+      texte: "Dans une grande casserole à fond épais, verser {lait} de lait et {creme} de crème. Ajouter 2 gousses d'ail écrasées, le thym, le laurier, le sel, le poivre blanc et la muscade. Porter juste à frémissement, couper le feu, couvrir et laisser infuser 15 min. Si on a de la truffe, ajouter ses parures dans l'infusion."
+      minuteur: 900
+    - titre: Trancher
+      texte: "Éplucher {pdt} de pommes de terre et les tailler en rondelles de 3 mm à la mandoline. Ne pas les rincer, ne pas les mettre dans l'eau : c'est leur amidon qui lie la crème."
+    - titre: Précuire dans la crème
+      texte: "Retirer l'ail, le thym et le laurier. Plonger les rondelles dans la crème infusée et cuire 8 à 10 min à feu doux, en remuant délicatement à la spatule pour ne pas les casser ni accrocher le fond. Elles doivent être à peine tendres et la crème nappante."
+      minuteur: 540
+    - titre: Préparer le plat
+      texte: "Préchauffer le four à 150 °C, chaleur statique. Frotter généreusement un plat en terre ou en fonte avec la dernière gousse d'ail coupée en deux, puis le beurrer avec {beurre} de beurre."
+    - titre: Monter le gratin
+      texte: "Disposer la moitié des pommes de terre à la louche. Avec la truffe : une couche de fines lamelles, la moitié de {truffe}. Recouvrir du reste des pommes de terre en rangeant la dernière couche en rosace bien serrée. Verser la crème restante à hauteur, puis répartir {double} de crème double en surface."
+    - titre: Cuire lentement
+      texte: "Enfourner à 150 °C pour 1 h 15 à 1 h 30. Le gratin est prêt quand le dessus est blond doré et qu'une lame traverse sans aucune résistance. S'il colore trop vite, le couvrir d'une feuille de papier cuisson."
+      minuteur: 4500
+    - titre: Reposer et finir
+      texte: "Laisser reposer 15 à 20 min hors du four, pour que la crème se fige et que le gratin se tienne à la découpe. Au moment de servir, râper le reste de la truffe par-dessus et ajouter une pincée de fleur de sel."
+      minuteur: 900
+  astuces:
+    - "Les trois gestes qui font la différence : ne pas rincer les rondelles, les précuire dans la crème infusée, cuire lentement à 150 °C plutôt qu'à feu vif."
+    - "Version restaurant : cuire la veille dans un plat rectangulaire, presser une nuit au frigo sous un poids, tailler des pavés nets et les réchauffer 15 min au four à 200 °C."
+
+notes:
+  - titre: La truffe
+    mode: chef
+    texte: "En octobre, c'est la saison de la truffe de Bourgogne (Tuber uncinatum) ; la noire du Périgord arrive en décembre. Sans truffe, le gratin reste un grand gratin : on saute simplement les lamelles."

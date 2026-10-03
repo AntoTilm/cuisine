@@ -1,0 +1,38 @@
+titre: Riz blanc parfumé
+cuisine: asiatique
+type: accompagnement
+resume: Le riz jasmin des plats au wok, cuit à l'étouffée pour des grains séparés et parfumés.
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Riz parfumé thaï (jasmin), qte: 300, unite: g, cle: riz }
+      - { nom: Eau, qte: 450, unite: ml, cle: eau }
+      - { nom: Sel, qte: 1, unite: pincee }
+
+simple:
+  temps: { preparation: 5, cuisson: 15, attente: 10 }
+  etapes:
+    - "Rincer le riz dans une passoire sous l'eau froide."
+    - texte: "Le mettre dans une casserole avec {eau} d'eau et le sel. Porter à ébullition, couvrir, baisser à feu très doux et cuire 12 min sans soulever le couvercle."
+      minuteur: 720
+    - texte: "Couper le feu et laisser reposer 10 min, toujours couvert. Égrainer à la fourchette."
+      minuteur: 600
+
+chef:
+  temps: { preparation: 25, cuisson: 15, attente: 10 }
+  etapes:
+    - titre: Laver
+      texte: "Laver {riz} de riz dans un saladier d'eau froide en le frottant entre les mains, vider l'eau trouble et recommencer quatre ou cinq fois, jusqu'à ce qu'elle soit presque claire."
+    - titre: Tremper
+      texte: "Laisser tremper 20 min, puis égoutter soigneusement 5 min : le grain trempé cuit plus régulièrement. Réduire alors l'eau de cuisson de 50 ml."
+      minuteur: 1200
+    - titre: Cuire à l'étouffée
+      texte: "Riz et eau dans une casserole à fond épais avec un couvercle qui ferme bien. Porter à ébullition, couvrir, feu au minimum : 12 min sans jamais ouvrir."
+      minuteur: 720
+    - titre: Reposer
+      texte: "Hors du feu, 10 min de repos à couvert, puis aérer le riz à la spatule en le soulevant, sans l'écraser."
+      minuteur: 600
+  astuces:
+    - "Pour les plats japonais, prendre du riz rond japonais et 10 % d'eau en moins."

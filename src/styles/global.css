@@ -1,67 +1,77 @@
 /*
   Carnet de cuisine
-  Un cahier d'écolier à grands carreaux (réglure Seyès) : lignes bleu lavande, marge rouge.
-  L'encre bleue sert à la version simple et aux actions ; le rouge de la marge, aux annotations
-  du chef et à la version grande cuisine.
+  Une carte de brasserie : papier crème, encre brune, bordeaux pour l'action, laiton pour la
+  grande cuisine. La seule pièce de décor est l'ardoise où l'on compose son assiette.
 */
 
 :root {
-  --page: #ffffff;
-  --surface: #f5f7fc;
-  --texte: #1f2331;
-  --texte-doux: #596075;
-  --encre: #2348a8;
-  --encre-fonce: #1a3680;
-  --encre-pale: #e7edfb;
-  --marge: #c4304a;
-  --marge-pale: #fcebee;
-  --ligne: #dce3f3;
-  --ligne-forte: #b3c0e4;
-  --seyes-fine: #e5eaf7;
-  --ombre: 0 1px 0 var(--ligne), 0 10px 24px -18px rgb(35 72 168 / 0.45);
+  --page: #f3ebdc;
+  --surface: #fbf6ec;
+  --texte: #2b211c;
+  --texte-doux: #6b5a4e;
+  --encre: #7a1f2e;
+  --encre-fonce: #5a1420;
+  --encre-pale: #f1dfd9;
+  --marge: #8a6418;
+  --marge-pale: #f3e6c8;
+  --ligne: #e1d4bd;
+  --ligne-forte: #c3ae8c;
+  --seyes-fine: #e8dcc6;
+  --ombre: 0 1px 0 var(--ligne-forte);
 
-  --f-titre: 'Besley', 'Rockwell', Georgia, serif;
-  --f-texte: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ardoise: #27302b;
+  --ardoise-bord: #6a4a30;
+  --craie: #efe9da;
+  --craie-douce: #aab2a7;
+  --craie-trait: rgb(239 233 218 / 0.22);
+
+  --f-titre: 'Young Serif', 'Rockwell', Georgia, serif;
+  --f-texte: 'Source Serif 4', Georgia, 'Times New Roman', serif;
 
   --largeur: 1160px;
   --gouttiere: 16px;
   --carreau: 32px;
+  --rayon: 3px;
 
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --page: #141926;
-    --surface: #1a2031;
-    --texte: #e8ebf3;
-    --texte-doux: #a6adbf;
-    --encre: #94b0ff;
-    --encre-fonce: #b9cbff;
-    --encre-pale: #1f2a47;
-    --marge: #ff7d8e;
-    --marge-pale: #3a1e28;
-    --ligne: #252d43;
-    --ligne-forte: #36415f;
-    --seyes-fine: #1d2436;
-    --ombre: 0 1px 0 var(--ligne), 0 10px 24px -18px rgb(0 0 0 / 0.8);
+    --page: #1d1815;
+    --surface: #26201c;
+    --texte: #eee4d4;
+    --texte-doux: #b3a392;
+    --encre: #e58e98;
+    --encre-fonce: #f2b3ba;
+    --encre-pale: #3b2226;
+    --marge: #d9b46a;
+    --marge-pale: #3a3020;
+    --ligne: #352c26;
+    --ligne-forte: #57483c;
+    --seyes-fine: #2c2520;
+    --ombre: 0 1px 0 var(--ligne-forte);
+    --ardoise: #1a211d;
+    --ardoise-bord: #4d3624;
     color-scheme: dark;
   }
 }
 :root[data-theme='dark'] {
-  --page: #141926;
-  --surface: #1a2031;
-  --texte: #e8ebf3;
-  --texte-doux: #a6adbf;
-  --encre: #94b0ff;
-  --encre-fonce: #b9cbff;
-  --encre-pale: #1f2a47;
-  --marge: #ff7d8e;
-  --marge-pale: #3a1e28;
-  --ligne: #252d43;
-  --ligne-forte: #36415f;
-  --seyes-fine: #1d2436;
-  --ombre: 0 1px 0 var(--ligne), 0 10px 24px -18px rgb(0 0 0 / 0.8);
+  --page: #1d1815;
+  --surface: #26201c;
+  --texte: #eee4d4;
+  --texte-doux: #b3a392;
+  --encre: #e58e98;
+  --encre-fonce: #f2b3ba;
+  --encre-pale: #3b2226;
+  --marge: #d9b46a;
+  --marge-pale: #3a3020;
+  --ligne: #352c26;
+  --ligne-forte: #57483c;
+  --seyes-fine: #2c2520;
+  --ombre: 0 1px 0 var(--ligne-forte);
+  --ardoise: #1a211d;
+  --ardoise-bord: #4d3624;
   color-scheme: dark;
 }
 
@@ -85,8 +95,10 @@ body {
   background: var(--page);
   color: var(--texte);
   font-family: var(--f-texte);
-  font-size: 17px;
-  line-height: 1.55;
+  font-size: 18px;
+  line-height: 1.6;
+  font-synthesis: none;
+  font-optical-sizing: auto;
   overflow-x: hidden;
 }
 img {
@@ -112,8 +124,8 @@ h1,
 h2,
 h3 {
   font-family: var(--f-titre);
-  font-weight: 700;
-  line-height: 1.15;
+  font-weight: 400;
+  line-height: 1.12;
   margin: 0;
   text-wrap: balance;
 }
@@ -122,6 +134,8 @@ h2 {
 }
 h3 {
   font-size: 1.15rem;
+  font-family: var(--f-texte);
+  font-weight: 700;
 }
 p {
   margin: 0;
@@ -157,82 +171,55 @@ select {
   padding: 8px 12px;
 }
 
-/* --- Réglure Seyès ------------------------------------------------------------ */
+/* --- Têtes de page : papier uni, fermé par un double filet laiton ------------- */
 .seyes {
-  --x-marge: 40px;
   position: relative;
-  overflow: hidden;
-  background-color: var(--page);
-  background-image:
-    linear-gradient(var(--ligne-forte) 1px, transparent 1px),
-    linear-gradient(90deg, var(--seyes-fine) 1px, transparent 1px),
-    linear-gradient(var(--seyes-fine) 1px, transparent 1px);
-  background-size:
-    100% var(--carreau),
-    var(--carreau) 100%,
-    100% calc(var(--carreau) / 4);
-  background-position: 0 -1px;
-}
-.seyes > .conteneur {
-  position: relative;
-}
-.seyes > .conteneur::before {
-  content: '';
-  position: absolute;
-  top: -400px;
-  bottom: -400px;
-  left: calc(var(--gouttiere) + var(--x-marge) - 16px);
-  width: 2px;
-  background: var(--marge);
-  opacity: 0.85;
+  border-bottom: 3px double var(--ligne-forte);
 }
 .seyes .dans-la-marge {
-  padding-left: var(--x-marge);
-}
-@media (min-width: 720px) {
-  .seyes {
-    --x-marge: 64px;
-  }
+  max-width: 52rem;
 }
 
-/* --- En-tête du site -------------------------------------------------------- */
+/* --- En-tête du site : le bandeau bordeaux de la devanture -------------------- */
 .site-tete {
-  border-bottom: 1px solid var(--ligne-forte);
-  background: var(--page);
+  background: #6e1b29;
+  color: #f6eedf;
+  border-bottom: 4px solid #a8833f;
 }
 .site-tete .conteneur {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 4px 24px;
-  padding-block: 12px;
+  gap: 4px 28px;
+  padding-block: 14px;
 }
 .marque {
   font-family: var(--f-titre);
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--texte);
+  font-size: 1.45rem;
+  color: inherit;
   text-decoration: none;
-  letter-spacing: -0.01em;
 }
 .marque span {
-  color: var(--marge);
+  color: #d9b46a;
 }
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 20px;
+  gap: 4px 22px;
 }
 .site-nav a {
-  color: var(--texte);
+  color: inherit;
   text-decoration: none;
   padding-block: 6px;
   border-bottom: 2px solid transparent;
 }
 .site-nav a:hover,
 .site-nav a[aria-current='page'] {
-  border-bottom-color: var(--encre);
+  border-bottom-color: #d9b46a;
+}
+.site-tete :focus-visible {
+  outline-color: #d9b46a;
 }
 .compteur-liste {
   display: inline-grid;
@@ -242,8 +229,8 @@ select {
   margin-left: 4px;
   padding-inline: 4px;
   border-radius: 999px;
-  background: var(--encre);
-  color: var(--page);
+  background: #d9b46a;
+  color: #2b211c;
   font-size: 0.8rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
@@ -252,7 +239,7 @@ select {
 /* --- Pied de page ----------------------------------------------------------- */
 .site-pied {
   margin-top: 96px;
-  border-top: 1px solid var(--ligne-forte);
+  border-top: 3px double var(--ligne-forte);
   color: var(--texte-doux);
   font-size: 0.9rem;
 }
@@ -269,11 +256,11 @@ select {
   padding-block: calc(var(--carreau) * 2) calc(var(--carreau) * 1.5);
 }
 .une h1 {
-  font-size: clamp(3rem, 11vw, 6.5rem);
-  font-weight: 800;
-  line-height: 0.95;
-  letter-spacing: -0.02em;
-  max-width: 10ch;
+  font-size: clamp(3.2rem, 12vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: -0.015em;
+  max-width: 9ch;
+  color: var(--encre);
 }
 .une .chapeau {
   margin-top: 24px;
@@ -333,8 +320,7 @@ select {
 }
 .sommaire li a .cuisine-nom {
   font-family: var(--f-titre);
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.4rem;
 }
 .sommaire li a .pointilles {
   flex: 1;
@@ -364,7 +350,7 @@ select {
 .puce {
   border: 1.5px solid var(--ligne-forte);
   background: var(--page);
-  border-radius: 999px;
+  border-radius: var(--rayon);
   padding: 6px 14px;
   font-size: 0.95rem;
   cursor: pointer;
@@ -387,7 +373,10 @@ select {
   justify-content: space-between;
   gap: 4px 16px;
   padding-bottom: 10px;
-  border-bottom: 2px solid var(--texte);
+  border-bottom: 3px double var(--encre);
+}
+.section-cuisine > header h2 {
+  color: var(--encre);
 }
 .section-cuisine > header p {
   color: var(--texte-doux);
@@ -420,8 +409,7 @@ select {
 }
 .ligne-titre {
   font-family: var(--f-titre);
-  font-size: 1.35rem;
-  font-weight: 700;
+  font-size: 1.4rem;
   line-height: 1.2;
 }
 .ligne-resume {
@@ -465,8 +453,7 @@ select {
 }
 .tete-page h1 {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .tete-page .chapeau {
   margin-top: 12px;
@@ -484,9 +471,37 @@ select {
 }
 .recette-tete h1 {
   font-size: clamp(2.4rem, 7.5vw, 4.75rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   max-width: 16ch;
+}
+.variantes {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border: 1.5px solid var(--encre);
+  border-radius: var(--rayon);
+  width: fit-content;
+  max-width: 100%;
+}
+.variantes a {
+  padding: 8px 16px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--encre);
+  font-weight: 600;
+}
+.variantes a + a {
+  border-left: 1.5px solid var(--encre);
+}
+.variantes a[aria-current='page'] {
+  background: var(--encre);
+  color: var(--surface);
+}
+.variantes a:not([aria-current]):hover {
+  background: var(--encre-pale);
 }
 .recette-tete .resume {
   margin-top: 16px;
@@ -531,14 +546,14 @@ select {
 .bascule {
   display: inline-flex;
   padding: 3px;
-  border-radius: 999px;
+  border-radius: var(--rayon);
   border: 1.5px solid var(--ligne-forte);
   background: var(--surface);
 }
 .bascule button {
   border: 0;
   background: transparent;
-  border-radius: 999px;
+  border-radius: 2px;
   padding: 7px 16px;
   min-height: 40px;
   cursor: pointer;
@@ -625,7 +640,7 @@ select {
   margin-left: auto;
   border: 1.5px solid var(--ligne-forte);
   background: var(--page);
-  border-radius: 999px;
+  border-radius: var(--rayon);
   padding: 6px 14px;
   min-height: 40px;
   cursor: pointer;
@@ -666,8 +681,8 @@ select {
 /* Panneau ingrédients / liste de courses */
 .panneau {
   background: var(--surface);
-  border-radius: 8px;
-  box-shadow: var(--ombre);
+  border-radius: var(--rayon);
+  border: 1px solid var(--ligne-forte);
   padding: 4px 20px 20px;
 }
 .onglets {
@@ -770,7 +785,7 @@ select {
   border: 1.5px solid var(--encre);
   background: var(--encre);
   color: var(--page);
-  border-radius: 999px;
+  border-radius: var(--rayon);
   padding: 10px 18px;
   min-height: 44px;
   font-weight: 700;
@@ -823,9 +838,8 @@ select {
   left: 51px;
   top: 0;
   bottom: 0;
-  width: 2px;
-  background: var(--marge);
-  opacity: 0.85;
+  width: 1px;
+  background: var(--ligne-forte);
 }
 .etape {
   display: grid;
@@ -843,8 +857,7 @@ select {
   border: 0;
   background: transparent;
   font-family: var(--f-titre);
-  font-weight: 800;
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   color: var(--encre);
   cursor: pointer;
   font-variant-numeric: tabular-nums;
@@ -897,7 +910,7 @@ select {
   border: 1.5px solid var(--encre);
   background: transparent;
   color: var(--encre);
-  border-radius: 999px;
+  border-radius: var(--rayon);
   padding: 6px 14px;
   min-height: 40px;
   min-width: 110px;
@@ -930,7 +943,7 @@ select {
   padding: 10px 14px;
   border-left: 3px solid var(--marge);
   background: var(--marge-pale);
-  border-radius: 0 6px 6px 0;
+  border-radius: 0;
 }
 .alerte strong {
   color: var(--marge);
@@ -946,7 +959,7 @@ select {
   padding: 18px 22px;
   border-left: 3px solid var(--encre);
   background: var(--encre-pale);
-  border-radius: 0 8px 8px 0;
+  border-radius: 0;
 }
 .annotations h2 {
   font-size: 1.3rem;
@@ -964,13 +977,9 @@ select {
 }
 .annotations.chef h2 {
   color: var(--marge);
-  font-style: italic;
-  font-weight: 500;
 }
 .annotations.chef li {
-  font-family: var(--f-titre);
   font-style: italic;
-  font-weight: 500;
   line-height: 1.6;
 }
 
@@ -1013,7 +1022,7 @@ select {
   display: block;
   padding: 10px 16px;
   border: 1.5px solid var(--ligne-forte);
-  border-radius: 8px;
+  border-radius: var(--rayon);
   text-decoration: none;
   color: var(--texte);
   background: var(--page);
@@ -1039,7 +1048,7 @@ select {
   gap: 12px 24px;
   padding: 18px 22px;
   border: 2px dashed var(--ligne-forte);
-  border-radius: 8px;
+  border-radius: var(--rayon);
 }
 .deroule p {
   max-width: 44ch;
@@ -1054,9 +1063,10 @@ select {
 .calculateur {
   margin-bottom: 40px;
   padding: 20px 22px;
-  border-radius: 8px;
+  border-radius: var(--rayon);
   background: var(--surface);
-  box-shadow: var(--ombre);
+  border: 1px solid var(--ligne-forte);
+  border-top: 4px solid var(--encre);
 }
 .calculateur h2 {
   font-size: 1.3rem;
@@ -1106,7 +1116,7 @@ select {
 }
 .choix-cuisson label {
   border: 1.5px solid var(--ligne-forte);
-  border-radius: 999px;
+  border-radius: var(--rayon);
   padding: 6px 14px;
   min-height: 40px;
   display: inline-flex;
@@ -1167,8 +1177,8 @@ select {
 }
 .colonne-recettes {
   background: var(--surface);
-  border-radius: 8px;
-  box-shadow: var(--ombre);
+  border-radius: var(--rayon);
+  border: 1px solid var(--ligne-forte);
   padding: 18px 20px;
 }
 .colonne-recettes h2,
@@ -1343,6 +1353,182 @@ select {
   font-size: 0.95rem;
 }
 
+/* --- L'ardoise : composer l'assiette ------------------------------------------------ */
+.assiette {
+  margin-top: 28px;
+}
+.ardoise {
+  background: var(--ardoise);
+  color: var(--craie);
+  border: 10px solid var(--ardoise-bord);
+  border-radius: 6px;
+  box-shadow: inset 0 0 60px rgb(0 0 0 / 0.35), 0 2px 0 rgb(0 0 0 / 0.15);
+  padding: 20px 20px 22px;
+  display: grid;
+  gap: 18px 40px;
+}
+@media (min-width: 900px) {
+  .ardoise {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    padding: 26px 32px 28px;
+  }
+  .ardoise-tete {
+    grid-column: 1 / -1;
+  }
+}
+.ardoise-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 24px;
+}
+.ardoise h2 {
+  font-size: clamp(1.6rem, 4.5vw, 2.1rem);
+  color: var(--craie);
+}
+.ardoise-tete p {
+  color: var(--craie-douce);
+  font-size: 0.98rem;
+  max-width: 46ch;
+}
+.ardoise-tete [data-personnes] {
+  color: var(--craie);
+  font-weight: 700;
+}
+.ardoise-groupes {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+.ardoise-groupe {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.ardoise-groupe legend {
+  padding: 0;
+  margin-bottom: 8px;
+  font-family: var(--f-titre);
+  font-size: 1.15rem;
+  color: #e8c983;
+}
+.ardoise-choix {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ardoise-choix input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.ardoise-choix label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 6px 14px;
+  border: 1.5px dashed var(--craie-trait);
+  border-radius: var(--rayon);
+  cursor: pointer;
+  color: var(--craie);
+  line-height: 1.25;
+}
+.ardoise-choix label:hover {
+  border-color: var(--craie-douce);
+}
+.ardoise-choix label.aucun {
+  color: var(--craie-douce);
+  font-style: italic;
+}
+.ardoise-choix input:checked + label {
+  border-style: solid;
+  border-color: var(--craie);
+  background: rgb(239 233 218 / 0.1);
+}
+.ardoise-choix input:checked + label::before {
+  content: '✓';
+  margin-right: 8px;
+  color: #e8c983;
+}
+.ardoise-choix input:focus-visible + label {
+  outline: 3px solid #e8c983;
+  outline-offset: 2px;
+}
+.ardoise-menu {
+  list-style: none;
+  margin: 0;
+  padding: 18px 0 0;
+  border-top: 1.5px dashed var(--craie-trait);
+  text-align: center;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+@media (min-width: 900px) {
+  .ardoise-menu {
+    padding: 4px 0 0 32px;
+    border-top: 0;
+    border-left: 1.5px dashed var(--craie-trait);
+  }
+}
+.ardoise-menu li {
+  display: grid;
+  gap: 2px;
+}
+.ardoise-menu li + li::before {
+  content: '~';
+  color: var(--craie-douce);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.ardoise-menu .menu-titre {
+  font-family: var(--f-titre);
+  font-size: 1.3rem;
+  color: var(--craie);
+  text-decoration: none;
+}
+.ardoise-menu .plat-principal .menu-titre {
+  font-size: 1.55rem;
+  color: #e8c983;
+}
+.ardoise-menu a.menu-titre {
+  text-decoration: underline;
+  text-decoration-color: var(--craie-trait);
+  text-underline-offset: 5px;
+}
+.ardoise-menu a.menu-titre:hover {
+  text-decoration-color: var(--craie);
+}
+.ardoise-menu .menu-detail {
+  color: var(--craie-douce);
+  font-size: 0.92rem;
+  max-width: 36ch;
+  justify-self: center;
+}
+.ardoise :focus-visible {
+  outline-color: #e8c983;
+}
+
+/* Accompagnements rangés sous leur plat dans la liste de courses. */
+.recette-liste.accompagnement {
+  padding-left: 18px;
+  border-left: 2px solid var(--ligne-forte);
+  margin-left: 4px;
+}
+.recette-liste .avec {
+  display: block;
+  font-family: var(--f-texte);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--texte-doux);
+}
+#courses .pour {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--texte-doux);
+}
+
 /* --- Impression : la recette seule, sans les boutons. -------------------------------- */
 @media print {
   .site-tete,
@@ -1357,12 +1543,15 @@ select {
   .liens-recettes {
     display: none !important;
   }
-  .seyes {
-    background: none;
-  }
-  .seyes > .conteneur::before,
-  .etapes::before {
+  .etapes::before,
+  .ardoise-groupes {
     display: none;
+  }
+  .ardoise {
+    background: none;
+    color: inherit;
+    border: 1px solid;
+    box-shadow: none;
   }
   .reglages {
     position: static;

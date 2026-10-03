@@ -1,7 +1,7 @@
 titre: Salade de concombre et wakamé
 cuisine: asiatique
 origine: Japon
-type: entree
+type: accompagnement
 saison: ete
 resume: Concombre tranché fin, algues wakamé et vinaigrette japonaise au sésame grillé.
 portions:
@@ -43,4 +43,3 @@ chef:
 sources:
   - titre: "Vinaigrette japonaise et salade d'algues wakamé et concombre (YouTube)"
     url: https://www.youtube.com/watch?v=_0CkWADgyso
-servirAvec: [saumon-teriyaki]

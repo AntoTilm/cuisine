@@ -1,0 +1,44 @@
+titre: Légumes sautés au wok
+cuisine: asiatique
+type: accompagnement
+resume: Oignon, carottes, poivrons et champignons saisis à feu vif, chacun à son tour pour qu'ils restent croquants.
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Oignon, qte: 1 }
+      - { nom: Carotte, qte: 2 }
+      - { nom: Poivron, qte: 2, note: "rouge, jaune ou vert" }
+      - { nom: Champignons de Paris, qte: 200, unite: g, note: ou shiitakés }
+      - { nom: Huile de tournesol, qte: 2, unite: cs }
+      - { nom: Ail, qte: 1, unite: gousse, optionnel: true }
+      - { nom: Sauce soja, qte: 1, unite: cs, optionnel: true }
+      - { nom: Miel, qte: 1, unite: cc, optionnel: true }
+      - { nom: Sel }
+      - { nom: Poivre moulu }
+
+simple:
+  temps: { preparation: 15, cuisson: 10 }
+  etapes:
+    - "Émincer l'oignon, tailler les carottes en fins bâtonnets, les poivrons en lanières et les champignons en lamelles."
+    - texte: "Dans un wok ou une grande poêle très chaude avec l'huile, sauter l'oignon et les carottes 4 min, puis les poivrons et les champignons 4 min."
+      minuteur: 480
+    - "Saler, poivrer, ajouter un filet de sauce soja et servir aussitôt."
+
+chef:
+  temps: { preparation: 15, cuisson: 10 }
+  etapes:
+    - titre: À feu vif
+      texte: "Chauffer l'huile dans un wok jusqu'à ce qu'elle fume légèrement. Y mettre l'oignon en premier, 2 min, pour qu'il devienne translucide et parfumé."
+      minuteur: 120
+    - texte: "Ajouter les carottes, 3 min : plus fermes, elles doivent s'attendrir avant le reste."
+      minuteur: 180
+    - texte: "Ajouter les poivrons, 2 min : ils cuisent vite et doivent rester croquants."
+      minuteur: 120
+    - texte: "Ajouter les champignons en dernier, 2 min : ils rendent de l'eau et détremperaient les autres légumes."
+      minuteur: 120
+    - titre: L'assaisonnement
+      texte: "En fin de cuisson : sel, poivre, un peu d'ail haché, un filet de sauce soja ou une pointe de miel selon le plat qu'ils accompagnent. Compter 9 à 10 min en tout, en remuant souvent."
+  astuces:
+    - "Ne pas surcharger le wok : en deux fois si besoin, sinon les légumes cuisent à la vapeur."

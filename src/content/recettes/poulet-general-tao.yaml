@@ -73,3 +73,11 @@ chef:
 sources:
   - titre: "Poulet du Général Tao, recette facile (Cooking With Morgane)"
     url: https://www.youtube.com/watch?v=nL_x4wCtldI
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc, riz-cantonais]
+    defaut: [riz-blanc]
+  - role: legume
+    choix: [legumes-sautes-wok, salade-concombre-wakame]
+    defaut: [legumes-sautes-wok]

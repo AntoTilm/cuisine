@@ -1,0 +1,18 @@
+---
+// Ancienne adresse : les deux entrecôtes ne font plus qu'une recette, avec ses variantes.
+import { lien } from '../../lib/recettes.js';
+const cible = lien('recette/entrecote/');
+---
+
+<!doctype html>
+<html lang="fr-BE">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0; url=${cible}`} />
+    <link rel="canonical" href={cible} />
+    <title>Entrecôte · Carnet de cuisine</title>
+  </head>
+  <body>
+    <p>La recette a déménagé : <a href={cible}>Entrecôte</a>.</p>
+  </body>
+</html>

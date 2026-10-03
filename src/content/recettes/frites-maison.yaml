@@ -1,0 +1,47 @@
+titre: Frites maison
+cuisine: belge
+type: accompagnement
+resume: "Deux bains, comme à la friterie : un premier pour cuire, un second pour dorer. Croustillantes dehors, fondantes dedans."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Pommes de terre Bintje, qte: 1.2, unite: kg, note: "grosses, de même taille", cle: pdt }
+      - { nom: Huile de friture, qte: 2, unite: l, mode: simple, note: "arachide ou tournesol, pour la friteuse" }
+      - { nom: Blanc de bœuf, qte: 2, unite: kg, mode: chef, note: "graisse de rognon, chez le boucher ; pour la friteuse" }
+      - { nom: Sel fin }
+
+simple:
+  temps: { preparation: 20, cuisson: 15, attente: 20 }
+  etapes:
+    - "Éplucher les pommes de terre et les tailler en bâtonnets de 1 cm."
+    - "Les rincer à l'eau froide puis les sécher soigneusement dans un essuie : l'eau fait mousser l'huile et ramollit les frites."
+    - texte: "Premier bain à 150 °C, par petites quantités : 6 à 7 min, jusqu'à ce que les frites soient cuites mais encore pâles. Égoutter."
+      minuteur: 390
+    - texte: "Laisser reposer au moins 20 min, étalées sur une grille ou du papier absorbant."
+      minuteur: 1200
+    - texte: "Second bain à 180 °C : 2 à 3 min, jusqu'à ce qu'elles soient dorées. Égoutter, saler tout de suite et servir."
+      minuteur: 150
+
+chef:
+  temps: { preparation: 30, cuisson: 20, attente: 60 }
+  etapes:
+    - titre: La taille
+      texte: "Éplucher {pdt} de Bintje et les tailler en bâtonnets réguliers de 12 mm. Écarter les petits bouts, qui brûleraient avant les autres."
+    - titre: Rincer et sécher
+      texte: "Rincer à l'eau froide jusqu'à ce qu'elle soit claire, pour enlever l'amidon de surface. Sécher à fond dans un essuie propre, en tamponnant."
+    - titre: Le premier bain, à 150 °C
+      texte: "Faire fondre le blanc de bœuf et le monter à 150 °C. Cuire les frites par petites fournées, pour que la graisse ne refroidisse pas : 6 à 8 min, jusqu'à ce qu'une frite s'écrase entre les doigts, sans coloration."
+      minuteur: 420
+    - titre: Le repos
+      texte: "Étaler les frites sur une grille et les laisser refroidir au moins 1 h. Elles peuvent attendre la veille au frigo : la croûte n'en sera que plus croustillante."
+      minuteur: 3600
+    - titre: Le second bain, à 180 °C
+      texte: "Remonter la graisse à 180 °C. Plonger les frites 2 à 3 min, jusqu'à ce qu'elles soient bien dorées et sonnent creux en les secouant dans le panier."
+      minuteur: 150
+    - titre: Le service
+      texte: "Égoutter, secouer dans un saladier avec le sel fin et servir aussitôt, en cornet ou dans un plat chaud."
+  astuces:
+    - "Le blanc de bœuf, c'est le goût des friteries belges. Filtré après usage, il se garde au frais pour plusieurs fritures."
+    - "Un thermomètre de cuisson évite les frites grasses : si la graisse descend sous 140 °C, attendre qu'elle remonte avant la fournée suivante."

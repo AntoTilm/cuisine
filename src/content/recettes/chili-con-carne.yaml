@@ -77,3 +77,8 @@ chef:
     - "Torréfier le cumin en graines 1 min à sec dans une poêle, puis le moudre : le parfum est bien plus intense qu'avec la poudre."
     - "Le chocolat ne sucre pas le plat : il arrondit l'acidité de la tomate et donne de la profondeur à la sauce."
     - "Préparé la veille et réchauffé doucement, le chili gagne encore en goût."
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc]
+    defaut: [riz-blanc]

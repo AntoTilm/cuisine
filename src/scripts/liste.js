@@ -1,6 +1,7 @@
 // Page « Ma liste de courses » : toutes les recettes ajoutées, fusionnées par rayon.
 import { lignesRecette, fusionner, parRayon, texteQuantite, enTexte } from '../lib/courses.js';
 import { lireListe, ecrireListe } from './stockage.js';
+import { personnes } from '../lib/assiette.js';
 
 const racine = document.getElementById('liste-courses');
 if (racine) {
@@ -22,15 +23,25 @@ if (racine) {
     return e;
   };
 
+  // Les accompagnements suivent le nombre de personnes du plat.
+  function suivre(entree, liste) {
+    const r = parSlug.get(entree.slug);
+    const n = personnes(entree.portions, r.portions.parPersonne);
+    liste.recettes.forEach((x) => {
+      if (x.pour === entree.slug) x.portions = n;
+    });
+  }
+
   function sauver(liste) {
     ecrireListe(liste);
     rendre();
   }
 
   function ligneRecette(entree, r, liste) {
-    const li = el('li', 'recette-liste');
+    const li = el('li', entree.pour ? 'recette-liste accompagnement' : 'recette-liste');
     const a = el('a', 'titre', r.titre);
-    a.href = `${base}recette/${r.slug}/?mode=${entree.mode}&p=${entree.portions}`;
+    a.href = `${base}recette/${r.slug}/?mode=${entree.mode}&p=${entree.portions}${entree.avec ? `&avec=${entree.avec.join(',')}` : ''}`;
+    if (entree.pour && parSlug.has(entree.pour)) a.append(el('span', 'avec', `pour : ${parSlug.get(entree.pour).titre}`));
 
     const reglages = el('div', 'reglages-ligne');
 
@@ -46,10 +57,12 @@ if (racine) {
     plus.setAttribute('aria-label', `Plus de ${r.portions.pluriel} pour ${r.titre}`);
     moins.addEventListener('click', () => {
       entree.portions = Math.max(min, entree.portions - pas);
+      suivre(entree, liste);
       sauver(liste);
     });
     plus.addEventListener('click', () => {
       entree.portions += pas;
+      suivre(entree, liste);
       sauver(liste);
     });
     portions.append(moins, valeur, plus);
@@ -64,13 +77,16 @@ if (racine) {
     });
     choix.addEventListener('change', () => {
       entree.mode = choix.value;
+      liste.recettes.forEach((x) => {
+        if (x.pour === entree.slug) x.mode = choix.value;
+      });
       sauver(liste);
     });
 
     const retirer = el('button', 'lien-discret', 'Retirer');
     retirer.type = 'button';
     retirer.addEventListener('click', () => {
-      liste.recettes = liste.recettes.filter((x) => x !== entree);
+      liste.recettes = liste.recettes.filter((x) => x !== entree && x.pour !== entree.slug);
       sauver(liste);
     });
 
@@ -83,6 +99,10 @@ if (racine) {
     const liste = lireListe();
     // Recettes supprimées du site depuis : on les ignore.
     liste.recettes = liste.recettes.filter((e) => parSlug.has(e.slug));
+    // Un accompagnement dont le plat a été retiré redevient une recette à part.
+    liste.recettes.forEach((e) => {
+      if (e.pour && !liste.recettes.some((x) => x.slug === e.pour && !x.pour)) delete e.pour;
+    });
 
     const rien = !liste.recettes.length && !liste.extras.length;
     vide.hidden = !rien;

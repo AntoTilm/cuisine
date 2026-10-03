@@ -9,6 +9,11 @@ export async function toutesLesRecettes() {
   return recettes.sort((a, b) => a.data.titre.localeCompare(b.data.titre, 'fr'));
 }
 
+/** Les recettes affichées dans les sommaires : les variantes sont rangées sous leur recette principale. */
+export async function recettesListees() {
+  return (await toutesLesRecettes()).filter((r) => !r.data.varianteDe);
+}
+
 export function parCuisine(recettes) {
   return CUISINES.map((c) => ({ ...c, recettes: recettes.filter((r) => r.data.cuisine === c.slug) })).filter(
     (c) => c.recettes.length,
@@ -81,4 +86,9 @@ export function donneesClient(entree) {
     portions: r.portions,
     ingredients: r.ingredients,
   };
+}
+
+/** Temps total de la version simple, pour les petites fiches d'accompagnement. */
+export function dureeSimple(r) {
+  return dureeTotale(r.data.simple.temps);
 }

@@ -1,11 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ListeRecettes from '../../components/ListeRecettes.astro';
-import { toutesLesRecettes, lien } from '../../lib/recettes.js';
+import { recettesListees, lien } from '../../lib/recettes.js';
 import { CUISINES, TYPES } from '../../data/cuisines.js';
 
 export async function getStaticPaths() {
-  const recettes = await toutesLesRecettes();
+  const recettes = await recettesListees();
   return CUISINES.filter((c) => recettes.some((r) => r.data.cuisine === c.slug)).map((c) => ({
     params: { slug: c.slug },
     props: { cuisine: c, recettes: recettes.filter((r) => r.data.cuisine === c.slug) },

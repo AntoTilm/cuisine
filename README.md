@@ -85,6 +85,32 @@ Autres options d'un ingrédient :
   (`fruits-legumes`, `boucherie`, `cremerie`, `boulangerie`, `epicerie`, `asiatique`, `sucre`, `surgeles`, `cave`,
   `placard`, `divers`). Le classement automatique est dans `src/lib/rayons.js`.
 
+### Plat complet : composer l'assiette
+
+Un plat peut proposer ses accompagnements, rôle par rôle (`feculent`, `legume`, `sauce`, `autre`). Sur la page, on
+les choisit sur l'ardoise ; ils s'ajoutent à la liste de courses pour le bon nombre de personnes.
+
+```yaml
+assiette:
+  - role: feculent
+    choix: [frites-maison, frites-au-four, friterie, gratin-dauphinois]   # slugs de recettes
+    defaut: [frites-maison]                                             # cochés à l'ouverture
+  - role: sauce
+    choix: [sauce-cacahuete-tamarin, sauce-nuoc-mam]
+    defaut: [sauce-cacahuete-tamarin, sauce-nuoc-mam]
+    plusieurs: true                                                     # cases à cocher au lieu d'un choix unique
+```
+
+Les accompagnements se comptent en personnes. Si le plat se compte autrement (rouleaux, grammes de viande),
+`portions.parPersonne` dit combien d'unités fait une personne (`parPersonne: 2` pour les rouleaux). `friterie` est
+un choix sans recette, défini dans `src/lib/assiette.js`.
+
+### Variantes
+
+Une recette déclinée en plusieurs façons garde un seul titre. La principale porte `nomVariante`, les autres portent
+aussi `varianteDe: <slug de la principale>` : elles n'apparaissent pas dans les sommaires, et des onglets passent de
+l'une à l'autre (voir `entrecote.yaml` et `entrecote-bleue.yaml`).
+
 Autres champs d'une recette : `notes` (encadrés « Notes du carnet »), `sources` (liens), `servirAvec` et
 `voirAussi` (noms de fichiers d'autres recettes, sans `.yaml`). Voir les recettes existantes pour des exemples.
 

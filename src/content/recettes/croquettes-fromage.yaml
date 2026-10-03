@@ -8,6 +8,7 @@ portions:
   pluriel: croquettes
   pas: 6
   min: 6
+  parPersonne: 4
 
 ingredients:
   - groupe: La pâte
@@ -70,3 +71,8 @@ chef:
 sources:
   - titre: "Recette d'origine (Google Drive)"
     url: https://drive.google.com/file/d/1xT3SrBk2okrn2yii7Qjn8QU-MmJ_rKpm/view?usp=sharing
+
+assiette:
+  - role: legume
+    choix: [salade-composee]
+    defaut: [salade-composee]

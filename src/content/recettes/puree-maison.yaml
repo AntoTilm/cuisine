@@ -1,0 +1,40 @@
+titre: Purée maison
+cuisine: francaise
+type: accompagnement
+saison: hiver
+resume: Pommes de terre écrasées au lait chaud et au beurre. En grande cuisine, la version très beurrée et passée au tamis.
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Pommes de terre à chair farineuse, qte: 1, unite: kg, note: "Bintje ; Ratte en grande cuisine", cle: pdt }
+      - { nom: Lait entier, qte: 25, unite: cl, cle: lait }
+      - { nom: Beurre, qte: 80, unite: g, mode: simple, cle: beurresimple }
+      - { nom: Beurre, qte: 250, unite: g, mode: chef, note: "bien froid, en dés", cle: beurrechef }
+      - { nom: Noix de muscade }
+      - { nom: Gros sel, qte: 1, unite: cs }
+      - { nom: Sel fin }
+      - { nom: Poivre blanc }
+
+simple:
+  temps: { preparation: 15, cuisson: 25 }
+  etapes:
+    - texte: "Éplucher les pommes de terre, les couper en morceaux égaux et les cuire 20 à 25 min à l'eau froide salée au gros sel, jusqu'à ce qu'une lame les traverse."
+      minuteur: 1350
+    - "Pendant ce temps, chauffer le lait sans le faire bouillir."
+    - "Égoutter, écraser au presse-purée (jamais au mixeur, qui rend la purée élastique). Incorporer {beurresimple} de beurre, puis le lait chaud petit à petit. Saler, poivrer, râper un peu de muscade."
+
+chef:
+  temps: { preparation: 20, cuisson: 40 }
+  etapes:
+    - titre: Cuire en robe
+      texte: "Laver {pdt} de pommes de terre sans les éplucher et les cuire à l'eau froide salée au gros sel, 30 à 40 min selon la taille : la peau les empêche de se gorger d'eau."
+      minuteur: 2100
+    - titre: Peler et passer
+      texte: "Les peler encore chaudes, puis les passer au tamis ou au moulin à légumes, grille fine. Remettre la purée dans la casserole à feu doux et la dessécher 2 min à la spatule."
+      minuteur: 120
+    - titre: Monter au beurre
+      texte: "Incorporer {beurrechef} de beurre froid petit à petit, en travaillant vigoureusement à la spatule, puis le lait bien chaud en filet jusqu'à la texture voulue. Saler, poivrer au poivre blanc, une pointe de muscade."
+  astuces:
+    - "Le beurre froid avant le lait : il s'émulsionne mieux et la purée devient brillante."

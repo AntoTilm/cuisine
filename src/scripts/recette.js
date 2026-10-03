@@ -4,6 +4,7 @@ import { lignesRecette, fusionner, parRayon, texteQuantite, enTexte } from '../l
 import { textesCalcul } from '../lib/entrecote.js';
 import { modePrefere, memoriserMode, ajouterRecette, dansLaListe } from './stockage.js';
 import { brancherMinuteurs } from './minuteur.js';
+import { personnes } from '../lib/assiette.js';
 
 const article = document.querySelector('article.recette');
 if (article) {
@@ -24,6 +25,51 @@ if (article) {
   const boutonAjout = article.querySelector('#ajouter-liste');
   const etatAjout = article.querySelector('#etat-liste');
 
+  // --- Assiette (accompagnements) ------------------------------------------
+  const choixAssiette = article.querySelectorAll('[data-assiette]');
+  const accompagnements = new Map(
+    (recette.assiette || []).flatMap((g) => g.choix).map((c) => [c.slug, c]),
+  );
+  const demandes = url.searchParams.get('avec');
+  if (demandes != null && choixAssiette.length) {
+    const voulus = new Set(demandes.split(',').filter(Boolean));
+    choixAssiette.forEach((i) => (i.checked = i.value ? voulus.has(i.value) : false));
+    // Un groupe à choix unique sans rien de coché : « aucun ».
+    const groupes = new Set([...choixAssiette].map((i) => i.name));
+    groupes.forEach((n) => {
+      const ins = [...article.querySelectorAll(`[name="${n}"]`)];
+      if (!ins.some((i) => i.checked)) {
+        const aucun = ins.find((i) => !i.value);
+        if (aucun) aucun.checked = true;
+      }
+    });
+  }
+  const choisis = () => [...choixAssiette].filter((i) => i.checked && i.value).map((i) => i.value);
+  const nbPersonnes = () => personnes(portions, recette.portions.parPersonne);
+  const accompagnementsAAcheter = () =>
+    choisis()
+      .map((s) => accompagnements.get(s))
+      .filter((c) => c && !c.horsRecette)
+      .map((c) => ({ slug: c.slug, recette: c, portions: nbPersonnes() }));
+
+  function majAssiette() {
+    if (!choixAssiette.length) return;
+    const n = nbPersonnes();
+    article.querySelectorAll('[data-personnes]').forEach((e) => (e.textContent = String(n)));
+    article.querySelectorAll('[data-personnes-unite]').forEach((e) => (e.textContent = n >= 2 ? 'personnes' : 'personne'));
+    const actifs = new Set(choisis());
+    article.querySelectorAll('[data-menu]').forEach((li) => {
+      li.hidden = !actifs.has(li.dataset.menu);
+      const a = li.querySelector('[data-lien-accompagnement]');
+      if (a) {
+        const u = new URL(a.href, location.href);
+        u.searchParams.set('p', String(n));
+        u.searchParams.set('mode', mode);
+        a.href = u.pathname + u.search;
+      }
+    });
+  }
+
   // --- Quantités ------------------------------------------------------------
   function majQuantites() {
     const f = portions / base;
@@ -36,7 +82,13 @@ if (article) {
 
   // --- Liste de courses de la recette --------------------------------------
   function majCourses() {
-    const rayons = parRayon(fusionner(lignesRecette(recette, portions, mode)));
+    majAssiette();
+    const avec = accompagnementsAAcheter();
+    const lignes = [
+      ...lignesRecette(recette, portions, mode),
+      ...avec.flatMap((a) => lignesRecette(a.recette, a.portions, mode)),
+    ];
+    const rayons = parRayon(fusionner(lignes));
     panneauCourses.replaceChildren(
       ...rayons.map((r) => {
         const bloc = document.createElement('section');
@@ -49,6 +101,12 @@ if (article) {
           const nom = document.createElement('span');
           nom.className = 'nom';
           nom.textContent = i.nom + (i.optionnel ? ' (facultatif)' : '');
+          if (avec.length) {
+            const pour = document.createElement('span');
+            pour.className = 'pour';
+            pour.textContent = i.recettes.join(', ');
+            nom.append(pour);
+          }
           const q = document.createElement('span');
           q.className = 'quantite';
           q.textContent = texteQuantite(i);
@@ -61,7 +119,7 @@ if (article) {
     );
     panneauCourses.dataset.texte = enTexte(
       rayons,
-      `${recette.titre} (${portions} ${portions >= 2 ? pluriel : unite}, ${mode === 'chef' ? 'grande cuisine' : 'simple'})`,
+      `${recette.titre}${avec.length ? ` avec ${avec.map((a) => a.recette.titre.toLowerCase()).join(', ')}` : ''} (${portions} ${portions >= 2 ? pluriel : unite}, ${mode === 'chef' ? 'grande cuisine' : 'simple'})`,
     );
     majEtatListe();
   }
@@ -73,13 +131,14 @@ if (article) {
       etatAjout.hidden = true;
       return;
     }
-    const identique = e.portions === portions && e.mode === mode;
+    const avec = accompagnementsAAcheter().map((a) => a.slug).join(',');
+    const identique = e.portions === portions && e.mode === mode && (e.avec || []).join(',') === avec;
     boutonAjout.textContent = identique ? 'Dans ma liste de courses' : 'Mettre à jour ma liste de courses';
     etatAjout.hidden = false;
   }
 
   boutonAjout.addEventListener('click', () => {
-    ajouterRecette(recette.slug, portions, mode);
+    ajouterRecette(recette.slug, portions, mode, accompagnementsAAcheter());
     majEtatListe();
   });
 
@@ -122,8 +181,16 @@ if (article) {
     u.searchParams.set('mode', mode);
     if (portions !== (recette.portions.defaut || base)) u.searchParams.set('p', String(portions));
     else u.searchParams.delete('p');
+    if (choixAssiette.length) u.searchParams.set('avec', choisis().join(','));
     history.replaceState(null, '', u);
   }
+
+  choixAssiette.forEach((i) =>
+    i.addEventListener('change', () => {
+      majCourses();
+      majUrl();
+    }),
+  );
 
   // --- Onglets du panneau ------------------------------------------------
   const onglets = article.querySelectorAll('[role="tab"]');

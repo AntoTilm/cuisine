@@ -10,6 +10,7 @@ portions:
   pluriel: rouleaux
   pas: 2
   min: 2
+  parPersonne: 2
 
 ingredients:
   - groupe: Les rouleaux
@@ -54,5 +55,11 @@ chef:
     - titre: Le service
       texte: "Garder les rouleaux sous un torchon humide et les servir dans l'heure avec les deux sauces, pour qu'ils ne sèchent pas."
 
-servirAvec: [sauce-cacahuete-tamarin, sauce-nuoc-mam]
 voirAussi: [porc-laque]
+
+assiette:
+  - role: sauce
+    titre: Sauces
+    choix: [sauce-cacahuete-tamarin, sauce-nuoc-mam]
+    defaut: [sauce-cacahuete-tamarin, sauce-nuoc-mam]
+    plusieurs: true

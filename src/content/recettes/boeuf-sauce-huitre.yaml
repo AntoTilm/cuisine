@@ -69,3 +69,7 @@ chef:
 sources:
   - titre: "Bœuf sauté à la sauce huître (YouTube)"
     url: https://www.youtube.com/shorts/EdYrgxk728Y
+
+assiette:
+  - role: legume
+    choix: [legumes-sautes-wok, salade-concombre-wakame]

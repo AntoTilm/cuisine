@@ -60,3 +60,7 @@ sources:
     url: https://philippe-etchebest.com/sauce-hollandaise/
   - titre: "Réussir un œuf poché (750g, YouTube)"
     url: https://www.youtube.com/watch?v=WcaYANOUSRY
+
+assiette:
+  - role: legume
+    choix: [salade-composee]

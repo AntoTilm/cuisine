@@ -48,4 +48,14 @@ chef:
 sources:
   - titre: "Cuisse de poulet croustillante sauce teriyaki aux oignons (YouTube)"
     url: https://www.youtube.com/watch?v=VWFlQ1EOxMk
-servirAvec: [sauce-teriyaki]
+
+assiette:
+  - role: sauce
+    choix: [sauce-teriyaki]
+    defaut: [sauce-teriyaki]
+  - role: feculent
+    choix: [riz-blanc]
+    defaut: [riz-blanc]
+  - role: legume
+    choix: [salade-concombre-wakame, legumes-sautes-wok]
+    defaut: [salade-concombre-wakame]

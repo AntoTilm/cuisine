@@ -9,6 +9,7 @@ portions:
   pluriel: g de porc
   pas: 100
   min: 200
+  parPersonne: 150
 
 ingredients:
   - groupe: La viande
@@ -57,3 +58,11 @@ chef:
   astuces:
     - "Pour un laquage plus brillant, ajouter une cuillère de miel à la marinade restante avant le dernier badigeonnage."
     - "Se conserve très bien au frigo et se réchauffe à la poêle ou au four."
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc, riz-cantonais]
+    defaut: [riz-blanc]
+  - role: legume
+    choix: [legumes-sautes-wok, salade-concombre-wakame]
+    defaut: [legumes-sautes-wok]

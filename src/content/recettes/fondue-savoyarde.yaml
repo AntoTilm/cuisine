@@ -79,3 +79,8 @@ notes:
 sources:
   - titre: "Tous les secrets de la fondue savoyarde avec le chef Laurent Métral (YouTube)"
     url: https://www.youtube.com/watch?v=SvgKp69Gzu8
+
+assiette:
+  - role: legume
+    choix: [salade-composee]
+    defaut: [salade-composee]

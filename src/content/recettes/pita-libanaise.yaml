@@ -64,3 +64,9 @@ chef:
 sources:
   - titre: "Des recettes de pitas pour voyager le temps d'un repas (Marie Claire)"
     url: https://www.marieclaire.fr/cuisine/des-recettes-de-pitas-pour-voyager-le-temps-d-un-repas,1378517.asp
+
+assiette:
+  - role: legume
+    choix: [legumes-grilles-au-four]
+  - role: sauce
+    choix: [tzatziki]

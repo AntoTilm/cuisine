@@ -57,3 +57,8 @@ chef:
 sources:
   - titre: "Crevettes à l'ail (YouTube)"
     url: https://www.youtube.com/watch?v=0zvziyJ8nfQ
+
+assiette:
+  - role: legume
+    choix: [salade-composee, legumes-grilles-au-four]
+    defaut: [salade-composee]

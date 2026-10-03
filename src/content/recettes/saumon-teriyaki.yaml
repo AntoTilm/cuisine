@@ -65,5 +65,9 @@ chef:
 sources:
   - titre: "Saumon teriyaki, impressionnant et facile à préparer (YouTube)"
     url: https://www.youtube.com/watch?v=zzN5bhc5_PQ
-servirAvec: [salade-concombre-wakame]
 voirAussi: [sauce-teriyaki]
+
+assiette:
+  - role: legume
+    choix: [salade-concombre-wakame]
+    defaut: [salade-concombre-wakame]

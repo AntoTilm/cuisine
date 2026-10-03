@@ -1,4 +1,6 @@
-titre: Entrecôte bleue, sauce au cognac
+titre: Entrecôte
+nomVariante: Grosse pièce au four, sauce au cognac
+varianteDe: entrecote
 cuisine: francaise
 type: plat
 resume: Une pièce d'un kilo cuite tout doucement au four, saisie et arrosée au beurre de thym, avec une sauce au cognac et une salade poire, noix et persil.
@@ -8,6 +10,7 @@ portions:
   pluriel: g d'entrecôte
   pas: 250
   min: 500
+  parPersonne: 250
 
 deroule:
   titre: Le déroulé minuté du vendredi 2 octobre
@@ -111,4 +114,8 @@ notes:
   - titre: Le reste du menu
     texte: "Servi avec un gratin dauphinois, préparé à l'avance et repassé 15 min à 200 °C pendant que la viande cuit."
 
-voirAussi: [entrecote-beurre-arrose]
+
+assiette:
+  - role: feculent
+    choix: [gratin-dauphinois, pommes-de-terre-hasselback, frites-maison, puree-maison]
+    defaut: [gratin-dauphinois]

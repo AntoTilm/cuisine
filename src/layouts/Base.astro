@@ -1,11 +1,9 @@
 ---
-import '@fontsource/besley/latin-500.css';
-import '@fontsource/besley/latin-500-italic.css';
-import '@fontsource/besley/latin-700.css';
-import '@fontsource/besley/latin-800.css';
-import '@fontsource/atkinson-hyperlegible/latin-400.css';
-import '@fontsource/atkinson-hyperlegible/latin-400-italic.css';
-import '@fontsource/atkinson-hyperlegible/latin-700.css';
+import '@fontsource/young-serif/latin-400.css';
+import '@fontsource/source-serif-4/latin-400.css';
+import '@fontsource/source-serif-4/latin-400-italic.css';
+import '@fontsource/source-serif-4/latin-600.css';
+import '@fontsource/source-serif-4/latin-700.css';
 import '../styles/global.css';
 import { lien } from '../lib/recettes.js';
 
@@ -25,8 +23,8 @@ const titreComplet = titre === 'Carnet de cuisine' ? titre : `${titre} · Carnet
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{titreComplet}</title>
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#141926" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#6e1b29" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#6e1b29" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href={lien('favicon.svg')} type="image/svg+xml" />
   </head>
   <body>

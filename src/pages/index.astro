@@ -1,10 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
 import ListeRecettes from '../components/ListeRecettes.astro';
-import { toutesLesRecettes, parCuisine, lien } from '../lib/recettes.js';
+import { recettesListees, parCuisine, lien } from '../lib/recettes.js';
 import { TYPES } from '../data/cuisines.js';
 
-const recettes = await toutesLesRecettes();
+const recettes = await recettesListees();
 const cuisines = parCuisine(recettes);
 const typesPresents = Object.entries(TYPES).filter(([t]) => recettes.some((r) => r.data.type === t));
 ---

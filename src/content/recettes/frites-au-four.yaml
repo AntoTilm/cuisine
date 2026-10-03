@@ -1,0 +1,45 @@
+titre: Frites au four
+cuisine: belge
+type: accompagnement
+resume: Sans friteuse ni odeur de friture, mais vraiment croustillantes, grâce à un rinçage, un séchage soigné et un four très chaud.
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Pommes de terre Bintje, qte: 1, unite: kg, cle: pdt }
+      - { nom: Huile de tournesol, qte: 3, unite: cs }
+      - { nom: Fécule de maïs, qte: 1, unite: cs, mode: chef }
+      - { nom: Vinaigre blanc, qte: 1, unite: cs, mode: chef, note: pour l'eau de blanchiment }
+      - { nom: Paprika fumé, qte: 1, unite: cc, optionnel: true }
+      - { nom: Sel fin }
+
+simple:
+  temps: { preparation: 15, cuisson: 35, attente: 30 }
+  etapes:
+    - "Éplucher les pommes de terre et les tailler en bâtonnets de 1 cm."
+    - texte: "Les faire tremper 30 min dans l'eau froide, puis les sécher soigneusement dans un essuie."
+      minuteur: 1800
+    - "Préchauffer le four à 220 °C, chaleur tournante."
+    - "Mélanger les frites avec l'huile et le paprika dans un saladier, puis les étaler en une seule couche sur une plaque couverte de papier cuisson, sans qu'elles se touchent."
+    - texte: "Cuire 30 à 35 min en les retournant à mi-cuisson, jusqu'à ce qu'elles soient dorées. Saler à la sortie du four."
+      minuteur: 2000
+
+chef:
+  temps: { preparation: 20, cuisson: 45 }
+  etapes:
+    - titre: Tailler
+      texte: "Éplucher {pdt} de pommes de terre et les tailler en bâtonnets réguliers de 1 cm."
+    - titre: Blanchir
+      texte: "Les plonger dans une grande casserole d'eau bouillante salée avec le vinaigre : 5 min, pas plus. Le vinaigre les empêche de se défaire."
+      minuteur: 300
+    - titre: Sécher
+      texte: "Égoutter et laisser fumer 5 min sur une grille : la surface doit être sèche et un peu rugueuse. Préchauffer le four à 220 °C, chaleur tournante, avec la plaque dedans."
+      minuteur: 300
+    - titre: Enrober
+      texte: "Saupoudrer de fécule et mélanger délicatement, puis ajouter l'huile et le paprika. Étaler en une seule couche sur la plaque chaude couverte de papier cuisson."
+    - titre: Cuire
+      texte: "Cuire 35 à 40 min en retournant deux fois, jusqu'à ce qu'elles soient bien dorées et croustillantes. Saler à la sortie."
+      minuteur: 2250
+  astuces:
+    - "Deux plaques plutôt qu'une trop chargée : des frites entassées cuisent à la vapeur et restent molles."

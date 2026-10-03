@@ -99,3 +99,11 @@ sources:
     url: https://www.youtube.com/watch?v=bgG479XvQkk
   - titre: "Le vol-au-vent des Armes de Bruxelles (The Mastercooks of Belgium)"
     url: https://mastercooks.be/fr/le-vol-au-vent-des-armes-de-bruxelles
+
+assiette:
+  - role: feculent
+    choix: [frites-maison, friterie, frites-au-four, puree-maison]
+    defaut: [frites-maison]
+  - role: legume
+    choix: [salade-composee]
+    defaut: [salade-composee]
