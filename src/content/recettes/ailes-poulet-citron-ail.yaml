@@ -1,0 +1,60 @@
+titre: Ailes de poulet au citron et à l'ail
+cuisine: mediterraneenne
+origine: Liban
+type: plat
+resume: "Djej bi toum w limon : des ailes marinées à l'ail pilé, au citron et à l'huile d'olive, rôties jusqu'à ce qu'elles soient croustillantes. En mezzé ou en plat, avec du pain libanais."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La marinade
+    items:
+      - { nom: Ailes de poulet, qte: 1.2, unite: kg, note: environ 12 ailes entières }
+      - { nom: Ail, qte: 8, unite: gousse }
+      - { nom: Citrons, qte: 2, note: "le jus, plus 1 pour servir" }
+      - { nom: Huile d'olive, qte: 4, unite: cs }
+      - { nom: Paprika doux, qte: 1, unite: cc }
+      - { nom: Sumac, qte: 1, unite: cc, optionnel: true }
+      - { nom: Sel, qte: 1, unite: cc }
+      - { nom: Poivre noir }
+      - { nom: Levure chimique, qte: 1, unite: cc, mode: chef, note: "sans goût, pour le croustillant" }
+  - groupe: Pour servir
+    items:
+      - { nom: Coriandre fraîche, qte: 0.5, unite: botte }
+      - { nom: Pain libanais, qte: 4 }
+
+simple:
+  temps: { preparation: 15, cuisson: 45, attente: 60 }
+  etapes:
+    - "Piler l'ail avec le sel. Mélanger avec le jus de citron, l'huile d'olive, le paprika, le sumac et le poivre."
+    - texte: "Enrober les ailes de cette marinade et les laisser au frais au moins 1 h (jusqu'à une nuit)."
+      minuteur: 3600
+    - texte: "Préchauffer le four à 220 °C. Étaler les ailes sur une plaque couverte de papier cuisson, sans qu'elles se touchent, et les rôtir 40 à 45 min en les retournant à mi-cuisson, jusqu'à ce qu'elles soient bien dorées."
+      minuteur: 2700
+    - "Arroser d'un filet de citron frais, parsemer de coriandre et servir avec le pain et le toum."
+
+chef:
+  temps: { preparation: 25, cuisson: 50, attente: 480 }
+  etapes:
+    - titre: Sécher la peau
+      texte: "Couper les ailes aux articulations (garder les pointes pour un bouillon). Les sécher au papier absorbant, les saler et les enrober de levure chimique, puis les laisser une nuit au frigo sur une grille, sans couvrir : la peau sèche et deviendra très croustillante."
+      minuteur: 28800
+    - titre: La marinade à l'ail
+      texte: "Piler l'ail au mortier avec une pincée de sel jusqu'à une pâte lisse, puis ajouter le jus de citron, l'huile d'olive, le paprika, le sumac et le poivre. Garder la moitié pour la fin."
+    - titre: Rôtir
+      texte: "Préchauffer le four à 230 °C, chaleur tournante. Enrober les ailes de la moitié de la marinade et les poser sur une grille au-dessus d'une plaque. Rôtir 40 à 45 min en les retournant une fois, jusqu'à ce que la peau soit dorée et craquante."
+      minuteur: 2600
+    - titre: Laquer
+      texte: "À la sortie du four, les mélanger dans un saladier avec le reste de la marinade : l'ail cru et le citron frais réveillent tout. Coriandre ciselée, quartiers de citron."
+  astuces:
+    - "La levure chimique fait monter le pH de la peau : elle dore plus vite et devient croustillante comme une friture."
+
+assiette:
+  - role: feculent
+    choix: [batata-harra, riz-libanais, frites-au-four]
+    defaut: [batata-harra]
+  - role: sauce
+    choix: [toum, tzatziki]
+    defaut: [toum]
+  - role: legume
+    choix: [salade-composee, legumes-grilles-au-four]

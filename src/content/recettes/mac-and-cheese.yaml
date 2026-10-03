@@ -1,0 +1,67 @@
+titre: Mac and cheese
+cuisine: britannique
+origine: Fallow, Londres
+type: plat
+resume: "Le mac and cheese préféré des chefs de Fallow : une béchamel à trois fromages, de la mozzarella qui file, des croûtons et des peaux de poulet croustillantes."
+portions:
+  base: 6
+
+ingredients:
+  - groupe: Les pâtes
+    items:
+      - { nom: Macaroni, qte: 500, unite: g }
+  - groupe: La sauce au fromage
+    items:
+      - { nom: Beurre doux, qte: 50, unite: g, cle: beurre }
+      - { nom: Farine, qte: 50, unite: g, cle: farine }
+      - { nom: Lait entier, qte: 500, unite: ml, cle: lait, note: "environ, à l'œil" }
+      - { nom: Moutarde, qte: 1, unite: cs }
+      - { nom: Gruyère français (comté), qte: 50, unite: g }
+      - { nom: Red Leicester, qte: 100, unite: g, note: "ou mimolette, ou cheddar rouge" }
+      - { nom: Parmesan, qte: 25, unite: g }
+      - { nom: Sel, qte: 1, unite: cc }
+      - { nom: Vinaigre de xérès, qte: 1, unite: cc, note: un trait }
+  - groupe: Le dessus
+    items:
+      - { nom: Mozzarella, qte: 1, note: boule moyenne }
+      - { nom: Pain, qte: 0.25, note: "un quart de pain, pour les croûtons" }
+      - { nom: Peau de poulet, qte: 150, unite: g, mode: chef, note: chez le boucher }
+
+simple:
+  temps: { preparation: 15, cuisson: 35 }
+  etapes:
+    - "Cuire les macaroni dans l'eau bouillante salée en les sortant 2 min avant la fin. Égoutter et rincer brièvement pour stopper la cuisson."
+    - "Faire fondre {beurre} de beurre, ajouter {farine} de farine et cuire 1 min. Verser {lait} de lait petit à petit en fouettant, et laisser épaissir 3 min à feu doux."
+    - "Hors du feu, ajouter la moutarde, le gruyère, le red leicester, le parmesan râpés, le sel et le vinaigre. Mélanger avec les pâtes."
+    - "Préchauffer le four à 200 °C. Verser dans un plat, couvrir de mozzarella déchirée et de dés de pain arrosés d'un filet d'huile."
+    - texte: "Enfourner 15 à 20 min, jusqu'à ce que le dessus soit doré et que ça bouillonne sur les bords."
+      minuteur: 1050
+
+chef:
+  temps: { preparation: 30, cuisson: 45 }
+  etapes:
+    - titre: La peau de poulet
+      texte: "Étaler la peau de poulet bien à plat entre deux feuilles de papier cuisson, saler, et la presser entre deux plaques. Cuire 20 à 25 min à 180 °C, jusqu'à ce qu'elle soit dorée et cassante. L'égoutter sur du papier absorbant et l'émietter."
+      minuteur: 1350
+    - titre: Les croûtons
+      texte: "Couper le pain en petits dés et les dorer au four ou à la poêle avec un peu de graisse rendue par la peau de poulet."
+    - titre: Les pâtes
+      texte: "Cuire les macaroni 2 min de moins que le temps du paquet : ils finiront de cuire dans la sauce et au four."
+    - titre: La béchamel
+      texte: "Cuire {beurre} de beurre et {farine} de farine 2 min sans coloration. Ajouter {lait} de lait chaud petit à petit en fouettant, jusqu'à une sauce épaisse et lisse ; ajuster avec un peu de lait si besoin."
+    - titre: Les fromages
+      texte: "Hors du feu, la moutarde, puis le gruyère, le red leicester et le parmesan râpés, petit à petit pour qu'ils fondent sans filer en paquets. Saler et finir avec un trait de vinaigre de xérès : l'acidité réveille le fromage. Mélanger avec les pâtes, la sauce doit être généreuse."
+    - titre: Gratiner
+      texte: "Verser dans des plats individuels ou un grand plat, couvrir de mozzarella déchirée et passer sous le gril bien chaud jusqu'à ce qu'elle bulle et dore."
+    - titre: Le service
+      texte: "Parsemer de croûtons et de miettes de peau de poulet au moment de servir, pour qu'elles restent croustillantes."
+  astuces:
+    - "Le red leicester donne la couleur orange et un goût doux de noisette ; une vieille mimolette fait très bien l'affaire."
+
+sources:
+  - titre: "POV: Cooking the Ultimate Mac & Cheese, Fallow (YouTube)"
+    url: https://www.youtube.com/watch?v=0NlML-xA_lA
+
+assiette:
+  - role: legume
+    choix: [salade-composee]

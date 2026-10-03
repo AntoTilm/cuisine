@@ -1,0 +1,75 @@
+titre: Poulet farci aux champignons, jambon de Parme et sauce madère
+cuisine: britannique
+origine: Fallow, Londres
+type: plat
+resume: "Le niveau 2 du poulet de Fallow : un suprême ouvert et farci d'une duxelles de champignons, roulé dans le jambon de Parme, rôti et servi avec une sauce crème au madère."
+portions:
+  base: 2
+
+ingredients:
+  - groupe: Le poulet
+    items:
+      - { nom: Suprêmes de poulet, qte: 2, note: "avec la peau en grande cuisine" }
+      - { nom: Jambon de Parme, qte: 6, unite: tranche }
+      - { nom: Beurre, qte: 30, unite: g, cle: beurrepoulet }
+      - { nom: Thym, qte: 3, unite: brin }
+      - { nom: Ail, qte: 1, unite: gousse, cle: ailpoulet, note: écrasée }
+  - groupe: La duxelles
+    items:
+      - { nom: Champignons de Paris, qte: 250, unite: g }
+      - { nom: Échalote, qte: 1, cle: echduxelles }
+      - { nom: Ail, qte: 1, unite: gousse, cle: ailduxelles }
+      - { nom: Beurre, qte: 10, unite: g, cle: beurreduxelles }
+      - { nom: Poivre noir }
+  - groupe: La sauce au madère
+    items:
+      - { nom: Échalote, qte: 1, cle: echsauce }
+      - { nom: Cognac ou brandy, qte: 3, unite: cl, mode: chef }
+      - { nom: Madère, qte: 10, unite: cl, cle: madere }
+      - { nom: Fond de volaille, qte: 30, unite: cl, cle: fond }
+      - { nom: Crème double, qte: 10, unite: cl, cle: creme }
+      - { nom: Citron, qte: 0.25, note: quelques gouttes }
+      - { nom: Sel }
+
+simple:
+  temps: { preparation: 30, cuisson: 30 }
+  etapes:
+    - "Hacher finement les champignons (au robot, c'est plus rapide), l'échalote et l'ail. Cuire les champignons dans une poêle sèche à feu moyen jusqu'à ce que toute leur eau soit évaporée, puis ajouter l'échalote, l'ail, quelques feuilles de thym, {beurreduxelles} de beurre et beaucoup de poivre. Laisser refroidir."
+    - "Entailler chaque suprême dans l'épaisseur pour l'ouvrir en portefeuille. Le poser sur 3 tranches de jambon de Parme légèrement se chevauchant, garnir de duxelles, refermer et rouler serré dans le jambon."
+    - texte: "Préchauffer le four à 180 °C. Dorer les rouleaux à la poêle dans un peu d'huile, puis ajouter {beurrepoulet} de beurre, le thym et l'ail et arroser 1 min. Enfourner 12 à 15 min."
+      minuteur: 840
+    - texte: "Dans la même poêle, faire suer l'échalote, verser {madere} de madère et réduire de moitié, puis {fond} de fond et réduire encore de moitié. Ajouter {creme} de crème et laisser épaissir 3 min. Poivrer, quelques gouttes de citron."
+      minuteur: 600
+    - "Laisser reposer le poulet 5 min, le trancher en biais et servir nappé de sauce."
+
+chef:
+  temps: { preparation: 45, cuisson: 40 }
+  etapes:
+    - titre: La duxelles
+      texte: "Hacher les champignons au couteau jusqu'à une texture de chapelure. Les mettre dans une poêle sèche à feu moyen : ils rendent leur eau, qui bout, puis ils se mettent à chanter. C'est le signe que l'eau est partie. Ajouter l'échalote et l'ail finement hachés, les pointes de thym, {beurreduxelles} de beurre et un bon tour de poivre noir. Étaler sur une assiette pour refroidir."
+    - titre: La base de la sauce
+      texte: "Dans la même poêle, faire suer l'échalote pour qu'elle soit douce et sucrée. Ajouter le cognac et {madere} de madère, monter le feu et flamber pour chasser l'alcool. Verser {fond} de fond de volaille et laisser réduire doucement pendant la suite."
+    - titre: La peau
+      texte: "Retirer la peau des suprêmes et la poser dans une poêle froide, à feu doux : elle va rendre sa graisse, dans laquelle on cuira le poulet."
+    - titre: Farcir et rouler
+      texte: "Entailler la partie épaisse du suprême et l'ouvrir pour former une poche. Étaler 3 tranches de jambon de Parme, assaisonner légèrement (le jambon sale déjà) et poser le poulet dessus dans sa forme naturelle. Remplir la poche de duxelles froide en la moulant, rabattre la chair, puis rouler bien serré dans le jambon. On peut les préparer la veille, roulés dans du film alimentaire, pour une forme parfaite."
+    - titre: Rôtir
+      texte: "Retirer la peau de la poêle. Poser les rouleaux dans la graisse rendue, délicatement pour ne pas les dérouler, et les dorer sur toutes les faces. Ajouter le thym, l'ail écrasé et {beurrepoulet} de beurre, arroser, puis enfourner à 180 °C pour environ 12 min."
+      minuteur: 720
+    - titre: Finir la sauce
+      texte: "Ajouter {creme} de crème double à la réduction et laisser épaissir : la sauce passe d'un beige clair à un brun acajou en réduisant. Poivrer généreusement, saler avec prudence, puis ajouter le jus de repos du poulet et quelques gouttes de citron."
+    - titre: Le dressage
+      texte: "Laisser reposer le poulet 5 min, puis le trancher pour montrer la duxelles. Servir avec des asperges et des pommes de terre, la sauce au madère à part."
+  astuces:
+    - "Dans la même vidéo, le niveau 1 est un suprême croustillant avec une sauce à la moutarde dans la poêle, et le niveau 3 un poulet saumuré cuit sous vide."
+
+sources:
+  - titre: "Cooking Chicken from Beginner to Michelin, Fallow (YouTube)"
+    url: https://www.youtube.com/watch?v=8VY0RnxaZJc
+
+assiette:
+  - role: feculent
+    choix: [gratin-dauphinois, puree-maison, pommes-de-terre-hasselback]
+    defaut: [gratin-dauphinois]
+  - role: legume
+    choix: [salade-composee, legumes-grilles-au-four]

@@ -1,0 +1,91 @@
+titre: Bœuf bourguignon
+cuisine: francaise
+origine: Bourgogne
+type: plat
+saison: hiver
+resume: "Le grand classique mijoté au vin rouge, lardons, petits oignons et champignons. En grande cuisine, la version de Fallow : trois morceaux de bœuf, une bouteille réduite de moitié, une sauce filtrée et réduite comme dans une cuisine étoilée."
+portions:
+  base: 8
+
+ingredients:
+  - groupe: Le bœuf
+    items:
+      - { nom: Paleron de bœuf, qte: 2, unite: kg, mode: simple, note: "en gros cubes, ou paleron et joue" }
+      - { nom: Paleron de bœuf désossé, qte: 750, unite: g, mode: chef, note: "en cubes, pour le goût" }
+      - { nom: Jarret de bœuf, qte: 750, unite: g, mode: chef, note: pour le collagène }
+      - { nom: Plat de côtes, qte: 750, unite: g, mode: chef, note: pour le moelleux }
+      - { nom: Farine, qte: 30, unite: g }
+      - { nom: Huile neutre, qte: 3, unite: cs }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: La cuisson
+    items:
+      - { nom: Oignon, qte: 1, note: "gros, en morceaux épais" }
+      - { nom: Carottes, qte: 4, note: en tronçons épais }
+      - { nom: Ail, qte: 6, unite: gousse, note: écrasées }
+      - { nom: Concentré de tomate, qte: 20, unite: g }
+      - { nom: Vin rouge corsé, qte: 75, unite: cl, note: une bouteille, cle: vin }
+      - { nom: Fond de bœuf, qte: 75, unite: cl, cle: fond }
+      - { nom: Thym, qte: 5, unite: g }
+      - { nom: Queues de persil, qte: 5, unite: g }
+      - { nom: Laurier, qte: 3, unite: feuille }
+  - groupe: La garniture
+    items:
+      - { nom: Lardons, qte: 200, unite: g }
+      - { nom: Petits oignons grelots, qte: 300, unite: g, note: épluchés }
+      - { nom: Petits champignons de Paris, qte: 250, unite: g }
+      - { nom: Beurre doux, qte: 20, unite: g }
+      - { nom: Persil plat, qte: 0.5, unite: botte, note: haché }
+
+simple:
+  temps: { preparation: 30, cuisson: 210 }
+  etapes:
+    - "Saler la viande et la fariner légèrement. La dorer dans l'huile dans une grande cocotte, en plusieurs fois pour qu'elle colore au lieu de bouillir. Réserver."
+    - texte: "Dans la même cocotte, faire revenir les lardons 5 min, puis l'oignon, les carottes et l'ail 5 min. Ajouter le concentré de tomate et remuer 1 min."
+      minuteur: 600
+    - texte: "Verser {vin} de vin en grattant les sucs, porter à ébullition et réduire 10 min. Remettre la viande, ajouter {fond} de fond, le thym, le laurier, poivrer."
+      minuteur: 600
+    - texte: "Couvrir et laisser mijoter 3 h à feu très doux (ou au four à 160 °C), jusqu'à ce que la viande se défasse à la fourchette."
+      minuteur: 10800
+    - texte: "30 min avant la fin, dorer les champignons au beurre, puis les petits oignons 10 min dans la même poêle, et les ajouter à la cocotte. Parsemer de persil au moment de servir."
+      minuteur: 600
+  astuces:
+    - "Encore meilleur réchauffé le lendemain."
+
+chef:
+  temps: { preparation: 60, cuisson: 330, attente: 60 }
+  etapes:
+    - titre: Fariner et saisir
+      texte: "Mettre la farine salée sur un plateau, y passer toute la viande et tapoter pour retirer l'excédent. Dans une cocotte en fonte, à feu moyen, dorer la viande sur toutes les faces en plusieurs fournées. Réserver."
+    - titre: Les légumes à l'étouffée
+      texte: "Un peu d'huile dans la cocotte, l'oignon, les carottes et l'ail : couper aussitôt le feu et couvrir. Les légumes cuisent à la vapeur dans la chaleur de la fonte. À mi-cuisson, ajouter le thym, les queues de persil et le laurier. Quand ils sont cuits, gratter tous les sucs du fond et réserver les légumes."
+    - titre: Réduire le vin
+      texte: "Verser toute la bouteille, {vin}, dans la cocotte et la faire réduire de moitié : on garde le fruit et on chasse l'acidité de l'alcool."
+    - titre: Braiser
+      texte: "Remettre la viande, les légumes, les herbes et le concentré de tomate, et couvrir avec {fond} de fond de bœuf. Porter à frémissement, poser une cartouche de papier cuisson à même la surface, puis le couvercle, et enfourner à 160 °C pour 4 à 6 h, jusqu'à ce que la viande soit extrêmement tendre."
+      minuteur: 14400
+    - titre: Refroidir dans le jus
+      texte: "Sortir la cocotte et laisser la viande refroidir dans son liquide : elle s'en regorge et reste moelleuse."
+      minuteur: 3600
+    - titre: La sauce
+      texte: "Retirer la viande et la réserver ; jeter carottes, oignon, herbes et ail, qui ont tout donné. Passer le liquide au tamis, le remettre dans une casserole et le réduire doucement jusqu'à ce qu'il nappe la cuillère, en écumant la graisse et les impuretés."
+    - titre: La garniture
+      texte: "Dans une sauteuse, une noisette de beurre et les champignons, jusqu'à ce qu'ils soient tendres ; réserver. Dans la même poêle, dorer les lardons jusqu'à ce qu'ils croustillent ; réserver en gardant un maximum de graisse. Y cuire les petits oignons avec quelques noisettes de beurre, jusqu'à ce qu'ils soient tendres et légèrement dorés."
+    - titre: L'assemblage
+      texte: "Remettre la viande et la garniture dans la sauce réduite et réchauffer doucement en arrosant. Finir avec le persil haché."
+  astuces:
+    - "Trois morceaux : le paleron pour le goût, le jarret pour le collagène qui donne une sauce collante, le plat de côtes pour la richesse."
+    - "Les légumes de cuisson ne sont pas servis : ils parfument le braisage, la garniture se cuit à part pour garder sa tenue."
+
+sources:
+  - titre: "Beef Bourguignon Done Properly, Fallow (YouTube)"
+    url: https://www.youtube.com/watch?v=fVvYTWAHoBQ
+  - titre: "Le bœuf bourguignon, Philippe Etchebest (YouTube)"
+    url: https://www.youtube.com/watch?v=F_53yUD3Je4
+
+assiette:
+  - role: feculent
+    choix: [puree-maison, frites-maison, pommes-de-terre-hasselback]
+    defaut: [puree-maison]
+  - role: legume
+    choix: [salade-composee]

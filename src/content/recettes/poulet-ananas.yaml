@@ -1,0 +1,74 @@
+titre: Poulet à l'ananas
+cuisine: asiatique
+origine: Chine, Laos
+type: plat
+resume: "Du poulet mariné et de l'ananas frais sautés à feu fort, dans une sauce aigre-douce à la sauce d'huître."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La marinade
+    items:
+      - { nom: Hauts de cuisse de poulet désossés, qte: 500, unite: g }
+      - { nom: Sel, qte: 0.25, unite: cc, cle: selmarinade }
+      - { nom: Poivre moulu }
+      - { nom: Alcool de riz Shaoxing, qte: 0.5, unite: cs }
+      - { nom: Sauce soja claire, qte: 1, unite: cs, cle: sojamarinade }
+      - { nom: Fécule de maïs, qte: 1, unite: cc, cle: fecmarinade }
+      - { nom: Huile de tournesol, qte: 1, unite: cs, cle: huilemarinade }
+  - groupe: La cuisson
+    items:
+      - { nom: Ananas frais, qte: 1 }
+      - { nom: Ail, qte: 5, unite: gousse }
+      - { nom: Gingembre frais râpé, qte: 1, unite: cs }
+      - { nom: Oignon, qte: 1 }
+      - { nom: Cébette, qte: 1 }
+      - { nom: Sucre, qte: 2, unite: cs }
+      - { nom: Sauce soja claire, qte: 1, unite: cs, cle: sojacuisson }
+      - { nom: Sauce soja foncée, qte: 2.5, unite: cc, note: "1 c. à café + ½ c. à soupe" }
+      - { nom: Sauce d'huître, qte: 1, unite: cs }
+      - { nom: Fécule de maïs, qte: 1, unite: cc, cle: feccuisson, note: "délayée dans 3 c. à soupe d'eau" }
+      - { nom: Sel, qte: 0.25, unite: cc, cle: selcuisson }
+      - { nom: Huile de tournesol, qte: 3, unite: cs, cle: huilecuisson }
+
+simple:
+  temps: { preparation: 25, cuisson: 12 }
+  etapes:
+    - "Couper le poulet en morceaux et le mélanger avec {selmarinade} de sel, du poivre, l'alcool de riz, {sojamarinade} de sauce soja claire, {fecmarinade} de fécule et {huilemarinade} d'huile."
+    - "Éplucher l'ananas, retirer le cœur et le couper en morceaux. Couper l'oignon en quartiers, hacher l'ail, couper la cébette en tronçons."
+    - "Mélanger dans un bol le sucre, {sojacuisson} de sauce soja claire, la sauce soja foncée, la sauce d'huître, la fécule délayée dans l'eau et {selcuisson} de sel."
+    - texte: "Wok à feu fort, 2 c. à soupe d'huile : saisir le poulet bien étalé 2 min, le retourner, encore 2 min, et le réserver."
+      minuteur: 240
+    - texte: "Le reste d'huile, l'ail et le gingembre 15 s, puis l'oignon 1 min et l'ananas 2 min."
+      minuteur: 180
+    - "Remettre le poulet, verser la sauce et remuer 1 min jusqu'à ce qu'elle nappe. Ajouter la cébette et servir."
+
+chef:
+  temps: { preparation: 30, cuisson: 12, attente: 20 }
+  etapes:
+    - titre: Mariner
+      texte: "Couper les hauts de cuisse en morceaux réguliers. Les assaisonner de {selmarinade} de sel, de poivre, de l'alcool de riz et de {sojamarinade} de sauce soja claire, et masser. Ajouter {fecmarinade} de fécule, puis {huilemarinade} d'huile pour que les morceaux ne collent pas. Laisser reposer 20 min."
+      minuteur: 1200
+    - titre: L'ananas, comme au Laos
+      texte: "Couper le haut et la base de l'ananas et retirer l'écorce en bandes fines. Les yeux forment des lignes en diagonale : les retirer en entaillant des sillons en V qui suivent ces lignes, plutôt que de couper épais. On garde toute la chair. Couper en quartiers, retirer le cœur et tailler en morceaux."
+    - titre: La sauce
+      texte: "Mélanger le sucre, {sojacuisson} de sauce soja claire, la sauce soja foncée, la sauce d'huître, {selcuisson} de sel, et la fécule délayée dans l'eau."
+    - titre: Saisir le poulet
+      texte: "Chauffer le wok à feu fort jusqu'à ce qu'il fume. 2 c. à soupe d'huile, le poulet étalé : le laisser saisir 2 min sans y toucher, retourner, 2 min encore. Réserver."
+      minuteur: 240
+    - titre: Les aromates et l'ananas
+      texte: "Le reste d'huile, l'ail et le gingembre 15 s, l'oignon et le blanc de cébette 1 min, puis l'ananas 2 min : il doit chauffer et caraméliser légèrement sans compoter."
+      minuteur: 180
+    - titre: L'assemblage
+      texte: "Remettre le poulet, verser la sauce bien mélangée et remuer 1 min, jusqu'à ce qu'elle épaississe et brille. Ajouter le vert de cébette et couper le feu."
+
+sources:
+  - titre: "Poulet à l'ananas sauté, sauce aigre-douce, Cooking With Morgane (YouTube)"
+    url: https://www.youtube.com/watch?v=eVvgyOOFudg
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc, riz-cantonais]
+    defaut: [riz-blanc]
+  - role: legume
+    choix: [legumes-sautes-wok]

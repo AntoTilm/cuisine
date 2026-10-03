@@ -45,7 +45,7 @@ const recettes = defineCollection({
   loader: glob({ pattern: '**/*.yaml', base: './src/content/recettes' }),
   schema: z.object({
     titre: z.string(),
-    cuisine: z.enum(['francaise', 'belge', 'italienne', 'mediterraneenne', 'americaine', 'asiatique', 'autres-horizons']),
+    cuisine: z.enum(['francaise', 'belge', 'italienne', 'mediterraneenne', 'americaine', 'britannique', 'asiatique', 'autres-horizons']),
     origine: z.string().optional(),
     type: z.enum(['entree', 'plat', 'accompagnement', 'sauce', 'dessert']),
     saison: z.enum(['hiver', 'ete']).optional(),

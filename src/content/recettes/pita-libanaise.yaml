@@ -69,4 +69,4 @@ assiette:
   - role: legume
     choix: [legumes-grilles-au-four]
   - role: sauce
-    choix: [tzatziki]
+    choix: [toum, tzatziki]

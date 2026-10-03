@@ -1,0 +1,39 @@
+titre: Batata harra
+cuisine: mediterraneenne
+origine: Liban
+type: accompagnement
+resume: "Les pommes de terre épicées libanaises : des cubes dorés, puis enrobés d'ail, de coriandre, de citron et de piment."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Pommes de terre à chair ferme, qte: 800, unite: g }
+      - { nom: Huile d'olive, qte: 4, unite: cs, mode: simple }
+      - { nom: Huile de friture, qte: 1, unite: l, mode: chef }
+      - { nom: Ail, qte: 4, unite: gousse }
+      - { nom: Coriandre fraîche, qte: 1, unite: bouquet }
+      - { nom: Citron, qte: 1, note: le jus }
+      - { nom: Piment d'Alep ou flocons de piment, qte: 1, unite: cc }
+      - { nom: Paprika, qte: 0.5, unite: cc }
+      - { nom: Sel }
+
+simple:
+  temps: { preparation: 15, cuisson: 35 }
+  etapes:
+    - "Préchauffer le four à 220 °C. Éplucher les pommes de terre et les couper en cubes de 2 cm."
+    - texte: "Les mélanger avec 3 c. à soupe d'huile, le paprika et le sel, les étaler sur une plaque et rôtir 30 à 35 min en remuant à mi-cuisson."
+      minuteur: 1950
+    - "Dans une poêle, faire revenir l'ail haché 30 s dans le reste d'huile, ajouter la coriandre hachée et le piment. Y verser les pommes de terre, arroser du jus de citron et mélanger."
+
+chef:
+  temps: { preparation: 20, cuisson: 25 }
+  etapes:
+    - titre: Précuire
+      texte: "Couper les pommes de terre en cubes de 2 cm, les rincer, puis les plonger 5 min dans l'eau bouillante salée. Égoutter et laisser sécher 10 min sur une grille."
+      minuteur: 300
+    - titre: Frire
+      texte: "Frire les cubes à 180 °C, 5 à 6 min, jusqu'à ce qu'ils soient très dorés et croustillants. Égoutter et saler."
+      minuteur: 330
+    - titre: La persillade libanaise
+      texte: "Dans une poêle, 1 c. à soupe d'huile d'olive, l'ail haché 30 s, puis la coriandre, le piment et le paprika 30 s. Y faire sauter les pommes de terre, arroser du jus de citron hors du feu et servir aussitôt."

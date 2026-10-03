@@ -1,0 +1,40 @@
+titre: Riz libanais aux vermicelles
+cuisine: mediterraneenne
+origine: Liban
+type: accompagnement
+resume: "Le riz de tous les jours au Liban : des vermicelles dorés au beurre, puis du riz cuit à l'étouffée. Les grains restent séparés et le goût de noisette est irrésistible."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Riz long (basmati ou égyptien), qte: 300, unite: g, cle: riz }
+      - { nom: Vermicelles fins, qte: 60, unite: g }
+      - { nom: Beurre ou ghee, qte: 30, unite: g }
+      - { nom: Eau, qte: 450, unite: ml, cle: eau }
+      - { nom: Sel, qte: 1, unite: cc }
+      - { nom: Amandes effilées, qte: 30, unite: g, mode: chef, optionnel: true }
+
+simple:
+  temps: { preparation: 5, cuisson: 25, attente: 10 }
+  etapes:
+    - "Rincer le riz jusqu'à ce que l'eau soit claire et l'égoutter."
+    - "Faire fondre le beurre et y dorer les vermicelles 2 à 3 min en remuant, jusqu'à ce qu'ils soient bien bruns."
+    - texte: "Ajouter le riz, remuer 1 min pour l'enrober, puis verser {eau} d'eau bouillante et le sel. Couvrir et cuire 15 min à feu très doux."
+      minuteur: 900
+    - texte: "Laisser reposer 10 min à couvert hors du feu, puis égrainer à la fourchette."
+      minuteur: 600
+
+chef:
+  temps: { preparation: 30, cuisson: 25, attente: 10 }
+  etapes:
+    - titre: Tremper
+      texte: "Rincer {riz} de riz plusieurs fois, puis le laisser tremper 20 min dans l'eau froide et l'égoutter soigneusement."
+      minuteur: 1200
+    - titre: Les vermicelles
+      texte: "Casser les vermicelles en petits tronçons. Les dorer dans le beurre à feu moyen en remuant sans arrêt : ils doivent être d'un brun profond, sans noircir. C'est tout le goût du plat."
+    - titre: L'étouffée
+      texte: "Ajouter le riz égoutté, l'enrober 1 min, verser {eau} d'eau bouillante moins 50 ml (le riz trempé en demande moins) et le sel. Couvrir d'un linge propre puis du couvercle, et cuire 15 min sur le plus petit feu."
+      minuteur: 900
+    - titre: Le service
+      texte: "Repos 10 min, égrainer, puis parsemer d'amandes dorées à sec."

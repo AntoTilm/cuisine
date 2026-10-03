@@ -31,6 +31,12 @@ export const CUISINES = [
     intro: 'Burgers, chili tex-mex, salade César et brunch.',
   },
   {
+    slug: 'britannique',
+    titre: 'Cuisine britannique',
+    nom: 'Britannique',
+    intro: 'La cuisine des restaurants londoniens d’aujourd’hui, d’après les vidéos de Fallow.',
+  },
+  {
     slug: 'asiatique',
     titre: 'Cuisine asiatique',
     nom: 'Asiatique',

@@ -96,3 +96,17 @@ Femmes (site bloqué), les shorts sans sous-titres (sauce teriyaki, bœuf à la 
   tiennes.
 - La **salade composée** reprend la liste de la feuille : tomate, oignons, mozzarella ou burrata, feta en option.
 - « Steak frites » est couvert par l'entrecôte et ses frites.
+
+## Ajouts demandés ensuite
+
+- **Poulet à l'ananas** (Cooking With Morgane) : quantités de la description ; la publicité bloquait les sous-titres, les gestes suivent ses autres plats sautés.
+- **Mac and cheese**, **bœuf bourguignon** et **poulet farci aux champignons, jambon de Parme et sauce madère**
+  (Fallow) : le mac and cheese et le bourguignon suivent les quantités de la description ; le poulet farci est le
+  niveau 2 de « Cooking Chicken from Beginner to Michelin », écrit d'après la transcription, qui ne donne pas les
+  quantités. **À relire.** Les versions simples sont des raccourcis écrits pour le carnet. Nouvelle catégorie
+  « Cuisine britannique » pour les recettes de Fallow.
+- **Le plat libanais** de la conversation ChatGPT : **ailes de poulet au citron et à l'ail** (djej bi toum w
+  limon), avec trois recettes pour l'accompagner : **toum**, **batata harra** et **riz libanais aux vermicelles**.
+  Écrites sans source vidéo. Le chawarma et le taboulé sont dans les idées.
+- Page **Chaînes à suivre** : tes chaînes (Etchebest, Cooking With Morgane, Fallow) et d'autres par cuisine, avec
+  les vidéos qui ont donné une recette du carnet et d'autres à essayer (aussi dans les idées).

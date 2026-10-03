@@ -1529,6 +1529,78 @@ select {
   color: var(--texte-doux);
 }
 
+/* --- Chaînes à suivre ------------------------------------------------------------- */
+.chaines {
+  margin-top: 40px;
+  display: grid;
+  gap: 48px;
+}
+.groupe-chaines h2 {
+  color: var(--encre);
+  padding-bottom: 8px;
+  border-bottom: 3px double var(--encre);
+}
+.liste-chaines {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0 48px;
+}
+@media (min-width: 900px) {
+  .liste-chaines {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.chaine {
+  padding-block: 18px;
+  border-bottom: 1px solid var(--ligne);
+}
+.chaine h3 {
+  font-family: var(--f-titre);
+  font-weight: 400;
+  font-size: 1.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+.chaine h3 a {
+  color: var(--texte);
+}
+.chaine h3 a:hover {
+  color: var(--encre);
+}
+.marque-aime,
+.marque-langue {
+  font-family: var(--f-texte);
+  font-size: 0.8rem;
+  padding: 1px 8px;
+  border-radius: var(--rayon);
+  border: 1px solid var(--ligne-forte);
+  color: var(--texte-doux);
+}
+.marque-aime {
+  border-color: var(--encre);
+  color: var(--encre);
+}
+.chaine > p {
+  margin-top: 6px;
+  color: var(--texte-doux);
+  max-width: 60ch;
+}
+.videos {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+}
+.videos .au-carnet {
+  margin-left: 10px;
+  font-size: 0.88rem;
+  color: var(--marge);
+}
+
 /* --- Impression : la recette seule, sans les boutons. -------------------------------- */
 @media print {
   .site-tete,

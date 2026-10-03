@@ -1,0 +1,35 @@
+titre: Toum
+cuisine: mediterraneenne
+origine: Liban
+type: sauce
+resume: "La crème d'ail libanaise, blanche et aérienne comme une mayonnaise, mais sans œuf : de l'ail, du citron, du sel et de l'huile."
+portions:
+  base: 8
+
+ingredients:
+  - items:
+      - { nom: Ail, qte: 1, note: "une tête entière, environ 12 gousses" }
+      - { nom: Sel fin, qte: 1, unite: cc }
+      - { nom: Citron, qte: 1, note: le jus }
+      - { nom: Huile de tournesol, qte: 40, unite: cl, note: "neutre, pas d'huile d'olive" }
+      - { nom: Eau glacée, qte: 3, unite: cs }
+
+simple:
+  temps: { preparation: 15, cuisson: 0 }
+  etapes:
+    - "Éplucher l'ail et retirer le germe de chaque gousse."
+    - "Mixer l'ail avec le sel jusqu'à une purée fine, en raclant les parois."
+    - "Moteur en marche, verser l'huile en filet très fin, en alternant avec le jus de citron et l'eau glacée, cuillère par cuillère, jusqu'à obtenir une crème blanche et ferme."
+    - "Garder au frigo dans un bocal : elle se conserve deux semaines et s'adoucit avec le temps."
+
+chef:
+  temps: { preparation: 20, cuisson: 0 }
+  etapes:
+    - titre: L'ail
+      texte: "Éplucher l'ail, couper chaque gousse en deux et retirer le germe, qui rend la sauce âcre. Mixer avec le sel jusqu'à une pâte très lisse."
+    - titre: Monter l'émulsion
+      texte: "Moteur en marche, verser l'huile goutte à goutte au début, puis en filet très fin. Toutes les 10 cl d'huile, ajouter une cuillère de jus de citron puis une cuillère d'eau glacée. L'eau et le citron empêchent l'émulsion de trancher et la blanchissent."
+    - titre: Si elle tranche
+      texte: "Mixer une gousse d'ail neuve avec une pincée de sel et un peu de jus de citron, puis y reverser la sauce ratée en filet."
+  astuces:
+    - "Pas d'huile d'olive : elle devient amère au mixeur et colore la sauce."

@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import { GROUPES } from '../data/chaines.js';
+import { lien } from '../lib/recettes.js';
+---
+
+<Base titre="Chaînes à suivre" description="Les chaînes YouTube et les sites où chercher de nouvelles recettes." page="chaines">
+  <section class="tete-page seyes">
+    <div class="conteneur">
+      <div class="dans-la-marge">
+        <h1>Chaînes à suivre</h1>
+        <p class="chapeau">
+          Où chercher la prochaine recette. Les chaînes marquées « au carnet » sont celles d’où viennent déjà des recettes ; les
+          vidéos liées à une recette du carnet y renvoient.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="conteneur chaines">
+    {
+      GROUPES.map((g) => (
+        <section class="groupe-chaines">
+          <h2>{g.titre}</h2>
+          <ul class="liste-chaines">
+            {g.chaines.map((c) => (
+              <li class="chaine">
+                <h3>
+                  <a href={c.url} rel="noopener" target="_blank">{c.nom}</a>
+                  {c.aime && <span class="marque-aime">au carnet</span>}
+                  {c.anglais && <span class="marque-langue">en anglais</span>}
+                </h3>
+                <p>{c.texte}</p>
+                {c.videos && (
+                  <ul class="videos">
+                    {c.videos.map((v) => (
+                      <li>
+                        <a href={v.url} rel="noopener" target="_blank">{v.titre}</a>
+                        {v.recette && (
+                          <a class="au-carnet" href={lien(`recette/${v.recette}/`)}>
+                            la recette du carnet
+                          </a>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</Base>

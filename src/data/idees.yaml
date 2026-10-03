@@ -1,7 +1,40 @@
-# Recettes à écrire : notées dans le fichier Excel, sans quantités ni étapes.
+# Recettes à écrire : notées dans le fichier Excel ou repérées sur les chaînes, sans quantités ni étapes.
 # Quand une recette est prête, créer son fichier dans src/content/recettes/ et la retirer d'ici.
 
-- id: plat-libanais
-  titre: Un plat libanais
+- id: chawarma-poulet
+  titre: Chawarma de poulet
   cuisine: mediterraneenne
-  note: "Le lien du fichier mène à une conversation ChatGPT, lisible seulement depuis ton compte : coller la recette pour l'ajouter."
+  note: "Poulet mariné à l'ail, au citron et aux épices, cuit à la poêle ou au four faute de broche, en pain libanais avec du toum."
+- id: riz-libanais-vermicelle
+  titre: Riz libanais au vermicelle
+  cuisine: mediterraneenne
+  note: L'accompagnement classique des plats libanais.
+- id: crevettes-aigre-douces-ananas
+  titre: Crevettes aigre-douces à l'ananas
+  cuisine: asiatique
+  note: Cooking With Morgane.
+  lien: https://www.youtube.com/watch?v=yLUFHEUWgdI
+- id: porc-aigre-doux
+  titre: Porc aigre-doux
+  cuisine: asiatique
+  note: Cooking With Morgane.
+  lien: https://www.youtube.com/watch?v=LkV-lnWPmw8
+- id: riz-saute-poulet-ananas
+  titre: Riz sauté au poulet et à l'ananas
+  cuisine: asiatique
+  note: Cooking With Morgane.
+  lien: https://www.youtube.com/watch?v=GcZ73LzF7GQ
+- id: short-ribs-fallow
+  titre: Côtes de bœuf braisées (short ribs)
+  cuisine: britannique
+  note: Fallow, en anglais.
+  lien: https://www.youtube.com/watch?v=G0n2OHlBPcQ
+- id: tourte-boeuf-fallow
+  titre: Tourte au bœuf
+  cuisine: britannique
+  note: Fallow, en anglais.
+  lien: https://www.youtube.com/watch?v=XE6JvrChQ_Q
+- id: taboule-libanais
+  titre: Taboulé libanais
+  cuisine: mediterraneenne
+  note: Beaucoup de persil, un peu de boulgour, tomate, menthe et citron.
