@@ -24,6 +24,7 @@ ingredients:
       - { nom: Moutarde à l'ancienne, qte: 1, unite: cs, cle: ancienne }
       - { nom: Estragon frais, qte: 3, unite: brin, mode: chef }
       - { nom: Persil plat, qte: 3, unite: brin, mode: simple, optionnel: true }
+      - { nom: Citron non traité, qte: 0.5, optionnel: true }
 
 simple:
   temps: { preparation: 10, cuisson: 25 }
@@ -33,7 +34,7 @@ simple:
       minuteur: 330
     - texte: "Dans la même poêle, faire suer les échalotes 2 min, puis verser {vin} de vin blanc et gratter les sucs. Laisser réduire de moitié."
       minuteur: 120
-    - texte: "Ajouter {creme} de crème et les deux moutardes, remettre le poulet et laisser mijoter 10 min à feu doux, jusqu'à ce qu'il soit cuit et la sauce nappante. Persil ciselé au moment de servir."
+    - texte: "Ajouter {creme} de crème et les deux moutardes, remettre le poulet et laisser mijoter 10 min à feu doux, jusqu'à ce qu'il soit cuit et la sauce nappante. Hors du feu, un filet de jus de citron si on aime, puis le persil ciselé."
       minuteur: 600
 
 chef:
@@ -48,12 +49,14 @@ chef:
     - texte: "Ajouter {creme} de crème et laisser frémir 3 à 4 min, jusqu'à ce qu'elle nappe la cuillère."
       minuteur: 210
     - titre: La moutarde, hors du feu
-      texte: "Hors du feu, incorporer {dijon} de moutarde de Dijon et {ancienne} de moutarde à l'ancienne, puis l'estragon ciselé. Goûter et rectifier."
+      texte: "Hors du feu, incorporer {dijon} de moutarde de Dijon et {ancienne} de moutarde à l'ancienne, puis l'estragon ciselé, un peu de zeste et un filet de jus de citron (environ ½ cs). Goûter et rectifier."
     - titre: Le service
       texte: "Remettre le poulet et son jus de repos dans la sauce, le laisser chauffer 3 min à couvert sur feu très doux, puis servir avec la peau hors de la sauce pour qu'elle reste croustillante."
       minuteur: 180
   astuces:
     - "La moutarde n'aime pas bouillir : elle devient amère et perd son piquant. On l'ajoute toujours à la fin, hors du feu."
+    - "Le citron aussi va hors du feu : s'il bout dans la crème, elle risque de trancher et il perd son goût. Doser léger, le vin et la moutarde apportent déjà de l'acidité."
+    - "Variantes pour le déglaçage : un trait de cognac flambé pour une sauce plus ronde, ou une bière blonde belge pour une note douce et légèrement amère."
 
 assiette:
   - role: feculent
