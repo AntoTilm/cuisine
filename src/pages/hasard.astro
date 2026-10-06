@@ -1,22 +1,26 @@
 ---
 import Base from '../layouts/Base.astro';
-import { VIDEOS } from '../data/hasard.js';
+import { VIDEOS, CUISINES_HASARD } from '../data/hasard.js';
 import { CUISINES, TYPES } from '../data/cuisines.js';
 import { lien } from '../lib/recettes.js';
 
 const videos = VIDEOS.map((v) => ({ ...v, lienRecette: v.recette ? lien(`recette/${v.recette}/`) : '' }));
-const cuisines = CUISINES.filter((c) => VIDEOS.some((v) => v.cuisine === c.slug));
+const cuisines = [...CUISINES, ...CUISINES_HASARD].filter((c) => VIDEOS.some((v) => v.cuisine === c.slug));
 const types = Object.entries(TYPES).filter(([t]) => VIDEOS.some((v) => v.type === t));
-const chaines = [...new Set(VIDEOS.map((v) => v.chaine))];
+// Les chaînes bien représentées ont leur entrée ; les autres sont regroupées.
+const parChaine = VIDEOS.reduce((m, v) => m.set(v.chaine, (m.get(v.chaine) || 0) + 1), new Map());
+const chaines = [...parChaine].filter(([, n]) => n >= 8).map(([c]) => c).sort((a, b) => a.localeCompare(b, 'fr'));
+const petites = new Set([...parChaine].filter(([, n]) => n < 8).map(([c]) => c));
+for (const v of videos) if (petites.has(v.chaine)) v.autre = true;
 ---
 
-<Base titre="Une idée au hasard" description="Un coup de dé parmi les vidéos des chaînes de cuisine que je suis." page="hasard">
+<Base titre="Une idée au hasard" description="Un coup de dé parmi plus de mille vidéos de recettes." page="hasard">
   <section class="tete-page seyes">
     <div class="conteneur">
       <div class="dans-la-marge">
         <h1>Une idée au hasard</h1>
         <p class="chapeau">
-          Un coup de dé parmi {videos.length} vidéos de recettes de mes chaînes préférées. Le prompt en dessous sert à demander
+          Un coup de dé parmi {videos.length} vidéos : mes chaînes préférées, et les grands classiques du monde entier, du bistrot à la table étoilée en passant par la street food. Le prompt en dessous sert à demander
           à Claude d’en tirer une recette pour le carnet.
         </p>
       </div>
@@ -32,9 +36,9 @@ const chaines = [...new Set(VIDEOS.map((v) => v.chaine))];
         <select name="type"><option value="">Tous</option>{types.map(([t, n]) => <option value={t}>{n}</option>)}</select>
       </label>
       <label>Chaîne
-        <select name="chaine"><option value="">Toutes</option>{chaines.map((c) => <option value={c}>{c}</option>)}</select>
+        <select name="chaine"><option value="">Toutes</option>{chaines.map((c) => <option value={c}>{c}</option>)}<option value="__autres">Autres chaînes</option></select>
       </label>
-      <label class="hasard-case"><input type="checkbox" name="nouveau" /> Pas encore au carnet</label>
+      <label class="hasard-case"><input type="checkbox" name="nouveau" checked /> Pas encore au carnet</label>
     </form>
 
     <button class="bouton-de" id="lancer" type="button"><span class="de" aria-hidden="true">🎲</span> Lancer le dé</button>
@@ -62,7 +66,7 @@ const chaines = [...new Set(VIDEOS.map((v) => v.chaine))];
       return videos.filter((v: any) =>
         (!f.get('cuisine') || v.cuisine === f.get('cuisine')) &&
         (!f.get('type') || v.type === f.get('type')) &&
-        (!f.get('chaine') || v.chaine === f.get('chaine')) &&
+        (!f.get('chaine') || v.chaine === f.get('chaine') || (f.get('chaine') === '__autres' && v.autre)) &&
         (!f.get('nouveau') || !v.recette));
     }
     function compter() {

@@ -1,13 +1,15 @@
 // Vidéos YouTube pour le dé « Une idée au hasard » (page /hasard/).
 // cuisine : un slug de cuisines.js ; type : entree, plat, accompagnement, sauce, dessert.
 // recette : nom du fichier YAML si la recette est déjà au carnet.
+import { PLUS } from './hasard-plus.js';
+
 const yt = (id) => `https://www.youtube.com/watch?v=${id}`;
 
 const ETCHEBEST = 'Philippe Etchebest';
 const MORGANE = 'Cooking With Morgane';
 const FALLOW = 'Fallow';
 
-export const VIDEOS = [
+const BASE = [
   // Philippe Etchebest
   { chaine: ETCHEBEST, cuisine: 'francaise', type: 'plat', titre: 'Le bœuf bourguignon', url: yt('F_53yUD3Je4'), recette: 'boeuf-bourguignon' },
   { chaine: ETCHEBEST, cuisine: 'francaise', type: 'dessert', titre: 'La tarte au citron', url: yt('N7kY8vuCbVI'), recette: 'tarte-citron-meringuee' },
@@ -74,4 +76,17 @@ export const VIDEOS = [
   { chaine: FALLOW, cuisine: 'britannique', type: 'accompagnement', titre: 'La purée de restaurant', url: yt('MvSYttvUxA0') },
   { chaine: FALLOW, cuisine: 'americaine', type: 'plat', titre: 'Le meilleur burger', url: yt('3BcnNOJPyBU') },
   { chaine: FALLOW, cuisine: 'britannique', type: 'plat', titre: 'Le steak et la sauce les plus célèbres de Londres', url: yt('IaMMnRiAvY4') },
+];
+
+// Cuisines qui n'existent que dans le dé (pas encore de rubrique dans le carnet).
+export const CUISINES_HASARD = [
+  { slug: 'indienne', nom: 'Indienne' },
+  { slug: 'latino', nom: 'Mexique et Amérique latine' },
+];
+
+const dejaLa = new Set(BASE.map((v) => v.url));
+export const VIDEOS = [
+  ...BASE,
+  ...PLUS.map(([chaine, cuisine, type, titre, id, recette]) => ({ chaine, cuisine, type, titre, url: yt(id), ...(recette ? { recette } : {}) }))
+    .filter((v) => !dejaLa.has(v.url)),
 ];
