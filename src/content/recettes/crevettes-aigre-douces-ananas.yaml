@@ -1,0 +1,68 @@
+titre: Crevettes aigre-douces à l'ananas
+cuisine: asiatique
+origine: Chine
+type: plat
+resume: "Des crevettes croustillantes, de l'ananas et des poivrons, enrobés d'une sauce aigre-douce brillante au ketchup et au vinaigre de riz."
+portions:
+  base: 2
+
+ingredients:
+  - groupe: Les crevettes
+    items:
+      - { nom: Crevettes crues décortiquées, qte: 300, unite: g }
+      - { nom: Sel, qte: 0.25, unite: cc, cle: sel }
+      - { nom: Blanc d'œuf, qte: 1 }
+      - { nom: Fécule de maïs, qte: 3, unite: cs, cle: fecule }
+      - { nom: Huile de friture, qte: 50, unite: cl, cle: friture }
+  - groupe: La sauce
+    items:
+      - { nom: Ketchup, qte: 3, unite: cs }
+      - { nom: Vinaigre de riz blanc, qte: 2, unite: cs }
+      - { nom: Sucre, qte: 2, unite: cs }
+      - { nom: Sauce soja claire, qte: 1, unite: cs }
+      - { nom: Eau, qte: 80, unite: ml, cle: eau }
+      - { nom: Fécule de maïs, qte: 1, unite: cc, cle: fecsauce }
+  - groupe: La garniture
+    items:
+      - { nom: Ananas frais, qte: 0.25 }
+      - { nom: Poivron rouge, qte: 0.5 }
+      - { nom: Poivron vert, qte: 0.5 }
+      - { nom: Oignon, qte: 0.5 }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Cébette, qte: 1 }
+
+simple:
+  temps: { preparation: 20, cuisson: 10 }
+  etapes:
+    - "Mélanger tous les ingrédients de la sauce dans un bol."
+    - "Couper l'ananas, les poivrons et l'oignon en morceaux, hacher l'ail."
+    - texte: "Saler les crevettes, les enrober de {fecule} de fécule et les poêler 2 min par face dans 3 c. à soupe d'huile. Réserver."
+      minuteur: 240
+    - texte: "Dans la même poêle, l'ail, l'oignon et les poivrons 2 min, puis l'ananas 1 min."
+      minuteur: 180
+    - "Verser la sauce, laisser épaissir 1 min, remettre les crevettes, enrober et parsemer de cébette."
+
+chef:
+  temps: { preparation: 25, cuisson: 15 }
+  etapes:
+    - titre: Les crevettes
+      texte: "Inciser le dos des crevettes, retirer le boyau, les sécher. Les mélanger avec {sel} de sel et le blanc d'œuf, puis les enrober de {fecule} de fécule."
+    - titre: Frire
+      texte: "Chauffer {friture} d'huile à 180 °C. Frire les crevettes 1 min 30 en deux fois, égoutter. Remonter l'huile et refrire 30 s pour un croustillant qui tient sous la sauce."
+      minuteur: 90
+    - titre: La sauce
+      texte: "Wok avec 1 c. à soupe d'huile : ail, oignon, poivrons 1 min à feu vif (ils restent croquants), ananas 1 min. Verser la sauce mélangée et cuire jusqu'à ce qu'elle soit translucide et brillante."
+      minuteur: 120
+    - titre: L'enrobage
+      texte: "Hors du feu, ajouter les crevettes, sauter deux fois pour enrober et servir tout de suite, avant que la croûte ne ramollisse."
+
+sources:
+  - titre: "Crevettes aigre-douces à l'ananas, Cooking With Morgane (YouTube)"
+    url: https://www.youtube.com/watch?v=yLUFHEUWgdI
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc, riz-cantonais]
+    defaut: [riz-blanc]
+
+voirAussi: [poulet-ananas, porc-aigre-doux]

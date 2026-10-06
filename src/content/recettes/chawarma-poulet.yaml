@@ -1,0 +1,63 @@
+titre: Chawarma de poulet
+cuisine: mediterraneenne
+origine: Liban
+type: plat
+resume: "Des hauts de cuisse marinés à l'ail, au citron et aux épices, grillés bien dorés puis émincés, roulés dans un pain libanais avec du toum et des pickles."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La marinade
+    items:
+      - { nom: Hauts de cuisse de poulet désossés, qte: 800, unite: g, cle: poulet }
+      - { nom: Yaourt grec, qte: 100, unite: g }
+      - { nom: Citron, qte: 1, note: "jus" }
+      - { nom: Ail, qte: 4, unite: gousse }
+      - { nom: Huile d'olive, qte: 3, unite: cs }
+      - { nom: Cumin moulu, qte: 1, unite: cc }
+      - { nom: Paprika, qte: 1, unite: cc }
+      - { nom: Sept épices libanaises (ou mélange shawarma), qte: 2, unite: cc }
+      - { nom: Curcuma, qte: 0.5, unite: cc }
+      - { nom: Cannelle, qte: 1, unite: pincee }
+      - { nom: Sel, qte: 1.5, unite: cc }
+      - { nom: Vinaigre blanc, qte: 1, unite: cs, mode: chef }
+  - groupe: Pour servir
+    items:
+      - { nom: Pain libanais, qte: 4 }
+      - { nom: Toum, qte: 120, unite: g, note: "voir la recette du toum" }
+      - { nom: Cornichons ou navets au vinaigre, qte: 1, unite: pot }
+      - { nom: Tomates, qte: 2 }
+      - { nom: Persil plat, qte: 0.5, unite: bouquet }
+      - { nom: Frites, optionnel: true, mode: chef }
+
+simple:
+  temps: { preparation: 20, cuisson: 15, attente: 60 }
+  etapes:
+    - texte: "Mélanger tous les ingrédients de la marinade avec l'ail râpé, y enrober le poulet et laisser au frais au moins 1 h."
+      minuteur: 3600
+    - texte: "Cuire le poulet dans une grande poêle bien chaude huilée, 5 à 6 min par face, jusqu'à ce qu'il soit doré et un peu noirci par endroits."
+      minuteur: 660
+    - "Laisser reposer 5 min puis émincer finement."
+    - "Tartiner le pain de toum, ajouter le poulet, les pickles, la tomate et le persil, puis rouler serré."
+
+chef:
+  temps: { preparation: 30, cuisson: 30, attente: 720 }
+  etapes:
+    - titre: La veille
+      texte: "Mélanger la marinade (yaourt, citron, ail râpé, huile, vinaigre, épices, sel). Y masser {poulet} de hauts de cuisse et laisser mariner une nuit au frais : le vinaigre et le yaourt attendrissent, les épices pénètrent."
+    - titre: La broche à la maison
+      texte: "Préchauffer le four à 220 °C. Empiler les hauts de cuisse serrés sur une plaque, en pain de viande, ou en brochettes sur deux pics. Rôtir 25 à 30 min, jusqu'à 75 °C à cœur."
+      minuteur: 1680
+    - titre: Le croustillant
+      texte: "Émincer finement, puis saisir les lamelles dans une poêle très chaude avec un filet d'huile et un peu du jus de cuisson, sans remuer, pour retrouver les bords grillés de la broche."
+    - titre: Le sandwich
+      texte: "Toum généreux, poulet, pickles, quelques frites à la libanaise, puis rouler serré et dorer le rouleau 1 min à la poêle sèche, côté jointure en premier."
+  astuces:
+    - "Les hauts de cuisse restent juteux là où le blanc sèche."
+    - "Servi en assiette : avec du riz aux vermicelles, du taboulé et du toum."
+
+sources:
+  - titre: "Recherche « chicken shawarma at home » (YouTube)"
+    url: https://www.youtube.com/results?search_query=chicken+shawarma+at+home
+
+servirAvec: [toum, taboule-libanais, riz-libanais, pita-libanaise]

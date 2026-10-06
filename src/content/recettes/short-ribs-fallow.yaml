@@ -1,0 +1,70 @@
+titre: Côtes de bœuf braisées (short ribs)
+cuisine: britannique
+origine: Londres, façon Fallow
+type: plat
+saison: hiver
+resume: "Des short ribs saisis, braisés des heures dans le vin rouge et le fond, puis laqués dans leur jus réduit jusqu'à ce qu'ils brillent."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le braisage
+    items:
+      - { nom: Short ribs de bœuf (plat de côtes) avec os, qte: 2, unite: kg, cle: ribs }
+      - { nom: Sel, qte: 2, unite: cc }
+      - { nom: Huile, qte: 2, unite: cs }
+      - { nom: Oignons, qte: 2 }
+      - { nom: Carottes, qte: 2 }
+      - { nom: Céleri, qte: 2, unite: branche }
+      - { nom: Ail, qte: 1, note: "tête coupée en deux" }
+      - { nom: Concentré de tomate, qte: 2, unite: cs }
+      - { nom: Vin rouge, qte: 75, unite: cl, cle: vin }
+      - { nom: Fond de bœuf, qte: 1, unite: l, cle: fond }
+      - { nom: Thym, qte: 4, unite: brin }
+      - { nom: Laurier, qte: 2, unite: feuille }
+  - groupe: La finition
+    mode: chef
+    items:
+      - { nom: Beurre froid, qte: 30, unite: g }
+      - { nom: Vinaigre de vin rouge, qte: 1, unite: cs }
+      - { nom: Raifort râpé, qte: 2, unite: cs, optionnel: true }
+
+simple:
+  temps: { preparation: 30, cuisson: 210 }
+  etapes:
+    - "Saler les ribs et les dorer sur toutes les faces dans l'huile, dans une cocotte. Réserver."
+    - "Faire revenir les légumes coupés en gros morceaux 8 min, ajouter le concentré de tomate 2 min."
+    - "Verser {vin} de vin, réduire de moitié, ajouter {fond} de fond, le thym et le laurier."
+    - texte: "Remettre la viande, couvrir et cuire au four à 150 °C pendant 3 h 30."
+      minuteur: 12600
+    - "Retirer la viande, passer le jus et le réduire jusqu'à ce qu'il nappe. Servir les ribs arrosés."
+
+chef:
+  temps: { preparation: 45, cuisson: 240, attente: 720 }
+  etapes:
+    - titre: La veille, saler
+      texte: "Saler {ribs} de short ribs la veille et les laisser à découvert au frigo : la surface sèche et dore mieux."
+    - titre: Une vraie coloration
+      texte: "Saisir les ribs à feu fort sur chaque face, en deux fois, jusqu'à une croûte brun foncé (10 à 12 min). C'est là que se fait le goût du jus."
+      minuteur: 720
+    - titre: La garniture
+      texte: "Dans la graisse rendue, colorer franchement oignons, carottes, céleri et ail. Pincer le concentré de tomate 2 min, puis déglacer avec {vin} de vin et réduire des deux tiers."
+    - titre: Le four
+      texte: "Ajouter {fond} de fond et les herbes : la viande doit être juste couverte, os vers le haut. Couvrir et cuire 4 h à 140 °C, jusqu'à ce que l'os sorte tout seul."
+      minuteur: 14400
+    - titre: Le repos
+      texte: "Idéalement, laisser refroidir la viande dans le jus jusqu'au lendemain : elle se raffermit, se tranche net, et la graisse figée s'enlève facilement."
+    - titre: Le glaçage
+      texte: "Passer le jus, le réduire à feu vif jusqu'à un sirop qui nappe la cuillère, ajouter le vinaigre et monter au beurre froid. Réchauffer les ribs au four à 200 °C en les arrosant toutes les 3 min jusqu'à ce qu'ils soient laqués. Servir avec un peu de raifort."
+      minuteur: 900
+  astuces:
+    - "Demander au boucher du plat de côtes coupé en pavés épais de 3 os ou à l'unité."
+
+sources:
+  - titre: "Short rib, Fallow (YouTube, en anglais)"
+    url: https://www.youtube.com/watch?v=G0n2OHlBPcQ
+
+assiette:
+  - role: feculent
+    choix: [puree-maison]
+    defaut: [puree-maison]

@@ -1,0 +1,57 @@
+titre: Riz sauté au poulet et à l'ananas
+cuisine: asiatique
+origine: Thaïlande
+type: plat
+resume: "Riz jasmin de la veille sauté au wok avec du poulet, de l'ananas frais, des noix de cajou et une touche de curcuma."
+portions:
+  base: 2
+
+ingredients:
+  - items:
+      - { nom: Riz jasmin cuit (de la veille), qte: 400, unite: g, cle: riz }
+      - { nom: Blanc de poulet, qte: 150, unite: g }
+      - { nom: Ananas frais, qte: 0.25 }
+      - { nom: Noix de cajou grillées, qte: 50, unite: g }
+      - { nom: Œuf, qte: 1 }
+      - { nom: Oignon, qte: 0.5 }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Sel, qte: 1, unite: pincee }
+      - { nom: Sucre, qte: 1, unite: cc }
+      - { nom: Curcuma, qte: 1, unite: cc }
+      - { nom: Sauce soja claire, qte: 2, unite: cs, cle: soja }
+      - { nom: Coriandre fraîche, qte: 5, unite: g }
+      - { nom: Cébettes, qte: 2 }
+      - { nom: Huile de tournesol, qte: 3, unite: cs }
+      - { nom: Sauce poisson, qte: 1, unite: cc, mode: chef }
+
+simple:
+  temps: { preparation: 15, cuisson: 10 }
+  etapes:
+    - "Couper le poulet en petits dés, l'ananas en morceaux, l'oignon en dés ; hacher l'ail, ciseler la cébette et la coriandre."
+    - texte: "Wok à feu fort avec 1 c. à soupe d'huile : saisir le poulet 3 min et le réserver."
+      minuteur: 180
+    - "Brouiller l'œuf dans un peu d'huile et le réserver."
+    - texte: "Le reste d'huile, l'oignon et l'ail 1 min, puis le riz émietté et le curcuma, en remuant 3 min."
+      minuteur: 240
+    - "Ajouter {soja} de sauce soja, le sucre, le sel, l'ananas, le poulet, l'œuf et les cajous. Sauter 2 min et finir avec la cébette et la coriandre."
+
+chef:
+  temps: { preparation: 20, cuisson: 10 }
+  etapes:
+    - titre: Le riz
+      texte: "Utiliser {riz} de riz jasmin cuit la veille, égrainé à la main : un riz frais colle et fait de la bouillie."
+    - titre: L'ananas
+      texte: "Couper l'ananas en petits dés et les poêler à sec 2 min à feu vif pour les caraméliser légèrement. Option fête : servir dans la demi-coque évidée."
+      minuteur: 120
+    - titre: Le wok
+      texte: "Wok fumant : poulet 3 min, réserver. Œuf brouillé à peine pris, réserver. Oignon et ail, puis le riz étalé et le curcuma : laisser le riz griller 30 s sans remuer avant de sauter, deux ou trois fois."
+    - titre: L'assaisonnement
+      texte: "Verser {soja} de sauce soja et la sauce poisson sur la paroi chaude du wok pour qu'elles grésillent, puis sucre, ananas, poulet, œuf et cajous. Goûter, finir avec cébette et coriandre."
+
+sources:
+  - titre: "Riz sauté au poulet et à l'ananas, Cooking With Morgane (YouTube)"
+    url: https://www.youtube.com/watch?v=GcZ73LzF7GQ
+  - titre: "Chicken & Pineapple Fried Rice, Cooking With Morgane"
+    url: https://cookingwithmorgane.com/en/recipe/chicken-pineapple-fried-rice.html
+
+voirAussi: [riz-cantonais, poulet-ananas]

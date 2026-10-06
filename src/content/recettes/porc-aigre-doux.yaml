@@ -1,0 +1,68 @@
+titre: Porc aigre-doux
+cuisine: asiatique
+origine: Chine
+type: plat
+resume: "Des travers de porc dorés puis braisés dans une sauce au vinaigre de riz et au sucre, réduite jusqu'à laquer la viande."
+portions:
+  base: 2
+
+ingredients:
+  - items:
+      - { nom: Travers de porc coupés en tronçons, qte: 600, unite: g, cle: travers }
+      - { nom: Anis étoilé, qte: 1 }
+      - { nom: Ail, qte: 3, unite: gousse }
+      - { nom: Cébette, qte: 1 }
+      - { nom: Graines de sésame grillées, qte: 1, unite: pincee }
+      - { nom: Alcool de riz Shaoxing, qte: 1, unite: cs }
+      - { nom: Vinaigre de riz blanc, qte: 2, unite: cs, cle: vinaigre }
+      - { nom: Sauce soja claire, qte: 1, unite: cs }
+      - { nom: Sauce soja foncée, qte: 0.5, unite: cc }
+      - { nom: Sauce poisson, qte: 1, unite: cs }
+      - { nom: Sucre, qte: 2, unite: cs, cle: sucre }
+      - { nom: Sel, qte: 0.25, unite: cc }
+      - { nom: Poivre moulu, qte: 0.25, unite: cc }
+      - { nom: Huile de tournesol, qte: 1, unite: cs }
+      - { nom: Gingembre frais, qte: 2, unite: tranche, mode: chef }
+
+simple:
+  temps: { preparation: 10, cuisson: 45 }
+  etapes:
+    - texte: "Blanchir les travers 3 min dans l'eau bouillante, les rincer et les sécher."
+      minuteur: 180
+    - texte: "Les dorer 5 min dans l'huile chaude avec l'ail écrasé et l'anis."
+      minuteur: 300
+    - "Ajouter l'alcool de riz, les sauces soja, la sauce poisson, {sucre} de sucre, {vinaigre} de vinaigre, le sel, le poivre et de l'eau à hauteur."
+    - texte: "Couvrir et mijoter 30 min à feu doux."
+      minuteur: 1800
+    - texte: "Découvrir et réduire à feu vif 5 min en remuant, jusqu'à ce que la sauce nappe et brille. Parsemer de cébette et de sésame."
+      minuteur: 300
+
+chef:
+  temps: { preparation: 15, cuisson: 60 }
+  etapes:
+    - titre: Blanchir
+      texte: "Départ eau froide avec le gingembre et un trait d'alcool de riz ; dès l'ébullition, compter 3 min, puis rincer {travers} de travers à l'eau tiède et bien les sécher."
+      minuteur: 180
+    - titre: Dorer
+      texte: "Wok à feu moyen-vif : dorer les travers sur toutes les faces, 6 à 8 min. Ajouter l'ail et l'anis les 30 dernières secondes."
+      minuteur: 420
+    - titre: Braiser
+      texte: "Déglacer à l'alcool de riz sur la paroi chaude. Ajouter les sauces, le sucre, la moitié du vinaigre, sel, poivre, et de l'eau juste à hauteur. Couvrir et mijoter 40 min : la viande doit se détacher de l'os."
+      minuteur: 2400
+    - titre: Laquer
+      texte: "Retirer l'anis et le gingembre, monter le feu et réduire en remuant sans arrêt jusqu'à une sauce sirupeuse qui laque. Hors du feu, le reste du vinaigre : il garde son piquant. Cébette et sésame."
+  astuces:
+    - "Le vinaigre en deux fois : à la cuisson pour le fond, à la fin pour la fraîcheur."
+
+sources:
+  - titre: "Porc aigre-doux, Cooking With Morgane (YouTube)"
+    url: https://www.youtube.com/watch?v=LkV-lnWPmw8
+  - titre: "Sweet and Sour Pork Ribs, Cooking With Morgane"
+    url: https://cookingwithmorgane.com/en/recipe/sweet-and-sour-pork-ribs.html
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc]
+    defaut: [riz-blanc]
+  - role: legume
+    choix: [legumes-sautes-wok]

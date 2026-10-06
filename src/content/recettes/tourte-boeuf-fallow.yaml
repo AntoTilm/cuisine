@@ -1,0 +1,73 @@
+titre: Tourte au bœuf
+cuisine: britannique
+origine: Londres, façon Fallow
+type: plat
+saison: hiver
+resume: "La pie anglaise : du bœuf braisé à la bière et aux oignons, sous un couvercle de pâte feuilletée bien doré."
+portions:
+  base: 6
+
+ingredients:
+  - groupe: La garniture
+    items:
+      - { nom: Joue ou paleron de bœuf, qte: 1.2, unite: kg, cle: boeuf }
+      - { nom: Farine, qte: 2, unite: cs }
+      - { nom: Sel, qte: 2, unite: cc }
+      - { nom: Huile, qte: 3, unite: cs }
+      - { nom: Oignons, qte: 3 }
+      - { nom: Carottes, qte: 2 }
+      - { nom: Champignons de Paris, qte: 250, unite: g }
+      - { nom: Ail, qte: 3, unite: gousse }
+      - { nom: Concentré de tomate, qte: 1, unite: cs }
+      - { nom: Bière brune (stout), qte: 50, unite: cl, cle: biere }
+      - { nom: Fond de bœuf, qte: 50, unite: cl, cle: fond }
+      - { nom: Sauce Worcestershire, qte: 1, unite: cs }
+      - { nom: Thym, qte: 4, unite: brin }
+      - { nom: Laurier, qte: 2, unite: feuille }
+  - groupe: La pâte
+    items:
+      - { nom: Pâte feuilletée pur beurre, qte: 1, note: "rouleau" }
+      - { nom: Pâte brisée, qte: 1, mode: chef, note: "rouleau, pour le fond" }
+      - { nom: Jaune d'œuf, qte: 1 }
+      - { nom: Lait, qte: 1, unite: cs }
+
+simple:
+  temps: { preparation: 30, cuisson: 200, attente: 30 }
+  etapes:
+    - "Couper le bœuf en gros cubes, le saler, le fariner et le dorer en plusieurs fois dans l'huile. Réserver."
+    - "Faire revenir les oignons, les carottes et les champignons 10 min, ajouter l'ail et le concentré de tomate."
+    - "Remettre la viande, verser {biere} de bière, {fond} de fond, la Worcestershire et les herbes."
+    - texte: "Couvrir et mijoter 2 h 30 à feu doux, jusqu'à ce que la viande soit fondante. La sauce doit être épaisse."
+      minuteur: 9000
+    - texte: "Laisser tiédir, verser dans un plat, couvrir de pâte feuilletée, dorer au jaune d'œuf et cuire 30 min à 200 °C."
+      minuteur: 1800
+
+chef:
+  temps: { preparation: 60, cuisson: 220, attente: 720 }
+  etapes:
+    - titre: Le ragoût
+      texte: "Saisir {boeuf} de bœuf fariné en petites quantités jusqu'à une croûte bien brune. Dans la même cocotte, colorer oignons, carottes et champignons, puis l'ail et le concentré."
+    - titre: Le braisage
+      texte: "Déglacer avec {biere} de bière en grattant les sucs, ajouter {fond} de fond, la Worcestershire et les herbes. Couvrir et cuire 3 h au four à 150 °C."
+      minuteur: 10800
+    - titre: La sauce
+      texte: "Égoutter la viande et réduire le jus jusqu'à ce qu'il nappe la cuillère. Remélanger et laisser refroidir complètement, idéalement une nuit : une garniture chaude fait fondre le feuilletage."
+    - titre: Le montage
+      texte: "Foncer un moule beurré de pâte brisée, cuire à blanc 15 min à 190 °C. Remplir de garniture froide, humidifier les bords, couvrir de feuilletée, souder et faire une cheminée."
+      minuteur: 900
+    - titre: La cuisson
+      texte: "Dorer deux fois au jaune d'œuf battu avec le lait (10 min de frigo entre les couches), rayer le dessus et cuire 40 min à 200 °C. Reposer 10 min avant de couper."
+      minuteur: 2400
+  astuces:
+    - "Servir avec de la purée et des petits pois, et le reste du jus en sauce."
+
+sources:
+  - titre: "Beef pie, Fallow (YouTube, en anglais)"
+    url: https://www.youtube.com/watch?v=XE6JvrChQ_Q
+
+assiette:
+  - role: feculent
+    choix: [puree-maison]
+    defaut: [puree-maison]
+
+voirAussi: [boeuf-bourguignon, short-ribs-fallow]

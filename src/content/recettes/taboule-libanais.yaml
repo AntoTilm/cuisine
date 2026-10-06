@@ -1,0 +1,51 @@
+titre: Taboulé libanais
+cuisine: mediterraneenne
+origine: Liban
+type: entree
+saison: ete
+resume: "Le vrai : une salade de persil, avec juste un peu de boulgour, de la tomate, de la menthe et beaucoup de citron."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Persil plat, qte: 3, unite: bouquet, cle: persil }
+      - { nom: Menthe fraîche, qte: 0.5, unite: bouquet }
+      - { nom: Boulgour fin, qte: 40, unite: g, cle: boulgour }
+      - { nom: Tomates fermes, qte: 3 }
+      - { nom: Oignons nouveaux, qte: 3 }
+      - { nom: Citrons, qte: 2, note: "jus" }
+      - { nom: Huile d'olive, qte: 6, unite: cs }
+      - { nom: Sel, qte: 1, unite: cc }
+      - { nom: Sept épices libanaises, qte: 1, unite: pincee, mode: chef }
+      - { nom: Feuilles de laitue romaine, qte: 8, mode: chef }
+
+simple:
+  temps: { preparation: 30, cuisson: 0, attente: 10 }
+  etapes:
+    - texte: "Rincer {boulgour} de boulgour et le laisser gonfler 10 min dans le jus d'un citron."
+      minuteur: 600
+    - "Laver et sécher le persil et la menthe, retirer les grosses tiges, puis les hacher finement au couteau."
+    - "Couper les tomates et les oignons nouveaux en petits dés."
+    - "Mélanger tout avec le reste du jus de citron, l'huile et le sel au dernier moment."
+
+chef:
+  temps: { preparation: 45, cuisson: 0, attente: 15 }
+  etapes:
+    - titre: Les herbes bien sèches
+      texte: "Laver {persil} de persil la veille ou 2 h avant, l'essorer et le laisser sécher dans un torchon : un persil humide donne un taboulé détrempé."
+    - titre: Le boulgour
+      texte: "Laisser gonfler {boulgour} de boulgour fin dans le jus des tomates égouttées et la moitié du citron, 15 min."
+      minuteur: 900
+    - titre: La coupe
+      texte: "Rassembler le persil en botte serrée et le trancher en fins rubans au couteau très aiguisé, sans repasser dessus : hacher plusieurs fois l'écrase et le noircit. Même chose pour la menthe."
+    - titre: L'assaisonnement
+      texte: "Assaisonner les oignons de sel et d'une pincée de sept épices, ajouter tomates, boulgour, herbes, citron et huile. Goûter : il doit être franchement acidulé. Servir aussitôt avec des feuilles de romaine en guise de cuillère."
+  astuces:
+    - "Au Liban, le taboulé est vert : à peine une poignée de boulgour."
+
+sources:
+  - titre: "Recherche « tabbouleh libanais » (YouTube)"
+    url: https://www.youtube.com/results?search_query=tabbouleh+libanais
+
+servirAvec: [chawarma-poulet, pita-libanaise]
