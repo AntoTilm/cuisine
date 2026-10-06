@@ -1,0 +1,62 @@
+titre: Black cod au miso
+cuisine: healthy
+origine: Japon, façon Nobu
+type: plat
+resume: Le plat signature de Nobu. Un poisson gras mariné trois jours dans le miso, laqué sous le gril, fondant comme du beurre.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le poisson
+    items:
+      - { nom: Filet de black cod (morue charbonnière), qte: 600, unite: g, note: "4 pavés avec la peau ; à défaut, du cabillaud épais ou du saumon" }
+  - groupe: La marinade saikyo
+    items:
+      - { nom: Saké, qte: 4, unite: cl }
+      - { nom: Mirin, qte: 4, unite: cl }
+      - { nom: Miso blanc (shiro miso), qte: 150, unite: g, cle: miso }
+      - { nom: Sucre, qte: 60, unite: g }
+  - groupe: Pour servir
+    items:
+      - { nom: Riz rond, qte: 300, unite: g }
+      - { nom: Gingembre mariné, qte: 40, unite: g, optionnel: true }
+      - { nom: Cébette, qte: 2 }
+      - { nom: Graines de sésame, qte: 1, unite: cs, mode: chef }
+
+simple:
+  temps: { preparation: 15, cuisson: 15, attente: 1440 }
+  etapes:
+    - "Porter le saké et le mirin à ébullition 20 secondes, baisser le feu, ajouter le miso et le sucre et fouetter jusqu'à dissolution. Laisser refroidir."
+    - texte: "Sécher les pavés, les enrober de marinade dans une boîte, couvrir et laisser au frigo au moins 24 h."
+      minuteur: 86400
+    - "Préchauffer le four à 200 °C. Essuyer l'excédent de marinade avec les doigts (sans rincer)."
+    - texte: "Saisir les pavés côté peau 2 min dans une poêle légèrement huilée, puis glisser au four 10 min, jusqu'à ce que le dessus caramélise."
+      minuteur: 600
+    - "Servir avec le riz, la cébette ciselée et le gingembre mariné."
+
+chef:
+  temps: { preparation: 20, cuisson: 15, attente: 4320 }
+  etapes:
+    - titre: La marinade saikyo
+      texte: "Porter le saké et le mirin à ébullition 20 secondes pour évaporer l'alcool. Baisser à feu doux, ajouter {miso} de miso en fouettant, puis le sucre petit à petit. Cuire 3 à 4 min sans laisser attacher. Refroidir complètement."
+    - titre: Trois jours de marinade
+      texte: "Saler très légèrement les pavés, attendre 15 min et les éponger. Les enrober entièrement de marinade, filmer au contact et laisser 2 à 3 jours au frigo."
+      minuteur: 259200
+    - titre: La cuisson
+      texte: "Préchauffer le four à 200 °C, grill en haut. Essuyer la marinade à la main (une fine pellicule doit rester). Saisir côté peau 2 min dans une poêle allant au four, juste huilée."
+      minuteur: 120
+    - texte: "Enfourner 10 à 12 min. Finir 1 à 2 min sous le gril pour des bords presque noirs. Surveiller : le sucre brûle vite."
+      minuteur: 660
+    - titre: Le dressage
+      texte: "Dresser avec une boule de riz, quelques lamelles de gingembre mariné, la cébette et un peu de sésame. Un trait de marinade réchauffée en sauce, si on veut."
+  astuces:
+    - "Le black cod est rare chez nous : un pavé de cabillaud bien épais ou un dos de saumon fonctionnent, en réduisant la marinade à 24 h."
+    - "La marinade restante se garde une semaine au frigo et laque aussi très bien des aubergines."
+
+notes:
+  - titre: Pourquoi c'est healthy
+    texte: "Un poisson riche en oméga-3, aucune friture : la marinade fait tout le travail."
+sources:
+  - titre: "Black cod au miso, Nobu (Just One Cookbook, YouTube)"
+    url: https://www.youtube.com/watch?v=uLmhRzBBMa0
+servirAvec: [riz-blanc, salade-concombre-wakame]

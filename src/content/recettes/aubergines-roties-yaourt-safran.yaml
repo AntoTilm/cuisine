@@ -1,0 +1,63 @@
+titre: Aubergines rôties, yaourt au safran et grenade
+cuisine: healthy
+origine: D'après Ottolenghi
+type: entree
+resume: Des tranches d'aubergine rôties jusqu'au fondant, nappées d'un yaourt au safran et à l'ail, avec grenade, basilic et pignons.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Les aubergines
+    items:
+      - { nom: Aubergine, qte: 3 }
+      - { nom: Huile d'olive, qte: 6, unite: cs }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: Le yaourt au safran
+    items:
+      - { nom: Safran en filaments, qte: 1, unite: pincee }
+      - { nom: Eau chaude, qte: 3, unite: cs, rayon: divers }
+      - { nom: Yaourt grec, qte: 200, unite: g }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Citron, qte: 0.5 }
+  - groupe: La garniture
+    items:
+      - { nom: Grenade, qte: 1 }
+      - { nom: Pignons de pin, qte: 30, unite: g }
+      - { nom: Basilic, qte: 1, unite: bouquet }
+      - { nom: Sel en flocons, qte: 1, unite: pincee, mode: chef }
+
+simple:
+  temps: { preparation: 15, cuisson: 35 }
+  etapes:
+    - "Préchauffer le four à 220 °C. Couper les aubergines en rondelles de 2 cm, les badigeonner d'huile sur les deux faces, saler et poivrer."
+    - texte: "Les étaler sur une plaque et rôtir 30 à 35 min, jusqu'à ce qu'elles soient dorées et fondantes."
+      minuteur: 2000
+    - "Faire infuser le safran 5 min dans l'eau chaude. Mélanger au yaourt avec l'ail râpé, le jus de citron et une pincée de sel."
+    - "Dorer les pignons à sec 2 min dans une poêle."
+    - "Disposer les aubergines tièdes sur un plat, napper de yaourt au safran, parsemer de grenade, de pignons et de basilic."
+
+chef:
+  temps: { preparation: 20, cuisson: 40, attente: 15 }
+  etapes:
+    - titre: Le safran
+      texte: "Piler le safran avec une pincée de sel, le couvrir de l'eau chaude et laisser infuser 15 min : la couleur et le parfum se développent pleinement."
+      minuteur: 900
+    - titre: Les aubergines
+      texte: "Four à 230 °C chaleur tournante. Couper les aubergines en rondelles de 2 cm ou en longs quartiers. Les quadriller légèrement au couteau, les badigeonner généreusement d'huile, saler et poivrer."
+    - texte: "Rôtir sur deux plaques sans les superposer, 35 à 40 min, en les retournant à mi-cuisson. Elles doivent être brun profond dessus et totalement crémeuses dedans."
+      minuteur: 2250
+    - titre: Le yaourt
+      texte: "Mélanger l'infusion de safran au yaourt avec l'ail râpé et le jus de citron. Saler. La sauce doit être d'un jaune vif et assez épaisse pour tenir sur les aubergines."
+    - titre: Le dressage
+      texte: "Dresser les aubergines tièdes, poser des cuillerées de yaourt dessus, puis les grains de grenade, les pignons dorés au beurre ou à sec, le basilic déchiré, un filet d'huile d'olive et quelques flocons de sel."
+  astuces:
+    - "Plat de buffet idéal : il se sert à température ambiante, et on peut rôtir les aubergines quelques heures à l'avance."
+
+notes:
+  - titre: Pourquoi c'est healthy
+    texte: "Des légumes rôtis, un yaourt à la place de la crème, des fruits et des oléagineux."
+sources:
+  - titre: "Aubergine with Pomegranate, Saffron and Yogurt, Ottolenghi (YouTube)"
+    url: https://www.youtube.com/watch?v=eghpIo84fY8
+voirAussi: [chou-fleur-roti-entier, mejadra]

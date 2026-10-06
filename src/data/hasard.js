@@ -2,7 +2,7 @@
 // cuisine : un slug de cuisines.js ; type : entree, plat, accompagnement, sauce, dessert.
 // recette : nom du fichier YAML si la recette est déjà au carnet.
 import { PLUS } from './hasard-plus.js';
-import { NOUVELLES, IDS_HEALTHY } from './healthy.js';
+import { NOUVELLES, IDS_HEALTHY, RECETTES_HEALTHY } from './healthy.js';
 
 const yt = (id) => `https://www.youtube.com/watch?v=${id}`;
 
@@ -90,4 +90,5 @@ const idDe = (url) => url.split('v=')[1];
 const plus = [...PLUS, ...NOUVELLES].map(([chaine, cuisine, type, titre, id, recette]) => ({ chaine, cuisine, type, titre, url: yt(id), ...(recette ? { recette } : {}) }));
 export const VIDEOS = [...BASE, ...plus.filter((v) => !dejaLa.has(v.url))]
   .filter((v, i, t) => t.findIndex((w) => w.url === v.url) === i)
-  .map((v) => (IDS_HEALTHY.has(idDe(v.url)) ? { ...v, healthy: true } : v));
+  .map((v) => (IDS_HEALTHY.has(idDe(v.url)) ? { ...v, healthy: true } : v))
+  .map((v) => (RECETTES_HEALTHY[idDe(v.url)] && !v.recette ? { ...v, recette: RECETTES_HEALTHY[idDe(v.url)] } : v));

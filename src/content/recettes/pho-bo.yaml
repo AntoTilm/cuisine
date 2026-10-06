@@ -1,0 +1,84 @@
+titre: Pho bò
+cuisine: healthy
+origine: Vietnam
+type: plat
+resume: Le vrai bouillon de pho, mijoté des heures avec os, oignon et gingembre brûlés et épices grillées, versé brûlant sur du bœuf cru tranché fin.
+portions:
+  base: 6
+
+ingredients:
+  - groupe: Le bouillon
+    items:
+      - { nom: Os à moelle de bœuf, qte: 2, unite: kg }
+      - { nom: Paleron de bœuf, qte: 500, unite: g }
+      - { nom: Oignon, qte: 2 }
+      - { nom: Gingembre frais, qte: 8, unite: cm }
+      - { nom: Eau, qte: 5, unite: l, rayon: divers }
+      - { nom: Sauce poisson (nuoc-mâm), qte: 4, unite: cs, cle: nuocmam }
+      - { nom: Sucre de canne (ou sucre candi), qte: 30, unite: g }
+      - { nom: Sel, qte: 1, unite: cs }
+  - groupe: Les épices
+    items:
+      - { nom: Badiane (anis étoilé), qte: 5 }
+      - { nom: Bâton de cannelle, qte: 1 }
+      - { nom: Clous de girofle, qte: 5 }
+      - { nom: Graines de coriandre, qte: 1, unite: cs }
+      - { nom: Cardamome noire, qte: 1, mode: chef, optionnel: true }
+      - { nom: Graines de fenouil, qte: 1, unite: cc }
+  - groupe: Les bols
+    items:
+      - { nom: Nouilles de riz plates (bánh phở), qte: 600, unite: g }
+      - { nom: Bœuf à griller (rumsteck ou filet), qte: 300, unite: g, note: "très froid, tranché le plus fin possible" }
+      - { nom: Pousses de soja, qte: 200, unite: g }
+      - { nom: Basilic thaï, qte: 1, unite: bouquet }
+      - { nom: Coriandre, qte: 1, unite: bouquet }
+      - { nom: Cébette, qte: 4 }
+      - { nom: Citron vert, qte: 3 }
+      - { nom: Piment rouge, qte: 2 }
+      - { nom: Sauce hoisin, optionnel: true }
+      - { nom: Sriracha, optionnel: true }
+
+simple:
+  temps: { preparation: 30, cuisson: 240 }
+  etapes:
+    - "Couvrir les os d'eau froide, porter à ébullition 10 min, jeter l'eau et rincer les os : le bouillon restera clair."
+    - "Couper les oignons et le gingembre en deux et les noircir à sec dans une poêle très chaude (ou sous le gril), environ 10 min."
+    - "Griller les épices à sec 2 min dans la même poêle, puis les enfermer dans une boule à thé ou un carré de gaze."
+    - texte: "Remettre les os dans une grande marmite avec l'eau, le paleron, l'oignon, le gingembre et les épices. Frémir à couvert entrouvert 3 h 30, en écumant."
+      minuteur: 12600
+    - "Retirer le paleron après 1 h 30 et le garder. Filtrer le bouillon, l'assaisonner avec {nuocmam} de nuoc-mâm, le sucre et le sel."
+    - "Cuire les nouilles, les répartir dans les bols avec le paleron émincé et le bœuf cru. Verser le bouillon bouillant dessus et servir avec les herbes, le soja, le citron vert et le piment."
+
+chef:
+  temps: { preparation: 45, cuisson: 390, attente: 720 }
+  etapes:
+    - titre: Blanchir les os
+      texte: "Couvrir les os d'eau froide, porter à gros bouillon 10 min. Égoutter, rincer chaque os à l'eau froide et laver la marmite."
+      minuteur: 600
+    - titre: Les aromates brûlés
+      texte: "Noircir les oignons et le gingembre coupés en deux, à la flamme du gaz ou sous le gril, jusqu'à ce que la peau soit carbonisée. Gratter le plus noir."
+    - titre: Les épices
+      texte: "Torréfier badiane, cannelle, girofle, coriandre, fenouil et cardamome à sec 2 à 3 min, jusqu'à ce que ça sente. Les enfermer dans une gaze."
+    - titre: Le bouillon
+      texte: "Remettre les os avec l'eau froide, porter à frémissement (jamais à gros bouillon) et écumer soigneusement pendant 30 min. Ajouter le paleron, les aromates et le sucre."
+      minuteur: 1800
+    - texte: "Retirer le paleron au bout de 1 h 30, le plonger 10 min dans de l'eau glacée et le réserver au frais. Ajouter les épices pour la dernière heure seulement (elles deviennent amères au-delà). Frémir 6 h au total."
+      minuteur: 21600
+    - titre: Dégraisser
+      texte: "Filtrer au chinois et à l'étamine. Idéalement, refroidir une nuit : la graisse fige et se retire d'un bloc."
+      minuteur: 43200
+    - titre: L'assaisonnement
+      texte: "Réchauffer le bouillon et l'assaisonner au dernier moment avec {nuocmam} de nuoc-mâm, puis le sel. Goûter : il doit être très légèrement trop salé, les nouilles et la viande vont l'absorber."
+    - titre: Le service
+      texte: "Mettre le bœuf cru 20 min au congélateur avant de le trancher en voile. Dans des bols chauds : nouilles cuites, paleron émincé, bœuf cru, oignon cru en lamelles, cébette. Verser le bouillon à gros bouillon pour cuire le bœuf rosé. Herbes, soja, citron vert et piment à part."
+  astuces:
+    - "Le bouillon se congèle très bien en portions : un dimanche de cuisson, plusieurs soirs de pho."
+    - "Hoisin et sriracha se mettent dans une coupelle pour y tremper la viande, pas dans le bouillon."
+
+notes:
+  - titre: Pourquoi c'est healthy
+    texte: "Un bouillon dégraissé, de la viande maigre, beaucoup d'herbes fraîches."
+sources:
+  - titre: "Pho bò (Joshua Weissman, YouTube)"
+    url: https://www.youtube.com/watch?v=WlosNFMCnE4
+voirAussi: [ramen]

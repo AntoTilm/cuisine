@@ -1,0 +1,70 @@
+titre: Ragoût de pois chiches, coco et curcuma
+cuisine: healthy
+origine: « The Stew » d'Alison Roman
+type: plat
+resume: La recette du New York Times devenue virale. Des pois chiches rissolés jusqu'à croustiller, mijotés au lait de coco avec des feuilles vertes, sous du yaourt et de la menthe.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le ragoût
+    items:
+      - { nom: Huile d'olive, qte: 6, unite: cl }
+      - { nom: Ail, qte: 4, unite: gousse }
+      - { nom: Oignon jaune, qte: 1 }
+      - { nom: Gingembre frais, qte: 5, unite: cm }
+      - { nom: Curcuma moulu, qte: 1, unite: cc }
+      - { nom: Flocons de piment, qte: 1, unite: cc }
+      - { nom: Pois chiches, qte: 2, unite: boite, note: "2 × 400 g, égouttés et rincés" }
+      - { nom: Lait de coco entier, qte: 2, unite: boite, note: "2 × 400 ml" }
+      - { nom: Bouillon de légumes (ou de volaille), qte: 50, unite: cl, cle: bouillon }
+      - { nom: "Blettes, chou kale ou épinards", qte: 200, unite: g }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: Pour servir
+    items:
+      - { nom: Menthe, qte: 1, unite: bouquet }
+      - { nom: Yaourt grec, qte: 200, unite: g }
+      - { nom: Pain grillé ou pita, optionnel: true }
+      - { nom: Citron, qte: 1, mode: chef }
+
+simple:
+  temps: { preparation: 15, cuisson: 45 }
+  etapes:
+    - "Émincer l'ail, l'oignon et le gingembre."
+    - texte: "Chauffer l'huile dans une cocotte, faire revenir l'ail, l'oignon et le gingembre 5 min à feu moyen. Ajouter le curcuma, le piment et les pois chiches."
+      minuteur: 300
+    - texte: "Laisser frire les pois chiches 10 min en remuant peu : ils doivent dorer et croustiller. Écraser un quart des pois chiches à la cuillère."
+      minuteur: 600
+    - texte: "Verser le lait de coco et {bouillon} de bouillon. Saler, poivrer et mijoter 30 min, jusqu'à ce que ça épaississe."
+      minuteur: 1800
+    - "Ajouter les feuilles vertes, laisser tomber 3 min. Servir avec du yaourt, de la menthe et du pain grillé."
+
+chef:
+  temps: { preparation: 20, cuisson: 50 }
+  etapes:
+    - titre: La base
+      texte: "Hacher finement l'ail, l'oignon et le gingembre. Les faire suer dans l'huile, à feu moyen, 5 min sans coloration."
+      minuteur: 300
+    - titre: Rissoler les pois chiches
+      texte: "Ajouter le curcuma, le piment et les pois chiches bien séchés. Monter le feu et laisser frire 10 à 12 min, en remuant de temps en temps, jusqu'à ce qu'ils soient dorés et légèrement croustillants. Prélever une petite tasse de pois chiches croustillants pour la garniture."
+      minuteur: 660
+    - texte: "Écraser grossièrement un quart des pois chiches restants avec une cuillère en bois : c'est ce qui épaissit le ragoût."
+    - titre: Le mijotage
+      texte: "Mouiller avec le lait de coco et {bouillon} de bouillon, gratter le fond. Saler, poivrer, porter à frémissement et cuire 30 à 35 min, jusqu'à la consistance d'un ragoût."
+      minuteur: 1950
+    - titre: Les verts
+      texte: "Effeuiller les blettes ou le kale, déchirer les feuilles et les ajouter. Laisser tomber 3 à 5 min. Rectifier le sel et finir d'un trait de jus de citron."
+      minuteur: 240
+    - titre: Le dressage
+      texte: "En bols : le ragoût, une grosse cuillère de yaourt, les pois chiches croustillants réservés, la menthe ciselée et un filet d'huile d'olive. Pain grillé à côté."
+  astuces:
+    - "Le lait de coco doit être entier : le ragoût allégé perd tout son intérêt."
+    - "Encore meilleur le lendemain ; détendre avec un peu de bouillon au réchauffage."
+
+notes:
+  - titre: Pourquoi c'est healthy
+    texte: "Légumineuses, légumes verts et épices : un plat végétarien qui cale vraiment."
+sources:
+  - titre: "Alison Roman's Internet-Famous Chickpea Stew (NYT Cooking, YouTube)"
+    url: https://www.youtube.com/watch?v=jaN3qsqXt38

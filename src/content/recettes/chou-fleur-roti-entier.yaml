@@ -1,0 +1,69 @@
+titre: Chou-fleur rôti entier, tahini et grenade
+cuisine: healthy
+origine: À la façon d'Ottolenghi
+type: plat
+resume: Un chou-fleur entier poché puis rôti à four très chaud jusqu'à être doré et fondant, servi avec tahini, herbes, grenade et sumac.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le chou-fleur
+    items:
+      - { nom: Chou-fleur entier avec ses feuilles, qte: 1, note: "environ 1,2 kg" }
+      - { nom: Huile d'olive, qte: 4, unite: cs }
+      - { nom: Beurre, qte: 20, unite: g, mode: chef }
+      - { nom: Gros sel, qte: 1, unite: cs }
+      - { nom: Cumin moulu, qte: 1, unite: cc }
+      - { nom: Paprika fumé, qte: 1, unite: cc }
+  - groupe: La sauce tahini
+    items:
+      - { nom: Tahini (crème de sésame), qte: 80, unite: g }
+      - { nom: Citron, qte: 1 }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Eau froide, qte: 8, unite: cl, rayon: divers }
+  - groupe: La finition
+    items:
+      - { nom: Grenade, qte: 1 }
+      - { nom: Persil plat, qte: 1, unite: bouquet }
+      - { nom: Menthe, qte: 0.5, unite: bouquet }
+      - { nom: Sumac, qte: 1, unite: cc }
+      - { nom: Pistaches ou amandes grillées, qte: 40, unite: g, mode: chef }
+
+simple:
+  temps: { preparation: 15, cuisson: 60 }
+  etapes:
+    - "Préchauffer le four à 220 °C. Retirer les feuilles abîmées du chou-fleur en gardant les plus tendres."
+    - texte: "Plonger le chou-fleur entier dans une grande casserole d'eau bouillante salée, tête en bas, 6 min. Égoutter tête en bas 10 min pour qu'il sèche."
+      minuteur: 360
+    - "Le poser dans un plat, l'enduire d'huile d'olive, de cumin, de paprika et de gros sel."
+    - texte: "Rôtir 45 min, jusqu'à ce qu'il soit bien doré et qu'une lame s'enfonce sans résistance."
+      minuteur: 2700
+    - "Sauce : fouetter le tahini, le jus du citron, l'ail râpé et l'eau jusqu'à une sauce lisse. Saler."
+    - "Napper le chou-fleur de sauce tahini, parsemer de grenade, d'herbes et de sumac. Servir entier et découper à table."
+
+chef:
+  temps: { preparation: 25, cuisson: 75 }
+  etapes:
+    - titre: Le pochage
+      texte: "Porter à ébullition une grande marmite d'eau salée comme la mer. Y plonger le chou-fleur entier tête en bas et cuire 6 à 8 min, juste pour l'attendrir. Égoutter tête en bas sur une grille 10 min : il doit être bien sec pour colorer."
+      minuteur: 420
+    - titre: Le rôtissage
+      texte: "Four à 230 °C chaleur tournante. Masser le chou-fleur avec l'huile, le beurre fondu, les épices et le gros sel. Rôtir 45 min à 1 h en l'arrosant deux fois avec le gras du plat, jusqu'à ce que le dessus soit brun profond et les feuilles croustillantes."
+      minuteur: 3000
+    - titre: La sauce tahini
+      texte: "Fouetter le tahini avec le jus de citron et l'ail râpé : il va épaissir et saisir, c'est normal. Ajouter l'eau froide petit à petit jusqu'à une texture de crème liquide, lisse et pâle. Saler."
+    - titre: Les finitions
+      texte: "Égrener la grenade. Concasser les pistaches. Effeuiller et ciseler grossièrement persil et menthe."
+    - titre: Le dressage
+      texte: "Étaler la sauce tahini dans un plat de service, poser le chou-fleur dessus, puis grenade, herbes, pistaches, sumac et un filet d'huile d'olive. Découper en quartiers à table."
+  astuces:
+    - "Le pochage préalable est la clé : sans lui, l'extérieur brûle avant que le cœur soit tendre."
+    - "Les petites feuilles rôties sont la meilleure partie, ne pas les jeter."
+
+notes:
+  - titre: Pourquoi c'est healthy
+    texte: "Un légume entier en vedette, du tahini et des herbes : végétal et gourmand, sans lourdeur."
+sources:
+  - titre: "Whole Roasted Cauliflower, méthode Ottolenghi (YouTube)"
+    url: https://www.youtube.com/watch?v=I152PpC4Vnc
+voirAussi: [aubergines-roties-yaourt-safran, mejadra]

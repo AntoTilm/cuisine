@@ -1,0 +1,77 @@
+titre: Mejadra
+cuisine: healthy
+origine: Levant, d'après Ottolenghi (Jérusalem)
+type: plat
+resume: Lentilles et riz basmati parfumés au cumin, à la coriandre et à la cannelle, sous une montagne d'oignons croustillants. Avec un yaourt à l'ail et une salade.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Les oignons croustillants
+    items:
+      - { nom: Oignon, qte: 4, note: "grands" }
+      - { nom: Farine, qte: 3, unite: cs }
+      - { nom: Huile de tournesol, qte: 25, unite: cl, note: "pour la friture, réutilisable" }
+  - groupe: Les lentilles et le riz
+    items:
+      - { nom: Lentilles vertes ou brunes, qte: 250, unite: g }
+      - { nom: Graines de cumin, qte: 2, unite: cc }
+      - { nom: Graines de coriandre, qte: 1.5, unite: cs }
+      - { nom: Riz basmati, qte: 200, unite: g }
+      - { nom: Huile d'olive, qte: 2, unite: cs }
+      - { nom: Curcuma, qte: 0.5, unite: cc }
+      - { nom: Piment de la Jamaïque (quatre-épices), qte: 1.5, unite: cc }
+      - { nom: Cannelle moulue, qte: 1.5, unite: cc }
+      - { nom: Sucre, qte: 1, unite: cc }
+      - { nom: Eau, qte: 35, unite: cl, rayon: divers, cle: eau }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: Pour servir
+    items:
+      - { nom: Yaourt grec, qte: 250, unite: g }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Citron, qte: 0.5 }
+      - { nom: Concombre, qte: 1, mode: chef }
+      - { nom: Tomates, qte: 3, mode: chef }
+
+simple:
+  temps: { preparation: 20, cuisson: 45, attente: 10 }
+  etapes:
+    - texte: "Cuire les lentilles 12 min dans l'eau bouillante : elles doivent rester fermes. Égoutter."
+      minuteur: 720
+    - "Émincer les oignons finement, les fariner légèrement et les frire en deux fois dans l'huile chaude, 5 à 7 min, jusqu'à ce qu'ils soient bruns et croustillants. Égoutter sur du papier, saler."
+    - "Dans une cocotte, griller le cumin et la coriandre 1 min à sec. Ajouter l'huile d'olive, le riz, les épices, le sucre, sel et poivre, et remuer 1 min."
+    - texte: "Ajouter les lentilles et {eau} d'eau, porter à ébullition, couvrir et cuire 15 min à feu très doux."
+      minuteur: 900
+    - texte: "Hors du feu, glisser un torchon sous le couvercle et laisser reposer 10 min."
+      minuteur: 600
+    - "Égrener, mélanger avec la moitié des oignons et recouvrir du reste. Servir avec le yaourt mélangé à l'ail râpé et au citron."
+
+chef:
+  temps: { preparation: 30, cuisson: 50, attente: 10 }
+  etapes:
+    - titre: Les lentilles
+      texte: "Rincer les lentilles et les cuire 12 à 15 min à l'eau bouillante non salée. Elles doivent être tendres mais tenir. Égoutter."
+      minuteur: 780
+    - titre: Les oignons
+      texte: "Émincer les oignons en demi-lunes de 2 mm. Les sécher, les rouler dans la farine juste avant de frire. Chauffer l'huile à 170 °C et frire en trois fournées, 5 à 7 min chacune, jusqu'à un brun profond. Égoutter sur papier et saler aussitôt : ils croustillent en refroidissant."
+    - titre: Le riz
+      texte: "Rincer le riz jusqu'à ce que l'eau soit claire. Dans la cocotte essuyée, torréfier le cumin et la coriandre 1 à 2 min. Ajouter l'huile d'olive, le riz, le curcuma, le quatre-épices, la cannelle, le sucre, ½ cuillère à café de sel et du poivre. Nacrer 1 min."
+    - titre: La cuisson
+      texte: "Ajouter les lentilles et {eau} d'eau. Porter à ébullition, couvrir hermétiquement et cuire 15 min à feu minimum, sans ouvrir."
+      minuteur: 900
+    - texte: "Retirer du feu, poser un torchon propre sous le couvercle et laisser reposer 10 min : le riz finit de cuire et sèche."
+      minuteur: 600
+    - titre: Le service
+      texte: "Égrener à la fourchette, incorporer la moitié des oignons. Dresser en dôme et couvrir du reste. À côté : le yaourt à l'ail et au citron, et une salade de concombre et tomate au jus de citron."
+  astuces:
+    - "L'huile de friture filtrée se réutilise ; pour moins de gras, cuire les oignons au four à 200 °C avec 3 cuillères d'huile, 35 min en remuant (moins croustillants)."
+
+notes:
+  - titre: Pourquoi c'est healthy
+    texte: "Lentilles et riz forment ensemble des protéines complètes : un plat végétarien très nourrissant, servi avec des crudités."
+sources:
+  - titre: "Mejadra, recette d'Ottolenghi tirée de Jérusalem (YouTube)"
+    url: https://www.youtube.com/watch?v=OzZRJ4Ol6ME
+servirAvec: [tzatziki]
+voirAussi: [chou-fleur-roti-entier]

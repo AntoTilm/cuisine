@@ -1,0 +1,70 @@
+titre: Tom yum goong
+cuisine: healthy
+origine: Thaïlande
+type: entree
+resume: La soupe thaïe aigre et piquante aux crevettes, parfumée de citronnelle, de galanga et de kaffir, montée sur un bouillon fait avec les têtes.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le bouillon
+    items:
+      - { nom: Crevettes crues entières, qte: 600, unite: g, note: "grosses, avec têtes et carapaces" }
+      - { nom: Eau, qte: 1.2, unite: l, rayon: divers }
+      - { nom: Huile neutre, qte: 1, unite: cs, mode: chef }
+  - groupe: Les aromates
+    items:
+      - { nom: Citronnelle, qte: 3, unite: branche }
+      - { nom: Galanga (ou gingembre), qte: 6, unite: cm }
+      - { nom: Feuilles de kaffir, qte: 6, unite: feuille }
+      - { nom: Piment oiseau, qte: 4 }
+      - { nom: Échalote, qte: 2 }
+  - groupe: La soupe
+    items:
+      - { nom: Champignons de Paris ou pleurotes, qte: 200, unite: g }
+      - { nom: Tomates cerises, qte: 8 }
+      - { nom: Sauce poisson (nuoc-mâm), qte: 4, unite: cs, cle: nuocmam }
+      - { nom: Citron vert, qte: 3 }
+      - { nom: Pâte de piment thaïe (nam prik pao), qte: 1, unite: cs }
+      - { nom: Sucre, qte: 1, unite: cc }
+      - { nom: Coriandre, qte: 0.5, unite: bouquet }
+
+simple:
+  temps: { preparation: 20, cuisson: 25 }
+  etapes:
+    - "Décortiquer les crevettes en gardant les têtes et les carapaces. Retirer l'intestin."
+    - texte: "Couvrir têtes et carapaces avec l'eau, porter à ébullition et frémir 10 min. Filtrer."
+      minuteur: 600
+    - "Écraser la citronnelle au plat du couteau et la couper en tronçons. Trancher le galanga, déchirer les feuilles de kaffir, écraser les piments et couper l'échalote."
+    - texte: "Ajouter les aromates au bouillon et frémir 5 min."
+      minuteur: 300
+    - texte: "Ajouter les champignons et les tomates, 3 min, puis les crevettes, 2 min : elles doivent juste rosir."
+      minuteur: 120
+    - "Hors du feu : {nuocmam} de nuoc-mâm, la pâte de piment, le sucre et le jus des citrons verts. Goûter, servir avec la coriandre."
+
+chef:
+  temps: { preparation: 30, cuisson: 35 }
+  etapes:
+    - titre: Le fond de crevettes
+      texte: "Faire revenir les têtes et les carapaces dans l'huile, à feu vif, 3 à 4 min, en les écrasant pour en extraire le corail. Mouiller avec l'eau froide, frémir 15 min et filtrer en pressant bien."
+      minuteur: 900
+    - titre: L'infusion
+      texte: "Écraser citronnelle, galanga, échalotes et piments au pilon pour libérer les huiles. Les ajouter avec les feuilles de kaffir déchirées (sans la nervure). Frémir 5 min."
+      minuteur: 300
+    - titre: La garniture
+      texte: "Ajouter les champignons en quartiers et les tomates coupées en deux, 3 min. Puis les crevettes, 1 à 2 min seulement."
+      minuteur: 90
+    - titre: L'assaisonnement
+      texte: "Retirer du feu, toujours : le citron vert cuit devient amer. Ajouter {nuocmam} de nuoc-mâm, le nam prik pao, le sucre, puis le jus de citron vert. Goûter et équilibrer : d'abord acide, puis salé, puis piquant."
+    - titre: Le service
+      texte: "Servir brûlant dans des bols, avec la coriandre ciselée. Les aromates restent dans la soupe mais ne se mangent pas."
+  astuces:
+    - "Version crémeuse (nam khon) : ajouter 10 cl de lait concentré non sucré ou de lait de coco au moment de l'assaisonnement."
+
+notes:
+  - titre: Pourquoi c'est healthy
+    texte: "Un bouillon clair, des crevettes maigres, des aromates frais : tout le goût, presque aucune matière grasse."
+sources:
+  - titre: "Tom Yum Goong (Hot Thai Kitchen, YouTube)"
+    url: https://www.youtube.com/watch?v=hXaaZiMgvgI
+voirAussi: [laab-gai]

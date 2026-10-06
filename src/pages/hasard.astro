@@ -5,7 +5,7 @@ import { CUISINES, TYPES } from '../data/cuisines.js';
 import { lien } from '../lib/recettes.js';
 
 const videos = VIDEOS.map((v) => ({ ...v, lienRecette: v.recette ? lien(`recette/${v.recette}/`) : '' }));
-const cuisines = [...CUISINES, ...CUISINES_HASARD].filter((c) => VIDEOS.some((v) => v.cuisine === c.slug));
+const cuisines = [...CUISINES, ...CUISINES_HASARD].filter((c) => VIDEOS.some((v) => v.cuisine === c.slug || (c.slug === 'healthy' && v.healthy)));
 const types = Object.entries(TYPES).filter(([t]) => VIDEOS.some((v) => v.type === t));
 // Les chaînes bien représentées ont leur entrée ; les autres sont regroupées.
 const parChaine = VIDEOS.reduce((m, v) => m.set(v.chaine, (m.get(v.chaine) || 0) + 1), new Map());
@@ -39,7 +39,6 @@ for (const v of videos) if (petites.has(v.chaine)) v.autre = true;
         <select name="chaine"><option value="">Toutes</option>{chaines.map((c) => <option value={c}>{c}</option>)}<option value="__autres">Autres chaînes</option></select>
       </label>
       <label class="hasard-case"><input type="checkbox" name="nouveau" checked /> Pas encore au carnet</label>
-      <label class="hasard-case"><input type="checkbox" name="healthy" /> 🥗 Healthy seulement</label>
     </form>
 
     <button class="bouton-de" id="lancer" type="button"><span class="de" aria-hidden="true">🎲</span> Lancer le dé</button>
@@ -59,18 +58,17 @@ for (const v of videos) if (petites.has(v.chaine)) v.autre = true;
   <script>
     const videos = JSON.parse(document.getElementById('donnees-videos')!.textContent || '[]');
     const form = document.getElementById('filtres') as HTMLFormElement;
-    if (new URLSearchParams(location.search).has('healthy')) (form.elements.namedItem('healthy') as HTMLInputElement).checked = true;
+    
     const $ = (id: string) => document.getElementById(id) as any;
     let dernier = '';
 
     function candidats() {
       const f = new FormData(form);
       return videos.filter((v: any) =>
-        (!f.get('cuisine') || v.cuisine === f.get('cuisine')) &&
+        (!f.get('cuisine') || v.cuisine === f.get('cuisine') || (f.get('cuisine') === 'healthy' && v.healthy)) &&
         (!f.get('type') || v.type === f.get('type')) &&
         (!f.get('chaine') || v.chaine === f.get('chaine') || (f.get('chaine') === '__autres' && v.autre)) &&
-        (!f.get('nouveau') || !v.recette) &&
-        (!f.get('healthy') || v.healthy));
+        (!f.get('nouveau') || !v.recette));
     }
     function compter() {
       const n = candidats().length;

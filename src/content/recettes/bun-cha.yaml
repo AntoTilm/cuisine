@@ -1,0 +1,83 @@
+titre: Bún chả de Hanoï
+cuisine: healthy
+origine: Vietnam
+type: plat
+resume: Boulettes et poitrine de porc caramélisées au nuoc-mâm, grillées, servies dans un bouillon aigre-doux tiède avec vermicelles et une montagne d'herbes.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La marinade
+    items:
+      - { nom: Sauce poisson (nuoc-mâm), qte: 4, unite: cs }
+      - { nom: Sucre, qte: 2, unite: cs }
+      - { nom: Échalote, qte: 3 }
+      - { nom: Ail, qte: 4, unite: gousse }
+      - { nom: Poivre noir moulu, qte: 1, unite: cc }
+      - { nom: Huile neutre, qte: 1, unite: cs }
+      - { nom: Sauce caramel (nuoc màu), qte: 1, unite: cs, mode: chef, optionnel: true }
+  - groupe: Les viandes
+    items:
+      - { nom: Porc haché (pas trop maigre), qte: 400, unite: g }
+      - { nom: Poitrine de porc fraîche sans couenne, qte: 300, unite: g, note: "en tranches de 3 mm" }
+  - groupe: Le bouillon aigre-doux
+    items:
+      - { nom: Eau tiède, qte: 50, unite: cl, rayon: divers }
+      - { nom: Sauce poisson (nuoc-mâm), qte: 8, unite: cl, cle: nuocmam }
+      - { nom: Sucre, qte: 80, unite: g }
+      - { nom: Vinaigre de riz, qte: 4, unite: cl }
+      - { nom: Citron vert, qte: 2 }
+      - { nom: Carotte, qte: 1 }
+      - { nom: Papaye verte ou chou-rave, qte: 100, unite: g }
+      - { nom: Piment oiseau, qte: 2 }
+  - groupe: Pour servir
+    items:
+      - { nom: Vermicelles de riz fins (bún), qte: 400, unite: g }
+      - { nom: Salade (laitue), qte: 1 }
+      - { nom: Menthe, qte: 1, unite: bouquet }
+      - { nom: Coriandre, qte: 1, unite: bouquet }
+      - { nom: Périlla ou basilic thaï, qte: 1, unite: bouquet }
+      - { nom: Pousses de soja, qte: 150, unite: g }
+
+simple:
+  temps: { preparation: 40, cuisson: 20, attente: 60 }
+  etapes:
+    - "Hacher finement l'échalote et l'ail. Les mélanger avec le nuoc-mâm, le sucre, le poivre et l'huile de la marinade."
+    - texte: "Répartir la marinade entre le haché et les tranches de poitrine. Laisser 1 h au frais."
+      minuteur: 3600
+    - "Bouillon : dissoudre le sucre dans l'eau tiède, ajouter {nuocmam} de nuoc-mâm, le vinaigre, le jus des citrons verts, la carotte et la papaye en fines lamelles, le piment."
+    - "Façonner de petites galettes avec le haché."
+    - texte: "Griller galettes et poitrine au barbecue ou sous le gril du four, 4 à 5 min de chaque côté, jusqu'à ce qu'elles soient bien caramélisées."
+      minuteur: 600
+    - "Cuire les vermicelles, les rincer à l'eau froide. Mettre les viandes grillées dans des bols de bouillon. Servir avec vermicelles, salade et herbes à part : on trempe et on se sert."
+
+chef:
+  temps: { preparation: 60, cuisson: 25, attente: 240 }
+  etapes:
+    - titre: La marinade
+      texte: "Piler l'échalote et l'ail avec le sucre. Ajouter le nuoc-mâm, le poivre, l'huile et la sauce caramel (pour la couleur). Diviser en deux."
+    - titre: Les viandes
+      texte: "Mélanger une moitié avec le haché, en le malaxant 2 min pour qu'il se tienne. Masser l'autre moitié dans les tranches de poitrine. Laisser mariner 4 h au frais."
+      minuteur: 14400
+    - titre: Le bouillon aigre-doux
+      texte: "Dissoudre le sucre dans l'eau tiède, ajouter {nuocmam} de nuoc-mâm, le vinaigre et le jus de citron vert. Goûter : équilibré entre sucré, salé et acide. Y ajouter la carotte et la papaye verte tranchées fin, qui vont mariner. Piment et ail haché au moment de servir."
+    - titre: Le grill
+      texte: "Façonner des galettes de 5 cm, légèrement aplaties. Les griller avec la poitrine sur des braises vives (ou une grille à double face), 4 à 5 min de chaque côté : les bords doivent noircir légèrement."
+      minuteur: 540
+    - titre: Les garnitures
+      texte: "Cuire les vermicelles selon le paquet, rincer à l'eau froide, égoutter et former de petits nids. Laver et essorer la salade et les herbes."
+    - titre: Le service
+      texte: "Plonger les viandes grillées encore chaudes dans des bols individuels de bouillon tiède. Au centre de la table : vermicelles, salade, herbes et soja. Chacun trempe vermicelles et herbes dans son bol."
+  astuces:
+    - "Le charbon de bois fait le goût du bún chả ; au four, finir sous le gril le plus fort possible."
+    - "Avec des nems frits en plus, c'est la formule de Hanoï, mais ce n'est plus vraiment healthy."
+
+notes:
+  - titre: Pourquoi c'est healthy
+    texte: "Viandes grillées sans matière grasse ajoutée, une montagne d'herbes et de crudités, une sauce sans crème."
+sources:
+  - titre: "The Most Underrated Vietnamese Dish (Bun Cha Hanoi), YouTube"
+    url: https://www.youtube.com/watch?v=-2RjqDwbrZQ
+  - titre: "Vietnamese Pork Bun Cha (Marion's Kitchen, YouTube)"
+    url: https://www.youtube.com/watch?v=sFr_9c9akhc
+voirAussi: [sauce-nuoc-mam, rouleaux-de-printemps]

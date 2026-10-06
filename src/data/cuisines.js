@@ -43,6 +43,12 @@ export const CUISINES = [
     intro: 'Japon, Chine et Vietnam : ramen, gyozas, plats au wok, rouleaux et leurs sauces.',
   },
   {
+    slug: 'healthy',
+    titre: 'Cuisine healthy',
+    nom: 'Healthy',
+    intro: 'Sain, mais d’abord savoureux : des plats qui demandent parfois de s’y mettre, et qui valent chaque minute.',
+  },
+  {
     slug: 'autres-horizons',
     titre: 'Autres horizons',
     nom: 'Autres horizons',

@@ -1,0 +1,80 @@
+titre: Poke bowl au saumon
+cuisine: healthy
+origine: Hawaï
+type: plat
+resume: Saumon cru mariné au soja et au sésame sur un riz vinaigré, avec avocat, edamame, concombre, mangue et une mayonnaise épicée légère.
+portions:
+  base: 2
+
+ingredients:
+  - groupe: Le riz
+    items:
+      - { nom: Riz à sushi, qte: 160, unite: g }
+      - { nom: Vinaigre de riz, qte: 2, unite: cs }
+      - { nom: Sucre, qte: 1, unite: cc }
+      - { nom: Sel, qte: 0.5, unite: cc }
+  - groupe: Le saumon
+    items:
+      - { nom: Saumon extra-frais (qualité sashimi), qte: 250, unite: g }
+      - { nom: Sauce soja, qte: 2, unite: cs, cle: soja }
+      - { nom: Huile de sésame, qte: 1, unite: cc }
+      - { nom: Mirin, qte: 1, unite: cc }
+      - { nom: Gingembre frais, qte: 1, unite: cm }
+      - { nom: Cébette, qte: 2 }
+  - groupe: Les garnitures
+    items:
+      - { nom: Avocat, qte: 1 }
+      - { nom: Edamame écossés (surgelés), qte: 100, unite: g }
+      - { nom: Concombre, qte: 0.5 }
+      - { nom: Mangue, qte: 0.5 }
+      - { nom: Radis, qte: 4 }
+      - { nom: Chou rouge, qte: 80, unite: g, mode: chef }
+      - { nom: Algues wakame déshydratées, qte: 5, unite: g, mode: chef, optionnel: true }
+      - { nom: Graines de sésame, qte: 1, unite: cs }
+  - groupe: La sauce épicée
+    items:
+      - { nom: Yaourt grec, qte: 3, unite: cs }
+      - { nom: Mayonnaise, qte: 1, unite: cs }
+      - { nom: Sriracha, qte: 1, unite: cs }
+      - { nom: Citron vert, qte: 0.5 }
+
+simple:
+  temps: { preparation: 30, cuisson: 15, attente: 15 }
+  etapes:
+    - texte: "Rincer le riz jusqu'à ce que l'eau soit claire, le cuire selon le paquet puis le laisser reposer 10 min à couvert."
+      minuteur: 900
+    - "Mélanger le vinaigre, le sucre et le sel, les incorporer délicatement au riz et laisser tiédir."
+    - texte: "Couper le saumon en cubes de 2 cm. Le mélanger avec {soja} de soja, l'huile de sésame, le mirin, le gingembre râpé et la cébette. Laisser 15 min au frais."
+      minuteur: 900
+    - "Cuire les edamame 3 min à l'eau bouillante, les refroidir. Trancher l'avocat, le concombre, la mangue et les radis."
+    - "Mélanger le yaourt, la mayonnaise, la sriracha et le jus du citron vert."
+    - "Dans des bols : le riz tiède, le saumon et les garnitures disposées en secteurs. Sauce et sésame par-dessus."
+
+chef:
+  temps: { preparation: 45, cuisson: 15, attente: 20 }
+  etapes:
+    - titre: Le riz
+      texte: "Rincer le riz 4 ou 5 fois, le laisser égoutter 15 min, puis le cuire. Chauffer légèrement le vinaigre avec le sucre et le sel pour les dissoudre, en arroser le riz en le tranchant à la spatule, et l'éventer pour qu'il brille. Garder à température ambiante sous un linge humide."
+      minuteur: 900
+    - titre: Le saumon
+      texte: "Retirer la peau et le gras gris du saumon. Le couper en cubes nets de 2 cm. Le mariner au dernier moment avec {soja} de soja, l'huile de sésame, le mirin, le gingembre râpé et le blanc de cébette, 15 à 20 min, pas plus : le soja « cuit » le poisson."
+      minuteur: 1080
+    - titre: Les garnitures
+      texte: "Réhydrater le wakame 5 min et l'essorer. Cuire les edamame 3 min. Émincer le chou rouge très finement et le masser avec une pincée de sel et un trait de vinaigre de riz. Couper concombre et mangue en dés, radis en rondelles fines, avocat en éventail au dernier moment."
+    - titre: La sauce
+      texte: "Fouetter yaourt, mayonnaise, sriracha et jus de citron vert. Mettre en flacon ou en cornet pour la tracer en fils."
+    - titre: Le montage
+      texte: "Riz tiède au fond, saumon au centre, garnitures en secteurs de couleurs alternées autour. Fils de sauce, vert de cébette, sésame torréfié."
+  astuces:
+    - "Le saumon cru doit être de qualité sashimi, ou avoir été congelé au moins 24 h à −20 °C avant usage."
+    - "Le riz doit être tiède, jamais froid de frigo : c'est le contraste avec le poisson qui fait le plat."
+
+notes:
+  - titre: Pourquoi c'est healthy
+    texte: "Poisson cru riche en oméga-3, beaucoup de légumes, une sauce allégée au yaourt."
+sources:
+  - titre: "Poke bowl hawaïen (Joshua Weissman, YouTube)"
+    url: https://www.youtube.com/watch?v=guXtz64bIlo
+  - titre: "Poke Bowl (Cooking With Morgane, YouTube)"
+    url: https://www.youtube.com/watch?v=neLfSG9C8VU
+voirAussi: [saumon-teriyaki, salade-concombre-wakame]

@@ -10,7 +10,7 @@ import { lien } from '../lib/recettes.js';
 interface Props {
   titre: string;
   description?: string;
-  page?: 'recettes' | 'idees' | 'liste' | 'chaines' | 'hasard' | 'healthy';
+  page?: 'recettes' | 'idees' | 'liste' | 'chaines' | 'hasard';
 }
 const { titre, description = 'Mes recettes, rangées par cuisine, en version simple ou grande cuisine.', page } = Astro.props;
 const titreComplet = titre === 'Carnet de cuisine' ? titre : `${titre} · Carnet de cuisine`;
@@ -35,7 +35,6 @@ const titreComplet = titre === 'Carnet de cuisine' ? titre : `${titre} · Carnet
         <nav class="site-nav" aria-label="Navigation principale">
           <a href={lien()} aria-current={page === 'recettes' ? 'page' : undefined}>Recettes</a>
           <a href={lien('idees/')} aria-current={page === 'idees' ? 'page' : undefined}>Idées à tester</a>
-          <a href={lien('healthy/')} aria-current={page === 'healthy' ? 'page' : undefined}>🥗 Healthy</a>
           <a href={lien('hasard/')} aria-current={page === 'hasard' ? 'page' : undefined}>🎲 Au hasard</a>
           <a href={lien('chaines/')} aria-current={page === 'chaines' ? 'page' : undefined}>Chaînes</a>
           <a href={lien('liste-de-courses/')} aria-current={page === 'liste' ? 'page' : undefined}>

@@ -1663,11 +1663,3 @@ select {
 .hasard-legende { display: block; margin: 16px 0 6px; color: var(--texte-doux); }
 .hasard-tirage textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 0.9rem; padding: 10px; background: var(--page); color: var(--texte); border: 1px solid var(--ligne); border-radius: var(--rayon); margin-bottom: 10px; }
 
-/* Page Healthy */
-.healthy { padding-block: 32px 64px; }
-.healthy-top { list-style: none; padding: 0; margin: 0 0 48px; display: grid; gap: 16px; counter-reset: top; }
-.healthy-carte { counter-increment: top; position: relative; background: var(--surface); border: 1.5px solid var(--ligne-forte); border-radius: var(--rayon); padding: 20px 20px 16px 64px; }
-.healthy-carte::before { content: counter(top); position: absolute; left: 20px; top: 16px; font-size: 2rem; font-weight: 700; color: var(--marge); }
-.healthy-carte h3 { margin: 4px 0 8px; }
-.healthy-carte p { margin: 0 0 8px; }
-@media (max-width: 520px) { .healthy-carte { padding-left: 20px; } .healthy-carte::before { position: static; display: block; } }

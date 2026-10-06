@@ -1,0 +1,69 @@
+titre: Laab gai
+cuisine: healthy
+origine: Thaïlande (Isan)
+type: plat
+resume: Une salade tiède de poulet haché au citron vert et au nuoc-mâm, parfumée de riz grillé moulu, d'échalote et d'une poignée d'herbes. Vive, piquante, croquante.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La poudre de riz grillé
+    items:
+      - { nom: Riz gluant (ou riz jasmin), qte: 3, unite: cs }
+  - groupe: Le laab
+    items:
+      - { nom: Blanc ou haut de cuisse de poulet haché, qte: 600, unite: g }
+      - { nom: Eau ou bouillon, qte: 4, unite: cs, rayon: divers }
+      - { nom: Sauce poisson (nuoc-mâm), qte: 3, unite: cs, cle: nuocmam }
+      - { nom: Citron vert, qte: 3 }
+      - { nom: Piment séché en poudre, qte: 1, unite: cc }
+      - { nom: Sucre, qte: 1, unite: pincee }
+      - { nom: Échalote, qte: 3 }
+      - { nom: Cébette, qte: 3 }
+      - { nom: Menthe, qte: 1, unite: bouquet }
+      - { nom: Coriandre, qte: 1, unite: bouquet }
+      - { nom: Citronnelle, qte: 1, unite: branche, mode: chef }
+      - { nom: Feuilles de kaffir, qte: 3, unite: feuille, mode: chef }
+  - groupe: Pour servir
+    items:
+      - { nom: Laitue (cœurs de sucrine), qte: 2 }
+      - { nom: Concombre, qte: 1 }
+      - { nom: Haricots verts crus ou kilomètre, qte: 100, unite: g }
+      - { nom: Riz gluant cuit, optionnel: true }
+
+simple:
+  temps: { preparation: 20, cuisson: 10 }
+  etapes:
+    - "Griller le riz cru à sec dans une poêle, 6 à 8 min, jusqu'à ce qu'il soit bien doré. Le mixer ou le piler en poudre grossière."
+    - texte: "Dans une casserole, cuire le poulet avec l'eau à feu moyen, en l'émiettant, 5 min, sans le colorer."
+      minuteur: 300
+    - "Hors du feu, ajouter {nuocmam} de nuoc-mâm, le jus des citrons verts, le piment, le sucre, puis l'échalote émincée."
+    - "Au moment de servir, ajouter la cébette, la menthe, la coriandre et 2 cuillères de poudre de riz. Goûter : acide, salé, piquant."
+    - "Servir tiède avec les feuilles de laitue, le concombre et les haricots crus."
+
+chef:
+  temps: { preparation: 30, cuisson: 12 }
+  etapes:
+    - titre: Le khao khua
+      texte: "Griller le riz avec la citronnelle émincée et les feuilles de kaffir à sec, à feu moyen, en remuant sans arrêt, jusqu'à une couleur noisette (8 à 10 min). Laisser refroidir, puis piler finement au mortier."
+      minuteur: 540
+    - titre: La cuisson
+      texte: "Hacher le poulet au couteau si possible : la texture est meilleure. Le cuire dans l'eau à feu moyen, en l'émiettant, juste jusqu'à ce qu'il ne soit plus rose (4 à 5 min). Il doit rester juteux."
+      minuteur: 270
+    - titre: L'assaisonnement
+      texte: "Hors du feu, assaisonner avec {nuocmam} de nuoc-mâm, le jus de citron vert et le piment. Ajouter l'échalote en lamelles fines, qui va s'attendrir à la chaleur."
+    - titre: Les herbes
+      texte: "Juste avant de servir : cébette, menthe et coriandre grossièrement ciselées, puis la poudre de riz. Mélanger, goûter et équilibrer : l'acidité et le sel doivent claquer."
+    - titre: Le service
+      texte: "Dresser tiède, avec une assiette de crudités fraîches et croquantes : sucrine, concombre, haricots. On roule le laab dans les feuilles."
+  astuces:
+    - "La poudre de riz grillé se garde un mois dans un bocal : en faire un peu plus."
+    - "Le poulet ne doit jamais dorer : on le poche dans son jus, c'est ce qui le garde tendre."
+
+notes:
+  - titre: Pourquoi c'est healthy
+    texte: "Viande maigre pochée, pas de matière grasse ajoutée, des herbes et des crudités en quantité."
+sources:
+  - titre: "Laab Gai (Hot Thai Kitchen, YouTube)"
+    url: https://www.youtube.com/watch?v=yCRUvp_JY8E
+voirAussi: [tom-yum-goong]
