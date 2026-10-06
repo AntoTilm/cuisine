@@ -29,6 +29,7 @@ const typesPresents = Object.entries(TYPES).filter(([t]) => recettes.some((r) =>
   <div class="conteneur">
     <nav class="sommaire" aria-labelledby="titre-sommaire">
       <h2 id="titre-sommaire">Sommaire</h2>
+      <a class="bouton-de petit" href={lien('hasard/')}><span aria-hidden="true">🎲</span> Pas d’idée ? Une recette au hasard</a>
       <ol>
         {
           cuisines.map((c) => (

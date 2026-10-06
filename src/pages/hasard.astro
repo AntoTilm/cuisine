@@ -1,0 +1,106 @@
+---
+import Base from '../layouts/Base.astro';
+import { VIDEOS } from '../data/hasard.js';
+import { CUISINES, TYPES } from '../data/cuisines.js';
+import { lien } from '../lib/recettes.js';
+
+const videos = VIDEOS.map((v) => ({ ...v, lienRecette: v.recette ? lien(`recette/${v.recette}/`) : '' }));
+const cuisines = CUISINES.filter((c) => VIDEOS.some((v) => v.cuisine === c.slug));
+const types = Object.entries(TYPES).filter(([t]) => VIDEOS.some((v) => v.type === t));
+const chaines = [...new Set(VIDEOS.map((v) => v.chaine))];
+---
+
+<Base titre="Une idée au hasard" description="Un coup de dé parmi les vidéos des chaînes de cuisine que je suis." page="hasard">
+  <section class="tete-page seyes">
+    <div class="conteneur">
+      <div class="dans-la-marge">
+        <h1>Une idée au hasard</h1>
+        <p class="chapeau">
+          Un coup de dé parmi {videos.length} vidéos de recettes de mes chaînes préférées. Le prompt en dessous sert à demander
+          à Claude d’en tirer une recette pour le carnet.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="conteneur hasard">
+    <form class="hasard-filtres" id="filtres">
+      <label>Cuisine
+        <select name="cuisine"><option value="">Toutes</option>{cuisines.map((c) => <option value={c.slug}>{c.nom}</option>)}</select>
+      </label>
+      <label>Type
+        <select name="type"><option value="">Tous</option>{types.map(([t, n]) => <option value={t}>{n}</option>)}</select>
+      </label>
+      <label>Chaîne
+        <select name="chaine"><option value="">Toutes</option>{chaines.map((c) => <option value={c}>{c}</option>)}</select>
+      </label>
+      <label class="hasard-case"><input type="checkbox" name="nouveau" /> Pas encore au carnet</label>
+    </form>
+
+    <button class="bouton-de" id="lancer" type="button"><span class="de" aria-hidden="true">🎲</span> Lancer le dé</button>
+    <p class="hasard-compte" id="compte" aria-live="polite"></p>
+
+    <article class="hasard-tirage" id="tirage" hidden aria-live="polite">
+      <p class="hasard-chaine" id="t-chaine"></p>
+      <h2><a id="t-titre" href="#" target="_blank" rel="noopener"></a></h2>
+      <p><a id="t-carnet" class="au-carnet" href="#" hidden>Déjà au carnet : voir la recette</a></p>
+      <label for="t-prompt" class="hasard-legende">Prompt pour Claude</label>
+      <textarea id="t-prompt" rows="9" readonly></textarea>
+      <button class="puce" id="copier" type="button">Copier le prompt</button>
+    </article>
+  </div>
+
+  <script type="application/json" id="donnees-videos" set:html={JSON.stringify(videos)} />
+  <script>
+    const videos = JSON.parse(document.getElementById('donnees-videos')!.textContent || '[]');
+    const form = document.getElementById('filtres') as HTMLFormElement;
+    const $ = (id: string) => document.getElementById(id) as any;
+    let dernier = '';
+
+    function candidats() {
+      const f = new FormData(form);
+      return videos.filter((v: any) =>
+        (!f.get('cuisine') || v.cuisine === f.get('cuisine')) &&
+        (!f.get('type') || v.type === f.get('type')) &&
+        (!f.get('chaine') || v.chaine === f.get('chaine')) &&
+        (!f.get('nouveau') || !v.recette));
+    }
+    function compter() {
+      const n = candidats().length;
+      $('compte').textContent = n ? `${n} vidéo${n > 1 ? 's' : ''} dans le chapeau.` : 'Aucune vidéo avec ces filtres.';
+      $('lancer').disabled = !n;
+    }
+    function prompt(v: any) {
+      return `Va chercher la recette de cette vidéo YouTube : ${v.url}
+(« ${v.titre} », chaîne ${v.chaine}).
+
+Récupère les ingrédients et les quantités (description de la vidéo, site du chef ou transcription), puis écris-la pour mon carnet de cuisine : un fichier YAML dans src/content/recettes/ selon le schéma du README, avec une version « simple » et une version « chef », les portions, les ingrédients groupés et des minuteurs dans les étapes. Propose avec quoi la servir pour en faire un repas complet.
+
+Si quelque chose n'est pas clair dans la vidéo, demande-moi avant d'inventer.`;
+    }
+    $('lancer').addEventListener('click', () => {
+      let liste = candidats();
+      if (liste.length > 1) liste = liste.filter((v: any) => v.url !== dernier);
+      const v = liste[Math.floor(Math.random() * liste.length)];
+      if (!v) return;
+      dernier = v.url;
+      $('t-chaine').textContent = v.chaine;
+      $('t-titre').textContent = v.titre;
+      $('t-titre').href = v.url;
+      $('t-carnet').hidden = !v.recette;
+      if (v.recette) $('t-carnet').href = v.lienRecette;
+      $('t-prompt').value = prompt(v);
+      $('copier').textContent = 'Copier le prompt';
+      $('tirage').hidden = false;
+      const de = document.querySelector('.de')!;
+      de.classList.remove('roule'); void (de as HTMLElement).offsetWidth; de.classList.add('roule');
+    });
+    $('copier').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText($('t-prompt').value); }
+      catch { $('t-prompt').select(); document.execCommand('copy'); }
+      $('copier').textContent = 'Copié ✓';
+    });
+    form.addEventListener('change', compter);
+    compter();
+  </script>
+</Base>
