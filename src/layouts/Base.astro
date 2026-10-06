@@ -51,6 +51,12 @@ const titreComplet = titre === 'Carnet de cuisine' ? titre : `${titre} · Carnet
       <div class="conteneur">
         <p>Recettes tirées de mon fichier Excel, mises au propre.</p>
         <p><a href={lien('idees/')}>Les recettes encore à écrire</a></p>
+        <p>
+          Tout récupérer :
+          <a href={lien('telecharger/carnet-de-cuisine.docx')} download>le carnet complet (Word)</a>
+          ·
+          <a href={lien('telecharger/recettes.json')} download>les données brutes (JSON)</a>
+        </p>
       </div>
     </footer>
 
