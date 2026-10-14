@@ -1,0 +1,67 @@
+titre: Salsiccia e patate
+cuisine: italienne
+origine: Italie du Sud
+type: plat
+saison: hiver
+resume: "Des pommes de terre fermes rissolées au romarin et à l'ail dans la graisse des saucisses, déglacées au vin blanc. Tout se fait dans une seule poêle."
+portions:
+  base: 2
+
+ingredients:
+  - groupe: Les saucisses
+    items:
+      - { nom: Saucisses fraîches, qte: 400, unite: g, note: "italiennes si possible, sinon chipolatas" }
+      - { nom: Vin blanc sec, qte: 10, unite: cl, cle: vin }
+      - { nom: Fenouil en graines, qte: 0.5, unite: cc, mode: chef, optionnel: true }
+  - groupe: Les pommes de terre
+    items:
+      - { nom: Pommes de terre à chair ferme, qte: 500, unite: g }
+      - { nom: Ail, qte: 2, unite: gousse, note: en chemise }
+      - { nom: Romarin, qte: 2, unite: brin }
+      - { nom: Huile d'olive, qte: 2, unite: cs }
+      - { nom: Piment, optionnel: true }
+      - { nom: Sel }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 10, cuisson: 35 }
+  etapes:
+    - "Couper les pommes de terre en cubes de 2 cm, les rincer et bien les sécher : c'est ce qui les rend croustillantes."
+    - texte: "Couper les saucisses en tronçons et les dorer 8 min dans un filet d'huile. Les retirer en gardant la graisse dans la poêle."
+      minuteur: 480
+    - texte: "Mettre les pommes de terre dans cette graisse à feu moyen-vif et les laisser 5 min sans y toucher."
+      minuteur: 300
+    - texte: "Poursuivre 15 min en remuant de temps en temps. Ajouter l'ail et le romarin à mi-cuisson."
+      minuteur: 900
+    - texte: "Remettre les saucisses, déglacer avec {vin} de vin blanc, couvrir et cuire 5 min."
+      minuteur: 300
+    - texte: "Découvrir et laisser 3 à 4 min à feu vif pour que les pommes de terre redeviennent croustillantes. Saler, poivrer."
+      minuteur: 210
+
+chef:
+  temps: { preparation: 15, cuisson: 40 }
+  etapes:
+    - titre: Les pommes de terre
+      texte: "Couper les pommes de terre en cubes de 2 cm et les rincer à l'eau froide jusqu'à ce qu'elle soit claire. Les précuire 5 min dans l'eau bouillante salée, égoutter et laisser fumer 5 min pour sécher la surface : les arêtes un peu farineuses deviendront très croustillantes."
+      minuteur: 300
+    - titre: Les saucisses
+      texte: "Retirer la peau des saucisses et les détailler en grosses boulettes irrégulières. Les dorer à feu moyen dans un filet d'huile avec les graines de fenouil légèrement écrasées, 8 min, jusqu'à une belle croûte. Réserver en gardant la graisse."
+      minuteur: 480
+    - titre: Rissoler
+      texte: "Mettre les pommes de terre en une seule couche dans la graisse chaude, sans les serrer. Laisser 5 min sans y toucher, puis retourner et poursuivre 12 à 15 min, avec l'ail en chemise écrasé et le romarin à mi-cuisson."
+      minuteur: 900
+    - titre: Déglacer
+      texte: "Remettre les saucisses, verser {vin} de vin blanc et gratter les sucs. Laisser le vin s'évaporer presque entièrement à feu vif, sans couvrir, pour garder le croustillant."
+      minuteur: 180
+    - titre: Finir
+      texte: "Saler, poivrer, un peu de piment si on aime, et servir aussitôt avec les brocolis sautés."
+  astuces:
+    - "Les pommes de terre à chair ferme gardent leur forme : c'est la bonne variété ici. Les farineuses s'effritent."
+    - "Ne pas surcharger la poêle : en tas, les pommes de terre cuisent à la vapeur au lieu de rissoler."
+
+servirAvec: [broccoli-ripassati]
+
+assiette:
+  - role: legume
+    choix: [broccoli-ripassati, salade-composee]
+    defaut: [broccoli-ripassati]

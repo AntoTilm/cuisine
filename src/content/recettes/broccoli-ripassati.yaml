@@ -1,0 +1,45 @@
+titre: Brocolis sautés à l'ail et au piment
+cuisine: italienne
+origine: Naples (broccoli ripassati)
+type: accompagnement
+saison: hiver
+resume: "Le brocoli blanchi puis sauté à l'ail et au piment : le remplaçant des friarielli napolitains, parfait à côté d'une saucisse."
+portions:
+  base: 2
+
+ingredients:
+  - items:
+      - { nom: Brocoli, qte: 400, unite: g, note: "ou des cime di rapa si on en trouve" }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Huile d'olive, qte: 3, unite: cs }
+      - { nom: Piment, optionnel: true }
+      - { nom: Sel }
+      - { nom: Citron, qte: 0.25, mode: chef, optionnel: true }
+
+simple:
+  temps: { preparation: 10, cuisson: 10 }
+  etapes:
+    - "Détailler le brocoli en petits bouquets. Peler la tige et la couper en dés."
+    - texte: "Blanchir 3 min dans l'eau bouillante salée, puis égoutter."
+      minuteur: 180
+    - texte: "Faire revenir l'ail émincé et le piment 1 min dans l'huile."
+      minuteur: 60
+    - texte: "Ajouter le brocoli et le sauter 5 min à feu vif, jusqu'à ce qu'il colore un peu. Saler."
+      minuteur: 300
+
+chef:
+  temps: { preparation: 10, cuisson: 12 }
+  etapes:
+    - titre: Blanchir
+      texte: "Blanchir les bouquets et les dés de tige 2 min dans une grande eau très salée, puis les plonger dans l'eau glacée pour garder la couleur. Bien égoutter et sécher."
+      minuteur: 120
+    - titre: L'huile parfumée
+      texte: "Mettre l'huile, l'ail en lamelles et le piment dans une poêle froide, puis chauffer doucement : l'ail doit blondir sans brûler."
+    - titre: Ripassare
+      texte: "Monter le feu, ajouter le brocoli et le sauter 4 à 5 min en le laissant colorer par endroits. Saler, quelques gouttes de citron."
+      minuteur: 300
+  astuces:
+    - "Avec la salsiccia e patate, passer le brocoli 2 min dans la poêle des saucisses à la fin pour qu'il prenne leur goût."
+    - "Les cime di rapa (chez les épiciers italiens) se préparent exactement pareil, en version plus amère et plus authentique."
+
+voirAussi: [salsiccia-e-patate]
