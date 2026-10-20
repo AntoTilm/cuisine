@@ -1,0 +1,73 @@
+titre: Wrap poulet, citron et yaourt
+cuisine: mediterraneenne
+type: plat
+resume: "Du blanc de poulet mariné au yaourt et au citron, saisi bien doré, roulé dans une tortilla complète avec une sauce yaourt-herbes et beaucoup de crudités. Léger, frais, prêt en 30 min."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le poulet
+    items:
+      - { nom: Blanc de poulet, qte: 500, unite: g, cle: poulet }
+      - { nom: Yaourt grec nature (2 %), qte: 80, unite: g }
+      - { nom: Citron, qte: 1, note: "zeste et jus" }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Huile d'olive, qte: 1, unite: cs }
+      - { nom: Paprika fumé, qte: 1, unite: cc }
+      - { nom: Cumin moulu, qte: 1, unite: cc }
+      - { nom: Origan séché, qte: 1, unite: cc }
+      - { nom: Sel, qte: 0.75, unite: cc }
+      - { nom: Poivre }
+  - groupe: La sauce yaourt
+    items:
+      - { nom: Yaourt grec nature (2 %), qte: 200, unite: g, cle: yaourt }
+      - { nom: Citron, qte: 0.5, note: "jus" }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Menthe fraîche, qte: 4, unite: brin }
+      - { nom: Aneth, qte: 3, unite: brin, mode: chef }
+      - { nom: Sumac, qte: 1, unite: pincee, mode: chef }
+      - { nom: Sel }
+  - groupe: Le wrap
+    items:
+      - { nom: Tortillas complètes, qte: 4 }
+      - { nom: Laitue romaine, qte: 0.5, note: "ou jeunes pousses" }
+      - { nom: Concombre, qte: 0.5 }
+      - { nom: Tomates cerises, qte: 200, unite: g }
+      - { nom: Oignon rouge, qte: 0.5 }
+      - { nom: Feta, qte: 60, unite: g, optionnel: true }
+      - { nom: Vinaigre de vin rouge, qte: 2, unite: cs, mode: chef, note: "pour les oignons pickles" }
+
+simple:
+  temps: { preparation: 20, cuisson: 10, attente: 15 }
+  etapes:
+    - texte: "Couper le poulet en lanières. Le mélanger avec le yaourt, le zeste et le jus du citron, l'ail râpé, l'huile, les épices, le sel et le poivre. Laisser mariner 15 min (ou jusqu'à une nuit au frais)."
+      minuteur: 900
+    - "Pendant ce temps, mélanger {yaourt} de yaourt avec le jus de citron, l'ail râpé, la menthe ciselée et une pincée de sel. Émincer la salade, l'oignon, le concombre et couper les tomates."
+    - texte: "Cuire le poulet dans une poêle antiadhésive bien chaude, sans ajouter de matière grasse, 6 à 8 min en le retournant, jusqu'à ce qu'il soit doré et cuit à cœur."
+      minuteur: 420
+    - "Chauffer les tortillas 20 s par face dans la poêle sèche."
+    - "Tartiner de sauce, ajouter les crudités, le poulet et la feta émiettée, rabattre le bas puis rouler serré."
+  astuces:
+    - "Une tortilla complète, du blanc de poulet et du yaourt à 2 % : environ 450 kcal et 40 g de protéines par wrap."
+    - "Pour emporter : sauce dans un pot à part, on roule au dernier moment."
+
+chef:
+  temps: { preparation: 30, cuisson: 15, attente: 240 }
+  etapes:
+    - titre: La marinade
+      texte: "Ouvrir les blancs en portefeuille pour obtenir une épaisseur régulière, puis les masser avec la marinade (yaourt, zeste et jus de citron, ail râpé, huile, paprika fumé, cumin, origan, sel). 4 h au frais : l'acide du yaourt attendrit sans rendre la viande farineuse."
+      minuteur: 14400
+    - titre: Les oignons pickles
+      texte: "Émincer l'oignon rouge très finement, le couvrir de vinaigre avec une pincée de sel et de sucre. 20 min suffisent pour qu'il devienne rose et croquant."
+    - titre: La sauce
+      texte: "Mélanger {yaourt} de yaourt, le jus de citron, l'ail râpé, la menthe et l'aneth ciselés, une pincée de sel. Finir d'une pincée de sumac."
+    - titre: La cuisson
+      texte: "Essuyer l'excès de marinade et saisir les blancs entiers dans une poêle-gril très chaude à peine huilée, 4 min par face, jusqu'à 68 °C à cœur. Laisser reposer 5 min, puis trancher en biais : il reste juteux."
+      minuteur: 480
+    - titre: Le montage
+      texte: "Tortilla chauffée, sauce, romaine, concombre, tomates, oignons pickles égouttés, poulet, feta. Rouler serré, puis remettre le wrap 1 min dans la poêle, jointure en dessous, pour le sceller et le marquer."
+  astuces:
+    - "Cuire les blancs entiers plutôt qu'en lanières donne une viande plus juteuse."
+    - "Les hauts de cuisse sans peau fonctionnent aussi : un peu plus gras, encore plus moelleux."
+
+voirAussi: [chawarma-poulet, tzatziki, poulet-au-citron]
