@@ -1,0 +1,103 @@
+titre: Tacos au bœuf haché juteux
+cuisine: americaine
+origine: Tex-Mex
+type: plat
+resume: Bœuf haché bien saisi, concentré de tomate et glaçons de bouillon de volaille maison qui le rendent juteux et brillant.
+portions:
+  base: 4
+
+ingredients:
+  - groupe: La viande
+    items:
+      - { nom: Bœuf haché, qte: 500, unite: g, note: "15 à 20 % de matière grasse" }
+      - { nom: Oignon, qte: 1 }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Concentré de tomate, qte: 2, unite: cs, cle: concentre }
+      - { nom: Bouillon de volaille, qte: 150, unite: ml, cle: bouillon, mode: simple, note: "4 à 5 glaçons de bouillon maison, ou 1 cube dissous" }
+      - { nom: Bouillon de volaille maison, qte: 150, unite: ml, cle: bouillon, mode: chef, maison: true, note: "4 à 5 glaçons" }
+      - { nom: Cumin en poudre, qte: 2, unite: cc }
+      - { nom: Paprika fumé, qte: 1, unite: cc }
+      - { nom: Origan séché, qte: 1, unite: cc }
+      - { nom: Piment en poudre, qte: 0.5, unite: cc }
+      - { nom: Ail en poudre, qte: 0.5, unite: cc, mode: simple, rayon: epicerie }
+      - { nom: Chipotle en adobo, qte: 1, mode: chef, optionnel: true, rayon: epicerie, note: "1 piment haché + 1 cs de sauce" }
+      - { nom: Huile de tournesol, qte: 1, unite: cs }
+      - { nom: Citron vert, qte: 0.5, note: pour le jus }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: Le bouillon de volaille (glaçons)
+    mode: chef
+    items:
+      - { nom: Carcasses de poulet, qte: 1, unite: kg, rayon: boucherie, note: "ou une poule à bouillir" }
+      - { nom: Ailes de poulet, qte: 500, unite: g, note: "ou des pattes : la gélatine fait le juteux" }
+      - { nom: Carotte, qte: 2 }
+      - { nom: Oignon, qte: 1, note: coupé en deux et brûlé à sec côté chair }
+      - { nom: Poireau, qte: 1, note: le vert }
+      - { nom: Céleri, qte: 1, unite: branche }
+      - { nom: Laurier, qte: 2, unite: feuille }
+      - { nom: Thym, qte: 2, unite: brin }
+      - { nom: Poivre en grains, qte: 1, unite: cc }
+  - groupe: Pour garnir
+    items:
+      - { nom: Tortillas de blé, qte: 12, mode: simple, rayon: epicerie, note: "petites, 15 cm" }
+      - { nom: Tortillas de maïs, qte: 12, mode: chef, rayon: epicerie, note: "petites, 15 cm" }
+      - { nom: Laitue iceberg, qte: 0.25, mode: simple, note: en lanières }
+      - { nom: Tomate, qte: 2, note: en petits dés }
+      - { nom: Cheddar, qte: 100, unite: g, mode: simple, note: râpé }
+      - { nom: Crème aigre, qte: 150, unite: g }
+      - { nom: Oignon rouge, qte: 1 }
+      - { nom: Coriandre fraîche, qte: 1, unite: bouquet }
+      - { nom: Citron vert, qte: 1.5, note: en quartiers }
+      - { nom: Piment jalapeño, qte: 1, mode: chef, optionnel: true }
+      - { nom: Sauce piquante, optionnel: true }
+
+simple:
+  temps: { preparation: 15, cuisson: 20 }
+  etapes:
+    - "Hacher l'oignon et l'ail. Préparer les garnitures : laitue en lanières, tomates en dés, oignon rouge émincé, coriandre ciselée, cheddar râpé."
+    - texte: "Chauffer l'huile à feu vif dans une grande poêle. Ajouter le bœuf haché en une couche, l'aplatir et le laisser colorer 3 min sans y toucher, puis l'émietter et le cuire encore 2 min."
+      minuteur: 180
+    - "Ajouter l'oignon et l'ail, baisser à feu moyen et cuire 3 min. Ajouter le cumin, le paprika, l'origan, le piment et l'ail en poudre, remuer 30 secondes."
+    - texte: "Ajouter {concentre} de concentré de tomate et le faire revenir 1 à 2 min en remuant, jusqu'à ce qu'il fonce et accroche légèrement."
+      minuteur: 90
+    - texte: "Ajouter {bouillon} de bouillon de volaille (les glaçons vont directement dans la poêle), gratter le fond et laisser réduire 5 à 8 min : la viande doit être nappée d'une sauce brillante, ni sèche ni soupe."
+      minuteur: 360
+    - "Hors du feu, ajouter le jus de citron vert, saler et poivrer."
+    - "Chauffer les tortillas 20 secondes de chaque côté dans une poêle sèche, puis les garder au chaud dans un torchon. Garnir à table."
+  astuces:
+    - "C'est le bouillon maison qui rend la viande si juteuse : refroidi, il prend en gelée, et cette gélatine nappe la viande. Un cube du commerce donne le goût, pas la texture."
+    - "Ne pas remuer la viande pendant les premières minutes : elle doit dorer, pas bouillir dans son jus."
+
+chef:
+  temps: { preparation: 45, cuisson: 240, attente: 480 }
+  etapes:
+    - titre: Le bouillon, la veille ou bien avant
+      texte: "Mettre les carcasses et les ailes dans une grande casserole, couvrir de 3 l d'eau froide et porter doucement à frémissement. Écumer soigneusement."
+    - texte: "Ajouter les légumes, l'oignon brûlé, les herbes et le poivre. Cuire 3 h à tout petits frémissements, sans couvrir ni faire bouillir : le bouillon reste clair."
+      minuteur: 10800
+    - texte: "Filtrer, puis faire réduire à feu vif jusqu'à environ 1 l. Laisser refroidir : il doit prendre en gelée. Dégraisser, couler dans des bacs à glaçons et congeler. On en garde pour plusieurs fois."
+    - titre: Les garnitures
+      texte: "Émincer finement l'oignon rouge et le couvrir du jus d'un citron vert avec une pincée de sel : 20 min suffisent pour qu'il rosisse. Mélanger les tomates en dés, un peu de coriandre ciselée, le jalapeño haché, un filet de citron vert et du sel : c'est le pico de gallo."
+    - titre: La viande
+      texte: "Chauffer l'huile à feu très vif dans une grande poêle en fonte. Étaler le bœuf en une galette, le laisser croûter 4 min sans y toucher, retourner par morceaux, puis émietter."
+      minuteur: 240
+    - texte: "Baisser à feu moyen, ajouter l'oignon et l'ail hachés et cuire 3 min. Ajouter les épices dans la graisse et remuer 30 secondes pour les torréfier."
+    - texte: "Ajouter {concentre} de concentré de tomate et le chipotle. Faire revenir 2 min en remuant, jusqu'à ce que le concentré passe du rouge vif au rouge brique."
+      minuteur: 120
+    - texte: "Ajouter les glaçons de bouillon ({bouillon}), gratter les sucs et laisser réduire à feu moyen jusqu'à ce que la sauce nappe la viande et brille, 6 à 8 min."
+      minuteur: 420
+    - texte: "Finir avec le jus d'un demi-citron vert, rectifier le sel. La viande attend au chaud, couverte."
+    - titre: Les tortillas
+      texte: "Chauffer les tortillas de maïs 30 secondes de chaque côté dans une poêle très chaude, jusqu'à ce qu'elles gonflent et marquent. Les empiler dans un torchon : elles restent souples."
+    - titre: Le montage
+      texte: "Deux tortillas superposées par taco, la viande, le pico de gallo, l'oignon mariné, une cuillère de crème aigre, de la coriandre et un quartier de citron vert."
+  astuces:
+    - "Les ailes ou les pattes de poulet apportent la gélatine : c'est elle qui donne à la viande ce côté juteux et brillant. Si le bouillon ne prend pas en gelée au frigo, il n'est pas assez réduit."
+    - "Un glaçon fait environ 30 ml : compter 4 à 5 glaçons pour 500 g de viande."
+    - "Le chipotle en adobo apporte un fumé que le paprika seul n'a pas. On en trouve en boîte au rayon mexicain."
+
+notes:
+  - titre: D'où vient cette recette
+    texte: "Tacos faits un jour avec de la viande hachée, du concentré de tomate et des glaçons de bouillon de poule maison : la viande était super juteuse. Cette recette cherche à refaire ça."
+
+voirAussi: [chili-con-carne, ramen]
