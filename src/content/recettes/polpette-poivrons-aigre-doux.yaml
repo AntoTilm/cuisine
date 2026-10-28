@@ -60,7 +60,8 @@ simple:
       minuteur: 600
     - "Hors du feu, parsemer des pignons, du reste de persil, des feuilles de thym et du basilic. Servir avec du pain."
   astuces:
-    - "Un pain de campagne rassis donne des boulettes moelleuses ; un pain de mie les rend caoutchouteuses."
+    - "Un pain de campagne rassis donne des boulettes moelleuses ; un pain de mie les rend un peu plus denses."
+    - "Pas de pain rassis ? Prendre la mie d'un pain frais, la sécher 5 à 10 min au four à 150 °C, la mouiller d'un peu moins de lait et bien la presser. Sinon, 50 à 60 g de chapelure gonflée 10 min dans 6 à 8 cl de lait. Si la farce colle, une cuillère de parmesan ou de chapelure sèche."
     - "Pas plus grosses qu'une noix : plus grosses, elles restent crues au centre."
     - "Aussi bon tiède ou à température ambiante, et encore meilleur réchauffé le lendemain."
 
@@ -113,4 +114,5 @@ voirAussi: [salsiccia-e-patate]
 
 assiette:
   - role: feculent
-    choix: [puree-maison, riz-blanc]
+    choix: [pain, frites-au-four]
+    defaut: [pain]

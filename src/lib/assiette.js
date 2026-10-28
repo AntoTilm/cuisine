@@ -13,6 +13,10 @@ export const HORS_RECETTE = {
     titre: 'Frites de la friterie',
     resume: 'Un cornet par personne, pris en rentrant. Les commander « bien cuites » si la viande attend.',
   },
+  pain: {
+    titre: 'Du bon pain',
+    resume: 'Un pain de campagne à croûte épaisse, pour la scarpetta : en Italie, un plat en sauce se mange avec du pain, pas avec des pâtes.',
+  },
 };
 
 /** Nombre de personnes servies par un plat, selon ses portions (rouleaux, grammes de viande…). */

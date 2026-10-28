@@ -81,5 +81,9 @@ sources:
     url: https://blog.giallozafferano.it/piovonoricette/ricetta-spezzatino-con-funghi-e-patate/
 
 assiette:
+  - role: autre
+    titre: Pour saucer
+    choix: [pain]
+    defaut: [pain]
   - role: legume
     choix: [salade-composee]
