@@ -1,4 +1,4 @@
-// Les chaînes YouTube (et quelques sites) où chercher des idées, rangées par cuisine.
+// Les chaînes YouTube et les sites où chercher des idées, rangées par cuisine.
 // `aime: true` : les chaînes que je suis déjà. `videos` : des recettes à regarder.
 const yt = (id) => `https://www.youtube.com/watch?v=${id}`;
 
@@ -134,6 +134,22 @@ export const GROUPES = [
   {
     titre: 'Cuisine italienne',
     chaines: [
+      {
+        nom: 'Piovono Ricette',
+        url: 'https://blog.giallozafferano.it/piovonoricette/',
+        site: true,
+        aime: true,
+        texte: 'Le blog d’Isabella De Simone sur GialloZafferano : de vraies recettes italiennes de tous les jours, pâtes, viandes mijotées, poissons et desserts du Sud, avec les quantités et des photos pas à pas. Aussi sur Instagram.',
+        videos: [
+          { titre: 'Polpette con peperoni in agrodolce', url: 'https://blog.giallozafferano.it/piovonoricette/ricetta-polpette-con-peperoni-in-agrodolce/', recette: 'polpette-poivrons-aigre-doux' },
+          { titre: 'Bucatini all’amatriciana', url: 'https://blog.giallozafferano.it/piovonoricette/bucatini-all-amatriciana/', recette: 'pates-amatriciana' },
+          { titre: 'Tonnarelli cacio e pepe', url: 'https://blog.giallozafferano.it/piovonoricette/tonnarelli-cacio-e-pepe/', recette: 'pates-cacio-e-pepe' },
+          { titre: 'Pollo in umido con patate', url: 'https://blog.giallozafferano.it/piovonoricette/ricetta-pollo-in-umido-con-patate/', recette: 'poulet-mijote-pommes-de-terre' },
+          { titre: 'Spezzatino con funghi e patate', url: 'https://blog.giallozafferano.it/piovonoricette/ricetta-spezzatino-con-funghi-e-patate/', recette: 'spezzatino-champignons' },
+          { titre: 'Pasticciotti', url: 'https://blog.giallozafferano.it/piovonoricette/pasticciotti/', recette: 'pasticciotti' },
+          { titre: 'Instagram : piovono.ricette', url: 'https://www.instagram.com/piovono.ricette/' },
+        ],
+      },
       {
         nom: 'Vincenzo’s Plate',
         url: 'https://www.youtube.com/@VincenzosPlate',

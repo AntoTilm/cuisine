@@ -3,6 +3,7 @@
 // recette : nom du fichier YAML si la recette est déjà au carnet.
 import { PLUS } from './hasard-plus.js';
 import { NOUVELLES, IDS_HEALTHY, RECETTES_HEALTHY } from './healthy.js';
+import { PIOVONO, PIOVONO_URL } from './piovono.js';
 
 const yt = (id) => `https://www.youtube.com/watch?v=${id}`;
 
@@ -85,10 +86,23 @@ export const CUISINES_HASARD = [
   { slug: 'latino', nom: 'Mexique et Amérique latine' },
 ];
 
+// Sites de recettes (pas des vidéos) : le tirage renvoie vers la page de la recette.
+const sites = PIOVONO.map(([cuisine, type, titre, slug, recette]) => ({
+  chaine: 'Piovono Ricette', site: true, cuisine, type, titre, url: `${PIOVONO_URL}${slug}/`, ...(recette ? { recette } : {}),
+}));
+
+// Un même auteur peut apparaître sous plusieurs orthographes : on les regroupe pour le filtre « Source ».
+const ALIAS = { 'Food Wishes (Chef John)': 'Food Wishes', 'Joshua Weissman Recipes': 'Joshua Weissman' };
+const nomSource = (c) => {
+  const n = c.replace(/'/g, '’').trim();
+  return ALIAS[n.replace(/’/g, "'")] || ALIAS[n] || n;
+};
+
 const dejaLa = new Set(BASE.map((v) => v.url));
 const idDe = (url) => url.split('v=')[1];
 const plus = [...PLUS, ...NOUVELLES].map(([chaine, cuisine, type, titre, id, recette]) => ({ chaine, cuisine, type, titre, url: yt(id), ...(recette ? { recette } : {}) }));
-export const VIDEOS = [...BASE, ...plus.filter((v) => !dejaLa.has(v.url))]
+export const VIDEOS = [...BASE, ...plus.filter((v) => !dejaLa.has(v.url)), ...sites]
   .filter((v, i, t) => t.findIndex((w) => w.url === v.url) === i)
+  .map((v) => ({ ...v, chaine: nomSource(v.chaine) }))
   .map((v) => (IDS_HEALTHY.has(idDe(v.url)) ? { ...v, healthy: true } : v))
   .map((v) => (RECETTES_HEALTHY[idDe(v.url)] && !v.recette ? { ...v, recette: RECETTES_HEALTHY[idDe(v.url)] } : v));

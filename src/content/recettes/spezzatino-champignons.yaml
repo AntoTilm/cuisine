@@ -1,0 +1,85 @@
+titre: Spezzatino de veau aux champignons et pommes de terre
+cuisine: italienne
+origine: Italie
+type: plat
+saison: hiver
+resume: "Le ragoût italien : du veau fariné et bien doré, mijoté deux heures au bouillon, des pommes de terre qui lient la sauce, et des champignons poêlés au beurre ajoutés à la fin."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le spezzatino
+    items:
+      - { nom: Veau à mijoter, qte: 800, unite: g, note: "épaule ou noix pâtissière, en cubes de 3 à 4 cm" }
+      - { nom: Échalote, qte: 1 }
+      - { nom: Farine, note: pour fariner la viande }
+      - { nom: Vin blanc sec, qte: 4, unite: cl, cle: vin }
+      - { nom: Bouillon de légumes, qte: 1, unite: l, cle: bouillon, note: "bien chaud" }
+      - { nom: Concentré de tomate, qte: 1, unite: cs }
+      - { nom: Pommes de terre, qte: 700, unite: g }
+      - { nom: Carotte, qte: 2 }
+      - { nom: Romarin, qte: 1, unite: brin }
+      - { nom: Laurier, qte: 1, unite: feuille }
+      - { nom: Huile d'olive }
+      - { nom: Sel }
+  - groupe: Les champignons
+    items:
+      - { nom: Champignons mélangés, qte: 350, unite: g, note: "frais ou surgelés : champignons de Paris, cèpes, pleurotes…" }
+      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Beurre, qte: 25, unite: g }
+      - { nom: Persil plat, qte: 1, unite: bouquet, note: "pour les champignons et pour finir" }
+
+simple:
+  temps: { preparation: 20, cuisson: 120 }
+  etapes:
+    - "Éplucher les pommes de terre, les couper en morceaux de la taille des cubes de viande et les garder dans l'eau froide. Sortir la viande du frigo à l'avance."
+    - "Fariner les cubes de veau et les secouer pour retirer l'excédent."
+    - texte: "Dans une cocotte, faire fondre l'échalote hachée dans un filet d'huile à feu moyen-vif, ajouter la viande et la dorer sur toutes les faces."
+      minuteur: 600
+    - "À feu vif, verser {vin} de vin blanc sur le bord de la cocotte, pas sur la viande, secouer et laisser s'évaporer."
+    - "Baisser le feu au minimum, couvrir la viande de bouillon chaud et ajouter le concentré de tomate délayé dans un peu de bouillon."
+    - texte: "Couvrir et laisser mijoter à feu très doux, en remuant de temps en temps."
+      minuteur: 3600
+    - texte: "Pendant ce temps, faire revenir l'ail écrasé dans le beurre avec un filet d'huile et un peu de persil haché. Ajouter les champignons en morceaux et les cuire à feu moyen en les retournant de temps en temps. Saler seulement à la fin et réserver."
+      minuteur: 540
+    - texte: "Après une heure, ajouter les pommes de terre égouttées, les carottes en tronçons, le romarin et le laurier. Ajouter du bouillon pour couvrir presque les pommes de terre, saler un peu, couvrir et cuire à feu très doux."
+      minuteur: 1800
+    - texte: "Retirer les herbes, ajouter les champignons et poursuivre sans couvercle à feu doux. Goûter et rectifier le sel."
+      minuteur: 1080
+    - "Écraser quelques morceaux de pomme de terre à la fourchette avec un peu de sauce et les remettre dans la cocotte. Parsemer de persil et servir, avec du pain."
+  astuces:
+    - "Des champignons surgelés conviennent très bien ; les saler à la fin, sinon ils rendent leur eau et bouillent au lieu de dorer."
+
+chef:
+  temps: { preparation: 25, cuisson: 120 }
+  etapes:
+    - titre: La viande
+      texte: "Sortir le veau 30 min avant, le sécher, puis le fariner légèrement en secouant bien. Tailler l'échalote finement, les pommes de terre en gros morceaux (gardés dans l'eau froide) et les carottes en tronçons biseautés."
+    - titre: Saisir
+      texte: "Dans une cocotte en fonte, faire suer l'échalote dans l'huile, la pousser sur le côté et saisir le veau en deux fournées, sans remuer les 2 premières minutes, jusqu'à une croûte bien brune sur chaque face."
+      minuteur: 720
+    - titre: Déglacer
+      texte: "Remettre toute la viande, verser {vin} de vin blanc sur la paroi chaude de la cocotte en grattant les sucs au fond, et laisser évaporer complètement."
+    - titre: Mijoter
+      texte: "Ajouter le concentré de tomate délayé dans un peu de bouillon, puis le bouillon chaud juste à hauteur. Couvrir et cuire au plus doux : le liquide doit à peine frémir."
+      minuteur: 3600
+    - titre: Les légumes
+      texte: "Ajouter les pommes de terre égouttées, les carottes, le romarin et le laurier, compléter de bouillon chaud presque à hauteur et saler légèrement. Couvrir et poursuivre à frémissement."
+      minuteur: 1800
+    - titre: Les champignons
+      texte: "Pendant ce temps, poêler les champignons à feu vif dans l'huile, en plusieurs fois pour qu'ils ne se touchent pas, jusqu'à ce qu'ils soient dorés. Ajouter le beurre, l'ail écrasé et un peu de persil haché, arroser 1 min au beurre mousseux, puis saler."
+      minuteur: 480
+    - titre: Lier et finir
+      texte: "Retirer les herbes, ajouter les champignons et laisser réduire à découvert jusqu'à ce que la sauce nappe. Écraser quelques morceaux de pomme de terre dans un peu de sauce et les remettre pour la rendre crémeuse. Rectifier le sel et finir au persil haché."
+      minuteur: 1080
+  astuces:
+    - "Le vin versé sur la paroi chaude plutôt que sur la viande s'évapore aussitôt et décolle les sucs sans détremper la croûte."
+    - "Avec un bouillon maison (céleri, carotte, oignon, une pomme de terre, persil et quelques tomates cerises, 1 h à feu doux), le spezzatino gagne beaucoup en profondeur."
+
+sources:
+  - titre: "Spezzatino con funghi e patate, Piovono Ricette (blog GialloZafferano)"
+    url: https://blog.giallozafferano.it/piovonoricette/ricetta-spezzatino-con-funghi-e-patate/
+
+assiette:
+  - role: legume
+    choix: [salade-composee]

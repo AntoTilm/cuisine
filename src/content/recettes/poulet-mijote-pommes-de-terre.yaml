@@ -1,0 +1,81 @@
+titre: Poulet mijoté aux pommes de terre et aux olives
+cuisine: italienne
+origine: Italie (pollo in umido)
+type: plat
+saison: hiver
+resume: "Des cuisses de poulet dorées puis mijotées avec un soffritto, un peu de tomate et des pommes de terre qui finissent fondantes et épaississent la sauce. Les olives arrivent à la fin."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Le poulet
+    items:
+      - { nom: Cuisses et hauts de cuisse de poulet, qte: 700, unite: g, note: "avec l'os, sans la peau" }
+      - { nom: Ail, qte: 1, unite: gousse, note: en chemise }
+      - { nom: Romarin, qte: 1, unite: brin }
+      - { nom: Vin blanc sec, qte: 3, unite: cl, cle: vin }
+      - { nom: Huile d'olive }
+      - { nom: Sel }
+  - groupe: Le soffritto et la sauce
+    items:
+      - { nom: Oignon, qte: 1 }
+      - { nom: Carotte, qte: 2 }
+      - { nom: Céleri, qte: 1, unite: branche }
+      - { nom: Concentré de tomate, qte: 1, unite: cs }
+      - { nom: Bouillon de légumes, qte: 50, unite: cl, cle: bouillon, note: "environ, de quoi couvrir" }
+      - { nom: Laurier, qte: 1, unite: feuille }
+  - groupe: Les pommes de terre et les olives
+    items:
+      - { nom: Pommes de terre, qte: 4, note: moyennes }
+      - { nom: Olives dénoyautées, qte: 70, unite: g, rayon: epicerie, note: "leccino ou taggiasche" }
+      - { nom: Persil plat, qte: 0.5, unite: bouquet }
+
+simple:
+  temps: { preparation: 15, cuisson: 60 }
+  etapes:
+    - "Éplucher les pommes de terre, les couper en gros morceaux et les garder dans un bol d'eau froide pour qu'elles ne noircissent pas. Hacher finement l'oignon, couper les carottes et le céleri en petits dés."
+    - "Dans une grande sauteuse, faire chauffer un filet d'huile avec la gousse d'ail en chemise et le romarin."
+    - texte: "Ajouter le poulet et le dorer sur toutes les faces. Le réserver sur une assiette."
+      minuteur: 600
+    - texte: "Retirer le romarin. Dans la même sauteuse, faire fondre l'oignon, les carottes et le céleri à feu doux, jusqu'à ce que l'oignon soit tendre."
+      minuteur: 360
+    - "Retirer l'ail, remettre le poulet quelques minutes, puis monter le feu et verser {vin} de vin blanc. Laisser l'alcool s'évaporer."
+    - "Ajouter le concentré de tomate, couvrir avec le bouillon (environ {bouillon}) et mélanger."
+    - texte: "Ajouter les pommes de terre égouttées et le laurier. Saler, baisser le feu au minimum, couvrir et laisser mijoter."
+      minuteur: 2400
+    - texte: "Retirer le couvercle, écraser quelques morceaux de pomme de terre pour épaissir la sauce, ajouter les olives et cuire encore quelques minutes."
+      minuteur: 300
+    - "Parsemer de persil haché et servir, avec du pain pour saucer."
+  astuces:
+    - "Les cuisses et hauts de cuisse, avec l'os, sont les morceaux les plus goûteux et restent tendres au mijotage ; le blanc sèche."
+
+chef:
+  temps: { preparation: 20, cuisson: 65 }
+  etapes:
+    - titre: La mise en place
+      texte: "Éplucher les pommes de terre, les tailler en gros morceaux réguliers et les garder dans l'eau froide. Tailler l'oignon, les carottes et le céleri en brunoise fine. Sortir le poulet du frigo 20 min avant et bien le sécher au papier."
+    - titre: Saisir
+      texte: "Chauffer l'huile avec l'ail en chemise écrasé et le romarin. Saler le poulet et le saisir en deux fois, sans le serrer, jusqu'à une croûte bien dorée de chaque côté. Réserver ; retirer le romarin."
+      minuteur: 720
+    - titre: Le soffritto
+      texte: "Faire suer la brunoise à feu doux dans la graisse de cuisson, en grattant les sucs, jusqu'à ce qu'elle soit fondante et légèrement blonde."
+      minuteur: 480
+    - titre: Déglacer
+      texte: "Retirer l'ail, remettre le poulet et son jus, monter le feu et déglacer avec {vin} de vin blanc. Laisser évaporer, puis faire revenir le concentré de tomate 1 min pour en ôter l'acidité."
+    - titre: Mijoter
+      texte: "Mouiller avec le bouillon chaud juste à hauteur, ajouter les pommes de terre égouttées et le laurier. Saler légèrement, couvrir et mijoter à frémissement."
+      minuteur: 2400
+    - titre: Lier et finir
+      texte: "Découvrir, écraser quelques morceaux de pomme de terre dans la sauce et laisser réduire 5 min jusqu'à ce qu'elle nappe. Ajouter les olives, rectifier le sel, retirer le laurier. Finir avec le persil haché et un filet d'huile d'olive crue."
+      minuteur: 300
+  astuces:
+    - "Saisir en deux fois : trop serré, le poulet rend son eau et bout au lieu de dorer, et la sauce perd ses sucs."
+    - "Le sel des olives s'ajoute à celui du bouillon : saler peu au départ et ajuster à la fin."
+
+sources:
+  - titre: "Pollo in umido con patate, Piovono Ricette (blog GialloZafferano)"
+    url: https://blog.giallozafferano.it/piovonoricette/ricetta-pollo-in-umido-con-patate/
+
+assiette:
+  - role: legume
+    choix: [salade-composee]

@@ -1,0 +1,68 @@
+titre: Bucatini all'amatriciana
+cuisine: italienne
+origine: Amatrice (Latium)
+type: plat
+resume: "Le guanciale fondu tout doucement jusqu'à être croustillant, une sauce tomate cuite dans sa graisse, et du pecorino en pluie. Ni oignon, ni ail."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Bucatini, qte: 380, unite: g, rayon: epicerie, note: "ou spaghetti ; tréfilés au bronze si possible" }
+      - { nom: Guanciale, qte: 250, unite: g, rayon: boucherie, note: "joue de porc séchée, à l'épicerie italienne ; à défaut, pancetta" }
+      - { nom: Vin blanc sec, qte: 1, unite: cs, cle: vin, note: "ou vinaigre de vin blanc" }
+      - { nom: Tomates pelées, qte: 400, unite: g, note: "San Marzano si possible" }
+      - { nom: Tomates concassées, qte: 300, unite: g }
+      - { nom: Piment séché, rayon: epicerie, note: "une pincée ou un petit piment émietté" }
+      - { nom: Pecorino romano, qte: 80, unite: g, cle: pecorino, rayon: cremerie, note: "+ un peu pour servir" }
+      - { nom: Gros sel }
+      - { nom: Sel }
+
+simple:
+  temps: { preparation: 10, cuisson: 30 }
+  etapes:
+    - "Couper le guanciale en tranches de 1 cm, retirer la couenne, puis détailler chaque tranche en bâtonnets pas trop fins."
+    - texte: "Mettre le guanciale dans une grande poêle froide, sans matière grasse, et le laisser fondre à feu doux en remuant de temps en temps, jusqu'à ce qu'il soit brillant et croustillant."
+      minuteur: 600
+    - "Monter le feu, verser {vin} de vin blanc et le laisser s'évaporer complètement. Retirer le guanciale dans un bol en gardant la graisse dans la poêle : il restera croustillant."
+    - "Mettre une grande casserole d'eau à bouillir."
+    - texte: "Dans la graisse du guanciale, faire revenir un peu de piment quelques secondes à feu moyen. Ajouter les tomates pelées, les tomates concassées, un demi-verre d'eau et une pincée de sel. Cuire en écrasant les tomates à la cuillère, jusqu'à ce que la sauce épaississe."
+      minuteur: 720
+    - "Saler l'eau au gros sel et y cuire les bucatini al dente, selon le paquet."
+    - texte: "Les transférer à la pince dans la sauce, ajouter le guanciale et mélanger à feu vif 1 ou 2 min."
+      minuteur: 90
+    - "Hors du feu, ajouter {pecorino} de pecorino râpé, bien mélanger et servir aussitôt, avec du pecorino à part."
+  astuces:
+    - "Le guanciale doit fondre lentement dans une poêle froide : à feu vif, il brûle dehors et reste caoutchouteux dedans."
+
+chef:
+  temps: { preparation: 10, cuisson: 30 }
+  etapes:
+    - titre: Le guanciale
+      texte: "Retirer la couenne, couper en tranches de 1 cm puis en bâtonnets. Les mettre dans une grande sauteuse froide, sans gras, et laisser fondre à feu doux en remuant, jusqu'à ce qu'ils soient translucides et croustillants."
+      minuteur: 600
+    - titre: Déglacer
+      texte: "Feu vif, déglacer avec {vin} de vin blanc (ou de vinaigre, qui rend le guanciale encore plus croustillant) et laisser s'évaporer entièrement. Réserver le guanciale à part, la graisse dans la sauteuse."
+    - titre: La sauce
+      texte: "Faire chanter le piment dans la graisse quelques secondes, ajouter les tomates pelées écrasées à la main, les tomates concassées, un demi-verre d'eau et une pincée de sel. Réduire à feu moyen en écrasant les tomates, jusqu'à une sauce épaisse qui nappe la cuillère."
+      minuteur: 840
+    - titre: Les pâtes
+      texte: "Cuire les bucatini dans une eau salée, 2 min de moins que le temps du paquet. Garder une tasse d'eau de cuisson."
+    - titre: Finir dans la sauce
+      texte: "Transférer les pâtes à la pince dans la sauce et les finir à feu vif en remuant sans arrêt, avec un peu d'eau de cuisson si la sauce serre trop. Ajouter le guanciale au dernier moment pour qu'il reste croquant."
+      minuteur: 120
+    - titre: Le pecorino
+      texte: "Hors du feu, ajouter {pecorino} de pecorino râpé finement et mélanger vivement. Servir dans des assiettes chaudes, avec du pecorino à part."
+  astuces:
+    - "À Amatrice, la recette tient en cinq ingrédients : guanciale, tomate, pecorino, vin blanc et piment ou poivre. Pas d'oignon, pas d'ail, pas d'huile : la graisse du guanciale suffit."
+    - "Le pecorino s'ajoute hors du feu : sur une sauce trop chaude, il file et fait des grumeaux."
+
+sources:
+  - titre: "Bucatini all'amatriciana, Piovono Ricette (blog GialloZafferano)"
+    url: https://blog.giallozafferano.it/piovonoricette/bucatini-all-amatriciana/
+
+voirAussi: [pates-carbonara, pates-cacio-e-pepe]
+
+assiette:
+  - role: legume
+    choix: [salade-composee]

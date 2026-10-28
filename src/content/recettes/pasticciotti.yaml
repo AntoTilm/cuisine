@@ -1,0 +1,92 @@
+titre: Pasticciotti leccesi
+cuisine: italienne
+origine: Lecce (Pouilles)
+type: dessert
+resume: "La pâtisserie du Salento : une pâte sablée au saindoux, dorée et friable, garnie de crème pâtissière au citron et d'une cuillère de confiture de myrtilles ou de griottes."
+portions:
+  base: 10
+  unite: pasticciotto
+  pluriel: pasticciotti
+  pas: 5
+  parPersonne: 1
+
+ingredients:
+  - groupe: La pâte
+    items:
+      - { nom: Farine, qte: 500, unite: g }
+      - { nom: Sucre, qte: 200, unite: g }
+      - { nom: Saindoux, qte: 250, unite: g, rayon: boucherie, note: "froid ; c'est lui qui fait le vrai pasticciotto" }
+      - { nom: Œuf, qte: 3, note: "1 entier + 2 jaunes" }
+      - { nom: Citron non traité, qte: 1, note: le zeste }
+      - { nom: Sel, qte: 1, unite: pincee }
+      - { nom: Ammoniaque alimentaire, qte: 0.5, unite: cc, rayon: epicerie, note: "ou 1 c. à café de levure chimique" }
+  - groupe: La crème pâtissière
+    items:
+      - { nom: Lait entier, qte: 50, unite: cl }
+      - { nom: Sucre, qte: 150, unite: g }
+      - { nom: Jaunes d'œufs, qte: 4 }
+      - { nom: Amidon de blé, qte: 50, unite: g, rayon: epicerie, note: "ou fécule de maïs" }
+      - { nom: Gousse de vanille, qte: 1, rayon: sucre }
+      - { nom: Citron non traité, qte: 1, note: le zeste }
+  - groupe: La garniture
+    mode: simple
+    items:
+      - { nom: Confiture de myrtilles, qte: 150, unite: g, note: "ou griottes Amarena" }
+  - groupe: La confiture de myrtilles
+    mode: chef
+    items:
+      - { nom: Myrtilles, qte: 300, unite: g }
+      - { nom: Sucre, qte: 60, unite: g }
+      - { nom: Pectine, qte: 1, unite: cs, rayon: sucre, note: "type Vitpris" }
+  - groupe: La dorure et les moules
+    items:
+      - { nom: Jaune d'œuf, qte: 1 }
+      - { nom: Lait, qte: 1, unite: cs }
+      - { nom: Beurre, note: pour les moules }
+
+simple:
+  temps: { preparation: 45, cuisson: 50, attente: 60 }
+  etapes:
+    - "La crème : faire tiédir le lait avec la gousse de vanille fendue, sans le faire bouillir. Fouetter les jaunes et le sucre jusqu'à ce qu'ils blanchissent, ajouter l'amidon tamisé petit à petit en alternant avec un peu de lait tiède, puis le zeste de citron et le reste du lait."
+    - texte: "Reverser dans la casserole et cuire à feu très doux en remuant sans arrêt, toujours dans le même sens, jusqu'à ce que la crème frémisse et épaississe. Couvrir d'un film au contact et laisser refroidir."
+      minuteur: 600
+    - "La pâte : mélanger la farine tamisée, le sucre, le sel et l'ammoniaque. Ajouter le saindoux froid coupé en petits morceaux et le zeste de citron, et sabler à la main jusqu'à une texture de sable."
+    - texte: "Faire un puits, ajouter l'œuf et les jaunes un à un et pétrir vite pour ne pas réchauffer la pâte. Former un disque, l'emballer dans un film et le laisser au frais au moins 1 h."
+      minuteur: 3600
+    - "Préchauffer le four à 180 °C (statique). Beurrer et fariner les moules."
+    - "Étaler un morceau de pâte à la fois entre deux feuilles de papier cuisson, sur 5 mm, en gardant le reste au frais. Foncer les moules en plaquant bien la pâte et retirer l'excédent."
+    - "Garnir de crème pâtissière et d'une cuillère de confiture. Fermer avec un second disque de pâte, souder les bords en appuyant et retirer l'excédent."
+    - texte: "Badigeonner de jaune d'œuf battu avec le lait et cuire 35 à 40 min, jusqu'à ce qu'ils soient bien dorés."
+      minuteur: 2100
+    - "Laisser refroidir complètement avant de démouler délicatement."
+  astuces:
+    - "Les moules ovales à pasticciotti se trouvent en ligne ; à défaut, des moules à tartelettes profonds ou un moule à muffins font l'affaire."
+    - "Sabler à la main, pas au robot : la pâte au saindoux devient collante et difficile à étaler."
+
+chef:
+  temps: { preparation: 60, cuisson: 50, attente: 90 }
+  etapes:
+    - titre: La crème pâtissière
+      texte: "Infuser la vanille fendue et grattée dans le lait tiède. Blanchir les jaunes avec le sucre, incorporer l'amidon tamisé en alternant avec le lait, ajouter le zeste. Cuire à feu très doux en remuant sans cesse jusqu'aux premiers bouillons, puis 1 min de plus pour cuire l'amidon. Débarrasser dans un plat, filmer au contact et refroidir rapidement."
+      minuteur: 600
+    - titre: La confiture
+      texte: "Mélanger à froid les myrtilles, le sucre et la pectine dans une casserole à bords hauts. Porter à ébullition à feu vif en remuant, puis laisser bouillir en remuant toujours. Verser dans un bol en verre et laisser refroidir."
+      minuteur: 300
+    - titre: La pâte au saindoux
+      texte: "Sabler du bout des doigts la farine tamisée, le sucre, le sel, l'ammoniaque, le zeste et le saindoux bien froid coupé en dés, sans trop travailler. Ajouter l'œuf et les jaunes un à un en pétrissant vite, juste assez pour rassembler. Aplatir en disque, filmer et laisser au moins 1 h au frais."
+      minuteur: 3600
+    - titre: Foncer
+      texte: "Préchauffer le four à 180 °C (statique). Étaler la pâte par petites portions entre deux feuilles de papier cuisson, sur 5 mm, en gardant le reste au froid. Foncer les moules beurrés et farinés en plaquant bien la pâte contre les parois."
+    - titre: Garnir et fermer
+      texte: "Lisser la crème au fouet pour l'assouplir, en garnir les moules aux trois quarts, déposer une cuillère de confiture au centre et recouvrir de crème. Fermer d'un disque de pâte, souder en pressant les bords et ébarber au couteau."
+    - titre: Cuire
+      texte: "Dorer au jaune battu avec le lait et cuire 35 à 40 min, jusqu'à une couleur bien dorée et uniforme. Laisser refroidir complètement dans les moules avant de démouler."
+      minuteur: 2100
+  astuces:
+    - "Ne pas remplacer le saindoux par du beurre : la pâte serait plus friable mais ce ne serait plus un pasticciotto."
+    - "Pour la version la plus traditionnelle, remplacer la confiture par des griottes Amarena égouttées."
+    - "Au Salento, on les mange tièdes au petit-déjeuner avec un café."
+
+sources:
+  - titre: "Pasticciotti, Piovono Ricette (blog GialloZafferano)"
+    url: https://blog.giallozafferano.it/piovonoricette/pasticciotti/

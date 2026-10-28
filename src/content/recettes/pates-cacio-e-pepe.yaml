@@ -1,0 +1,55 @@
+titre: Tonnarelli cacio e pepe
+cuisine: italienne
+origine: Rome
+type: plat
+resume: "Trois ingrédients, une technique : pecorino et parmesan montés en crème avec l'eau de cuisson, et du poivre torréfié. Une feuille de menthe en option."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Tonnarelli, qte: 400, unite: g, rayon: epicerie, note: "ou spaghetti épais" }
+      - { nom: Pecorino romano affiné, qte: 250, unite: g, rayon: cremerie, note: "en morceau ; 70 % du fromage" }
+      - { nom: Parmesan 24 mois, qte: 100, unite: g, note: "en morceau ; 30 % du fromage" }
+      - { nom: Poivre noir en grains, qte: 2, unite: cc, note: "à ajuster" }
+      - { nom: Menthe, qte: 4, unite: feuille, optionnel: true, note: "la variante de l'autrice" }
+      - { nom: Gros sel }
+
+simple:
+  temps: { preparation: 10, cuisson: 12 }
+  etapes:
+    - "Mettre une grande casserole d'eau à bouillir."
+    - "Râper très finement le pecorino et le parmesan et les mélanger dans un grand saladier."
+    - "Torréfier les grains de poivre quelques secondes dans une poêle bien chaude, puis les concasser au mortier (ou au moulin). Les ajouter aux fromages."
+    - "Saler l'eau, peu car les fromages sont salés, et y cuire les pâtes en remuant de temps en temps."
+    - "Juste avant la fin de la cuisson, prélever deux louches d'eau de cuisson et y ajouter un peu d'eau froide. La verser petit à petit sur les fromages en mélangeant, jusqu'à obtenir une crème épaisse."
+    - "Égoutter les pâtes al dente à la pince, directement dans le saladier. Mélanger vivement et longtemps, en ajoutant un peu d'eau de cuisson si besoin. Servir aussitôt."
+  astuces:
+    - "Le fromage en sachet, peu affiné et sec, fait des grumeaux : prendre du pecorino et du parmesan en morceau."
+
+chef:
+  temps: { preparation: 15, cuisson: 12 }
+  etapes:
+    - titre: Les fromages
+      texte: "Râper le pecorino et le parmesan au plus fin, puis les passer au tamis, un peu à la fois, en les égrenant du bout des doigts : c'est ce qui donne une crème sans grumeaux. Réunir dans un grand saladier."
+    - titre: Le poivre
+      texte: "Torréfier les grains de poivre quelques secondes à sec dans une poêle très chaude. Les piler au mortier avec les feuilles de menthe jusqu'à une poudre sableuse, et l'ajouter aux fromages."
+    - titre: Les pâtes
+      texte: "Cuire les tonnarelli dans une eau peu salée, en remuant de temps en temps : l'amidon qu'elles libèrent fera tenir la crème."
+    - titre: La crème
+      texte: "Une minute avant d'égoutter, prélever deux louches d'eau de cuisson et les tiédir avec un peu d'eau froide : trop chaude, l'eau fait cailler le fromage. La verser en filet sur les fromages en remuant, jusqu'à une crème lisse et épaisse. N'utiliser que ce qu'il faut."
+    - titre: Lier
+      texte: "Égoutter les pâtes al dente à la pince directement dans le saladier et mélanger vite et sans s'arrêter, en rallongeant d'un peu d'eau de cuisson, jusqu'à ce que chaque pâte soit enrobée d'une crème brillante. Servir tout de suite dans des assiettes chaudes."
+  astuces:
+    - "On lie dans un saladier, pas dans la poêle sur le feu : la chaleur directe fait filer le pecorino."
+    - "Si la crème graine, ajouter une cuillère d'eau tiède et fouetter vivement : elle se reforme souvent."
+
+sources:
+  - titre: "Tonnarelli cacio e pepe, Piovono Ricette (blog GialloZafferano)"
+    url: https://blog.giallozafferano.it/piovonoricette/tonnarelli-cacio-e-pepe/
+
+voirAussi: [pates-carbonara, pates-amatriciana]
+
+assiette:
+  - role: legume
+    choix: [salade-composee]
