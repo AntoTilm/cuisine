@@ -114,5 +114,5 @@ voirAussi: [salsiccia-e-patate]
 
 assiette:
   - role: feculent
-    choix: [pain, frites-au-four]
+    choix: [pain, patate-al-forno]
     defaut: [pain]

@@ -147,6 +147,7 @@ export const GROUPES = [
           { titre: 'Pollo in umido con patate', url: 'https://blog.giallozafferano.it/piovonoricette/ricetta-pollo-in-umido-con-patate/', recette: 'poulet-mijote-pommes-de-terre' },
           { titre: 'Spezzatino con funghi e patate', url: 'https://blog.giallozafferano.it/piovonoricette/ricetta-spezzatino-con-funghi-e-patate/', recette: 'spezzatino-champignons' },
           { titre: 'Pasticciotti', url: 'https://blog.giallozafferano.it/piovonoricette/pasticciotti/', recette: 'pasticciotti' },
+          { titre: 'Patate al forno', url: 'https://blog.giallozafferano.it/piovonoricette/patate-al-forno/', recette: 'patate-al-forno' },
           { titre: 'Instagram : piovono.ricette', url: 'https://www.instagram.com/piovono.ricette/' },
         ],
       },

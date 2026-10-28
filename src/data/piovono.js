@@ -184,7 +184,7 @@ export const PIOVONO = [
   ["americaine", "dessert", "Cheesecake al cioccolato", "cheesecake-al-cioccolato"],
   ["americaine", "dessert", "Cheesecake agli smarties", "cheesecake-agli-smarties"],
   ["italienne", "entree", "Fiori di zucca in pastella", "fiori-di-zucca-in-pastella"],
-  ["italienne", "accompagnement", "Patate al forno", "patate-al-forno"],
+  ["italienne", "accompagnement", "Patate al forno", "patate-al-forno", "patate-al-forno"],
   ["italienne", "plat", "Frittura di calamari", "frittura-di-calamari"],
   ["italienne", "dessert", "Torta allo yogurt con frutti di bosco", "torta-allo-yogurt-con-frutti-di-bosco"],
   ["italienne", "accompagnement", "Carciofi alla romana", "carciofi-alla-romana"],

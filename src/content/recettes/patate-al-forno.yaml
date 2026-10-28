@@ -1,0 +1,60 @@
+titre: Patate al forno
+cuisine: italienne
+origine: Italie
+type: accompagnement
+resume: "Les pommes de terre rôties italiennes : blanchies, assaisonnées encore chaudes au romarin, à la sauge et à l'ail en chemise, puis rôties jusqu'à être croustillantes dehors et fondantes dedans."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Pommes de terre à chair jaune, qte: 1.5, unite: kg, note: "pas trop farineuses ni trop aqueuses (Charlotte, Agata…)" }
+      - { nom: Ail, qte: 2, unite: gousse, note: en chemise }
+      - { nom: Romarin, qte: 3, unite: brin }
+      - { nom: Sauge, qte: 2, unite: feuille, rayon: fruits-legumes }
+      - { nom: Thym frais, qte: 2, unite: brin, optionnel: true, note: pour finir }
+      - { nom: Huile d'olive, qte: 4, unite: cs }
+      - { nom: Gros sel, note: "pour l'eau" }
+      - { nom: Fleur de sel, note: "ou sel en flocons" }
+      - { nom: Poivre }
+
+simple:
+  temps: { preparation: 20, cuisson: 50 }
+  etapes:
+    - "Préchauffer le four à 200 °C, chaleur tournante. Éplucher les pommes de terre et les couper en gros morceaux, ni trop petits ni trop gros."
+    - texte: "Les mettre dans une casserole d'eau frémissante salée au gros sel et porter à ébullition. Dès que l'eau rebout, égoutter et laisser fumer quelques minutes dans la passoire."
+      minuteur: 300
+    - "Verser les pommes de terre encore chaudes sur une plaque couverte de papier cuisson. Ajouter l'huile, la fleur de sel, le poivre, la sauge, le romarin et l'ail en chemise écrasé du plat de la main. Bien mélanger."
+    - texte: "Enfourner jusqu'à ce qu'elles soient dorées et croustillantes."
+      minuteur: 2700
+    - "Servir chaud, parsemé de quelques feuilles de thym."
+  astuces:
+    - "Le blanchiment retire l'amidon de surface : les pommes de terre ne collent pas et font une vraie croûte."
+    - "Les assaisonner encore chaudes : elles boivent mieux l'huile et les aromates."
+
+chef:
+  temps: { preparation: 20, cuisson: 50 }
+  etapes:
+    - titre: Préparer
+      texte: "Préchauffer le four à 200 °C, chaleur tournante, avec la plaque à l'intérieur. Éplucher les pommes de terre et les tailler en gros morceaux irréguliers de 4 à 5 cm."
+    - titre: Blanchir
+      texte: "Les plonger dans une eau frémissante bien salée et porter à ébullition. Dès que l'eau rebout, égoutter."
+      minuteur: 300
+    - titre: Sécher et rainurer
+      texte: "Laisser fumer 3 min dans la passoire, puis secouer vivement la passoire pour abîmer les arêtes : cette surface farineuse deviendra la croûte croustillante."
+      minuteur: 180
+    - titre: Assaisonner chaud
+      texte: "Sortir la plaque chaude, y verser l'huile, puis les pommes de terre encore fumantes en une seule couche, sans les serrer. Ajouter l'ail en chemise écrasé, le romarin, la sauge et le poivre, et retourner pour bien enrober."
+    - titre: Rôtir
+      texte: "Enfourner 25 min, retourner les morceaux à la spatule, puis poursuivre jusqu'à une croûte bien dorée sur toutes les faces."
+      minuteur: 1500
+    - titre: Finir
+      texte: "Après 20 min de plus, saler à la fleur de sel au sortir du four et parsemer de thym frais. Servir aussitôt."
+      minuteur: 1200
+  astuces:
+    - "La plaque préchauffée saisit les pommes de terre dès qu'elles la touchent : elles n'attachent pas et dorent dessous."
+    - "Une seule couche, de l'espace entre les morceaux : serrées, elles cuisent à la vapeur au lieu de rôtir."
+
+sources:
+  - titre: "Patate al forno, Piovono Ricette (blog GialloZafferano)"
+    url: https://blog.giallozafferano.it/piovonoricette/patate-al-forno/
