@@ -1,0 +1,55 @@
+titre: Spaghetti aglio, olio e peperoncino
+cuisine: italienne
+origine: Naples
+type: entree
+resume: "Le plat de pâtes le plus simple d'Italie : de l'ail doré dans l'huile d'olive, du piment, du persil, et l'eau de cuisson qui lie le tout. Dix minutes, en petite portion avant un secondo."
+portions:
+  base: 4
+
+ingredients:
+  - items:
+      - { nom: Spaghetti, qte: 280, unite: g, rayon: epicerie, note: "70 g par personne en entrée ; 100 g en plat" }
+      - { nom: Ail, qte: 3, unite: gousse }
+      - { nom: Huile d'olive vierge extra, qte: 6, unite: cs, cle: huile, note: "une bonne, elle fait le goût" }
+      - { nom: Piment séché, qte: 1, rayon: epicerie, note: "ou une pincée de flocons, selon le goût" }
+      - { nom: Persil plat, qte: 0.5, unite: bouquet }
+      - { nom: Chapelure, qte: 3, unite: cs, mode: chef, optionnel: true, note: "pour la mollica tostata" }
+      - { nom: Gros sel }
+
+simple:
+  temps: { preparation: 5, cuisson: 12 }
+  etapes:
+    - "Mettre une grande casserole d'eau à bouillir. Éplucher l'ail et le couper en fines lamelles ; hacher le persil."
+    - "Saler l'eau et y cuire les spaghetti 1 min de moins que le temps du paquet."
+    - texte: "Pendant ce temps, mettre {huile} d'huile et l'ail dans une grande poêle froide et chauffer à feu doux, jusqu'à ce que l'ail soit à peine blond. Ajouter le piment émietté et couper le feu."
+      minuteur: 240
+    - texte: "Égoutter les pâtes en gardant une tasse d'eau de cuisson. Les verser dans la poêle avec une petite louche d'eau, remettre à feu vif et mélanger vivement jusqu'à ce que l'huile et l'eau forment une sauce qui enrobe les spaghetti."
+      minuteur: 60
+    - "Ajouter le persil, mélanger et servir aussitôt."
+  astuces:
+    - "L'ail ne doit pas brunir : brûlé, il devient amer et gâche tout. Au premier doré, on coupe le feu."
+
+chef:
+  temps: { preparation: 5, cuisson: 12 }
+  etapes:
+    - titre: La mise en place
+      texte: "Mettre l'eau à bouillir, un peu moins salée que d'habitude. Couper l'ail en lamelles très fines et régulières pour qu'il dore d'un coup ; hacher finement le persil."
+    - titre: La mollica tostata
+      texte: "Facultatif : dorer la chapelure à sec ou avec un filet d'huile dans une petite poêle, en remuant sans arrêt, jusqu'à ce qu'elle soit blonde et sente la noisette. Réserver : c'est le « parmesan du pauvre » du Sud."
+      minuteur: 120
+    - titre: Les pâtes
+      texte: "Cuire les spaghetti 2 min de moins que le temps du paquet, en remuant de temps en temps."
+    - titre: L'huile à l'ail
+      texte: "Pendant ce temps, mettre {huile} d'huile et l'ail dans une sauteuse froide et chauffer très doucement : l'ail infuse l'huile avant de dorer. Au premier blond, ajouter le piment émietté et une louche d'eau de cuisson : ça stoppe la cuisson de l'ail et commence la sauce."
+      minuteur: 300
+    - titre: Lier
+      texte: "Égoutter les spaghetti à la pince directement dans la sauteuse. Finir la cuisson 2 min à feu vif en ajoutant de l'eau de cuisson petit à petit et en remuant sans arrêt, jusqu'à une sauce laiteuse et brillante qui nappe les pâtes."
+      minuteur: 120
+    - titre: Servir
+      texte: "Hors du feu, ajouter le persil et un filet d'huile crue. Servir en petites assiettes creuses chaudes, parsemé de mollica tostata."
+  astuces:
+    - "Pas de fromage : à Naples, il n'en faut pas. La mollica tostata apporte le croquant à sa place."
+    - "C'est l'amidon de l'eau de cuisson qui lie l'huile : sans elle, les pâtes sont grasses ; avec, elles sont nappées."
+
+servirAvec: [polpette-poivrons-aigre-doux]
+voirAussi: [pates-cacio-e-pepe, pates-amatriciana]
