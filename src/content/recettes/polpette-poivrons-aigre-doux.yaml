@@ -1,0 +1,116 @@
+titre: Polpette aux poivrons aigres-doux
+cuisine: italienne
+origine: Italie du Sud
+type: plat
+resume: "Des boulettes moelleuses au parmesan et au pecorino, dorées puis mijotées avec des poivrons fondants, des tomates cerises et une sauce aigre-douce au miel, relevée d'olives et de pignons. Le pain pour saucer est obligatoire."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Les polpette
+    items:
+      - { nom: Viande hachée, qte: 400, unite: g, note: "bœuf, ou moitié bœuf moitié porc" }
+      - { nom: Pain rassis, qte: 100, unite: g, note: "pain de campagne, la mie seulement" }
+      - { nom: Lait, qte: 5, unite: cl, cle: lait, note: "environ, juste de quoi imbiber le pain" }
+      - { nom: Parmesan, qte: 40, unite: g }
+      - { nom: Pecorino romano, qte: 40, unite: g, rayon: cremerie }
+      - { nom: Œuf, qte: 1 }
+      - { nom: Ail, qte: 0.5, unite: gousse }
+      - { nom: Persil plat, qte: 1, unite: bouquet, note: "une partie pour la farce, le reste pour finir" }
+      - { nom: Farine, note: pour enrober }
+      - { nom: Huile d'olive }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: Les poivrons aigres-doux
+    items:
+      - { nom: Poivron rouge, qte: 1 }
+      - { nom: Poivron jaune, qte: 1 }
+      - { nom: Oignon rouge, qte: 1 }
+      - { nom: Tomates cerises, qte: 150, unite: g }
+      - { nom: Vinaigre de vin blanc, qte: 3, unite: cl, cle: vinaigre }
+      - { nom: Miel, qte: 1, unite: cs, cle: miel, note: "toutes fleurs" }
+      - { nom: Olives taggiasche, qte: 50, unite: g, rayon: epicerie, note: "dénoyautées, ou des olives noires de Nice" }
+      - { nom: Pignons de pin, qte: 20, unite: g, rayon: epicerie }
+      - { nom: Thym, qte: 3, unite: brin }
+      - { nom: Basilic, qte: 8, unite: feuille }
+  - groupe: Pour servir
+    items:
+      - { nom: Pain de campagne, optionnel: true, note: "pour la scarpetta" }
+
+simple:
+  temps: { preparation: 25, cuisson: 60, attente: 20 }
+  etapes:
+    - texte: "Passer la mie de pain grossièrement au mixeur, la mettre dans un saladier, l'arroser de {lait} de lait et malaxer pour bien l'imbiber. Laisser 10 min."
+      minuteur: 600
+    - texte: "Si le pain est trop mouillé, le presser. Ajouter la viande, l'œuf, le parmesan et le pecorino râpés, une partie du persil haché, la demi-gousse d'ail écrasée, une pincée de sel et du poivre. Mélanger à la main jusqu'à obtenir une farce homogène, couvrir et laisser reposer 20 min au frais."
+      minuteur: 1200
+    - "Pendant ce temps, faire griller les pignons à sec dans une grande poêle antiadhésive jusqu'à ce qu'ils soient dorés, et les réserver. Émincer finement l'oignon, couper les poivrons en fines lanières et les tomates cerises en deux."
+    - "Former des boulettes de la taille d'une noix (une vingtaine), toutes de la même taille. Les rouler dans la farine juste pour les voiler, puis les secouer pour retirer l'excédent."
+    - texte: "Chauffer un filet d'huile dans la poêle et dorer les boulettes à feu doux sur toutes les faces, en les faisant rouler, 10 à 12 min. Les réserver sur une assiette."
+      minuteur: 660
+    - texte: "Dans la même poêle, faire revenir l'oignon 5 min (un peu d'huile seulement si nécessaire). Ajouter les poivrons, mélanger et laisser revenir 2 ou 3 min."
+      minuteur: 300
+    - texte: "Baisser le feu, couvrir et cuire 25 min à feu doux, jusqu'à ce que les poivrons soient tendres."
+      minuteur: 1500
+    - texte: "Retirer le couvercle, ajouter les tomates cerises et une pincée de sel. Cuire encore 10 min."
+      minuteur: 600
+    - texte: "Monter le feu, verser {vinaigre} de vinaigre et {miel} de miel, et laisser le vinaigre s'évaporer en remuant."
+      minuteur: 120
+    - texte: "Ajouter les olives et les boulettes, mélanger, couvrir et poursuivre 10 min."
+      minuteur: 600
+    - "Hors du feu, parsemer des pignons, du reste de persil, des feuilles de thym et du basilic. Servir avec du pain."
+  astuces:
+    - "Un pain de campagne rassis donne des boulettes moelleuses ; un pain de mie les rend caoutchouteuses."
+    - "Pas plus grosses qu'une noix : plus grosses, elles restent crues au centre."
+    - "Aussi bon tiède ou à température ambiante, et encore meilleur réchauffé le lendemain."
+
+chef:
+  temps: { preparation: 35, cuisson: 50, attente: 30 }
+  etapes:
+    - titre: La panade
+      texte: "Retirer la croûte du pain, passer la mie grossièrement au mixeur, l'arroser de {lait} de lait et malaxer. Laisser 10 min, puis presser pour qu'elle soit humide sans goutter."
+      minuteur: 600
+    - titre: La farce
+      texte: "Mélanger la viande, la panade, l'œuf, le parmesan et le pecorino râpés finement, une partie du persil haché, l'ail réduit en purée et du poivre. Saler peu : le pecorino l'est déjà. Poêler une noisette de farce pour goûter et rectifier, puis couvrir et laisser 30 min au frais."
+      minuteur: 1800
+    - titre: Les poivrons pelés
+      texte: "Pendant le repos, mettre les poivrons entiers sous le gril du four, sur la plaque haute, 20 à 25 min en les retournant, jusqu'à ce que la peau soit cloquée et noircie par endroits. Les enfermer 10 min dans un saladier couvert, puis les peler, les épépiner et les couper en lanières."
+      minuteur: 1200
+    - titre: Les pignons
+      texte: "Torréfier les pignons à sec dans la grande poêle, en remuant sans cesse, jusqu'à ce qu'ils soient blonds. Les réserver."
+    - titre: Les polpette
+      texte: "Façonner une vingtaine de boulettes de la taille d'une noix, les mains humides pour qu'elles soient bien lisses. Les voiler de farine, secouer l'excédent, puis les dorer à feu doux-moyen dans un filet d'huile en les faisant rouler, 10 à 12 min, jusqu'à une croûte bien dorée. Réserver."
+      minuteur: 660
+    - titre: La base
+      texte: "Dans la même poêle, faire fondre l'oignon émincé avec le thym 5 min, en grattant les sucs des boulettes. Ajouter les lanières de poivron et les tomates cerises coupées en deux, saler, et cuire 8 à 10 min, jusqu'à ce que les tomates s'affaissent."
+      minuteur: 540
+    - titre: L'aigre-doux
+      texte: "Écarter les légumes pour dégager le centre de la poêle, y verser {miel} de miel et le laisser mousser et blondir 1 min. Déglacer avec {vinaigre} de vinaigre, puis mélanger le tout en laissant réduire 1 min à feu vif."
+      minuteur: 120
+    - titre: Mijoter
+      texte: "Remettre les boulettes et les olives, couvrir et mijoter 10 min à feu doux. La sauce doit napper les boulettes d'un voile brillant : si elle attache, ajouter quelques cuillères d'eau. Goûter et rééquilibrer avec une goutte de vinaigre ou une pointe de miel."
+      minuteur: 600
+    - titre: Finir
+      texte: "Retirer les branches de thym, parsemer des pignons, du persil haché et du basilic déchiré à la main, et finir d'un filet d'huile d'olive crue. Servir avec du pain pour la scarpetta."
+  astuces:
+    - "Peler les poivrons change tout : ils deviennent soyeux et fondants, et la sauce n'a plus de peaux qui s'enroulent."
+    - "Le thym cuit avec les légumes ; le persil et le basilic, qui craignent la chaleur, vont à la toute fin."
+    - "Caraméliser légèrement le miel avant le vinaigre donne un aigre-doux plus profond qu'un simple mélange des deux."
+
+notes:
+  - titre: L'agrodolce
+    texte: "L'aigre-doux est une signature de la cuisine sicilienne, héritée de la présence arabe. Pour une version plus sicilienne, ajouter une poignée de raisins secs réhydratés et une cuillère de câpres en même temps que les olives."
+  - titre: D'où vient la recette
+    texte: "De Piovono Ricette (Isabella De Simone), vue en reel sur Instagram : la première recette cuisinée dans sa nouvelle cuisine."
+
+sources:
+  - titre: "Polpette con peperoni in agrodolce, Piovono Ricette (blog GialloZafferano)"
+    url: https://blog.giallozafferano.it/piovonoricette/ricetta-polpette-con-peperoni-in-agrodolce/
+  - titre: "Le reel de Piovono Ricette (Instagram)"
+    url: https://www.instagram.com/reel/Dc0hm4sKB7_/
+
+voirAussi: [salsiccia-e-patate]
+
+assiette:
+  - role: feculent
+    choix: [puree-maison, riz-blanc]
