@@ -58,6 +58,17 @@ chef:
     - "Le citron aussi va hors du feu : s'il bout dans la crème, elle risque de trancher et il perd son goût. Doser léger, le vin et la moutarde apportent déjà de l'acidité."
     - "Variantes pour le déglaçage : un trait de cognac flambé pour une sauce plus ronde, ou une bière blonde belge pour une note douce et légèrement amère."
 
+notes:
+  - titre: Variante aux pâtes
+    texte: |
+      Pour 4, compter 400 g de pâtes (penne, tagliatelles ou fusilli). Les pâtes boivent la sauce, alors on l'augmente d'environ moitié :
+      - Vin blanc : 15 cl au lieu de 10
+      - Crème : 40 cl au lieu de 25
+      - Moutarde : 3 cs de Dijon et 1 ½ cs à l'ancienne
+      - Échalotes : 3, plus 2 gousses d'ail ajoutées 30 s avant le déglaçage
+
+      Couper le poulet en dés. Cuire les pâtes dans l'eau bien salée et garder une louche d'eau de cuisson avant d'égoutter. Mélanger les pâtes dans la sauce avec le poulet, détendre avec l'eau de cuisson si besoin, puis servir avec persil ou ciboulette et 40 g de parmesan râpé si on aime. Des champignons de Paris poêlés avec les échalotes vont très bien avec.
+
 assiette:
   - role: feculent
     choix: [riz-blanc, puree-maison, frites-maison, frites-au-four]
