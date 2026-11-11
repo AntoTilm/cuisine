@@ -1,0 +1,78 @@
+titre: Poulet sauté au hoisin
+cuisine: asiatique
+origine: Chine
+type: plat
+resume: Lanières de cuisse de poulet saisies au wok et laquées d'une sauce où le hoisin domine, prêtes en 15 minutes.
+portions:
+  base: 2
+
+ingredients:
+  - groupe: La marinade du poulet
+    items:
+      - { nom: Cuisses de poulet désossées, qte: 400, unite: g }
+      - { nom: Sauce soja, qte: 15, unite: g }
+      - { nom: Fécule de maïs, qte: 4, unite: g }
+  - groupe: La sauce
+    items:
+      - { nom: Sauce hoisin, qte: 70, unite: g, cle: hoisin }
+      - { nom: Sauce soja, qte: 15, unite: g }
+      - { nom: Vinaigre de riz, qte: 15, unite: g }
+      - { nom: Eau, qte: 45, unite: g }
+  - groupe: Les aromates et la cuisson
+    items:
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Gingembre frais, qte: 10, unite: g }
+      - { nom: Poivron rouge, qte: 1 }
+      - { nom: Oignon vert, qte: 3 }
+      - { nom: Huile neutre, qte: 15, unite: g }
+      - { nom: Huile de sésame, qte: 5, unite: g }
+      - { nom: Graines de sésame, qte: 3, unite: g, optionnel: true }
+  - groupe: Pour servir
+    mode: chef
+    items:
+      - { nom: Sauce hoisin, qte: 15, unite: g, cle: hoisinCru, note: "crue, au service" }
+
+simple:
+  temps: { preparation: 10, cuisson: 8 }
+  etapes:
+    - "Couper le poulet en lanières et le mélanger avec la sauce soja et la fécule de la marinade."
+    - "Mélanger les ingrédients de la sauce dans un bol. Hacher l'ail, râper le gingembre, couper le poivron en lanières et émincer l'oignon vert."
+    - texte: "Chauffer l'huile neutre dans un wok à feu vif. Saisir le poulet sans le remuer pendant la première minute, puis le faire sauter jusqu'à ce qu'il soit doré."
+      minuteur: 300
+    - texte: "Ajouter le poivron, l'ail et le gingembre, et faire sauter."
+      minuteur: 90
+    - texte: "Verser la sauce et la laisser réduire à feu vif en remuant, jusqu'à ce qu'elle nappe et brille."
+      minuteur: 60
+    - "Hors du feu, ajouter l'huile de sésame, l'oignon vert et les graines de sésame. Servir avec du riz blanc."
+  astuces:
+    - "Le vinaigre coupe le sucre du hoisin : ne pas le supprimer."
+    - "Fonctionne aussi avec du bœuf (rumsteck) ou de l'échine de porc en lanières."
+
+chef:
+  temps: { preparation: 15, cuisson: 10 }
+  etapes:
+    - titre: Mariner
+      texte: "Couper le poulet en lanières de 1 cm. Le mélanger avec la sauce soja, puis la fécule, et laisser reposer pendant la préparation du reste."
+    - titre: Préparer
+      texte: "Mélanger la sauce soja, le vinaigre de riz et l'eau de la sauce, sans le hoisin. Hacher l'ail, râper le gingembre, couper le poivron en lanières et séparer le blanc et le vert de l'oignon vert."
+    - titre: Saisir
+      texte: "Chauffer le wok jusqu'à ce qu'il fume. Saisir le poulet en deux fois dans l'huile neutre, sans le remuer pendant la première minute, jusqu'à ce qu'il soit bien doré. Retirer et réserver."
+      minuteur: 240
+    - texte: "Faire sauter le poivron 1 min à feu vif, puis ajouter l'ail, le gingembre et le blanc d'oignon vert pendant 30 secondes."
+      minuteur: 90
+    - titre: Torréfier le hoisin
+      texte: "Pousser les légumes sur le côté et verser {hoisin} de hoisin directement sur le métal chaud. Le laisser grésiller 20 à 30 secondes : il caramélise et prend un goût plus profond."
+    - titre: Laquer
+      texte: "Remettre le poulet, verser le mélange soja-vinaigre-eau et faire réduire à feu vif en remuant, jusqu'à ce que la sauce nappe et brille."
+      minuteur: 60
+    - texte: "Hors du feu, ajouter l'huile de sésame et le vert d'oignon vert. Parsemer de graines de sésame et servir avec {hoisinCru} de hoisin cru à part, pour retrouver son goût franc."
+  astuces:
+    - "Le hoisin perd une partie de son arôme en cuisant : la touche crue au service est ce qui le fait vraiment ressortir."
+    - "La cuisse reste juteuse même si la cuisson va un peu trop loin, contrairement au blanc."
+
+assiette:
+  - role: feculent
+    choix: [riz-blanc, riz-cantonais]
+    defaut: [riz-blanc]
+  - role: legume
+    choix: [legumes-sautes-wok, salade-concombre-wakame]
