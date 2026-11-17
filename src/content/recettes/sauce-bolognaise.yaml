@@ -32,7 +32,7 @@ ingredients:
       - { nom: Céleri, qte: 2, unite: branche }
       - { nom: Vin rouge, qte: 25, unite: cl }
       - { nom: Lait entier, qte: 15, unite: cl }
-      - { nom: Croûte de parmesan, qte: 1, optionnel: true }
+      - { nom: Croûte de parmesan, qte: 1, optionnel: true, note: le bord dur du morceau de parmesan }
 
 simple:
   temps: { preparation: 20, cuisson: 75 }
@@ -62,5 +62,6 @@ chef:
       minuteur: 10800
     - texte: "Retirer le laurier et la croûte de parmesan, puis rectifier le sel et le poivre en fin de cuisson."
   astuces:
+    - "La croûte de parmesan, c'est le bord dur et jaune-brun d'un morceau de Parmigiano-Reggiano, trop dur pour être mangé. Elle est naturelle (sans cire) : en mijotant, elle ramollit et donne à la sauce de la profondeur et un goût salé. Un morceau de 5 à 10 cm suffit. Garde les croûtes au congélateur au lieu de les jeter. Sans croûte, tu peux t'en passer ou ajouter un peu de parmesan râpé à la fin. Comme elle sale la sauce, goûte avant de rectifier le sel."
     - "Sauter les champignons à part et à feu vif : avec la viande, ils rendent leur eau et l'empêchent de colorer."
     - "À Bologne, la sauce se sert avec des tagliatelles fraîches plutôt qu'avec des spaghettis."
