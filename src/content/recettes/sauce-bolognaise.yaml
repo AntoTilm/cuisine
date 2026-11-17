@@ -35,32 +35,54 @@ ingredients:
       - { nom: Croûte de parmesan, qte: 1, optionnel: true, note: le bord dur du morceau de parmesan }
 
 simple:
-  temps: { preparation: 20, cuisson: 75 }
+  temps: { preparation: 20, cuisson: 85 }
   etapes:
-    - "Émincer les oignons et l'ail, les faire revenir dans l'huile d'olive au fond d'une grande marmite, sans laisser brunir l'ail (il deviendrait amer). Ajouter la viande et la laisser cuire en l'émiettant."
-    - "Ajouter les champignons émincés et cuire 5 min, jusqu'à ce qu'ils aient rendu leur eau."
-    - "Verser les tomates pelées et les écraser grossièrement, avec un presse-purée par exemple. Cuire 5 min."
-    - "Ajouter le concentré de tomate et le coulis, puis l'eau, le laurier, le thym, le sel, le poivre et le piment."
-    - texte: "Laisser mijoter sans couvrir au moins 1 h, idéalement 2 h, en mélangeant de temps en temps."
+    - "Hacher finement l'ail et émincer les oignons. Écraser grossièrement les tomates pelées dans leur jus, avec un presse-purée par exemple."
+    - texte: "Chauffer l'huile d'olive à feu moyen dans une grande marmite. Faire revenir les oignons et l'ail 5 min en remuant souvent, jusqu'à ce que les oignons soient translucides. Ne pas laisser brunir l'ail : il deviendrait amer."
+      minuteur: 300
+    - texte: "Monter à feu vif et ajouter la viande. La laisser 3 min sans y toucher pour qu'elle colore dessous."
+      minuteur: 180
+    - texte: "Émietter la viande à la spatule et la cuire encore 5 à 8 min en remuant, jusqu'à ce qu'il ne reste plus de morceaux roses."
+      minuteur: 420
+    - texte: "Ajouter les champignons émincés et cuire 5 min en remuant, jusqu'à ce qu'ils aient rendu leur eau."
+      minuteur: 300
+    - texte: "Verser les tomates écrasées et cuire 5 min."
+      minuteur: 300
+    - "Ajouter le concentré de tomate et le coulis, puis l'eau, le laurier, le thym, le piment, du sel et du poivre. Mélanger et porter à petits frémissements (de petites bulles en surface)."
+    - texte: "Baisser à feu doux et laisser mijoter sans couvrir au moins 1 h, idéalement 2 h. Remuer toutes les 15 à 20 min en raclant bien le fond pour que ça n'attache pas."
       minuteur: 3600
+    - "Retirer les feuilles de laurier, goûter et rectifier le sel, le poivre et la sauce piquante."
   astuces:
     - "Se congèle très bien en portions : c'est une sauce à préparer en grande quantité."
 
 chef:
-  temps: { preparation: 40, cuisson: 200 }
+  temps: { preparation: 40, cuisson: 225 }
   etapes:
+    - titre: La mise en place
+      texte: "Hacher finement l'ail. Tailler les oignons, les carottes et le céleri en tout petits dés (brunoise). Émincer les champignons. Écraser grossièrement les tomates pelées dans leur jus."
     - titre: Le soffritto
-      texte: "Hacher finement l'ail. Tailler les oignons, les carottes et le céleri en tout petits dés (brunoise). Faire suer le tout 10 min à feu doux dans l'huile d'olive, sans coloration : l'ail qui colore devient amer."
+      texte: "Chauffer 2 cs d'huile d'olive à feu moyen-doux dans une grande marmite. Ajouter l'ail, les oignons, les carottes, le céleri et une pincée de sel. Faire suer 10 min en remuant toutes les 2 à 3 min : les légumes doivent devenir tendres et translucides, sans colorer. L'ail qui colore devient amer."
+      minuteur: 600
+    - texte: "Verser le soffritto dans un bol et le réserver. Ne pas laver la marmite."
     - titre: La viande
-      texte: "Pousser les légumes sur le côté, monter le feu et faire colorer la viande en plusieurs fois. Ne pas remuer pendant 2 min : la croûte qui se forme au fond de la marmite donne le goût."
+      texte: "Monter à feu vif. Mettre la viande en plusieurs fournées, en une seule couche sans la tasser : si la marmite est trop pleine, la viande rend son eau et bout au lieu de dorer."
+    - texte: "Laisser chaque fournée 3 min sans y toucher, jusqu'à ce qu'une croûte brune se forme dessous. C'est elle qui donne le goût."
+      minuteur: 180
+    - texte: "Émietter la viande à la spatule, la retourner et la cuire encore 2 min. Réserver dans le bol avec le soffritto, puis recommencer avec la fournée suivante."
+      minuteur: 120
+    - texte: "Remettre toute la viande et le soffritto dans la marmite et mélanger."
     - titre: Le mouillage
-      texte: "Verser le vin rouge et gratter les sucs. Laisser réduire presque à sec."
-    - texte: "Verser le lait et laisser réduire de moitié : il attendrit la viande et adoucit l'acidité de la tomate."
-    - texte: "Dans une poêle à part, sauter les champignons émincés 5 min à feu vif, puis les ajouter à la marmite avec les tomates pelées écrasées, le concentré, le coulis, l'eau, le laurier, le thym, le piment et la croûte de parmesan."
+      texte: "Verser le vin rouge et gratter le fond avec une cuillère en bois pour décoller les sucs. Laisser bouillir à feu vif 5 min environ, jusqu'à ce qu'il ne reste presque plus de liquide au fond."
+      minuteur: 300
+    - texte: "Verser le lait, baisser à feu moyen et laisser frémir environ 10 min en remuant de temps en temps, jusqu'à ce qu'il ait réduit de moitié. Il attendrit la viande et adoucit l'acidité de la tomate."
+      minuteur: 600
+    - texte: "Pendant que le lait réduit, chauffer la dernière cs d'huile à feu vif dans une poêle. Étaler les champignons, les laisser 2 min sans y toucher, puis les sauter 3 min jusqu'à ce qu'ils soient dorés."
+      minuteur: 300
+    - texte: "Ajouter dans la marmite les champignons, les tomates écrasées, le concentré, le coulis, l'eau, le laurier, le thym, le piment et la croûte de parmesan. Mélanger et porter à petits frémissements (de petites bulles en surface)."
     - titre: Le mijotage
-      texte: "Laisser mijoter 3 h à feu très doux, couvercle entrouvert, en remuant de temps en temps. Ajouter un peu d'eau si la sauce attache."
+      texte: "Baisser à feu très doux, couvercle entrouvert, et laisser mijoter 3 h. Remuer toutes les 20 à 30 min en raclant bien le fond. Si la sauce épaissit trop ou attache, ajouter un peu d'eau."
       minuteur: 10800
-    - texte: "Retirer le laurier et la croûte de parmesan, puis rectifier le sel et le poivre en fin de cuisson."
+    - texte: "Retirer le laurier et la croûte de parmesan. Goûter, puis rectifier le sel, le poivre et la sauce piquante."
   astuces:
     - "La croûte de parmesan, c'est le bord dur et jaune-brun d'un morceau de Parmigiano-Reggiano, trop dur pour être mangé. Elle est naturelle (sans cire) : en mijotant, elle ramollit et donne à la sauce de la profondeur et un goût salé. Un morceau de 5 à 10 cm suffit. Garde les croûtes au congélateur au lieu de les jeter. Sans croûte, tu peux t'en passer ou ajouter un peu de parmesan râpé à la fin. Comme elle sale la sauce, goûte avant de rectifier le sel."
     - "Sauter les champignons à part et à feu vif : avec la viande, ils rendent leur eau et l'empêchent de colorer."
