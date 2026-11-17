@@ -12,7 +12,7 @@ ingredients:
     items:
       - { nom: Viande hachée bœuf et porc, qte: 1, unite: kg }
       - { nom: Oignon, qte: 2 }
-      - { nom: Ail, qte: 3, unite: gousse }
+      - { nom: Ail, qte: 2, unite: gousse }
       - { nom: Tomates pelées en boîte, qte: 1, unite: kg, note: ou tomates fraîches }
       - { nom: Coulis de tomate, qte: 1, unite: l }
       - { nom: Concentré de tomate, qte: 150, unite: g }
