@@ -14,10 +14,10 @@ ingredients:
       - { nom: Fécule de maïs, qte: 4, unite: g }
   - groupe: La sauce
     items:
-      - { nom: Sauce hoisin, qte: 70, unite: g, cle: hoisin }
-      - { nom: Sauce soja, qte: 15, unite: g }
-      - { nom: Vinaigre de riz, qte: 15, unite: g }
-      - { nom: Eau, qte: 45, unite: g }
+      - { nom: Sauce hoisin, qte: 90, unite: g, cle: hoisin }
+      - { nom: Sauce soja, qte: 10, unite: g }
+      - { nom: Eau, qte: 30, unite: g }
+      - { nom: Cinq-épices, qte: 0.5, unite: g, optionnel: true }
   - groupe: Les aromates et la cuisson
     items:
       - { nom: Ail, qte: 2, unite: gousse }
@@ -27,10 +27,9 @@ ingredients:
       - { nom: Huile neutre, qte: 15, unite: g }
       - { nom: Huile de sésame, qte: 5, unite: g }
       - { nom: Graines de sésame, qte: 3, unite: g, optionnel: true }
-  - groupe: Pour servir
-    mode: chef
+  - groupe: Pour finir
     items:
-      - { nom: Sauce hoisin, qte: 15, unite: g, cle: hoisinCru, note: "crue, au service" }
+      - { nom: Sauce hoisin, qte: 20, unite: g, cle: hoisincru, note: "crue, hors du feu" }
 
 simple:
   temps: { preparation: 10, cuisson: 8 }
@@ -41,12 +40,13 @@ simple:
       minuteur: 300
     - texte: "Ajouter le poivron, l'ail et le gingembre, et faire sauter."
       minuteur: 90
-    - texte: "Verser la sauce et la laisser réduire à feu vif en remuant, jusqu'à ce qu'elle nappe et brille."
-      minuteur: 60
-    - "Hors du feu, ajouter l'huile de sésame, l'oignon vert et les graines de sésame. Servir avec du riz blanc."
+    - texte: "Verser la sauce et la laisser réduire à feu vif en remuant, juste le temps qu'elle nappe : pas plus, sinon le sucre prend le dessus."
+      minuteur: 45
+    - "Hors du feu, ajouter {hoisincru} de hoisin cru, l'huile de sésame, l'oignon vert et les graines de sésame, et mélanger. Servir avec du riz blanc."
   astuces:
-    - "Le vinaigre coupe le sucre du hoisin : ne pas le supprimer."
-    - "Fonctionne aussi avec du bœuf (rumsteck) ou de l'échine de porc en lanières."
+    - "Le hoisin cru ajouté hors du feu donne le goût franc de la sauce ; celui qui cuit apporte la laque et le caramel."
+    - "Pas de vinaigre : il tirait la sauce vers l'aigre-doux et masquait le hoisin."
+    - "Fonctionne aussi avec de l'échine de porc ou du filet pur en lanières de 5 mm (2 à 3 min de cuisson pour le filet, qui sèche vite)."
 
 chef:
   temps: { preparation: 15, cuisson: 10 }
@@ -54,20 +54,21 @@ chef:
     - titre: Mariner
       texte: "Couper le poulet en lanières de 1 cm. Le mélanger avec la sauce soja, puis la fécule, et laisser reposer pendant la préparation du reste."
     - titre: Préparer
-      texte: "Mélanger la sauce soja, le vinaigre de riz et l'eau de la sauce, sans le hoisin. Hacher l'ail, râper le gingembre, couper le poivron en lanières et séparer le blanc et le vert de l'oignon vert."
+      texte: "Mélanger la sauce soja, l'eau et le cinq-épices de la sauce, sans le hoisin. Hacher l'ail, râper le gingembre, couper le poivron en lanières et séparer le blanc et le vert de l'oignon vert."
     - titre: Saisir
       texte: "Chauffer le wok jusqu'à ce qu'il fume. Saisir le poulet en deux fois dans l'huile neutre, sans le remuer pendant la première minute, jusqu'à ce qu'il soit bien doré. Retirer et réserver."
       minuteur: 240
     - texte: "Faire sauter le poivron 1 min à feu vif, puis ajouter l'ail, le gingembre et le blanc d'oignon vert pendant 30 secondes."
       minuteur: 90
     - titre: Torréfier le hoisin
-      texte: "Pousser les légumes sur le côté et verser {hoisin} de hoisin directement sur le métal chaud. Le laisser grésiller 20 à 30 secondes : il caramélise et prend un goût plus profond."
+      texte: "Baisser à feu moyen, pousser les légumes sur le côté et verser {hoisin} de hoisin sur le métal chaud. Le laisser grésiller 15 à 20 secondes, sans le laisser noircir : il prend un goût plus profond."
     - titre: Laquer
-      texte: "Remettre le poulet, verser le mélange soja-vinaigre-eau et faire réduire à feu vif en remuant, jusqu'à ce que la sauce nappe et brille."
-      minuteur: 60
-    - texte: "Hors du feu, ajouter l'huile de sésame et le vert d'oignon vert. Parsemer de graines de sésame et servir avec {hoisinCru} de hoisin cru à part, pour retrouver son goût franc."
+      texte: "Remettre le poulet, verser le mélange soja-eau et remuer à feu vif juste le temps que la sauce nappe et brille."
+      minuteur: 45
+    - texte: "Hors du feu, ajouter {hoisincru} de hoisin cru, l'huile de sésame et le vert d'oignon vert. Parsemer de graines de sésame et servir aussitôt."
   astuces:
-    - "Le hoisin perd une partie de son arôme en cuisant : la touche crue au service est ce qui le fait vraiment ressortir."
+    - "Le hoisin perd une partie de son arôme en cuisant : la touche crue hors du feu est ce qui le fait vraiment ressortir."
+    - "Une pincée de cinq-épices renforce les notes épicées propres au hoisin sans ajouter de sucre."
     - "La cuisse reste juteuse même si la cuisson va un peu trop loin, contrairement au blanc."
 
 assiette:
