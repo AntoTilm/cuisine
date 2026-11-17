@@ -12,7 +12,7 @@ ingredients:
     items:
       - { nom: Viande hachée bœuf et porc, qte: 1, unite: kg }
       - { nom: Oignon, qte: 2 }
-      - { nom: Ail, qte: 1, unite: gousse }
+      - { nom: Ail, qte: 3, unite: gousse }
       - { nom: Tomates pelées en boîte, qte: 1, unite: kg, note: ou tomates fraîches }
       - { nom: Coulis de tomate, qte: 1, unite: l }
       - { nom: Concentré de tomate, qte: 150, unite: g }
@@ -53,6 +53,7 @@ simple:
       minuteur: 3600
     - "Retirer les feuilles de laurier, goûter et rectifier le sel, le poivre et la sauce piquante."
   astuces:
+    - "Saler franchement : avec autant de tomate, une sauce pas assez salée paraît plate et acide. Goûter après 1 h de mijotage et rectifier. Un bouillon cube peut remplacer une partie du sel (ce n'est pas traditionnel) ; dans ce cas, saler moins."
     - "Se congèle très bien en portions : c'est une sauce à préparer en grande quantité."
 
 chef:
