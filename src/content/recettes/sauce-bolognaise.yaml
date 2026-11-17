@@ -21,6 +21,7 @@ ingredients:
       - { nom: Thym séché, qte: 1, unite: cc }
       - { nom: Laurier, qte: 2, unite: feuille }
       - { nom: Eau, qte: 250, unite: ml, note: un grand verre }
+      - { nom: Bouillon cube, qte: 1, note: bœuf ou légumes }
       - { nom: Huile d'olive, qte: 3, unite: cs }
       - { nom: Sauce piquante, optionnel: true }
       - { nom: Sel }
@@ -48,12 +49,12 @@ simple:
       minuteur: 300
     - texte: "Verser les tomates écrasées et cuire 5 min."
       minuteur: 300
-    - "Ajouter le concentré de tomate et le coulis, puis l'eau, le laurier, le thym, le piment, du sel et du poivre. Mélanger et porter à petits frémissements (de petites bulles en surface)."
+    - "Ajouter le concentré de tomate et le coulis, puis l'eau, le bouillon cube émietté, le laurier, le thym, le piment et du poivre. Ne pas saler à ce stade : le bouillon sale déjà. Mélanger et porter à petits frémissements (de petites bulles en surface)."
     - texte: "Baisser à feu doux et laisser mijoter sans couvrir au moins 1 h, idéalement 2 h. Remuer toutes les 15 à 20 min en raclant bien le fond pour que ça n'attache pas."
       minuteur: 3600
     - "Retirer les feuilles de laurier, goûter et rectifier le sel, le poivre et la sauce piquante."
   astuces:
-    - "Saler franchement : avec autant de tomate, une sauce pas assez salée paraît plate et acide. Goûter après 1 h de mijotage et rectifier. Un bouillon cube peut remplacer une partie du sel (ce n'est pas traditionnel) ; dans ce cas, saler moins."
+    - "La sauce doit être franchement salée : avec autant de tomate, une sauce pas assez salée paraît plate et acide. Le bouillon cube apporte le sel et du goût. Goûter après 1 h de mijotage et ajouter du sel si besoin."
     - "Se congèle très bien en portions : c'est une sauce à préparer en grande quantité."
 
 chef:
@@ -79,7 +80,7 @@ chef:
       minuteur: 600
     - texte: "Pendant que le lait réduit, chauffer la dernière cs d'huile à feu vif dans une poêle. Étaler les champignons, les laisser 2 min sans y toucher, puis les sauter 3 min jusqu'à ce qu'ils soient dorés."
       minuteur: 300
-    - texte: "Ajouter dans la marmite les champignons, les tomates écrasées, le concentré, le coulis, l'eau, le laurier, le thym, le piment et la croûte de parmesan. Mélanger et porter à petits frémissements (de petites bulles en surface)."
+    - texte: "Ajouter dans la marmite les champignons, les tomates écrasées, le concentré, le coulis, l'eau, le bouillon cube émietté, le laurier, le thym, le piment et la croûte de parmesan. Ne pas saler à ce stade : le bouillon et le parmesan salent déjà. Mélanger et porter à petits frémissements (de petites bulles en surface)."
     - titre: Le mijotage
       texte: "Baisser à feu très doux, couvercle entrouvert, et laisser mijoter 3 h. Remuer toutes les 20 à 30 min en raclant bien le fond. Si la sauce épaissit trop ou attache, ajouter un peu d'eau."
       minuteur: 10800
