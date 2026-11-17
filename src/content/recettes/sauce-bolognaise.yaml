@@ -37,7 +37,7 @@ ingredients:
 simple:
   temps: { preparation: 20, cuisson: 75 }
   etapes:
-    - "Émincer les oignons et l'ail, les faire revenir dans l'huile d'olive au fond d'une grande marmite. Ajouter la viande et la laisser cuire en l'émiettant."
+    - "Émincer les oignons et l'ail, les faire revenir dans l'huile d'olive au fond d'une grande marmite, sans laisser brunir l'ail (il deviendrait amer). Ajouter la viande et la laisser cuire en l'émiettant."
     - "Ajouter les champignons émincés et cuire 5 min, jusqu'à ce qu'ils aient rendu leur eau."
     - "Verser les tomates pelées et les écraser grossièrement, avec un presse-purée par exemple. Cuire 5 min."
     - "Ajouter le concentré de tomate et le coulis, puis l'eau, le laurier, le thym, le sel, le poivre et le piment."
@@ -50,7 +50,7 @@ chef:
   temps: { preparation: 40, cuisson: 200 }
   etapes:
     - titre: Le soffritto
-      texte: "Tailler les oignons, les carottes et le céleri en tout petits dés (brunoise). Les faire suer 10 min à feu doux dans l'huile d'olive avec l'ail, sans coloration."
+      texte: "Hacher finement l'ail. Tailler les oignons, les carottes et le céleri en tout petits dés (brunoise). Faire suer le tout 10 min à feu doux dans l'huile d'olive, sans coloration : l'ail qui colore devient amer."
     - titre: La viande
       texte: "Pousser les légumes sur le côté, monter le feu et faire colorer la viande en plusieurs fois. Ne pas remuer pendant 2 min : la croûte qui se forme au fond de la marmite donne le goût."
     - titre: Le mouillage
