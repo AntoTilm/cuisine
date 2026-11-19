@@ -33,7 +33,7 @@ ingredients:
       - { nom: Laitue iceberg, qte: 0.25, mode: simple, note: en lanières }
       - { nom: Tomate, qte: 2, note: en petits dés }
       - { nom: Cheddar, qte: 100, unite: g, mode: simple, note: râpé }
-      - { nom: Crème aigre, qte: 150, unite: g }
+      - { nom: Crème aigre, qte: 150, unite: g, note: "sour cream ; sinon crème fraîche épaisse + un filet de citron vert et une pincée de sel" }
       - { nom: Oignon rouge, qte: 1 }
       - { nom: Coriandre fraîche, qte: 1, unite: bouquet }
       - { nom: Citron vert, qte: 1.5, note: en quartiers }
