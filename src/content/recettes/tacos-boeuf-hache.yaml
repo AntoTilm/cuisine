@@ -2,7 +2,7 @@ titre: Tacos au bœuf haché juteux
 cuisine: americaine
 origine: Tex-Mex
 type: plat
-resume: Bœuf haché bien saisi, concentré de tomate torréfié et une sauce courte qui nappe chaque grain de viande, juteux et brillant.
+resume: Bœuf haché épicé et juteux, un peu de fromage fondu pour arrondir et une seule touche acide : des tacos équilibrés.
 portions:
   base: 4
 
@@ -13,6 +13,7 @@ ingredients:
       - { nom: Oignon, qte: 1 }
       - { nom: Ail, qte: 2, unite: gousse }
       - { nom: Concentré de tomate, qte: 2, unite: cs, cle: concentre }
+      - { nom: Sucre, qte: 0.5, unite: cc, note: "arrondit l'acidité du concentré" }
       - { nom: Eau, qte: 150, unite: ml, cle: eau, mode: simple }
       - { nom: Fécule de maïs, qte: 1, unite: cc, mode: simple, note: "Maïzena" }
       - { nom: Glaçons de bouillon de volaille, qte: 150, unite: ml, cle: bouillon, mode: chef, maison: true, optionnel: true, note: "4 à 5 glaçons du congélateur ; sinon 150 ml d'eau + 1 cc de Maïzena" }
@@ -21,67 +22,76 @@ ingredients:
       - { nom: Origan séché, qte: 1, unite: cc }
       - { nom: Piment en poudre, qte: 0.5, unite: cc }
       - { nom: Ail en poudre, qte: 0.5, unite: cc, mode: simple, rayon: epicerie }
-      - { nom: Chipotle en adobo, qte: 1, mode: chef, optionnel: true, rayon: epicerie, note: "1 piment haché + 1 cs de sauce" }
+      - { nom: Chipotle en adobo, qte: 1, mode: chef, optionnel: true, rayon: epicerie, note: "1 piment haché, sans la sauce" }
       - { nom: Huile de tournesol, qte: 1, unite: cs }
-      - { nom: Citron vert, qte: 0.5, note: pour le jus }
       - { nom: Sel }
       - { nom: Poivre }
   - groupe: Pour garnir
     items:
       - { nom: Tortillas de blé, qte: 12, mode: simple, rayon: epicerie, note: "petites, 15 cm" }
       - { nom: Tortillas de maïs, qte: 12, mode: chef, rayon: epicerie, note: "petites, 15 cm" }
+      - { nom: Cheddar, qte: 80, unite: g, note: "râpé ; pas plus, il arrondit sans couvrir" }
       - { nom: Laitue iceberg, qte: 0.25, mode: simple, note: en lanières }
-      - { nom: Tomate, qte: 2, note: en petits dés }
-      - { nom: Cheddar, qte: 100, unite: g, mode: simple, note: râpé }
-      - { nom: Crème aigre, qte: 150, unite: g, note: "sour cream ; sinon crème fraîche épaisse + un filet de citron vert et une pincée de sel" }
-      - { nom: Oignon rouge, qte: 1 }
+      - { nom: Tomate, qte: 2, mode: simple, note: "en petits dés, juste salées" }
+      - { nom: Crème fraîche épaisse, qte: 100, unite: g, mode: simple }
+      - { nom: Avocat, qte: 2, mode: chef, note: bien mûrs }
+      - { nom: Oignon rouge, qte: 0.5 }
+      - { nom: Citron vert, qte: 1, mode: simple, note: "en quartiers, pressé à table" }
+      - { nom: Citron vert, qte: 0.5, mode: chef, note: "pour l'oignon ; ou ½ citron jaune" }
+      - { nom: Sucre, qte: 1, unite: pincee, mode: chef, note: pour l'oignon }
       - { nom: Coriandre fraîche, qte: 1, unite: bouquet }
-      - { nom: Citron vert, qte: 1.5, note: en quartiers }
       - { nom: Piment jalapeño, qte: 1, mode: chef, optionnel: true }
       - { nom: Sauce piquante, optionnel: true }
 
 simple:
   temps: { preparation: 15, cuisson: 15 }
   etapes:
-    - "Hacher l'oignon et l'ail. Délayer la Maïzena dans l'eau froide. Préparer les garnitures : laitue en lanières, tomates en dés, oignon rouge émincé, coriandre ciselée, cheddar râpé."
+    - "Hacher l'oignon et l'ail. Délayer la Maïzena dans l'eau froide. Préparer les garnitures : laitue en lanières, tomates en petits dés juste salées, oignon rouge haché très fin, coriandre ciselée, cheddar râpé."
     - texte: "Chauffer l'huile à feu vif dans une grande poêle. Ajouter le bœuf haché en une couche, l'aplatir et le laisser colorer 3 min sans y toucher, puis l'émietter et le cuire encore 2 min. Saler légèrement."
       minuteur: 180
     - "Ajouter l'oignon et l'ail, baisser à feu moyen et cuire 3 min. Ajouter le cumin, le paprika, l'origan, le piment et l'ail en poudre, remuer 30 secondes."
-    - texte: "Ajouter {concentre} de concentré de tomate et le faire revenir 1 à 2 min en remuant, jusqu'à ce qu'il fonce et accroche légèrement."
+    - texte: "Ajouter {concentre} de concentré de tomate et le sucre, et faire revenir 1 à 2 min en remuant, jusqu'à ce que le concentré fonce et accroche légèrement : c'est là qu'il perd son acidité."
       minuteur: 90
     - texte: "Verser l'eau à la Maïzena ({eau}), gratter le fond et laisser mijoter 4 à 5 min en remuant : la sauce épaissit et nappe la viande, brillante, ni sèche ni soupe. Si elle devient trop épaisse, un trait d'eau."
       minuteur: 270
-    - "Hors du feu, ajouter le jus de citron vert, goûter, saler et poivrer."
-    - "Chauffer les tortillas 20 secondes de chaque côté dans une poêle sèche, puis les garder au chaud dans un torchon. Garnir à table."
+    - "Goûter, saler et poivrer. Pas de citron dans la viande : elle doit rester ronde."
+    - "Chauffer les tortillas 20 secondes de chaque côté dans une poêle sèche, puis les garder au chaud dans un torchon."
+    - "Garnir à table : la viande bien chaude, une petite pincée de cheddar dessus pour qu'il fonde, la laitue, un peu de tomate, une cuillère de crème fraîche et de la coriandre. Le citron vert reste à côté : chacun en presse selon son goût."
   astuces:
-    - "La cuillère de Maïzena fait le juteux : elle lie l'eau, le concentré et la graisse de la viande en une sauce qui s'accroche à chaque grain au lieu de couler au fond du taco."
+    - "Un bon taco, c'est un équilibre : la viande riche et épicée, un peu de gras qui arrondit (fromage, crème), du frais qui croque (laitue, coriandre) et une seule touche acide, le citron vert pressé à table. Avec du citron partout, tout tire vers l'acide."
+    - "La cuillère de Maïzena fait le juteux : elle lie l'eau, le concentré et la graisse de la viande en une sauce qui s'accroche à chaque grain."
     - "S'il reste des glaçons de bouillon de volaille au congélateur, en mettre 4 à 5 à la place de l'eau et de la Maïzena : leur gélatine fait le même travail, avec plus de goût."
     - "Ne pas remuer la viande pendant les premières minutes : elle doit dorer, pas bouillir dans son jus."
 
 chef:
   temps: { preparation: 30, cuisson: 20 }
   etapes:
-    - titre: Les garnitures
-      texte: "Émincer finement l'oignon rouge et le couvrir du jus d'un citron vert avec une pincée de sel : 20 min suffisent pour qu'il rosisse. Mélanger les tomates en dés, un peu de coriandre ciselée, le jalapeño haché, un filet de citron vert et du sel : c'est le pico de gallo."
+    - titre: L'oignon mariné
+      texte: "Émincer très finement le demi-oignon rouge. Ajouter le jus du demi-citron vert, la pincée de sucre et une pincée de sel, mélanger : en 20 min il rosit et s'adoucit. C'est le seul élément acide du taco."
     - titre: La viande
       texte: "Chauffer l'huile à feu très vif dans une grande poêle en fonte. Étaler le bœuf en une galette, le laisser croûter 4 min sans y toucher, retourner par morceaux, puis émietter. Saler légèrement."
       minuteur: 240
     - texte: "Baisser à feu moyen, ajouter l'oignon et l'ail hachés et cuire 3 min. Ajouter les épices dans la graisse et remuer 30 secondes pour les torréfier."
-    - texte: "Ajouter {concentre} de concentré de tomate et le chipotle. Faire revenir 2 min en remuant, jusqu'à ce que le concentré passe du rouge vif au rouge brique."
+    - texte: "Ajouter {concentre} de concentré de tomate, le sucre et le chipotle. Faire revenir 2 min en remuant, jusqu'à ce que le concentré passe du rouge vif au rouge brique : il perd son acidité."
       minuteur: 120
     - texte: "Ajouter les glaçons de bouillon ({bouillon}) directement dans la poêle, gratter les sucs et laisser réduire à feu moyen jusqu'à ce que la sauce nappe la viande et brille, 6 à 8 min. Sans glaçons : verser 150 ml d'eau froide avec 1 cc de Maïzena délayée, 4 à 5 min suffisent."
       minuteur: 420
-    - texte: "Finir avec le jus d'un demi-citron vert, goûter et rectifier le sel. La viande attend au chaud, couverte."
-    - titre: Les tortillas
-      texte: "Chauffer les tortillas de maïs 30 secondes de chaque côté dans une poêle très chaude, jusqu'à ce qu'elles gonflent et marquent. Les empiler dans un torchon : elles restent souples."
+    - texte: "Goûter et rectifier le sel. Pas de citron ici : la viande reste ronde. Garder au chaud, couvert."
+    - titre: Les garnitures
+      texte: "Trancher les avocats et les saler légèrement. Ciseler la coriandre, couper le jalapeño en fines rondelles."
+    - titre: Les tortillas au fromage
+      texte: "Dans une poêle très chaude, chauffer une tortilla de maïs 30 secondes, la retourner, la parsemer d'une petite pincée de cheddar et poser une seconde tortilla dessus. Retourner le tout et compter 30 secondes : le fromage fond et colle les deux. Garder dans un torchon."
     - titre: Le montage
-      texte: "Deux tortillas superposées par taco, la viande, le pico de gallo, l'oignon mariné, une cuillère de crème aigre, de la coriandre et un quartier de citron vert."
+      texte: "Sur chaque double tortilla : la viande, 2 ou 3 tranches d'avocat, quelques lamelles d'oignon mariné (peu, il est là pour réveiller), de la coriandre et quelques rondelles de jalapeño."
   astuces:
+    - "L'équilibre : la viande épicée, le gras du fromage fondu et de l'avocat qui arrondit, la coriandre et le jalapeño pour le frais, et l'oignon mariné comme unique touche acide. Pas de citron sur l'avocat ni dans la viande."
     - "Les glaçons vont dans la poêle encore congelés : ils fondent en une minute. Leur gélatine donne à la viande ce côté juteux et brillant qu'un cube du commerce n'apporte pas. Un glaçon fait environ 30 ml : 4 à 5 pour 500 g de viande."
-    - "Le chipotle en adobo apporte un fumé que le paprika seul n'a pas. On en trouve en boîte au rayon mexicain."
+    - "Le chipotle en adobo apporte un fumé que le paprika seul n'a pas. Sa sauce est vinaigrée : un piment haché suffit, sans la sauce."
 
 notes:
   - titre: D'où vient cette recette
     texte: "Tacos faits un jour avec de la viande hachée, du concentré de tomate et des glaçons de bouillon de poule maison : la viande était super juteuse. Cette recette cherche à refaire ça, avec ou sans glaçons."
+  - titre: Essai du 20 novembre 2026
+    texte: "Beaucoup trop acide : du citron dans l'oignon, dans la tomate, dans la viande et dans la crème, sans rien pour équilibrer. Le taco avec un peu de fromage était bien meilleur. Recette rééquilibrée : une seule touche acide, un peu de fromage, pas de citron dans la viande."
 
 voirAussi: [chili-con-carne, ramen]
