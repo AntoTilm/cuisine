@@ -1,0 +1,91 @@
+titre: Petit déjeuner saumon, œufs, bacon et avocat
+cuisine: americaine
+origine: Brunch
+type: plat
+resume: Tartines d'avocat au saumon, œufs et bacon croustillant, bol de yaourt aux fruits et jus d'orange pressé. Le petit déjeuner salé-sucré complet.
+portions:
+  base: 2
+
+ingredients:
+  - groupe: Le saumon
+    items:
+      - { nom: Saumon fumé, qte: 150, unite: g, mode: simple }
+      - { nom: Filet de saumon extra-frais (qualité sashimi), qte: 250, unite: g, mode: chef, note: avec la peau }
+      - { nom: Gros sel, qte: 25, unite: g, mode: chef, cle: sel }
+      - { nom: Sucre, qte: 25, unite: g, mode: chef, cle: sucre }
+      - { nom: Citron, qte: 1, mode: chef, note: "le zeste pour le saumon, le jus pour la compotée" }
+      - { nom: Aneth, qte: 1, unite: bouquet, mode: chef }
+  - groupe: Les tartines
+    items:
+      - { nom: Pain de campagne, qte: 4, unite: tranche }
+      - { nom: Avocat, qte: 2, note: bien mûrs, rayon: fruits-legumes }
+      - { nom: Citron vert, qte: 1 }
+      - { nom: Huile d'olive, qte: 1, unite: cs }
+      - { nom: Piment d'Espelette }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: Les œufs et le bacon
+    items:
+      - { nom: Œuf, qte: 4 }
+      - { nom: Bacon, qte: 6, unite: tranche, rayon: boucherie }
+      - { nom: Beurre, qte: 15, unite: g, mode: chef }
+      - { nom: Crème fraîche épaisse, qte: 1, unite: cs, mode: chef }
+      - { nom: Ciboulette, qte: 4, unite: brin, mode: chef }
+  - groupe: Le bol et le jus
+    items:
+      - { nom: Yaourt grec, qte: 300, unite: g }
+      - { nom: Fruits de saison, qte: 250, unite: g, note: "poire, kiwi, banane, clémentine…", rayon: fruits-legumes }
+      - { nom: Fruits rouges surgelés, qte: 150, unite: g, mode: chef }
+      - { nom: Granola, qte: 60, unite: g, rayon: sucre }
+      - { nom: Miel, qte: 2, unite: cs }
+      - { nom: Miel, qte: 1, unite: cs, mode: chef, note: pour la compotée }
+      - { nom: Orange à jus, qte: 6, rayon: fruits-legumes }
+
+simple:
+  temps: { preparation: 15, cuisson: 15 }
+  etapes:
+    - "Presser les oranges et garder le jus au frais. Sortir le saumon fumé du frigo pour qu'il perde un peu de son froid."
+    - "Répartir le yaourt dans des bols et ajouter les fruits coupés en morceaux. Garder le granola et le miel pour le moment de servir : le granola reste croustillant."
+    - titre: Le bacon
+      texte: "Poser les tranches de bacon dans une poêle froide, sans matière grasse, et cuire à feu moyen 6 à 8 min en les retournant, jusqu'à ce qu'elles soient croustillantes. Égoutter sur du papier absorbant et garder une cuillère de gras dans la poêle."
+      minuteur: 420
+    - titre: L'avocat
+      texte: "Pendant ce temps, écraser l'avocat à la fourchette avec le jus du citron vert, l'huile d'olive, du sel, du poivre et une pincée de piment d'Espelette. Toaster le pain."
+    - titre: Les œufs
+      texte: "Casser les œufs dans le gras du bacon, à feu moyen. Saler, couvrir et cuire 3 min : le couvercle fait prendre le blanc sur le dessus sans durcir le jaune."
+      minuteur: 180
+    - "Tartiner le pain d'avocat, poser le saumon fumé dessus et donner un tour de poivre. Servir avec les œufs et le bacon, le bol de yaourt (granola et miel ajoutés au dernier moment) et le jus d'orange."
+  astuces:
+    - "Le gras du bacon donne du goût aux œufs et évite de salir une deuxième poêle."
+    - "L'avocat noircit vite : l'écraser au dernier moment, le citron le protège quelques minutes."
+
+chef:
+  temps: { preparation: 30, cuisson: 20, attente: 1440 }
+  etapes:
+    - titre: La veille, le gravlax
+      texte: "Mélanger {sel} de gros sel, {sucre} de sucre, le zeste du citron, un tour de poivre concassé et la moitié de l'aneth haché. Poser le saumon côté peau sur un grand film alimentaire, le couvrir entièrement du mélange et l'emballer serré."
+    - texte: "Le mettre dans un plat, poser un poids dessus (une boîte de conserve) et le laisser 24 h au frigo, en le retournant à mi-temps. Compter jusqu'à 36 h pour un filet épais."
+    - titre: Le matin
+      texte: "Rincer le saumon à l'eau froide, le sécher soigneusement et le rouler dans le reste de l'aneth haché. Le trancher finement en biais, au couteau bien aiguisé, en détachant chaque tranche de la peau."
+    - titre: La compotée
+      texte: "Cuire les fruits rouges avec le miel et le jus du citron 5 min à feu moyen, jusqu'à ce qu'ils éclatent. Laisser tiédir."
+      minuteur: 300
+    - titre: Le bacon au four
+      texte: "Préchauffer le four à 200 °C. Poser le bacon sur une grille au-dessus d'une plaque couverte de papier cuisson et cuire 12 à 15 min : il croustille de façon égale, sans surveiller ni retourner, et laisse les feux libres pour les œufs."
+      minuteur: 720
+    - texte: "Pendant ce temps, presser les oranges et monter les bols : yaourt, compotée tiède et fruits frais coupés. Le granola et le filet de miel au moment de servir."
+    - titre: L'avocat
+      texte: "Écraser grossièrement l'avocat avec le jus et le zeste du citron vert, l'huile d'olive, du sel et le piment d'Espelette, en gardant des morceaux pour la texture. Griller le pain à la poêle avec un filet d'huile d'olive."
+    - titre: Les œufs brouillés
+      texte: "Casser les œufs dans une casserole froide avec le beurre, sans les battre. Mettre sur feu doux et remuer sans arrêt à la spatule, en retirant la casserole du feu quelques secondes dès que ça accroche. Après 4 à 5 min, quand ils sont encore crémeux et brillants, les retirer du feu, ajouter la crème fraîche, saler, poivrer et parsemer de ciboulette ciselée."
+    - titre: Le dressage
+      texte: "Tartiner le pain d'avocat, couvrir de tranches de gravlax et finir d'un brin d'aneth. Servir avec les œufs brouillés, le bacon, le bol et le jus."
+  astuces:
+    - "Le saumon cru doit être de qualité sashimi, ou avoir été congelé au moins 24 h à −20 °C avant usage."
+    - "Le gravlax se garde 4 à 5 jours au frigo, bien emballé : en faire plus et le servir aussi à l'apéro."
+
+notes:
+  - titre: Le principe
+    texte: "Un petit déjeuner salé-sucré plutôt qu'un continental : le salé (saumon, œufs, bacon, avocat) dans l'assiette, le sucré (yaourt, fruits, jus) à côté. Tout se prépare en même temps, en 20 min."
+
+voirAussi: [oeufs-benedicte]
