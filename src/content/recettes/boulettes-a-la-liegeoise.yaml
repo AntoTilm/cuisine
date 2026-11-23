@@ -1,0 +1,118 @@
+titre: Boulettes à la liégeoise
+cuisine: belge
+origine: Liège
+type: plat
+saison: hiver
+resume: "De gros boulets porc et bœuf, nappés d'une sauce aigre-douce aux oignons et au sirop de Liège. Avec des frites, comme en Cité ardente."
+portions:
+  base: 4
+
+ingredients:
+  - groupe: Les boulets
+    items:
+      - { nom: Viande hachée porc et bœuf, qte: 800, unite: g, note: "2/3 porc, 1/3 bœuf : le mélange liégeois" }
+      - { nom: Pain de mie, qte: 3, unite: tranche, note: "rassis de préférence" }
+      - { nom: Lait, qte: 10, unite: cl, cle: lait }
+      - { nom: Oignon, qte: 1 }
+      - { nom: Persil plat, qte: 3, unite: cs, note: haché }
+      - { nom: Œuf, qte: 2 }
+      - { nom: Chapelure, qte: 3, unite: cs, note: "pour ajuster la texture" }
+      - { nom: Beurre, qte: 30, unite: g, note: "pour le plat ou la cocotte" }
+      - { nom: Huile de tournesol, qte: 1, unite: cs, mode: chef }
+      - { nom: Noix de muscade }
+      - { nom: Sel }
+      - { nom: Poivre }
+  - groupe: La sauce
+    items:
+      - { nom: Oignon, qte: 3 }
+      - { nom: Beurre, qte: 30, unite: g }
+      - { nom: Cassonade brune, qte: 3, unite: cs, cle: cassonade }
+      - { nom: Vinaigre de vin rouge, qte: 4, unite: cl, cle: vinaigre }
+      - { nom: Sirop de Liège, qte: 3, unite: cs, cle: sirop, note: "le Vrai Sirop de Liège de Meurens, au rayon des tartinades" }
+      - { nom: Bouillon de bœuf, qte: 60, unite: cl, cle: bouillon, mode: simple, note: "un cube dans de l'eau chaude" }
+      - { nom: Fond brun de veau, qte: 60, unite: cl, cle: fond, mode: chef, rayon: epicerie, note: "maison, ou du fond de veau déshydraté délayé dans l'eau" }
+      - { nom: Thym, qte: 2, unite: brin }
+      - { nom: Laurier, qte: 2, unite: feuille }
+      - { nom: Clous de girofle, qte: 2, rayon: epicerie }
+      - { nom: Baies de genièvre, qte: 6, rayon: epicerie, mode: chef }
+      - { nom: Raisins de Corinthe, qte: 30, unite: g, rayon: sucre, optionnel: true }
+      - { nom: Maïzena, qte: 1, unite: cs, mode: simple }
+      - { nom: Beurre, qte: 20, unite: g, mode: chef, note: "pour le beurre manié" }
+      - { nom: Farine, qte: 20, unite: g, mode: chef, note: "pour le beurre manié" }
+
+simple:
+  temps: { preparation: 25, cuisson: 45 }
+  etapes:
+    - texte: "Préchauffer le four à 180 °C. Retirer la croûte du pain de mie, le déchirer dans un saladier, l'arroser de {lait} de lait et laisser tremper 5 min. Presser pour retirer l'excédent."
+      minuteur: 300
+    - "Ajouter la viande, l'oignon très finement haché, le persil, les œufs, de la muscade râpée, du poivre et bien saler (environ 1 cc de sel par 500 g de viande). Mélanger à la main jusqu'à ce que la farce se tienne. Si elle colle trop, ajouter la chapelure cuillère par cuillère."
+    - texte: "Former 2 gros boulets par personne, les mains mouillées à l'eau tiède pour qu'ils soient bien lisses. Les poser dans un plat beurré et les enfourner 35 min."
+      minuteur: 2100
+    - texte: "Pendant ce temps, faire fondre le beurre dans une casserole et y dorer les oignons émincés à feu moyen, 10 min, en remuant souvent."
+      minuteur: 600
+    - texte: "Ajouter {cassonade} de cassonade et la laisser caraméliser 2 min avec les oignons. Déglacer avec {vinaigre} de vinaigre en grattant le fond."
+      minuteur: 120
+    - texte: "Verser {bouillon} de bouillon, ajouter {sirop} de sirop de Liège, le thym, le laurier et les clous de girofle. Laisser cuire 20 min à petit bouillon."
+      minuteur: 1200
+    - "Délayer la Maïzena dans 2 cuillères d'eau froide, la verser dans la sauce en fouettant et laisser épaissir 1 min. Ajouter les raisins. Goûter : saler, poivrer, et rééquilibrer avec une goutte de vinaigre ou un peu de sirop."
+    - texte: "Mettre les boulets et leur jus de cuisson dans la sauce, couvrir et laisser frémir 10 min à feu doux en les arrosant. Retirer le laurier et les clous de girofle, puis servir avec des frites et une compote de pommes."
+      minuteur: 600
+  astuces:
+    - "Pas de sirop de Liège ? Un sirop de pomme et poire fait l'affaire. Le miel ou la confiture ne donnent pas le même goût."
+    - "Encore meilleur réchauffé le lendemain : la sauce a eu le temps de prendre le goût des boulets."
+
+chef:
+  temps: { preparation: 40, cuisson: 70, attente: 30 }
+  etapes:
+    - titre: La panade
+      texte: "Retirer la croûte du pain de mie, le déchirer, l'arroser de {lait} de lait et laisser gonfler 10 min. Presser : la mie doit être humide sans goutter."
+      minuteur: 600
+    - titre: La farce
+      texte: "Hacher l'oignon très finement. Mélanger la viande, la panade, l'oignon, le persil et les œufs, avec du sel (environ 1 cc par 500 g de viande), du poivre du moulin et de la muscade fraîchement râpée. Pétrir 2 min à la main : la farce devient collante et les boulets se tiendront mieux à la cuisson. Ajuster avec la chapelure si besoin."
+    - texte: "Poêler une noisette de farce pour goûter et rectifier l'assaisonnement. Couvrir et laisser raffermir 30 min au frais."
+      minuteur: 1800
+    - titre: Les boulets
+      texte: "Façonner 2 boulets réguliers par personne, d'environ 140 g, les mains mouillées. Dans une grande cocotte, chauffer le beurre et l'huile et y colorer les boulets sur toutes les faces, 8 à 10 min, en les faisant rouler délicatement. Ils ne doivent pas être cuits à cœur. Les réserver."
+      minuteur: 540
+    - titre: Les oignons
+      texte: "Dans la même cocotte, faire fondre le beurre de la sauce et y mettre les oignons émincés. Les cuire 15 min à feu doux-moyen en grattant les sucs des boulets, jusqu'à ce qu'ils soient fondants et bien blonds."
+      minuteur: 900
+    - titre: Le caramel
+      texte: "Saupoudrer de {cassonade} de cassonade et laisser caraméliser 2 min en remuant. Déglacer avec {vinaigre} de vinaigre et laisser réduire presque à sec : l'acidité doit s'arrondir, pas piquer."
+      minuteur: 120
+    - titre: La sauce
+      texte: "Mouiller avec {fond} de fond de veau, ajouter {sirop} de sirop de Liège, le thym, le laurier, et les clous de girofle et les baies de genièvre légèrement écrasées, enfermés dans une boule à thé. Porter à frémissement et cuire 15 min. Pendant ce temps, faire gonfler les raisins dans un bol d'eau chaude."
+      minuteur: 900
+    - titre: Le mijotage
+      texte: "Remettre les boulets dans la sauce, couvrir et laisser mijoter 25 min à tout petit feu, en les retournant à mi-cuisson. Ils sont cuits quand le cœur atteint 70 °C et que le jus qui en sort est clair."
+      minuteur: 1500
+    - titre: La liaison
+      texte: "Sortir les boulets et la boule à thé. Écraser le beurre avec la farine à la fourchette, l'incorporer à la sauce par petits morceaux en fouettant et laisser cuire 3 min : la sauce devient brillante et nappante. Ajouter les raisins égouttés."
+      minuteur: 180
+    - texte: "Goûter et équilibrer : une goutte de vinaigre si c'est trop sucré, une cuillère de sirop si ça pique, du sel et du poivre. Remettre les boulets, les napper de sauce et servir bien chaud avec des frites maison."
+  astuces:
+    - "Pétrir la farce un peu longtemps, c'est ce qui la lie : les boulets gardent leur forme pendant le mijotage, sans s'effriter."
+    - "Les épices dans une boule à thé, c'est la garantie de ne croquer ni clou de girofle ni baie de genièvre."
+    - "Préparés la veille et réchauffés doucement dans leur sauce, les boulets sont encore meilleurs."
+
+notes:
+  - titre: Boulets ou boulettes ?
+    texte: "À Liège, on dit « boulets » : de grosses boulettes, deux par assiette, servies avec des frites, une salade ou une compote de pommes. La confrérie du Gay Boulet remet chaque année le Boulet de cristal à la maison qui fait la meilleure."
+  - titre: D'où vient la recette
+    texte: "Pas de recette de famille au départ : cette base suit celle de la confrérie du Gay Boulet : 2/3 de porc, 1/3 de bœuf, pain trempé dans le lait, et une sauce aux oignons, cassonade, vinaigre, girofle, genièvre et sirop de Liège. À ajuster selon ton goût après le premier essai."
+  - titre: Variante à la bière
+    texte: "Certaines familles mouillent la sauce avec moitié bière brune, moitié bouillon. La sauce est alors plus maltée et un peu moins sucrée : ajouter une cuillère de sirop en plus."
+
+sources:
+  - titre: "La recette des boulets à la liégeoise de la confrérie du Gay Boulet (RTBF)"
+    url: https://www.rtbf.be/article/connaissez-vous-la-meilleure-recette-des-boulets-a-la-liegeoise-10539712
+
+voirAussi: [vol-au-vent, polpette-poivrons-aigre-doux]
+
+assiette:
+  - role: feculent
+    choix: [frites-maison, friterie, frites-au-four, puree-maison]
+    defaut: [frites-maison]
+  - role: legume
+    choix: [salade-composee, chicons-braises]
+    defaut: [salade-composee]
