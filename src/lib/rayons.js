@@ -20,13 +20,13 @@ export const RAYONS = [
 const REGLES = [
   ['asiatique', /sauce soja|soja (claire|foncee)|kikkoman|mirin|\bsake\b|dashi|huitre|sauce de poisson|nuoc|hoisin|shaoxing|vin de riz|alcool de riz|vin de cuisine chinois|vinaigre de riz|huile de sesame|wakame|tamarin|sirop de riz|saucisse chinoise|shiitake|parfume|kimchi|puree de piment|cinq.epice|5 epice|nouille|vermicelle|galette de riz|lait de soja|sriracha|colorant|pate de cacahuete|ciboulette thai|ciboule chinoise|nori/],
   ['placard', /^(gros sel|fleur de sel|sel|poivre|huile|glacon)\b/],
-  ['epicerie', /vinaigre|concentre de tomate|coulis|jus de tomate|tomates? (pelee|concassee)|haricots rouges|\bmais\b|chapelure|farine|fecule|maizena|\briz\b|bouillon|moutarde|mayonnaise|ketchup|cornichon|worcestershire|tabasco|piquante|cumin|paprika|origan|muscade|piment (en poudre|d'espelette)|herbes de provence|levure|\bnoix\b|cacahuete|sesame|bicarbonate|poudre d|thym seche|graisse d'oie/],
+  ['epicerie', /vinaigre|concentre de tomate|coulis|jus de tomate|tomates? (pelee|concassee)|haricots rouges|\bmais\b|chapelure|farine|fecule|maizena|\briz\b|bouillon|moutarde|mayonnaise|ketchup|cornichon|worcestershire|tabasco|piquante|cumin|paprika|origan|muscade|piment (en poudre|d'espelette)|herbes de provence|levure|\bnoix\b|cacahuete|sesame|bicarbonate|poudre d|thym seche|graisse d'oie|genievre|girofle|graines? de coriandre|raifort/],
   ['sucre', /sucre|cassonade|\bmiel\b|vanille|chocolat|lait de coco|sirop/],
-  ['cave', /\bvin\b|cognac|kirsch|\bmarc\b|porto|biere|cidre|calvados/],
+  ['cave', /\bvin\b|riesling|cognac|kirsch|\bmarc\b|porto|biere|cidre|calvados/],
   ['surgeles', /sorbet|glacon|petits? poi|surgele/],
   ['cremerie', /beurre|creme|\blait\b|\boeuf|fromage|parmesan|emmental|gruyere|comte|beaufort|vacherin|cheddar|mozzarella|burrata|feta|yaourt|roquefort|pate brisee/],
-  ['boulangerie', /\bpain|baguette|brioche|croute/],
-  ['boucherie', /boeuf|veau|porc|poulet|\bpoule\b|poularde|viande|hache|entrecote|steak|echine|saucisse|pancetta|lardo|\blard|jambon|poitrine|saumon|crevette|scampi|poisson|\bmoules?\b|cuisse/],
+  ['boulangerie', /\bpain|baguette|brioche|\bcroute/],
+  ['boucherie', /choucroute|boeuf|veau|porc|poulet|\bpoule\b|poularde|viande|hache|entrecote|steak|echine|saucisse|pancetta|lardo|\blard|jambon|poitrine|saumon|crevette|scampi|poisson|\bmoules?\b|cuisse/],
   ['fruits-legumes', /oignon|\bail\b|echalote|tomate|poivron|carotte|poireau|courgette|champignon|concombre|salade|laitue|persil|menthe|coriandre|ciboulette|cebette|ciboule|thym|romarin|laurier|estragon|aneth|basilic|citron|gingembre|pomme|pousse|germe|poire|herbe|piment|celeri|bambou|brocoli|feuille/],
 ];
 

@@ -1,0 +1,103 @@
+titre: Choucroute garnie
+cuisine: francaise
+origine: Alsace
+type: plat
+saison: hiver
+resume: "Le chou fermenté d'Alsace braisé au riesling avec palette, lard fumé, Morteau et knacks, les pommes de terre cuites dessus. En grande cuisine : jarret demi-sel, graisse d'oie, aromates en sachet et braisage au four."
+portions:
+  base: 6
+
+ingredients:
+  - groupe: Le chou
+    items:
+      - { nom: Choucroute crue, qte: 1.5, unite: kg, note: "d'Alsace IGP si possible ; pas de choucroute déjà cuisinée" }
+      - { nom: Oignon, qte: 2 }
+      - { nom: Ail, qte: 2, unite: gousse }
+      - { nom: Saindoux ou graisse d'oie, qte: 40, unite: g, mode: simple, cle: graisse }
+      - { nom: Graisse d'oie, qte: 60, unite: g, mode: chef, cle: graisse }
+      - { nom: Riesling, qte: 50, unite: cl, note: "sec, d'Alsace", mode: simple, cle: vin }
+      - { nom: Riesling, qte: 75, unite: cl, note: "une bouteille, sec, d'Alsace", mode: chef, cle: vin }
+      - { nom: Eau, qte: 25, unite: cl, mode: simple, cle: eau }
+      - { nom: Bouillon de volaille, qte: 25, unite: cl, mode: chef, cle: bouillon }
+  - groupe: Les aromates
+    items:
+      - { nom: Baies de genièvre, qte: 10 }
+      - { nom: Clous de girofle, qte: 2 }
+      - { nom: Laurier, qte: 2, unite: feuille }
+      - { nom: Graines de coriandre, qte: 1, unite: cc, mode: chef }
+      - { nom: Thym, qte: 2, unite: branche, mode: chef }
+      - { nom: Poivre noir en grains, qte: 1, unite: cc, mode: chef }
+      - { nom: Poivre du moulin, mode: simple }
+  - groupe: La garniture
+    items:
+      - { nom: Jarret de porc demi-sel, qte: 1, mode: chef, note: "environ 1 kg ; ou un jambonneau" }
+      - { nom: Palette de porc fumée, qte: 800, unite: g, note: "ou échine fumée (kassler)" }
+      - { nom: Lard fumé, qte: 400, unite: g, note: en un seul morceau }
+      - { nom: Saucisse de Morteau, qte: 1, note: "ou 3 saucisses de Montbéliard" }
+      - { nom: Saucisses de Strasbourg, qte: 6, note: les knacks }
+      - { nom: Pommes de terre fermes, qte: 1.2, unite: kg, note: "charlotte ou nicola, de taille moyenne" }
+  - groupe: Pour servir
+    items:
+      - { nom: Moutarde forte, note: "ou moutarde douce d'Alsace" }
+      - { nom: Raifort râpé, mode: chef, optionnel: true }
+
+simple:
+  temps: { preparation: 20, cuisson: 125 }
+  etapes:
+    - "Goûter la choucroute. Si elle est très acide, la rincer une fois à l'eau froide et bien l'essorer à la main ; sinon, simplement la démêler entre les doigts."
+    - texte: "Émincer un oignon et piquer l'autre des clous de girofle. Dans une grande cocotte, faire fondre {graisse} de graisse et y faire suer l'oignon émincé 10 min à feu doux, sans coloration. Ajouter l'ail écrasé."
+      minuteur: 600
+    - "Étaler la moitié de la choucroute, poser la palette et le lard, puis couvrir avec le reste. Glisser l'oignon piqué, le genièvre et le laurier. Verser {vin} de riesling et {eau} d'eau, poivrer. Ne pas saler : les viandes fumées s'en chargent."
+    - texte: "Couvrir et laisser mijoter 1 h à feu très doux."
+      minuteur: 3600
+    - texte: "Piquer la Morteau à la fourchette et l'enfoncer dans le chou. Poser les pommes de terre épluchées par-dessus, couvrir et cuire encore 45 min. Ajouter un peu d'eau si le fond attache."
+      minuteur: 2700
+    - texte: "10 min avant de servir, réchauffer les saucisses de Strasbourg dans une eau frémissante, sans jamais la faire bouillir : elles éclateraient."
+      minuteur: 600
+    - "Trancher la palette, le lard et la Morteau. Dresser la choucroute en dôme, les viandes et les saucisses dessus, les pommes de terre autour. Servir avec la moutarde."
+  astuces:
+    - "Encore meilleure réchauffée : la cuire la veille, puis au moment du repas la réchauffer doucement 30 min et cuire les pommes de terre et les saucisses."
+
+chef:
+  temps: { preparation: 45, cuisson: 150 }
+  etapes:
+    - titre: Blanchir le jarret
+      texte: "Mettre le jarret dans une grande casserole d'eau froide, porter à ébullition et laisser bouillir 5 min : l'excès de sel et les impuretés s'en vont. Égoutter et rincer."
+      minuteur: 300
+    - titre: Préparer le chou
+      texte: "Goûter la choucroute. Trop acide, la rincer une seule fois à l'eau froide : un rinçage de plus la rend fade. L'essorer fort, par poignées, et la démêler pour qu'elle s'imprègne de façon régulière."
+    - titre: Le sachet d'aromates
+      texte: "Réunir le genièvre légèrement écrasé, la coriandre, le poivre en grains, les clous de girofle, le laurier et le thym dans une mousseline ou une grosse boule à thé : ils parfument tout le plat, et personne ne croque une baie de genièvre."
+    - titre: Fondre les oignons
+      texte: "Émincer les oignons. Dans une cocotte en fonte, faire fondre {graisse} de graisse d'oie et y faire suer les oignons 10 min à feu doux, sans coloration : ils doivent devenir fondants et translucides. Ajouter l'ail haché pour 1 min."
+      minuteur: 600
+    - titre: Monter la cocotte
+      texte: "Étaler la moitié de la choucroute, y poser le jarret, la palette et le lard, le sachet au milieu, et couvrir avec le reste du chou. Mouiller avec le riesling ({vin}), en gardant un petit verre pour la fin, et {bouillon} de bouillon : le liquide doit arriver aux trois quarts de la hauteur. Ne pas saler."
+    - titre: Braiser
+      texte: "Porter à frémissement, poser une feuille de papier cuisson à même le chou, puis le couvercle, et enfourner à 150 °C pour 1 h 30."
+      minuteur: 5400
+    - titre: La Morteau
+      texte: "Piquer la Morteau à la fourchette, l'enfoncer dans le chou et remettre au four 45 min. Le jarret est prêt quand l'os bouge et que la chair se détache."
+      minuteur: 2700
+    - titre: Les pommes de terre
+      texte: "Pendant ce temps, éplucher les pommes de terre et les cuire 25 min à la vapeur. Les rouler ensuite dans deux louches du jus de la choucroute : elles en prennent le goût sans s'écraser dans la cocotte."
+      minuteur: 1500
+    - titre: Les saucisses de Strasbourg
+      texte: "Les plonger 10 min dans une eau à peine frémissante, vers 80 °C. Si l'eau bout, elles éclatent."
+      minuteur: 600
+    - titre: Finir et dresser
+      texte: "Retirer le sachet. Arroser la choucroute du riesling gardé de côté pour réveiller son parfum, goûter et poivrer. Désosser le jarret en gros morceaux, trancher la palette, le lard et la Morteau. Dresser le chou en dôme sur un grand plat chaud, les viandes et les saucisses dessus, les pommes de terre autour. Moutarde et raifort à table."
+  astuces:
+    - "L'acidité de la fermentation fait le caractère du plat : on la tempère avec le vin, la graisse et le temps de cuisson, pas en lavant le chou à grande eau."
+    - "Les viandes fumées et demi-sel salent le chou pendant la cuisson : on ne juge le sel qu'à la toute fin."
+    - "Encore meilleure le lendemain : monter et braiser la veille jusqu'à la Morteau, laisser refroidir dans la cocotte, puis réchauffer 45 min au four à 150 °C avant de finir."
+
+notes:
+  - titre: À boire
+    texte: "Le riesling de la cuisson, ou un pinot blanc d'Alsace. Une bonne bière blonde fait aussi l'affaire."
+
+sources:
+  - titre: "La choucroute du Nouvel An, Un Gars, Un Chef ! (RTBF)"
+    url: https://www.rtbf.be/article/recette-la-choucroute-du-nouvel-an-d-un-gars-un-chef-11296139
+  - titre: "Choucroute garnie, Hachette Vins"
+    url: https://www.hachette-vins.com/cuisine-vins/274/choucroute-garnie
