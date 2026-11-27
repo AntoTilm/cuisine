@@ -1,0 +1,93 @@
+titre: Moules à la normande
+cuisine: francaise
+origine: Normandie
+type: plat
+saison: hiver
+resume: "Des moules de bouchot ouvertes au cidre brut, puis nappées d'une sauce à la crème crue réduite avec leur jus."
+portions:
+  base: 2
+
+ingredients:
+  - groupe: Les moules
+    items:
+      - { nom: Moules de bouchot, qte: 2, unite: kg, note: "1 kg par personne en plat, 500 g en entrée" }
+  - groupe: La cuisson au cidre
+    items:
+      - { nom: Échalote, qte: 2 }
+      - { nom: Beurre, qte: 30, unite: g, cle: beurre }
+      - { nom: Champignons de Paris, qte: 150, unite: g, mode: simple, optionnel: true }
+      - { nom: Calvados, qte: 2, unite: cs, mode: simple, optionnel: true, cle: calva }
+      - { nom: Calvados, qte: 2, unite: cs, mode: chef, cle: calva }
+      - { nom: Cidre brut, qte: 25, unite: cl, note: "fermier si possible, surtout pas doux", cle: cidre }
+  - groupe: La sauce
+    items:
+      - { nom: Crème crue fermière, qte: 150, unite: g, note: "épaisse ; ou crème d'Isigny AOP", cle: creme }
+      - { nom: Jaune d'œuf, qte: 1, mode: chef }
+      - { nom: Persil plat, qte: 4, unite: brin }
+      - { nom: Poivre du moulin }
+  - groupe: La garniture
+    mode: chef
+    items:
+      - { nom: Champignons de Paris, qte: 150, unite: g, note: "petits et bien fermes" }
+      - { nom: Beurre, qte: 15, unite: g, note: pour les champignons, cle: beurrechampi }
+      - { nom: Sel, note: pour les champignons }
+
+simple:
+  temps: { preparation: 15, cuisson: 15 }
+  etapes:
+    - "Rincer les moules à l'eau froide, gratter celles qui en ont besoin et tirer les barbes s'il y en a. Jeter les moules cassées et celles qui restent ouvertes quand on les tapote."
+    - texte: "Dans une grande cocotte, faire fondre {beurre} de beurre et y faire suer les échalotes ciselées (et les champignons émincés) à feu moyen, sans colorer."
+      minuteur: 180
+    - "Facultatif : verser {calva} de calvados et flamber, en éloignant la cocotte de la hotte."
+    - texte: "Verser {cidre} de cidre et porter à ébullition. Ajouter les moules, couvrir et cuire à feu vif en secouant la cocotte de temps en temps, jusqu'à ce qu'elles soient toutes ouvertes."
+      minuteur: 360
+    - texte: "Sortir les moules à l'écumoire et les garder au chaud. Laisser reposer le jus 1 à 2 min, puis le verser doucement dans une casserole en laissant le dernier centimètre au fond de la cocotte : c'est là qu'est le sable. Le réduire de moitié, ajouter {creme} de crème et laisser réduire encore 2 min, jusqu'à ce que la sauce nappe. Poivrer, sans saler : le jus des moules l'est déjà."
+      minuteur: 300
+    - "Remettre les moules dans la sauce, mélanger, parsemer de persil ciselé et servir aussitôt."
+  astuces:
+    - "Pour une sauce plus légère, compter 100 g de crème au lieu de 150 pour 2 : on garde le goût du cidre sans alourdir."
+    - "Une crème crue n'a pas toujours la même épaisseur : si la sauce reste liquide, la laisser réduire une ou deux minutes de plus."
+
+chef:
+  temps: { preparation: 25, cuisson: 20 }
+  etapes:
+    - titre: Le nettoyage
+      texte: "Juste avant la cuisson, plonger les moules dans un évier d'eau froide, les remuer, puis les sortir à la main pour laisser le sable au fond. Recommencer jusqu'à ce que l'eau reste claire. Gratter les coquilles au dos d'un couteau, tirer les barbes vers la pointe de la moule et jeter les moules cassées ou qui restent ouvertes."
+    - titre: Les champignons
+      texte: "Émincer les champignons et les faire sauter dans {beurrechampi} de beurre à feu vif, sans les remuer au début, jusqu'à ce qu'ils soient bien dorés. Saler légèrement et réserver : cuits à part, ils restent goûteux au lieu de bouillir dans le jus."
+      minuteur: 300
+    - titre: L'ouverture au cidre
+      texte: "Dans une grande cocotte, faire suer les échalotes ciselées dans {beurre} de beurre, sans coloration. Verser {calva} de calvados et flamber, cocotte éloignée de la hotte. Ajouter {cidre} de cidre, laisser bouillir 1 min, puis ajouter les moules, couvrir et cuire à feu vif en secouant la cocotte."
+      minuteur: 360
+    - texte: "Dès que les moules sont ouvertes, les sortir à l'écumoire et les garder au chaud sous un couvercle. Trop cuites, elles rétrécissent et deviennent caoutchouteuses."
+    - titre: La réduction
+      texte: "Laisser reposer le jus 2 min, puis le verser doucement dans une casserole en abandonnant le fond sableux. Le réduire de moitié à feu vif."
+      minuteur: 240
+    - titre: La sauce
+      texte: "Ajouter {creme} de crème crue et laisser frémir jusqu'à ce que la sauce nappe la cuillère. Hors du feu, délayer le jaune d'œuf dans une cuillère de sauce, puis l'incorporer en fouettant : la sauce ne doit plus bouillir, sinon le jaune graine. Ajouter les champignons et poivrer. Goûter avant de saler : en général, il n'en faut pas."
+      minuteur: 180
+    - titre: Le dressage
+      texte: "Ranger les moules dans un plat creux chaud ou dans la cocotte, napper de sauce et parsemer de persil ciselé. Servir aussitôt, avec le reste du cidre dans les verres."
+  astuces:
+    - "Le jaune d'œuf est la liaison de la sauce normande classique : il donne une sauce plus veloutée et plus brillante qu'avec la crème seule."
+    - "Pour une présentation de restaurant, retirer la coquille vide de chaque moule et ranger les demi-coquilles serrées dans le plat avant de napper."
+    - "Les moules de bouchot de la baie du Mont-Saint-Michel (AOP) sont la référence ; elles sont de saison de l'été jusqu'en janvier environ."
+
+notes:
+  - titre: Pas de sable
+    texte: |
+      - Les moules de bouchot poussent sur des pieux, hors du sable : elles en contiennent très peu.
+      - Ne pas les laisser tremper longtemps dans l'eau du robinet : l'eau douce les tue, elles s'ouvrent et perdent leur goût.
+      - Pour être tranquille, les laisser 20 à 30 min dans une eau salée à 35 g par litre, comme l'eau de mer : elles filtrent et rejettent le sable qui reste.
+      - Au supermarché, elles sont souvent vendues prêtes à cuire, déjà grattées et ébarbées. La barbe, ce sont les filaments bruns qui sortent entre les coquilles, côté plat : s'il n'y en a pas, rien à faire.
+  - titre: Sans chinois
+    texte: |
+      Décanter : sortir les moules, laisser reposer le jus 1 à 2 min pour que le sable tombe, puis le verser doucement en gardant le dernier centimètre au fond, à jeter. Pour aller plus loin, le verser dans une passoire garnie d'un essuie-tout ou d'un filtre à café.
+  - titre: Quelle crème
+    texte: |
+      Une crème crue fermière, au lait cru, a plus de goût que la crème d'Isigny AOP, qui est pasteurisée mais très bonne aussi. Comme la crème bout dans la sauce, le lait cru ne pose aucun souci.
+
+assiette:
+  - role: feculent
+    choix: [frites-maison, frites-au-four, friterie, pain]
+    defaut: [frites-maison]
